@@ -59,9 +59,11 @@ Plans:
 **Plans**: TBD — biggest remaining gap per HEALTHCHECK
 
 Plans:
-- [ ] 03-01: Trench-sharing two-pass DBSCAN (anchor + piggyback) + future-window filter (D-20/D-22) + singleton handling (D-28/D-29)
-- [ ] 03-02: Valhalla conflict graph (`exclude_polygons` closure simulation + volume weighting) + cached `conflict-graph.json`
-- [ ] 03-03: `/whatif` API wired to Valhalla + persisted `metrics.json`
+- [ ] 03-01: Future-window data prep — anchor + candidate tables (D-20/D-22, D-07 building filter)
+- [ ] 03-02: Trench-sharing two-pass — anchor<->candidate match + leftover-cluster DBSCAN (D-79, D-28/D-29) -> clusters.json + SCHEMAS.md
+- [ ] 03-03: Valhalla conflict graph — exclude_polygons precompute -> conflict-graph.json
+- [ ] 03-04: Greedy interval scheduler -> naive.json + optimized.json + durable metrics.json
+- [ ] 03-05: API surface — real /whatif (Valhalla) + /metrics from disk + /clusters,/naive,/optimized,/conflict-graph for Phase 4
 
 ### Phase 4: UI & Chat Panel
 **Goal**: Wire the optimizer outputs and Nemotron-3 Super 123B chat (over Ollama) into a single screen that tells the demo story. Even with placeholder chat content, the map alone should communicate the project.
@@ -140,7 +142,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7
 |-------|----------------|--------|-----------|
 | 1. Parallel Kickoff | 4/4 (infra ✅, data ✅, hero ✅) | Complete | 2026-05-30 |
 | 2. ~~Fine-tune Kickoff~~ | n/a | ⏭ Closed (D-77) | 2026-05-30 |
-| 3. Optimizer Build | 0/3 | In progress (single-pass DBSCAN only; Valhalla not wired) | - |
+| 3. Optimizer Build | 0/5 | In progress (single-pass DBSCAN only; Valhalla not wired) | - |
 | 4. UI & Chat Panel | 1/4 (Ollama chat ✅; toggle/counter/streaming ❌) | In progress | - |
 | 5. Verification & Pitch Artifacts | 1/2 (modelfile ✅; nvidia-smi + latency ❌) | In progress | - |
 | 6. Demo Polish | 0/3 | Not started | - |
