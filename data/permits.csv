@@ -1,0 +1,7 @@
+permit_id,street_name,lat,lon,start_date,end_date,work_type
+P001,Queen St W,43.6501,-79.3905,2026-06-01,2026-06-05,utility cut
+P002,Queen St W,43.6503,-79.3908,2026-06-03,2026-06-07,water repair
+P003,Queen St W,43.6506,-79.3911,2026-06-08,2026-06-12,gas repair
+P004,Dundas St W,43.6540,-79.3880,2026-07-01,2026-07-04,utility cut
+P005,Dundas St W,43.6542,-79.3884,2026-07-03,2026-07-06,electrical work
+P006,Bloor St W,43.6650,-79.4100,2026-08-01,2026-08-04,utility cut
