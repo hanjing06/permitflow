@@ -35,7 +35,7 @@ PermitFlow is a 36-hour NVIDIA hackathon build: an AI-assisted permit consolidat
 **Plans**: TBD (CONTEXT, SPEC, infra largely landed — see HEALTHCHECK.md)
 
 Plans:
-- [ ] 01-01: Ollama (123B) + NIM embedder on GX10 ✅ standing
+- [x] 01-01: Ollama (123B) + NIM embedder on GX10 ✅ standing
 - [ ] 01-02: Toronto Open Data ingestion (CKAN multi-dataset) + hero block selection — datasets 🟡, hero ❌
 - [ ] 01-03: Valhalla stack on Toronto OSM extract ✅
 - [ ] 01-04: Vite + React + Leaflet UI scaffold ✅
