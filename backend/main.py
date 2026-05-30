@@ -1,9 +1,12 @@
+from llm import build_cluster_prompt, mock_llm_response, ask_local_llm
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi import FastAPI
 from optimizer import (
     load_permits,
     cluster_permits,
-    recommend_consolidations
+    recommend_consolidations,
+    get_metrics,
+    what_if_analysis
 )
 
 app = FastAPI(title="PermitFlow")
@@ -80,4 +83,54 @@ def inspect():
         "sample_lat": float(df["lat"].iloc[0]),
         "sample_lon": float(df["lon"].iloc[0]),
         "sample_location": str(df["street_name"].iloc[0])
+    }
+
+@app.get("/metrics")
+def metrics():
+    df = load_permits()
+    df = cluster_permits(df)
+    return get_metrics(df)
+
+
+@app.get("/whatif")
+def whatif(cluster_id: int, delay_weeks: int = 2):
+    df = load_permits()
+    df = cluster_permits(df)
+    return what_if_analysis(df, cluster_id, delay_weeks)
+
+@app.get("/explain")
+def explain(cluster_id: int, use_llm: bool = False):
+    df = load_permits()
+    df = cluster_permits(df)
+
+    recommendations = recommend_consolidations(df)
+
+    cluster = next(
+        (r for r in recommendations if r["cluster_id"] == cluster_id),
+        None
+    )
+
+    if cluster is None:
+        return {
+            "error": "Cluster not found"
+        }
+
+    prompt = build_cluster_prompt(cluster)
+
+    if use_llm:
+        try:
+            explanation = ask_local_llm(prompt)
+            source = "local_llm"
+        except Exception as e:
+            explanation = mock_llm_response(cluster)
+            source = f"mock_fallback: {str(e)}"
+    else:
+        explanation = mock_llm_response(cluster)
+        source = "mock"
+
+    return {
+        "cluster_id": cluster_id,
+        "source": source,
+        "cluster": cluster,
+        "explanation": explanation
     }
