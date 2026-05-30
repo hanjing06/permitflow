@@ -1,17 +1,40 @@
 {
   "bbox": {
-    "east": -79.3952,
-    "north": 43.662,
-    "south": 43.6529,
-    "west": -79.4072
+    "east": -79.357943,
+    "north": 43.670202,
+    "south": 43.661222,
+    "west": -79.370383
   },
   "center": {
-    "lat": 43.65745,
-    "lon": -79.4012
+    "lat": 43.665712,
+    "lon": -79.364163
   },
-  "id": "kensington-harbord-01",
-  "name": "Kensington-Harbord hero block",
-  "narrative": "Dense downtown block with repeated water, hydro, gas, and telecom cuts.",
-  "neighbourhood": "Kensington Market / Harbord-Spadina",
-  "selected_by": "repeat utility cuts per 100m segment, 2023-2025"
+  "id": "segment-43666-79364",
+  "name": "Hero block \u2014 43.6657, -79.3642",
+  "neighbourhood": "unknown",
+  "selected_by": "disruption events 2023-2025 per 100m segment (D-08)",
+  "selection": {
+    "all_year_feature_count_in_bbox": 19,
+    "bonus_address_overlap_in_bbox": {
+      "building_permits_filtered": 1280,
+      "utility_cuts": 16882
+    },
+    "building_permit_filter": "PERMIT_TYPE IN ('New Building','Demolition Folder (DM)','Building Additions/Alterations','New Houses','Non-Residential Building Permit','Designated Structures','Drain and Site Service')",
+    "datasets_counted": [
+      "road_resurfacing",
+      "sidewalk_construction",
+      "road_reconstruction"
+    ],
+    "method_notes": "Segments are equirectangular ~100m grid cells (lat_step=0.000898, lon_step=0.001244), not real road segments. Ranking uses only the three geometry-bearing program datasets (road_resurfacing, sidewalk_construction, road_reconstruction) because utility_cuts.csv and building_permits.csv ship without inline geometry (GEO_ID + DISPLAY_DESC only, per 01-01 SUMMARY). The site-disturbance building_permit_filter is recorded for auditability and is applied to the bonus_address_overlap_in_bbox count via street-name token matching against features inside the bbox (heuristic, not a true geocode).",
+    "per_source_in_bbox_window": {
+      "road_reconstruction": 17,
+      "road_resurfacing": 2
+    },
+    "window_years": [
+      2023,
+      2025
+    ],
+    "winning_event_count": 5,
+    "winning_segment_id": "segment-0048625--063798"
+  }
 }
