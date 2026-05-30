@@ -34,18 +34,6 @@ Explain:
 """.strip()
 
 
-def mock_llm_response(cluster):
-    return (
-        f"Cluster {cluster['cluster_id']} should be reviewed for consolidation "
-        f"because it contains {cluster['permit_count']} nearby road work projects. "
-        f"Coordinating them could avoid ~{cluster['road_openings_saved']} separate "
-        f"road openings and save an estimated ${cluster['estimated_savings']:,}. "
-        f"Main risk is coordination complexity between project owners and contractors. "
-        f"Recommended action: assign as {cluster['priority']} priority and compare "
-        f"contractor schedules before approving separate closures."
-    )
-
-
 def ask_local_llm(prompt, max_tokens=800):
     response = requests.post(
         OLLAMA_URL,
