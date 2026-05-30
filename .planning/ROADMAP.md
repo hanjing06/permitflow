@@ -12,7 +12,7 @@ PermitFlow is a 36-hour NVIDIA hackathon build: an AI-assisted permit consolidat
 - Integer phases (1–7): The seven hour-block phases
 - Decimal phases would be urgent insertions if needed during the hackathon
 
-- [ ] **Phase 1: Parallel Kickoff** — Stand up Ollama (123B), Valhalla, NIM embedder, data ingestion, UI scaffold; pick hero block (Hour 0–4)
+- [x] **Phase 1: Parallel Kickoff** — Stand up Ollama (123B), Valhalla, NIM embedder, data ingestion, UI scaffold; pick hero block (Hour 0–4) ✅ all 5 G1 criteria satisfied 2026-05-30
 - [x] ~~**Phase 2: Fine-tune Kickoff**~~ — **CLOSED (D-77).** No fine-tune; 123B local is the anchor. Phase 5 D-44 fallback narrative replaces it.
 - [ ] **Phase 3: Optimizer Build** — DBSCAN trench-sharing (anchor + piggyback per D-79) + Valhalla conflict graph + naive/optimized timelines (Hour 6–14)
 - [ ] **Phase 4: UI & Chat Panel** — Leaflet hero-block view, naive↔optimized toggle, tri-stat counter, streaming Nemotron Super chat (Hour 14–22)
@@ -36,9 +36,9 @@ PermitFlow is a 36-hour NVIDIA hackathon build: an AI-assisted permit consolidat
 
 Plans:
 - [x] 01-01: Ollama (123B) + NIM embedder on GX10 ✅ standing
-- [ ] 01-02: Toronto Open Data ingestion (CKAN multi-dataset) + hero block selection — datasets 🟡, hero ❌
-- [ ] 01-03: Valhalla stack on Toronto OSM extract ✅
-- [ ] 01-04: Vite + React + Leaflet UI scaffold ✅
+- [x] 01-02: Toronto Open Data ingestion (CKAN multi-dataset) + hero block selection ✅ datasets ✅, hero ✅ (segment-43666-79364, Danforth/Greektown, 5 events 2023-2025)
+- [x] 01-03: Valhalla stack on Toronto OSM extract ✅
+- [x] 01-04: Vite + React + Leaflet UI scaffold ✅
 
 ### Phase 2: Fine-tune Kickoff — ⏭ CLOSED (D-77)
 
@@ -138,7 +138,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Parallel Kickoff | 3/4 (infra ✅, data 🟡, hero ❌) | In progress | - |
+| 1. Parallel Kickoff | 4/4 (infra ✅, data ✅, hero ✅) | Complete | 2026-05-30 |
 | 2. ~~Fine-tune Kickoff~~ | n/a | ⏭ Closed (D-77) | 2026-05-30 |
 | 3. Optimizer Build | 0/3 | In progress (single-pass DBSCAN only; Valhalla not wired) | - |
 | 4. UI & Chat Panel | 1/4 (Ollama chat ✅; toggle/counter/streaming ❌) | In progress | - |
