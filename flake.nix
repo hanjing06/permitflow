@@ -110,29 +110,22 @@
           '');
         };
 
-        # `nix run .#gx10` — rsync repo to GX10 and start the full stack THERE
+        # `nix run .#gx10` — start the full stack on the GX10 using whatever
+        # version is currently checked out there. Update is a manual `ssh
+        # gx10 'cd ~/permitflow/code && git pull'` when you want to refresh.
         apps.gx10 = {
           type = "app";
           program = toString (pkgs.writeShellScript "permitflow-gx10" ''
             set -uo pipefail
-            export PATH="${pkgs.rsync}/bin:${pkgs.openssh}/bin:$PATH"
+            export PATH="${pkgs.openssh}/bin:$PATH"
 
             GX10="''${PERMITFLOW_GX10:-gx10-4896}"
             REMOTE="''${PERMITFLOW_REMOTE_PATH:-~/permitflow/code}"
 
-            cd "''${PWD}"
-
-            echo "[gx10] syncing repo to $GX10:$REMOTE …"
-            rsync -az --delete \
-              --exclude=.git \
-              --exclude=node_modules \
-              --exclude=__pycache__ \
-              --exclude='*.pyc' \
-              --exclude='backend/.venv' \
-              ./ "$GX10:$REMOTE/"
-
-            echo "[gx10] starting stack on $GX10 (Ctrl-C here to stop) …"
-            ssh -tt "$GX10" "bash $REMOTE/scripts/gx10-up.sh"
+            echo "[gx10] starting stack on $GX10 (uses whatever's at $REMOTE)…"
+            echo "[gx10] to update: ssh $GX10 'cd $REMOTE && git pull'"
+            echo ""
+            exec ssh -tt "$GX10" "bash $REMOTE/scripts/gx10-up.sh"
           '');
         };
 
