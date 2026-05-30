@@ -45,12 +45,15 @@ if [ ! -d frontend/node_modules ]; then
 fi
 
 # --- kill any leftover processes on our ports ----------------------------
+# fuser works as a regular user; ss -p doesn't unless root.
 for port in 8000 5173; do
-  pid=$(ss -tlnp 2>/dev/null | awk -v p=":$port " '$0 ~ p {print}' | grep -oE 'pid=[0-9]+' | head -1 | cut -d= -f2)
-  if [ -n "$pid" ]; then
-    echo "[gx10] killing leftover process on :$port (pid $pid)"
-    kill "$pid" 2>/dev/null || true
-    sleep 1
+  if command -v fuser >/dev/null; then
+    pids=$(fuser "$port/tcp" 2>/dev/null || true)
+    if [ -n "$pids" ]; then
+      echo "[gx10] killing leftover process(es) on :$port ($pids)"
+      fuser -k "$port/tcp" 2>/dev/null || true
+      sleep 1
+    fi
   fi
 done
 
