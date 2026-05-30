@@ -27,7 +27,7 @@ ANCHORS = {
 }
 CANDIDATES = {
     "utility_cuts":       "utility-cut-permits",
-    "building_permits":   "building-permits-active",
+    "building_permits":   "building-permits-active-permits",
 }
 CONTEXT = {
     "watermain_breaks":   "watermain-breaks",
@@ -43,7 +43,11 @@ def fetch_package(package_id):
 
 def download_dataset(name, package_id):
     print(f"--- {name}  ({package_id}) ---")
-    package = fetch_package(package_id)
+    try:
+        package = fetch_package(package_id)
+    except Exception as exc:
+        print(f"  failed to fetch package metadata: {exc}")
+        return
 
     resources = [
         r for r in package["resources"]
