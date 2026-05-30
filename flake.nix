@@ -58,11 +58,12 @@
         apps.frontend = {
           type = "app";
           program = toString (pkgs.writeShellScript "permitflow-frontend" ''
+            export PATH="${pkgs.nodejs_22}/bin:$PATH"
             cd "''${PWD}/frontend"
             if [ ! -d node_modules ]; then
-              ${pkgs.nodejs_22}/bin/npm install
+              npm install
             fi
-            exec ${pkgs.nodejs_22}/bin/npm run dev
+            exec npm run dev
           '');
         };
       }
