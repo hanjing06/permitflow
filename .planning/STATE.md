@@ -2,83 +2,58 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: planning
-stopped_at: "Phase 1 infra cleared (Ollama 123B + NIM embedder + Valhalla all 200); G1 #1-3 done; #4-5 await team work"
-last_updated: "2026-05-30T19:29:44.133Z"
-last_activity: 2026-05-30 — Project scaffolded, ROADMAP and STATE bootstrapped
+status: executing
+stopped_at: "Phase 1 infra cleared via Ollama swap (D-76) and Valhalla swap (D-75); Phase 2 closed (D-77); Phases 3-4 partially built in permitflow repo"
+last_updated: "2026-05-30T21:00:00.000Z"
+last_activity: 2026-05-30 — permitflow set as canonical repo, HEALTHCHECK.md written, top gaps documented
 progress:
   total_phases: 7
   completed_phases: 0
   total_plans: 0
   completed_plans: 0
-  percent: 0
+  percent: 25
 ---
 
 # Project State
 
 ## Project Reference
 
-See: .planning/PROJECT.md (updated 2026-05-30)
+See: .planning/PROJECT.md (updated 2026-05-30) · .planning/HEALTHCHECK.md (mid-execution gap snapshot)
 
-**Core value:** Cut redundant Toronto road excavations by clustering permits in space+time and conflict-aware scheduling, narrated by Nemotron running locally on a GX10.
-**Current focus:** Phase 1 — Parallel Kickoff
+**Core value:** Cut redundant Toronto road excavations via trench-sharing (anchor-and-piggyback) and Valhalla conflict-aware scheduling, narrated by Ollama-served Nemotron-3 Super 123B running locally on a GX10.
+
+**Current focus:** Phase 3 optimizer rebuild (trench-sharing per D-79) + Phase 4 UI toggle/counter
 
 ## Current Position
 
-Phase: 1 of 7 (Parallel Kickoff)
-Plan: 0 of 4 in current phase
-Status: Ready to plan
-Last activity: 2026-05-30 — Project scaffolded, ROADMAP and STATE bootstrapped
+Phase: ~1.5 of 7 (Phase 1 infra cleared; Phase 3 partial; Phase 4 partial; Phase 2 closed; Phases 5–7 pending)
+Status: Executing in permitflow repo
+Last activity: 2026-05-30 — canonical repo switch + healthcheck
 
-Progress: [░░░░░░░░░░] 0%
+Progress: [██▌░░░░░░░] ~25%
 
-## Performance Metrics
-
-**Velocity:**
-
-- Total plans completed: 0
-- Average duration: —
-- Total execution time: 0 hours
-
-**By Phase:**
-
-| Phase | Plans | Total | Avg/Plan |
-|-------|-------|-------|----------|
-| — | — | — | — |
-
-**Recent Trend:**
-
-- Last 5 plans: none yet
-- Trend: —
-
-*Updated after each plan completion*
+See `.planning/HEALTHCHECK.md` for the per-phase delta.
 
 ## Accumulated Context
 
-### Decisions
+### Decisions (latest 5)
 
-Decisions are logged in PROJECT.md. Recent decisions affecting current work:
+- **D-79** — Optimizer reframes to trench-sharing (anchor + piggyback) using utility-cut-permits as candidates and road-reconstruction / resurfacing / sidewalk programs as anchor windows.
+- **D-78** — Phase 5 reduced to verification + screenshots (no fine-tune to eval).
+- **D-77** — Phase 2 fine-tune skipped; Phase 5 D-44 fallback narrative is the new anchor.
+- **D-76** — Inference engine swapped from NIM to Ollama (`nemotron-3-super:latest` 123B on `:11434`).
+- **D-75** — Routing engine swapped from OSRM to Valhalla (arm64-native, port `:5000` preserved).
 
-- Scaffold: All Nemotron inference and the LoRA fine-tune must run on the GX10 — non-negotiable
-- Scaffold: Hero block selection happens in Phase 1 from Utility Cut Permits 2023–2025
-- Scaffold: Nemotron is the spokesperson/normalizer, not the optimizer — clustering and conflict graph are classical
+Full decision log lives in per-phase CONTEXT files.
 
-### Pending Todos
+### Blockers / Concerns
 
-None yet.
-
-### Blockers/Concerns
-
-None yet.
-
-## Deferred Items
-
-| Category | Item | Status | Deferred At |
-|----------|------|--------|-------------|
-| *(none)* | | | |
+- New datasets not yet pulled (`utility-cut-permits` etc.) — blocks Phase 3 trench-sharing work
+- Hero block not yet selected — blocks all downstream geographic filtering
+- Frontend API URL still hardcoded to a Tailnet IP — blocks team-member dev environments
 
 ## Session Continuity
 
-Last session: 2026-05-30T19:29:44.105Z
-Stopped at: Phase 1 infra cleared (Ollama 123B + NIM embedder + Valhalla all 200); G1 #1-3 done; #4-5 await team work
-Resume file: .planning/phases/01-parallel-kickoff/01-CONTEXT.md
+Last session: 2026-05-30
+Stopped at: Healthcheck written, top gaps prioritized for next session
+Resume file: .planning/HEALTHCHECK.md
