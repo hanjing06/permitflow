@@ -3,7 +3,7 @@ import { MapContainer, TileLayer, CircleMarker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import "./App.css";
 
-const API = "http://100.81.34.28:8000";
+const API = import.meta.env.VITE_API_URL || "http://localhost:8000";
 
 function cleanText(text) {
   return String(text).replaceAll("&lt;br&gt;", " | ");

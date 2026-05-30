@@ -110,6 +110,32 @@
           '');
         };
 
+        # `nix run .#gx10` — rsync repo to GX10 and start the full stack THERE
+        apps.gx10 = {
+          type = "app";
+          program = toString (pkgs.writeShellScript "permitflow-gx10" ''
+            set -uo pipefail
+            export PATH="${pkgs.rsync}/bin:${pkgs.openssh}/bin:$PATH"
+
+            GX10="''${PERMITFLOW_GX10:-gx10-4896}"
+            REMOTE="''${PERMITFLOW_REMOTE_PATH:-~/permitflow/code}"
+
+            cd "''${PWD}"
+
+            echo "[gx10] syncing repo to $GX10:$REMOTE …"
+            rsync -az --delete \
+              --exclude=.git \
+              --exclude=node_modules \
+              --exclude=__pycache__ \
+              --exclude='*.pyc' \
+              --exclude='backend/.venv' \
+              ./ "$GX10:$REMOTE/"
+
+            echo "[gx10] starting stack on $GX10 (Ctrl-C here to stop) …"
+            ssh -tt "$GX10" "bash $REMOTE/scripts/gx10-up.sh"
+          '');
+        };
+
         # `nix run .#frontend`
         apps.frontend = {
           type = "app";
