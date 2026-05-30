@@ -54,6 +54,62 @@
           '');
         };
 
+        # `nix run` (default) — backend + frontend + Ollama tunnel
+        apps.default = self.apps.${system}.dev;
+        apps.dev = {
+          type = "app";
+          program = toString (pkgs.writeShellScript "permitflow-dev" ''
+            set -uo pipefail
+            export PATH="${pkgs.nodejs_22}/bin:${pkgs.openssh}/bin:${pkgs.iproute2}/bin:$PATH"
+
+            GX10="''${PERMITFLOW_GX10:-gx10-4896}"
+            pids=()
+
+            cleanup() {
+              echo ""
+              echo "[dev] shutting down…"
+              for pid in "''${pids[@]}"; do
+                kill "$pid" 2>/dev/null || true
+              done
+              pkill -f 'ssh.*-fN.*-L 11434:localhost:11434' 2>/dev/null || true
+            }
+            trap cleanup EXIT INT TERM
+
+            if ss -tln 2>/dev/null | grep -q ':11434 '; then
+              echo "[dev] Ollama tunnel already up on :11434"
+            else
+              echo "[dev] opening Ollama tunnel to $GX10…"
+              ssh -fN -L 11434:localhost:11434 "$GX10" || {
+                echo "[dev] tunnel failed — Ollama-backed endpoints will 500 until you fix it"
+              }
+            fi
+
+            cd "''${PWD}"
+
+            if [ ! -d frontend/node_modules ]; then
+              echo "[dev] installing frontend deps…"
+              ( cd frontend && npm install )
+            fi
+
+            echo "[dev] starting backend on :8000…"
+            ( cd backend && exec ${pythonEnv}/bin/uvicorn main:app --reload --port 8000 ) &
+            pids+=($!)
+
+            echo "[dev] starting frontend on :5173…"
+            ( cd frontend && exec npm run dev ) &
+            pids+=($!)
+
+            echo ""
+            echo "[dev] ready:"
+            echo "  backend  → http://localhost:8000"
+            echo "  frontend → http://localhost:5173"
+            echo "  ollama   → http://localhost:11434  (tunneled to $GX10)"
+            echo ""
+            echo "[dev] Ctrl-C to stop everything"
+            wait
+          '');
+        };
+
         # `nix run .#frontend`
         apps.frontend = {
           type = "app";
