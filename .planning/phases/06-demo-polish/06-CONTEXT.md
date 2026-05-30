@@ -1,7 +1,11 @@
 # Phase 6: Demo Polish - Context
 
 **Gathered:** 2026-05-30
-**Status:** Ready for planning
+**Status:** Not started
+
+> ⚠ **Reality-check (2026-05-31):** the upstream stack changed but Phase 6's polish work is largely unaffected.
+> - Any reference to "tuned Nano" / "raw-Nano fallback narrative" (e.g., the D-44 link from Phase 5) is moot: Phase 2 is closed (D-77) and Phase 5 reduced (D-78). The pitch anchor is **"123B Nemotron-3 Super running locally on GX10 via Ollama, no internet"** — that's the slide line.
+> - Cost-avoidance back-of-envelope (D-53) still owed; current optimizer uses magic $15K — Phase 3 work must replace it before Phase 6 can lock the figure.
 
 <domain>
 ## Phase Boundary

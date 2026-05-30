@@ -4,8 +4,8 @@ milestone: v1.0
 milestone_name: milestone
 status: executing
 stopped_at: "Phase 1 infra cleared via Ollama swap (D-76) and Valhalla swap (D-75); Phase 2 closed (D-77); Phases 3-4 partially built in permitflow repo"
-last_updated: "2026-05-30T21:00:00.000Z"
-last_activity: 2026-05-30 — permitflow set as canonical repo, HEALTHCHECK.md written, top gaps documented
+last_updated: "2026-05-31T00:00:00.000Z"
+last_activity: 2026-05-31 — planning docs synced to reality (PROJECT.md, ROADMAP.md, all phase CONTEXTs banner-updated for D-75/D-76/D-77/D-78/D-79)
 progress:
   total_phases: 7
   completed_phases: 0
@@ -28,7 +28,7 @@ See: .planning/PROJECT.md (updated 2026-05-30) · .planning/HEALTHCHECK.md (mid-
 
 Phase: ~1.5 of 7 (Phase 1 infra cleared; Phase 3 partial; Phase 4 partial; Phase 2 closed; Phases 5–7 pending)
 Status: Executing in permitflow repo
-Last activity: 2026-05-30 — canonical repo switch + healthcheck
+Last activity: 2026-05-31 — planning docs synced to reality (Ollama/Valhalla swaps + Phase 2 closure + Phase 5 reduction now reflected in PROJECT.md, ROADMAP.md, and every phase CONTEXT)
 
 Progress: [██▌░░░░░░░] ~25%
 
@@ -50,10 +50,9 @@ Full decision log lives in per-phase CONTEXT files.
 
 - New datasets not yet pulled (`utility-cut-permits` etc.) — blocks Phase 3 trench-sharing work
 - Hero block not yet selected — blocks all downstream geographic filtering
-- Frontend API URL still hardcoded to a Tailnet IP — blocks team-member dev environments
 
 ## Session Continuity
 
-Last session: 2026-05-30
-Stopped at: Healthcheck written, top gaps prioritized for next session
+Last session: 2026-05-31
+Stopped at: Planning docs synced to reality. Next actions (in order): (1) pull remaining Open Toronto datasets (`python backend/open_toronto.py all`), (2) `scripts/pick_hero_block.py` → `hero-block.json` + regenerate `permits.geojson`, (3) Phase 3 trench-sharing + Valhalla wiring.
 Resume file: .planning/HEALTHCHECK.md

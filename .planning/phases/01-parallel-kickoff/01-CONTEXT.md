@@ -1,7 +1,12 @@
 # Phase 1: Parallel Kickoff - Context
 
 **Gathered:** 2026-05-30
-**Status:** Ready for planning
+**Status:** Infra largely landed (see HEALTHCHECK.md for delta)
+
+> ⚠ **Reality-check (2026-05-31):** the stack swapped during execution.
+> - **Inference: NIM → Ollama** (D-76, body §"Inference Engine Swap"). All Nemotron serving is `ollama nemotron-3-super:latest` (123B) on `:11434`. NIM Nano/Super containers are not used; only the NIM embedder (`nv-embedqa-e5-v5` on `:8003`) survives.
+> - **Routing: OSRM → Valhalla** (D-75, body §"Routing Engine Swap"). OSRM was arm64-incompatible. Valhalla on `:5000` (gisops Docker image, Toronto OSM tiles).
+> - Ignore Track A's NIM-Nano / NIM-Super language and Track C's OSRM language in the §Tracks section below — those are superseded.
 
 <domain>
 ## Phase Boundary

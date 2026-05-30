@@ -1,7 +1,12 @@
 # Phase 3: Optimizer Build - Context
 
 **Gathered:** 2026-05-30
-**Status:** Ready for planning
+**Status:** Partial implementation; biggest remaining gap per HEALTHCHECK
+
+> ⚠ **Reality-check (2026-05-31):** the optimizer thesis pivoted during execution.
+> - **D-79 — trench-sharing (anchor + piggyback).** Utility-cut-permits are *candidates*. Road-reconstruction / resurfacing / sidewalk programs are *anchor windows*. Two-pass DBSCAN matches candidates to anchors. See body §"D-79".
+> - **Routing engine is Valhalla, not OSRM** (D-75). `/whatif` should call Valhalla `POST /route` with `exclude_polygons` for closure simulation.
+> - **Current code (`backend/optimizer.py`):** single-pass DBSCAN only — no trench-sharing, no Valhalla call. `/whatif` is the hardcoded delay-week stub. This is the work remaining in Phase 3.
 
 <domain>
 ## Phase Boundary

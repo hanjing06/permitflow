@@ -1,7 +1,12 @@
 # Phase 4: UI & Chat Panel - Context
 
 **Gathered:** 2026-05-30
-**Status:** Ready for planning
+**Status:** Partial — chat works (Ollama wired), narrative engine missing (no toggle, no streaming, no RAG)
+
+> ⚠ **Reality-check (2026-05-31):**
+> - **Chat model is Ollama `nemotron-3-super:latest` (123B) on `:11434`**, not NIM Super 49B (D-76, captured inline as D-41 below).
+> - **Embedder is up from hour 0** (D-77 closed Phase 2, no training window) — RAG via NIM `nv-embedqa-e5-v5` on `:8003` is available end-to-end. The "embedder offline during training" note (D-14 / D-39 preamble) no longer applies. See D-39 in body.
+> - **Current code:** `backend/main.py` has batch `/explain`; **no streaming `/chat` endpoint exists**, no RAG retrieval call is wired, no naive↔optimized toggle in the frontend. These are the remaining Phase 4 deliverables.
 
 <domain>
 ## Phase Boundary
