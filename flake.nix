@@ -49,7 +49,7 @@
         apps.backend = {
           type = "app";
           program = toString (pkgs.writeShellScript "permitflow-backend" ''
-            cd ${toString ./.}/backend
+            cd "''${PWD}/backend"
             exec ${pythonEnv}/bin/uvicorn main:app --reload --port 8000
           '');
         };
@@ -58,7 +58,7 @@
         apps.frontend = {
           type = "app";
           program = toString (pkgs.writeShellScript "permitflow-frontend" ''
-            cd ${toString ./.}/frontend
+            cd "''${PWD}/frontend"
             if [ ! -d node_modules ]; then
               ${pkgs.nodejs_22}/bin/npm install
             fi
