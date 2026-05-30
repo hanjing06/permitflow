@@ -1,0 +1,116 @@
+# PermitFlow — Healthcheck
+
+**As of:** 2026-05-30 (mid-execution snapshot)
+**Repo state:** permitflow is now canonical; this is a delta against the locked plan in PROJECT.md + per-phase CONTEXTs.
+
+Symbols: ✅ done · 🟡 partial · ❌ not started · ⏭ closed (won't do)
+
+---
+
+## Phase 1 — Parallel Kickoff (G1)
+
+| Item | Status | Notes |
+|---|---|---|
+| Inference: chat + reasoning on GX10 | ✅ | Ollama `nemotron-3-super:latest` (123B) at `:11434`, accessed via SSH tunnel — per D-76 |
+| Inference: embedder | ✅ | NIM `nv-embedqa-e5-v5` at `:8003` on GX10 |
+| Routing engine | ✅ | Valhalla at `:5000` on GX10 (Toronto OSM tiles built) — per D-75 |
+| Inference auto-restart | ✅ | All containers have `--restart unless-stopped` |
+| `ollama-modelfile.txt` snapshot | ✅ | `.planning/phases/01-parallel-kickoff/ollama-modelfile.txt` |
+| Data ingestion: CKAN downloader | ✅ | `backend/open_toronto.py` — multi-dataset tiered per D-79 |
+| Data ingestion: actual files pulled | 🟡 | Only `road-reconstruction-program` is on disk (`data/`). Need: utility-cut-permits, road-resurfacing-program, sidewalk-construction-program, watermain-breaks, road-restrictions, building-permits-active |
+| Hero block selection | ❌ | No script. Need `scripts/pick_hero_block.py` that queries the combined dataset and writes `hero-block.json` per D-07/D-08 |
+| Leaflet UI scaffold | ✅ | `frontend/` Vite + React + Leaflet, map renders permits |
+| `permits.geojson` for hero block | ❌ | Placeholder file copied from old planning; needs regenerating once hero block is chosen |
+| `hero-block.json` | ❌ | Placeholder file copied; needs the actual bbox |
+| Frontend API URL | 🟡 | Still hardcoded to a Tailscale IP in `App.jsx:6`; should be a Vite env var |
+
+**Phase 1 verdict:** infra ✅, data pipeline 🟡, hero selection ❌.
+
+---
+
+## Phase 2 — Fine-tune Kickoff ⏭ CLOSED
+
+Per D-77 — no LoRA training. Phase 5 D-44 fallback narrative replaces it (123B local is the anchor). Nothing to build.
+
+---
+
+## Phase 3 — Optimizer Build
+
+| Item | Status | Notes |
+|---|---|---|
+| DBSCAN clustering | 🟡 | `backend/optimizer.py` — projected to meters + time dim added. Single-pass (no trench-sharing) |
+| Trench-sharing two-pass (D-79) | ❌ | No anchor↔candidate matching. Optimizer doesn't distinguish planned-city-openings from utility cuts |
+| Future-window filter (D-20/D-22) | ❌ | Optimizer runs on all dates regardless |
+| Valhalla closure simulation | ❌ | `/whatif` is hardcoded delay-week buckets; never calls Valhalla's `exclude_polygons` |
+| Conflict graph cache (`conflict-graph.json`) | ❌ | No precompute pass |
+| Singleton handling per D-28/D-29 | ❌ | Cluster -1 is filtered entirely instead of contributing to `permits_considered` |
+| `permits.geojson` / `naive.json` / `optimized.json` | ❌ | None produced |
+| `metrics.json` durable artifact | ❌ | `/metrics` is computed live every request, not persisted |
+| `/whatif` endpoint | 🟡 | Exists but is a stub |
+
+**Phase 3 verdict:** the clustering math is sounder than before, but the *trench-sharing thesis and the Valhalla conflict simulation are both missing*. This is the biggest gap.
+
+---
+
+## Phase 4 — UI & Chat Panel
+
+| Item | Status | Notes |
+|---|---|---|
+| Leaflet map + permits | ✅ | `App.jsx` — CircleMarkers with popups |
+| Hero-block auto-centre + zoom (D-55) | ❌ | Map opens citywide at zoom 11 |
+| Naive ↔ Optimized toggle (D-32) | ❌ | No UI concept |
+| Tri-stat counter (D-33) | ❌ | Metrics shown as plain text |
+| Streaming `/chat` endpoint (D-41) | ❌ | Only batch `/explain` exists; no SSE |
+| RAG retrieval via embedder (D-39/D-40/D-41) | ❌ | No retrieval pipeline |
+| 3 canned scenarios cached (D-37) | ❌ | Pitch-lead deadline hour 30 |
+| Real Ollama integration | ✅ | `/explain` calls Ollama; mock removed |
+
+**Phase 4 verdict:** the UI is a viewer, not yet the demo's narrative engine.
+
+---
+
+## Phase 5 — Fine-tune Eval & Swap (reduced)
+
+Per D-78 — reduced to verification + screenshot capture.
+
+| Item | Status | Notes |
+|---|---|---|
+| Ollama modelfile snapshot | ✅ | Captured in Phase 1 |
+| `nvidia-smi` screenshot (123B resident) | ❌ | Pending |
+| One live chat round-trip latency screenshot | ❌ | Pending |
+
+---
+
+## Phase 6 — Demo Polish
+
+| Item | Status | Notes |
+|---|---|---|
+| PROJECT.md demo arc rewrite (future-only) | ❌ | Phase 6 owns this per D-21 |
+| 3-slide deck | ❌ | Pitch lead, hour 33 deadline (D-59) |
+| Pitch script ≤90s | ❌ | First draft due hour 28 (D-56) |
+| Cost-avoidance back-of-envelope (D-53) | ❌ | Code uses magic $15K/opening |
+| UI polish: polygon styling, counter animation | ❌ | After tri-stat lands |
+
+---
+
+## Phase 7 — Dry Runs & Backup
+
+| Item | Status | Notes |
+|---|---|---|
+| 3 dry runs | ❌ | Hour 34/34:45/35:15 |
+| WiFi-off offline test | ❌ | Need offline Leaflet tiles bundled |
+| Backup video (silent + live narration per D-62) | ❌ | Hour 35:50 |
+| Contingency cards (D-73) | ❌ | Print 6 cards |
+
+---
+
+## Closing gaps in order (highest leverage first)
+
+1. **Pull the new datasets** — `python backend/open_toronto.py all`
+2. **Hero block selection** — script + write `hero-block.json` + filter `permits.geojson`
+3. **Trench-sharing pass + future-window filter** — biggest change to `optimizer.py`
+4. **Naive↔Optimized toggle + tri-stat counter** — frontend
+5. **Valhalla integration** — turn `/whatif` from a stub into a real closure simulator
+6. **Streaming `/chat`** — SSE from Ollama through FastAPI
+
+Items 1–4 are the actual demo. Items 5–6 are the wow.

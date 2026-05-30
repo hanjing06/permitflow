@@ -1,0 +1,838 @@
+{
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -79.40625,
+              43.66008
+            ],
+            [
+              -79.40555,
+              43.66008
+            ],
+            [
+              -79.40555,
+              43.66052
+            ],
+            [
+              -79.40625,
+              43.66052
+            ],
+            [
+              -79.40625,
+              43.66008
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "PF-001",
+      "properties": {
+        "cluster_seed": "A",
+        "depth_class": "deep_excavation",
+        "description": "Harbord St utility cut for watermain replacement near segment harbord-spadina.",
+        "end_date": "2023-03-11",
+        "expected_duration_days": 5,
+        "lane_days": 5,
+        "lanes_affected": "one_lane",
+        "lat": 43.6603,
+        "lon": -79.4059,
+        "permit_id": "PF-001",
+        "segment_id": "harbord-spadina",
+        "start_date": "2023-03-06",
+        "street": "Harbord St",
+        "traffic_volume": 8570,
+        "utility_owner": "toronto_water",
+        "work_type": "watermain_replacement"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -79.40585,
+              43.65988
+            ],
+            [
+              -79.40515,
+              43.65988
+            ],
+            [
+              -79.40515,
+              43.66032
+            ],
+            [
+              -79.40585,
+              43.66032
+            ],
+            [
+              -79.40585,
+              43.65988
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "PF-002",
+      "properties": {
+        "cluster_seed": "A",
+        "depth_class": "shallow_cut",
+        "description": "Harbord St utility cut for hydro pull near segment harbord-spadina.",
+        "end_date": "2023-05-16",
+        "expected_duration_days": 4,
+        "lane_days": 4,
+        "lanes_affected": "one_lane",
+        "lat": 43.6601,
+        "lon": -79.4055,
+        "permit_id": "PF-002",
+        "segment_id": "harbord-spadina",
+        "start_date": "2023-05-12",
+        "street": "Harbord St",
+        "traffic_volume": 8940,
+        "utility_owner": "toronto_hydro",
+        "work_type": "hydro_pull"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -79.40554999999999,
+              43.65968
+            ],
+            [
+              -79.40485,
+              43.65968
+            ],
+            [
+              -79.40485,
+              43.66012
+            ],
+            [
+              -79.40554999999999,
+              43.66012
+            ],
+            [
+              -79.40554999999999,
+              43.65968
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "PF-003",
+      "properties": {
+        "cluster_seed": "A",
+        "depth_class": "shallow_cut",
+        "description": "Harbord St utility cut for fibre pull near segment harbord-spadina.",
+        "end_date": "2023-08-25",
+        "expected_duration_days": 4,
+        "lane_days": 4,
+        "lanes_affected": "shoulder",
+        "lat": 43.6599,
+        "lon": -79.4052,
+        "permit_id": "PF-003",
+        "segment_id": "harbord-spadina",
+        "start_date": "2023-08-21",
+        "street": "Harbord St",
+        "traffic_volume": 9310,
+        "utility_owner": "bell",
+        "work_type": "fibre_pull"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -79.40535,
+              43.65948
+            ],
+            [
+              -79.40465,
+              43.65948
+            ],
+            [
+              -79.40465,
+              43.65992
+            ],
+            [
+              -79.40535,
+              43.65992
+            ],
+            [
+              -79.40535,
+              43.65948
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "PF-004",
+      "properties": {
+        "cluster_seed": "A",
+        "depth_class": "shallow_cut",
+        "description": "Harbord St utility cut for gas main near segment harbord-spadina.",
+        "end_date": "2024-02-08",
+        "expected_duration_days": 3,
+        "lane_days": 3,
+        "lanes_affected": "one_lane",
+        "lat": 43.6597,
+        "lon": -79.405,
+        "permit_id": "PF-004",
+        "segment_id": "harbord-spadina",
+        "start_date": "2024-02-05",
+        "street": "Harbord St",
+        "traffic_volume": 9680,
+        "utility_owner": "enbridge",
+        "work_type": "gas_main"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -79.40115,
+              43.656980000000004
+            ],
+            [
+              -79.40045,
+              43.656980000000004
+            ],
+            [
+              -79.40045,
+              43.65742
+            ],
+            [
+              -79.40115,
+              43.65742
+            ],
+            [
+              -79.40115,
+              43.656980000000004
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "PF-005",
+      "properties": {
+        "cluster_seed": "B",
+        "depth_class": "deep_excavation",
+        "description": "Spadina Ave utility cut for sewer repair near segment spadina-college.",
+        "end_date": "2023-04-24",
+        "expected_duration_days": 6,
+        "lane_days": 6,
+        "lanes_affected": "multi_lane",
+        "lat": 43.6572,
+        "lon": -79.4008,
+        "permit_id": "PF-005",
+        "segment_id": "spadina-college",
+        "start_date": "2023-04-18",
+        "street": "Spadina Ave",
+        "traffic_volume": 10050,
+        "utility_owner": "city_transportation",
+        "work_type": "sewer_repair"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -79.40065,
+              43.65658
+            ],
+            [
+              -79.39995,
+              43.65658
+            ],
+            [
+              -79.39995,
+              43.657019999999996
+            ],
+            [
+              -79.40065,
+              43.657019999999996
+            ],
+            [
+              -79.40065,
+              43.65658
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "PF-006",
+      "properties": {
+        "cluster_seed": "B",
+        "depth_class": "deep_excavation",
+        "description": "Spadina Ave utility cut for watermain replacement near segment spadina-college.",
+        "end_date": "2023-08-03",
+        "expected_duration_days": 4,
+        "lane_days": 4,
+        "lanes_affected": "one_lane",
+        "lat": 43.6568,
+        "lon": -79.4003,
+        "permit_id": "PF-006",
+        "segment_id": "spadina-college",
+        "start_date": "2023-07-30",
+        "street": "Spadina Ave",
+        "traffic_volume": 10420,
+        "utility_owner": "toronto_water",
+        "work_type": "watermain_replacement"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -79.40025,
+              43.65628
+            ],
+            [
+              -79.39955,
+              43.65628
+            ],
+            [
+              -79.39955,
+              43.65672
+            ],
+            [
+              -79.40025,
+              43.65672
+            ],
+            [
+              -79.40025,
+              43.65628
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "PF-007",
+      "properties": {
+        "cluster_seed": "B",
+        "depth_class": "shallow_cut",
+        "description": "Spadina Ave utility cut for fibre pull near segment spadina-college.",
+        "end_date": "2024-01-20",
+        "expected_duration_days": 4,
+        "lane_days": 4,
+        "lanes_affected": "shoulder",
+        "lat": 43.6565,
+        "lon": -79.3999,
+        "permit_id": "PF-007",
+        "segment_id": "spadina-college",
+        "start_date": "2024-01-16",
+        "street": "Spadina Ave",
+        "traffic_volume": 10790,
+        "utility_owner": "rogers",
+        "work_type": "fibre_pull"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -79.40325,
+              43.65458
+            ],
+            [
+              -79.40255,
+              43.65458
+            ],
+            [
+              -79.40255,
+              43.65502
+            ],
+            [
+              -79.40325,
+              43.65502
+            ],
+            [
+              -79.40325,
+              43.65458
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "PF-008",
+      "properties": {
+        "cluster_seed": "C",
+        "depth_class": "shallow_cut",
+        "description": "Augusta Ave utility cut for gas main near segment augusta-oxford.",
+        "end_date": "2023-09-12",
+        "expected_duration_days": 3,
+        "lane_days": 3,
+        "lanes_affected": "one_lane",
+        "lat": 43.6548,
+        "lon": -79.4029,
+        "permit_id": "PF-008",
+        "segment_id": "augusta-oxford",
+        "start_date": "2023-09-09",
+        "street": "Augusta Ave",
+        "traffic_volume": 11160,
+        "utility_owner": "enbridge",
+        "work_type": "gas_main"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -79.40285,
+              43.65428
+            ],
+            [
+              -79.40215,
+              43.65428
+            ],
+            [
+              -79.40215,
+              43.65472
+            ],
+            [
+              -79.40285,
+              43.65472
+            ],
+            [
+              -79.40285,
+              43.65428
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "PF-009",
+      "properties": {
+        "cluster_seed": "C",
+        "depth_class": "shallow_cut",
+        "description": "Augusta Ave utility cut for hydro pull near segment augusta-oxford.",
+        "end_date": "2024-04-05",
+        "expected_duration_days": 2,
+        "lane_days": 2,
+        "lanes_affected": "shoulder",
+        "lat": 43.6545,
+        "lon": -79.4025,
+        "permit_id": "PF-009",
+        "segment_id": "augusta-oxford",
+        "start_date": "2024-04-03",
+        "street": "Augusta Ave",
+        "traffic_volume": 11530,
+        "utility_owner": "toronto_hydro",
+        "work_type": "hydro_pull"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -79.40644999999999,
+              43.65758
+            ],
+            [
+              -79.40575,
+              43.65758
+            ],
+            [
+              -79.40575,
+              43.65802
+            ],
+            [
+              -79.40644999999999,
+              43.65802
+            ],
+            [
+              -79.40644999999999,
+              43.65758
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "PF-010",
+      "properties": {
+        "cluster_seed": "D",
+        "depth_class": "shallow_cut",
+        "description": "College St utility cut for road resurfacing near segment college-borden.",
+        "end_date": "2024-05-25",
+        "expected_duration_days": 5,
+        "lane_days": 5,
+        "lanes_affected": "multi_lane",
+        "lat": 43.6578,
+        "lon": -79.4061,
+        "permit_id": "PF-010",
+        "segment_id": "college-borden",
+        "start_date": "2024-05-20",
+        "street": "College St",
+        "traffic_volume": 11900,
+        "utility_owner": "city_transportation",
+        "work_type": "road_resurfacing"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -79.40605,
+              43.65728
+            ],
+            [
+              -79.40535,
+              43.65728
+            ],
+            [
+              -79.40535,
+              43.65772
+            ],
+            [
+              -79.40605,
+              43.65772
+            ],
+            [
+              -79.40605,
+              43.65728
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "PF-011",
+      "properties": {
+        "cluster_seed": "D",
+        "depth_class": "deep_excavation",
+        "description": "College St utility cut for watermain replacement near segment college-borden.",
+        "end_date": "2024-09-05",
+        "expected_duration_days": 3,
+        "lane_days": 3,
+        "lanes_affected": "one_lane",
+        "lat": 43.6575,
+        "lon": -79.4057,
+        "permit_id": "PF-011",
+        "segment_id": "college-borden",
+        "start_date": "2024-09-02",
+        "street": "College St",
+        "traffic_volume": 12270,
+        "utility_owner": "toronto_water",
+        "work_type": "watermain_replacement"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -79.40565,
+              43.65688
+            ],
+            [
+              -79.40495,
+              43.65688
+            ],
+            [
+              -79.40495,
+              43.65732
+            ],
+            [
+              -79.40565,
+              43.65732
+            ],
+            [
+              -79.40565,
+              43.65688
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "PF-012",
+      "properties": {
+        "cluster_seed": "D",
+        "depth_class": "shallow_cut",
+        "description": "College St utility cut for fibre pull near segment college-borden.",
+        "end_date": "2025-01-13",
+        "expected_duration_days": 2,
+        "lane_days": 2,
+        "lanes_affected": "shoulder",
+        "lat": 43.6571,
+        "lon": -79.4053,
+        "permit_id": "PF-012",
+        "segment_id": "college-borden",
+        "start_date": "2025-01-11",
+        "street": "College St",
+        "traffic_volume": 12640,
+        "utility_owner": "bell",
+        "work_type": "fibre_pull"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -79.40455,
+              43.66178
+            ],
+            [
+              -79.40385,
+              43.66178
+            ],
+            [
+              -79.40385,
+              43.66222
+            ],
+            [
+              -79.40455,
+              43.66222
+            ],
+            [
+              -79.40455,
+              43.66178
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "PF-013",
+      "properties": {
+        "cluster_seed": "E",
+        "depth_class": "deep_excavation",
+        "description": "Borden St utility cut for sewer repair near segment borden-sussex.",
+        "end_date": "2024-03-28",
+        "expected_duration_days": 6,
+        "lane_days": 6,
+        "lanes_affected": "one_lane",
+        "lat": 43.662,
+        "lon": -79.4042,
+        "permit_id": "PF-013",
+        "segment_id": "borden-sussex",
+        "start_date": "2024-03-22",
+        "street": "Borden St",
+        "traffic_volume": 13010,
+        "utility_owner": "toronto_water",
+        "work_type": "sewer_repair"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -79.40424999999999,
+              43.66138
+            ],
+            [
+              -79.40355,
+              43.66138
+            ],
+            [
+              -79.40355,
+              43.66182
+            ],
+            [
+              -79.40424999999999,
+              43.66182
+            ],
+            [
+              -79.40424999999999,
+              43.66138
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "PF-014",
+      "properties": {
+        "cluster_seed": "E",
+        "depth_class": "shallow_cut",
+        "description": "Borden St utility cut for gas main near segment borden-sussex.",
+        "end_date": "2024-10-19",
+        "expected_duration_days": 5,
+        "lane_days": 5,
+        "lanes_affected": "one_lane",
+        "lat": 43.6616,
+        "lon": -79.4039,
+        "permit_id": "PF-014",
+        "segment_id": "borden-sussex",
+        "start_date": "2024-10-14",
+        "street": "Borden St",
+        "traffic_volume": 13380,
+        "utility_owner": "enbridge",
+        "work_type": "gas_main"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -79.40165,
+              43.653780000000005
+            ],
+            [
+              -79.40095000000001,
+              43.653780000000005
+            ],
+            [
+              -79.40095000000001,
+              43.65422
+            ],
+            [
+              -79.40165,
+              43.65422
+            ],
+            [
+              -79.40165,
+              43.653780000000005
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "PF-015",
+      "properties": {
+        "cluster_seed": "F",
+        "depth_class": "shallow_cut",
+        "description": "Oxford St utility cut for hydro pull near segment oxford-augusta.",
+        "end_date": "2025-02-21",
+        "expected_duration_days": 4,
+        "lane_days": 4,
+        "lanes_affected": "one_lane",
+        "lat": 43.654,
+        "lon": -79.4013,
+        "permit_id": "PF-015",
+        "segment_id": "oxford-augusta",
+        "start_date": "2025-02-17",
+        "street": "Oxford St",
+        "traffic_volume": 13750,
+        "utility_owner": "toronto_hydro",
+        "work_type": "hydro_pull"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -79.40135,
+              43.65358
+            ],
+            [
+              -79.40065,
+              43.65358
+            ],
+            [
+              -79.40065,
+              43.654019999999996
+            ],
+            [
+              -79.40135,
+              43.654019999999996
+            ],
+            [
+              -79.40135,
+              43.65358
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "PF-016",
+      "properties": {
+        "cluster_seed": "F",
+        "depth_class": "shallow_cut",
+        "description": "Oxford St utility cut for fibre pull near segment oxford-augusta.",
+        "end_date": "2025-04-05",
+        "expected_duration_days": 4,
+        "lane_days": 4,
+        "lanes_affected": "shoulder",
+        "lat": 43.6538,
+        "lon": -79.401,
+        "permit_id": "PF-016",
+        "segment_id": "oxford-augusta",
+        "start_date": "2025-04-01",
+        "street": "Oxford St",
+        "traffic_volume": 14120,
+        "utility_owner": "rogers",
+        "work_type": "fibre_pull"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -79.40095,
+              43.65328
+            ],
+            [
+              -79.40025,
+              43.65328
+            ],
+            [
+              -79.40025,
+              43.65372
+            ],
+            [
+              -79.40095,
+              43.65372
+            ],
+            [
+              -79.40095,
+              43.65328
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": "PF-017",
+      "properties": {
+        "cluster_seed": "F",
+        "depth_class": "deep_excavation",
+        "description": "Oxford St utility cut for watermain replacement near segment oxford-augusta.",
+        "end_date": "2025-07-11",
+        "expected_duration_days": 3,
+        "lane_days": 3,
+        "lanes_affected": "one_lane",
+        "lat": 43.6535,
+        "lon": -79.4006,
+        "permit_id": "PF-017",
+        "segment_id": "oxford-augusta",
+        "start_date": "2025-07-08",
+        "street": "Oxford St",
+        "traffic_volume": 14490,
+        "utility_owner": "toronto_water",
+        "work_type": "watermain_replacement"
+      },
+      "type": "Feature"
+    }
+  ],
+  "type": "FeatureCollection"
+}

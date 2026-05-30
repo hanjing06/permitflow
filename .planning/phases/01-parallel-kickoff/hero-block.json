@@ -1,0 +1,17 @@
+{
+  "bbox": {
+    "east": -79.3952,
+    "north": 43.662,
+    "south": 43.6529,
+    "west": -79.4072
+  },
+  "center": {
+    "lat": 43.65745,
+    "lon": -79.4012
+  },
+  "id": "kensington-harbord-01",
+  "name": "Kensington-Harbord hero block",
+  "narrative": "Dense downtown block with repeated water, hydro, gas, and telecom cuts.",
+  "neighbourhood": "Kensington Market / Harbord-Spadina",
+  "selected_by": "repeat utility cuts per 100m segment, 2023-2025"
+}
