@@ -33,32 +33,38 @@
 
           shellHook = ''
             echo ""
-            echo "PermitFlow dev shell ready."
+            echo "PermitFlow dev shell."
             echo "  python : $(python --version)"
             echo "  node   : $(node --version)"
             echo ""
-            echo "Quick start:"
-            echo "  1. Tunnel Ollama:  ssh -fN -L 11434:localhost:11434 gx10-4896"
-            echo "  2. Backend:        cd backend && uvicorn main:app --reload --port 8000"
-            echo "  3. Frontend:       cd frontend && npm install && npm run dev"
+            echo "Run modes:"
+            echo "  nix run                  # local stack (assumes Ollama on this box)"
+            echo "  nix run .#deploy-tunnel  # backend+frontend here, Ollama tunneled from GX10"
+            echo "  nix run .#backend"
+            echo "  nix run .#frontend"
             echo ""
           '';
         };
 
-        # `nix run .#backend`
-        apps.backend = {
+        # `nix run` (default) — run the whole stack on THIS machine.
+        # Assumes Ollama is reachable at http://localhost:11434 (i.e. you are
+        # on the GX10 itself). Use .#deploy-tunnel on the laptop instead.
+        apps.default = self.apps.${system}.local;
+        apps.local = {
           type = "app";
-          program = toString (pkgs.writeShellScript "permitflow-backend" ''
-            cd "''${PWD}/backend"
-            exec ${pythonEnv}/bin/uvicorn main:app --reload --port 8000
+          program = toString (pkgs.writeShellScript "permitflow-local" ''
+            set -uo pipefail
+            export PATH="${pythonEnv}/bin:${pkgs.nodejs_22}/bin:$PATH"
+            cd "''${PWD}"
+            exec bash scripts/gx10-up.sh
           '');
         };
 
-        # `nix run` (default) — backend + frontend + Ollama tunnel
-        apps.default = self.apps.${system}.dev;
-        apps.dev = {
+        # `nix run .#deploy-tunnel` — laptop dev mode: backend + frontend run
+        # here, Ollama is brought to localhost via SSH tunnel to the GX10.
+        apps.deploy-tunnel = {
           type = "app";
-          program = toString (pkgs.writeShellScript "permitflow-dev" ''
+          program = toString (pkgs.writeShellScript "permitflow-deploy-tunnel" ''
             set -uo pipefail
             export PATH="${pkgs.nodejs_22}/bin:${pkgs.openssh}/bin:${pkgs.iproute2}/bin:$PATH"
 
@@ -67,7 +73,7 @@
 
             cleanup() {
               echo ""
-              echo "[dev] shutting down…"
+              echo "[deploy-tunnel] shutting down…"
               for pid in "''${pids[@]}"; do
                 kill "$pid" 2>/dev/null || true
               done
@@ -76,56 +82,46 @@
             trap cleanup EXIT INT TERM
 
             if ss -tln 2>/dev/null | grep -q ':11434 '; then
-              echo "[dev] Ollama tunnel already up on :11434"
+              echo "[deploy-tunnel] Ollama tunnel already up on :11434"
             else
-              echo "[dev] opening Ollama tunnel to $GX10…"
+              echo "[deploy-tunnel] opening Ollama tunnel to $GX10…"
               ssh -fN -L 11434:localhost:11434 "$GX10" || {
-                echo "[dev] tunnel failed — Ollama-backed endpoints will 500 until you fix it"
+                echo "[deploy-tunnel] tunnel failed — Ollama-backed endpoints will 500"
               }
             fi
 
             cd "''${PWD}"
 
             if [ ! -d frontend/node_modules ]; then
-              echo "[dev] installing frontend deps…"
+              echo "[deploy-tunnel] installing frontend deps…"
               ( cd frontend && npm install )
             fi
 
-            echo "[dev] starting backend on :8000…"
+            echo "[deploy-tunnel] starting backend on :8000…"
             ( cd backend && exec ${pythonEnv}/bin/uvicorn main:app --reload --port 8000 ) &
             pids+=($!)
 
-            echo "[dev] starting frontend on :5173…"
+            echo "[deploy-tunnel] starting frontend on :5173…"
             ( cd frontend && exec npm run dev ) &
             pids+=($!)
 
             echo ""
-            echo "[dev] ready:"
+            echo "[deploy-tunnel] ready:"
             echo "  backend  → http://localhost:8000"
             echo "  frontend → http://localhost:5173"
             echo "  ollama   → http://localhost:11434  (tunneled to $GX10)"
             echo ""
-            echo "[dev] Ctrl-C to stop everything"
+            echo "[deploy-tunnel] Ctrl-C to stop everything"
             wait
           '');
         };
 
-        # `nix run .#gx10` — start the full stack on the GX10 using whatever
-        # version is currently checked out there. Update is a manual `ssh
-        # gx10 'cd ~/permitflow/code && git pull'` when you want to refresh.
-        apps.gx10 = {
+        # `nix run .#backend`
+        apps.backend = {
           type = "app";
-          program = toString (pkgs.writeShellScript "permitflow-gx10" ''
-            set -uo pipefail
-            export PATH="${pkgs.openssh}/bin:$PATH"
-
-            GX10="''${PERMITFLOW_GX10:-gx10-4896}"
-            REMOTE="''${PERMITFLOW_REMOTE_PATH:-~/permitflow/code}"
-
-            echo "[gx10] starting stack on $GX10 (uses whatever's at $REMOTE)…"
-            echo "[gx10] to update: ssh $GX10 'cd $REMOTE && git pull'"
-            echo ""
-            exec ssh -tt "$GX10" "bash $REMOTE/scripts/gx10-up.sh"
+          program = toString (pkgs.writeShellScript "permitflow-backend" ''
+            cd "''${PWD}/backend"
+            exec ${pythonEnv}/bin/uvicorn main:app --reload --port 8000
           '');
         };
 
