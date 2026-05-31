@@ -21,7 +21,7 @@ TORONTO_LAT_REF = 43.7
 LAT_M_PER_DEG = 111_320.0
 LON_M_PER_DEG = LAT_M_PER_DEG * math.cos(math.radians(TORONTO_LAT_REF))
 
-EPS_METERS = float(os.getenv("PERMITFLOW_EPS_M", "50"))
+EPS_METERS = float(os.getenv("PERMITFLOW_EPS_M", "150"))
 MIN_SAMPLES = int(os.getenv("PERMITFLOW_MIN_SAMPLES", "2"))
 # 1 year of separation costs this many meters of "distance" in DBSCAN space
 TIME_SCALE_M_PER_YEAR = float(os.getenv("PERMITFLOW_TIME_M_PER_YEAR", "800"))
