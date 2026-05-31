@@ -81,7 +81,7 @@ export default function ChatPanel({ view }) {
       </div>
 
       <div className="chat-response">
-        {response || (streaming ? "streaming…" : "Ask a question or pick a scenario above.")}
+        {response || (streaming ? "streaming…" : "Ask a question, pick a scenario above, or try a skill: /help · /whatif <street>")}
       </div>
 
       <div className="chat-input-row">
@@ -90,7 +90,7 @@ export default function ChatPanel({ view }) {
           value={query}
           onChange={e => setQuery(e.target.value)}
           onKeyDown={e => { if (e.key === "Enter") send(); }}
-          placeholder="Ask about a permit, street, or conflict…"
+          placeholder='Ask a question, or try "/whatif Bridgman Ave"'
           disabled={streaming}
         />
         <button className="chat-send" onClick={() => send()} disabled={streaming}>

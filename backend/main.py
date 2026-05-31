@@ -7,6 +7,8 @@ from llm import (
     extract_street_mentions,
     build_chat_messages,
     stream_chat,
+    stream_help_skill,
+    stream_whatif_skill,
     CANNED_SCENARIOS,
 )
 from fastapi.middleware.cors import CORSMiddleware
@@ -203,34 +205,81 @@ def retrieve(req: RetrieveRequest):
     }
 
 
+def _sse_wrap(generator):
+    """Wrap a text-chunk generator in SSE framing.
+
+    Each chunk becomes one ``data: ...\\n\\n`` event with embedded newlines
+    escaped so multi-line model output stays in a single SSE frame the
+    browser can parse without buffering across boundaries.
+    """
+    for chunk in generator:
+        safe = chunk.replace("\r", "").replace("\n", "\\n")
+        yield f"data: {safe}\n\n"
+    yield "data: [DONE]\n\n"
+
+
 @app.post("/chat")
 def chat(req: ChatRequest):
+    query = (req.query or "").strip()
+
+    # ----- Skill routing (explicit slash commands) -----
+    # /help — list available skills.
+    if query == "/help" or query.startswith("/help "):
+        return StreamingResponse(
+            _sse_wrap(stream_help_skill()),
+            media_type="text/event-stream",
+            headers={"Cache-Control": "no-cache", "X-Accel-Buffering": "no"},
+        )
+
+    # /whatif <street> — ground the model in the conflict graph.
+    if query.startswith("/whatif"):
+        # Allow both "/whatif Bridgman Ave" and bare "/whatif".
+        street = query[len("/whatif"):].strip()
+        whatif_result = what_if_by_street(street) if street else {}
+        # Reuse the normal context-building helpers so the skill has the same
+        # situational awareness as the natural-language chat would.
+        permits = load_artifact_or_build(
+            "optimized.json" if req.view == "optimized" else "naive.json"
+        )
+        context_permits = retrieve_permits(street or query, permits, top_k=5)
+        try:
+            conflict_graph = load_artifact_or_build("conflict-graph.json")
+        except Exception:
+            conflict_graph = []
+        streets = [street] if street else []
+        edges = lookup_conflict_edges(streets, conflict_graph) if streets else []
+        try:
+            metrics_doc = load_artifact_or_build("metrics.json")
+        except Exception:
+            metrics_doc = None
+        return StreamingResponse(
+            _sse_wrap(
+                stream_whatif_skill(
+                    street, whatif_result, context_permits, edges, metrics_doc
+                )
+            ),
+            media_type="text/event-stream",
+            headers={"Cache-Control": "no-cache", "X-Accel-Buffering": "no"},
+        )
+
+    # ----- Default path: natural-language RAG chat -----
     permits = load_artifact_or_build(
         "optimized.json" if req.view == "optimized" else "naive.json"
     )
-    context_permits = retrieve_permits(req.query, permits, top_k=5)
+    context_permits = retrieve_permits(query, permits, top_k=5)
     try:
         conflict_graph = load_artifact_or_build("conflict-graph.json")
     except Exception:
         conflict_graph = []
-    streets = extract_street_mentions(req.query, context_permits)
+    streets = extract_street_mentions(query, context_permits)
     edges = lookup_conflict_edges(streets, conflict_graph) if streets else []
     try:
         metrics_doc = load_artifact_or_build("metrics.json")
     except Exception:
         metrics_doc = None
 
-    def event_stream():
-        # SSE framing: each chunk is `data: <text>\n\n`. Escape embedded
-        # newlines so each model chunk stays a single SSE event the client
-        # can parse without buffering across frames.
-        for chunk in stream_chat(req.query, context_permits, edges, metrics_doc):
-            safe = chunk.replace("\r", "").replace("\n", "\\n")
-            yield f"data: {safe}\n\n"
-        yield "data: [DONE]\n\n"
-
     return StreamingResponse(
-        event_stream(),
+        _sse_wrap(stream_chat(query, context_permits, edges, metrics_doc)),
         media_type="text/event-stream",
         headers={
             "Cache-Control": "no-cache",

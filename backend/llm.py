@@ -319,6 +319,142 @@ def build_chat_messages(
     ]
 
 
+SKILL_HELP_TEXT = (
+    "PermitFlow chat skills:\n"
+    "\n"
+    "  /whatif <street>   — Ground the model in our conflict graph for that\n"
+    "                       street. Example: /whatif Bridgman Ave\n"
+    "  /help              — Show this message.\n"
+    "\n"
+    "Or just ask a question in plain English — the chat retrieves the top-5\n"
+    "permits via embeddings and any conflict edges that mention streets you\n"
+    "named, then streams the answer from Nemotron-3 Super on the GX10."
+)
+
+
+def stream_help_skill() -> Iterator[str]:
+    """Emit the /help text as a stream of small chunks so the SSE pipe stays
+    consistent with the streaming chat path."""
+    # Stream in two chunks so the user sees the "typing" cadence.
+    yield "🔧 Skill: /help\n\n"
+    yield SKILL_HELP_TEXT
+
+
+def stream_whatif_skill(
+    street: str,
+    whatif_result: dict,
+    context_permits: list[dict],
+    conflict_edges: list[dict],
+    metrics: dict | None,
+) -> Iterator[str]:
+    """Run the /whatif skill: emit a one-line factual prefix from the structured
+    `what_if_by_street` result, then stream a Nemotron summary grounded in it.
+
+    The structured prefix arrives first (judges see hard data in 1 token-round-
+    trip), then the model commentary streams afterwards (the "model thinks"
+    moment). On Ollama failure, only the structured prefix lands."""
+    if not street:
+        yield (
+            "🔧 Skill: /whatif\n\n"
+            "Usage: /whatif <street name>\n"
+            "Example: /whatif Bridgman Ave"
+        )
+        return
+
+    impact = whatif_result.get("impact", "?")
+    matching = whatif_result.get("matching_permits") or []
+    conflicts = whatif_result.get("conflicts") or []
+
+    # Emit the structured prefix as ONE SSE-friendly chunk.
+    prefix_lines = [
+        f"🔧 Skill: /whatif `{street}`",
+        "",
+        f"Impact: **{impact}** · {len(matching)} affected permit(s) · "
+        f"{len(conflicts)} conflict edge(s) in graph.",
+    ]
+    if matching:
+        prefix_lines.append("")
+        prefix_lines.append("Affected permits:")
+        for p in matching[:5]:
+            prefix_lines.append(
+                f"  • {p.get('permit_id','?')} — {p.get('street_name','?')} "
+                f"({p.get('start_date','?')} → {p.get('end_date','?')})"
+            )
+    if conflicts:
+        prefix_lines.append("")
+        prefix_lines.append("Top conflicts in graph:")
+        for c in conflicts[:3]:
+            shared = ", ".join(c.get("shared_streets") or [])
+            prefix_lines.append(
+                f"  • {c.get('permit_a','?')} vs {c.get('permit_b','?')} on "
+                f"[{shared}] (score {c.get('conflict_score','?')})"
+            )
+    if not matching and not conflicts:
+        prefix_lines.append("")
+        prefix_lines.append(
+            f"No permits matched '{street}' in the optimized timeline."
+        )
+    prefix_lines.append("")
+    prefix_lines.append("---")
+    prefix_lines.append("")
+    yield "\n".join(prefix_lines) + "\n"
+
+    # Now stream a model summary GROUNDED in the structured result.
+    system_msg = (
+        "You are PermitFlow's coordination assistant. The user invoked the "
+        f"/whatif skill on street '{street}'. Here is the live conflict-graph "
+        f"analysis for that street:\n\n{json.dumps(whatif_result, indent=2)}\n\n"
+        "Write 2-3 plain sentences answering: how risky is closing this street "
+        "during the impact window, what is the strongest conflict, and what "
+        "should be coordinated. Be concrete. Reference permit IDs. Do NOT "
+        "restate the JSON. Skip pleasantries."
+    )
+    messages = [
+        {"role": "system", "content": system_msg},
+        {"role": "user", "content": f"/whatif {street}"},
+    ]
+    payload = {
+        "model": OLLAMA_MODEL,
+        "messages": messages,
+        "temperature": 0.2,
+        "max_tokens": 400,
+        "stream": True,
+    }
+    try:
+        response = requests.post(OLLAMA_URL, json=payload, stream=True, timeout=120)
+        if response.status_code != 200:
+            yield (
+                f"\n[Nemotron unavailable — HTTP {response.status_code}. "
+                "Structured what-if data above is the primary result.]"
+            )
+            return
+        for raw in response.iter_lines():
+            if not raw:
+                continue
+            if not raw.startswith(b"data: "):
+                continue
+            payload_bytes = raw[len(b"data: "):]
+            if payload_bytes.strip() == b"[DONE]":
+                break
+            try:
+                obj = json.loads(payload_bytes.decode("utf-8"))
+            except (UnicodeDecodeError, ValueError):
+                continue
+            try:
+                delta = obj["choices"][0].get("delta") or {}
+            except (KeyError, IndexError, TypeError):
+                continue
+            content = delta.get("content")
+            if content:
+                yield content
+    except requests.RequestException:
+        yield (
+            "\n[Nemotron unreachable. Structured what-if data above is the "
+            "primary result.]"
+        )
+        return
+
+
 def stream_chat(
     query: str,
     context_permits: list[dict],
