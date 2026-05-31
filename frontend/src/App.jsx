@@ -33,7 +33,6 @@ function App() {
       <div className="topbar">
         <div className="brand">
           <h1>PermitFlow</h1>
-          <span className="brand-sub">Toronto · Greektown corridor</span>
         </div>
         <ToggleSwitch view={view} onChange={setView} />
       </div>
