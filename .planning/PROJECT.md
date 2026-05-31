@@ -74,9 +74,15 @@ Verify in Phase 1 with `nvidia-smi`.
 - **Time:** ~36 hours.
 - **Scope:** one Toronto neighbourhood, ~1–2 km². Chosen in Phase 1 as the block with the most repeat excavations in 2023–2025.
 - **Demo arc (90 seconds):**
-  1. Time-lapse on the hero block — 6 separate red closures over 18 months.
-  2. Toggle to optimized — same block, 2 consolidated closures. Counter ticks: "11 redundant excavations avoided · 38 lane-days saved."
-  3. Chat panel: judge asks "what if I issue a watermain permit on Harbord next week?" — Nemotron answers with traffic-impact reasoning and a deferral / batching recommendation.
+  1. Hero block, next quarter: ~530 utility-cut permits already planned for this
+     ~1 km² of Toronto over the coming 90 days. Map opens on the block, auto-zoomed,
+     each permit a static polygon coloured by week.
+  2. Toggle to Optimized — same permits, regrouped into trench-sharing clusters
+     and conflict-deferred singletons. Tri-stat counter tweens up: "permits
+     considered · excavations avoided · cost avoidance."
+  3. Chat panel: judge asks "what if I issue a watermain permit on Harbord next
+     week?" — Nemotron-3 Super (123B, local on GX10 via Ollama) streams a
+     traffic-impact answer with a defer / piggyback recommendation.
 - **Wow lever:** the model talking to the judge is a 123B Nemotron-3 Super running locally on the GX10 over Ollama — no internet, no cloud.
 
 ## Success criteria
@@ -85,7 +91,7 @@ Verify in Phase 1 with `nvidia-smi`.
 |---|---|---|
 | 1 | Reasoning + embedder both serving on GX10 | curl returns 200 from Ollama `:11434/v1/models` (lists nemotron-3-super) AND NIM embedder `:8003/v1/models` |
 | 2 | ~~LoRA fine-tune lift~~ — **superseded by D-77 (skip fine-tune).** New pitch anchor: "**123B Nemotron-3 Super running locally**" on this box, no internet. |
-| 3 | Optimizer produces non-trivial savings | hero block: ≥ 5 redundant excavations identified across the historical window |
+| 3 | Optimizer produces non-trivial savings | hero block: ≥ 5 redundant excavations identified across the next-quarter window |
 | 4 | Conflict simulator working | toggling closures in UI shows Valhalla-driven detour volume deltas |
 | 5 | End-to-end demo runs offline | full 90-second arc completes with WiFi disabled |
 | 6 | Backup video exists | recorded by hour 35 |
