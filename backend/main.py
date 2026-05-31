@@ -9,6 +9,8 @@ from llm import (
     stream_chat,
     stream_help_skill,
     stream_whatif_skill,
+    stream_clusters_skill,
+    stream_permit_skill,
     CANNED_SCENARIOS,
 )
 from fastapi.middleware.cors import CORSMiddleware
@@ -227,6 +229,96 @@ def chat(req: ChatRequest):
     if query == "/help" or query.startswith("/help "):
         return StreamingResponse(
             _sse_wrap(stream_help_skill()),
+            media_type="text/event-stream",
+            headers={"Cache-Control": "no-cache", "X-Accel-Buffering": "no"},
+        )
+
+    # /clusters [N] — list top N clusters by trench-share savings.
+    if query == "/clusters" or query.startswith("/clusters "):
+        arg = query[len("/clusters"):].strip()
+        try:
+            n = int(arg) if arg else 5
+        except ValueError:
+            n = 5
+        try:
+            clusters = load_artifact_or_build("clusters.json") or []
+        except Exception:
+            clusters = []
+        try:
+            metrics_doc = load_artifact_or_build("metrics.json")
+        except Exception:
+            metrics_doc = None
+        return StreamingResponse(
+            _sse_wrap(stream_clusters_skill(n, clusters, metrics_doc)),
+            media_type="text/event-stream",
+            headers={"Cache-Control": "no-cache", "X-Accel-Buffering": "no"},
+        )
+
+    # /permit <id> — explain a specific permit by id.
+    if query == "/permit" or query.startswith("/permit "):
+        raw_id = query[len("/permit"):].strip()
+        # Resolve loose IDs: accept "road_resurfacing:1007", "road_resurfacing #1007",
+        # or just "1007" (matches any source where the numeric tail matches).
+        def _find_permit(arr):
+            if not raw_id:
+                return None
+            target = raw_id.replace("#", "").strip()
+            # Exact match first.
+            for row in arr:
+                if row.get("permit_id") == target:
+                    return row
+            # Numeric tail match.
+            if target.isdigit():
+                suffix = ":" + target
+                for row in arr:
+                    if str(row.get("permit_id", "")).endswith(suffix):
+                        return row
+            # Substring fallback (covers "road_resurfacing 1007" w/o colon).
+            for row in arr:
+                pid = str(row.get("permit_id", ""))
+                if target.lower() in pid.lower():
+                    return row
+            return None
+        try:
+            opt_rows = load_artifact_or_build("optimized.json") or []
+        except Exception:
+            opt_rows = []
+        try:
+            nv_rows = load_artifact_or_build("naive.json") or []
+        except Exception:
+            nv_rows = []
+        try:
+            clusters_doc = load_artifact_or_build("clusters.json") or []
+        except Exception:
+            clusters_doc = []
+        try:
+            conflict_graph = load_artifact_or_build("conflict-graph.json") or []
+        except Exception:
+            conflict_graph = []
+        permit_opt = _find_permit(opt_rows)
+        permit_naive = _find_permit(nv_rows) if permit_opt else None
+        cluster_match = None
+        if permit_opt:
+            target_id = permit_opt["permit_id"]
+            for c in clusters_doc:
+                if target_id in (c.get("member_permit_ids") or []):
+                    cluster_match = c
+                    break
+        permit_conflicts = []
+        if permit_opt:
+            target_id = permit_opt["permit_id"]
+            for edge in conflict_graph:
+                if target_id in (edge.get("permit_a"), edge.get("permit_b")):
+                    permit_conflicts.append(edge)
+            permit_conflicts.sort(
+                key=lambda e: e.get("conflict_score", 0), reverse=True
+            )
+        return StreamingResponse(
+            _sse_wrap(
+                stream_permit_skill(
+                    raw_id, permit_opt, permit_naive, cluster_match, permit_conflicts
+                )
+            ),
             media_type="text/event-stream",
             headers={"Cache-Control": "no-cache", "X-Accel-Buffering": "no"},
         )
