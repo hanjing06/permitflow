@@ -1,838 +1,531 @@
 {
+  "type": "FeatureCollection",
   "features": [
     {
+      "type": "Feature",
+      "id": "rc-1",
       "geometry": {
+        "type": "LineString",
         "coordinates": [
           [
-            [
-              -79.40625,
-              43.66008
-            ],
-            [
-              -79.40555,
-              43.66008
-            ],
-            [
-              -79.40555,
-              43.66052
-            ],
-            [
-              -79.40625,
-              43.66052
-            ],
-            [
-              -79.40625,
-              43.66008
-            ]
+            -79.3638396631037,
+            43.6654072533266
+          ],
+          [
+            -79.3632393117332,
+            43.6655390894353
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
-      "id": "PF-001",
       "properties": {
-        "cluster_seed": "A",
-        "depth_class": "deep_excavation",
-        "description": "Harbord St utility cut for watermain replacement near segment harbord-spadina.",
-        "end_date": "2023-03-11",
-        "expected_duration_days": 5,
-        "lane_days": 5,
-        "lanes_affected": "one_lane",
-        "lat": 43.6603,
-        "lon": -79.4059,
-        "permit_id": "PF-001",
-        "segment_id": "harbord-spadina",
-        "start_date": "2023-03-06",
-        "street": "Harbord St",
-        "traffic_volume": 8570,
-        "utility_owner": "toronto_water",
-        "work_type": "watermain_replacement"
-      },
-      "type": "Feature"
+        "permit_id": "1",
+        "source": "road_reconstruction",
+        "street": "CARLTON ST&lt;br&gt; From: BOWMAN ST&lt;br&gt; To: RAWLINGS AVE ",
+        "work_type": "Local Road Rehabilitation",
+        "status": "Active",
+        "start_year": 2025,
+        "description": "Local Road Rehabilitation on CARLTON ST&lt;br&gt; From: BOWMAN ST&lt;br&gt; To: RAWLINGS AVE (2025)"
+      }
     },
     {
+      "type": "Feature",
+      "id": "rc-100",
       "geometry": {
+        "type": "LineString",
         "coordinates": [
           [
-            [
-              -79.40585,
-              43.65988
-            ],
-            [
-              -79.40515,
-              43.65988
-            ],
-            [
-              -79.40515,
-              43.66032
-            ],
-            [
-              -79.40585,
-              43.66032
-            ],
-            [
-              -79.40585,
-              43.65988
-            ]
+            -79.3685391029701,
+            43.6620435108171
+          ],
+          [
+            -79.3681759581657,
+            43.6621129619358
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
-      "id": "PF-002",
       "properties": {
-        "cluster_seed": "A",
-        "depth_class": "shallow_cut",
-        "description": "Harbord St utility cut for hydro pull near segment harbord-spadina.",
-        "end_date": "2023-05-16",
-        "expected_duration_days": 4,
-        "lane_days": 4,
-        "lanes_affected": "one_lane",
-        "lat": 43.6601,
-        "lon": -79.4055,
-        "permit_id": "PF-002",
-        "segment_id": "harbord-spadina",
-        "start_date": "2023-05-12",
-        "street": "Harbord St",
-        "traffic_volume": 8940,
-        "utility_owner": "toronto_hydro",
-        "work_type": "hydro_pull"
-      },
-      "type": "Feature"
+        "permit_id": "100",
+        "source": "road_reconstruction",
+        "street": "GERRARD ST E&lt;br&gt; From: BERKELEY ST&lt;br&gt; To: [N] GERRARD ST E [BRANCH] ",
+        "work_type": "Major Road Reconstruction",
+        "status": "Active",
+        "start_year": 2025,
+        "description": "Major Road Reconstruction on GERRARD ST E&lt;br&gt; From: BERKELEY ST&lt;br&gt; To: [N] GERRARD ST E [BRANCH] (2025)"
+      }
     },
     {
+      "type": "Feature",
+      "id": "rc-101",
       "geometry": {
+        "type": "LineString",
         "coordinates": [
           [
-            [
-              -79.40554999999999,
-              43.65968
-            ],
-            [
-              -79.40485,
-              43.65968
-            ],
-            [
-              -79.40485,
-              43.66012
-            ],
-            [
-              -79.40554999999999,
-              43.66012
-            ],
-            [
-              -79.40554999999999,
-              43.65968
-            ]
+            -79.3697172755116,
+            43.6617810438202
+          ],
+          [
+            -79.3685391029701,
+            43.6620435108171
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
-      "id": "PF-003",
       "properties": {
-        "cluster_seed": "A",
-        "depth_class": "shallow_cut",
-        "description": "Harbord St utility cut for fibre pull near segment harbord-spadina.",
-        "end_date": "2023-08-25",
-        "expected_duration_days": 4,
-        "lane_days": 4,
-        "lanes_affected": "shoulder",
-        "lat": 43.6599,
-        "lon": -79.4052,
-        "permit_id": "PF-003",
-        "segment_id": "harbord-spadina",
-        "start_date": "2023-08-21",
-        "street": "Harbord St",
-        "traffic_volume": 9310,
-        "utility_owner": "bell",
-        "work_type": "fibre_pull"
-      },
-      "type": "Feature"
+        "permit_id": "101",
+        "source": "road_reconstruction",
+        "street": "GERRARD ST E&lt;br&gt; From: ONTARIO ST&lt;br&gt; To: BERKELEY ST ",
+        "work_type": "Major Road Reconstruction",
+        "status": "Active",
+        "start_year": 2025,
+        "description": "Major Road Reconstruction on GERRARD ST E&lt;br&gt; From: ONTARIO ST&lt;br&gt; To: BERKELEY ST (2025)"
+      }
     },
     {
+      "type": "Feature",
+      "id": "rc-133",
       "geometry": {
+        "type": "LineString",
         "coordinates": [
           [
-            [
-              -79.40535,
-              43.65948
-            ],
-            [
-              -79.40465,
-              43.65948
-            ],
-            [
-              -79.40465,
-              43.65992
-            ],
-            [
-              -79.40535,
-              43.65992
-            ],
-            [
-              -79.40535,
-              43.65948
-            ]
+            -79.3674857192746,
+            43.6645993879443
+          ],
+          [
+            -79.3667013421698,
+            43.6647859999478
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
-      "id": "PF-004",
       "properties": {
-        "cluster_seed": "A",
-        "depth_class": "shallow_cut",
-        "description": "Harbord St utility cut for gas main near segment harbord-spadina.",
-        "end_date": "2024-02-08",
-        "expected_duration_days": 3,
-        "lane_days": 3,
-        "lanes_affected": "one_lane",
-        "lat": 43.6597,
-        "lon": -79.405,
-        "permit_id": "PF-004",
-        "segment_id": "harbord-spadina",
-        "start_date": "2024-02-05",
-        "street": "Harbord St",
-        "traffic_volume": 9680,
-        "utility_owner": "enbridge",
-        "work_type": "gas_main"
-      },
-      "type": "Feature"
+        "permit_id": "133",
+        "source": "road_reconstruction",
+        "street": "CARLTON ST&lt;br&gt; From: BROADCAST LANE&lt;br&gt; To: METCALFE ST ",
+        "work_type": "Local Road Rehabilitation",
+        "status": "Active",
+        "start_year": 2025,
+        "description": "Local Road Rehabilitation on CARLTON ST&lt;br&gt; From: BROADCAST LANE&lt;br&gt; To: METCALFE ST (2025)"
+      }
     },
     {
+      "type": "Feature",
+      "id": "rc-149",
       "geometry": {
+        "type": "LineString",
         "coordinates": [
           [
-            [
-              -79.40115,
-              43.656980000000004
-            ],
-            [
-              -79.40045,
-              43.656980000000004
-            ],
-            [
-              -79.40045,
-              43.65742
-            ],
-            [
-              -79.40115,
-              43.65742
-            ],
-            [
-              -79.40115,
-              43.656980000000004
-            ]
+            -79.3646466576578,
+            43.6659828749929
+          ],
+          [
+            -79.3641587769398,
+            43.6660933151395
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
-      "id": "PF-005",
       "properties": {
-        "cluster_seed": "B",
-        "depth_class": "deep_excavation",
-        "description": "Spadina Ave utility cut for sewer repair near segment spadina-college.",
-        "end_date": "2023-04-24",
-        "expected_duration_days": 6,
-        "lane_days": 6,
-        "lanes_affected": "multi_lane",
-        "lat": 43.6572,
-        "lon": -79.4008,
-        "permit_id": "PF-005",
-        "segment_id": "spadina-college",
-        "start_date": "2023-04-18",
-        "street": "Spadina Ave",
-        "traffic_volume": 10050,
-        "utility_owner": "city_transportation",
-        "work_type": "sewer_repair"
-      },
-      "type": "Feature"
+        "permit_id": "149",
+        "source": "road_reconstruction",
+        "street": "SACKVILLE PL&lt;br&gt; From: FLAGLER ST&lt;br&gt; To: BOWMAN ST ",
+        "work_type": "Local Road Reconstruction",
+        "status": "Active",
+        "start_year": 2025,
+        "description": "Local Road Reconstruction on SACKVILLE PL&lt;br&gt; From: FLAGLER ST&lt;br&gt; To: BOWMAN ST (2025)"
+      }
     },
     {
+      "type": "Feature",
+      "id": "rc-207",
       "geometry": {
+        "type": "LineString",
         "coordinates": [
           [
-            [
-              -79.40065,
-              43.65658
-            ],
-            [
-              -79.39995,
-              43.65658
-            ],
-            [
-              -79.39995,
-              43.657019999999996
-            ],
-            [
-              -79.40065,
-              43.657019999999996
-            ],
-            [
-              -79.40065,
-              43.65658
-            ]
+            -79.3665810096809,
+            43.6648000780788
+          ],
+          [
+            -79.3665330111327,
+            43.6648056856891
+          ],
+          [
+            -79.3663490728968,
+            43.6648465249815
+          ],
+          [
+            -79.3663342369936,
+            43.664849820127
+          ],
+          [
+            -79.3650544654706,
+            43.6651339478541
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
-      "id": "PF-006",
       "properties": {
-        "cluster_seed": "B",
-        "depth_class": "deep_excavation",
-        "description": "Spadina Ave utility cut for watermain replacement near segment spadina-college.",
-        "end_date": "2023-08-03",
-        "expected_duration_days": 4,
-        "lane_days": 4,
-        "lanes_affected": "one_lane",
-        "lat": 43.6568,
-        "lon": -79.4003,
-        "permit_id": "PF-006",
-        "segment_id": "spadina-college",
-        "start_date": "2023-07-30",
-        "street": "Spadina Ave",
-        "traffic_volume": 10420,
-        "utility_owner": "toronto_water",
-        "work_type": "watermain_replacement"
-      },
-      "type": "Feature"
+        "permit_id": "207",
+        "source": "road_reconstruction",
+        "street": "CARLTON ST&lt;br&gt; From: DERMOTT PL&lt;br&gt; To: SACKVILLE ST ",
+        "work_type": "Local Road Rehabilitation",
+        "status": "Active",
+        "start_year": 2025,
+        "description": "Local Road Rehabilitation on CARLTON ST&lt;br&gt; From: DERMOTT PL&lt;br&gt; To: SACKVILLE ST (2025)"
+      }
     },
     {
+      "type": "Feature",
+      "id": "rc-22",
       "geometry": {
+        "type": "LineString",
         "coordinates": [
           [
-            [
-              -79.40025,
-              43.65628
-            ],
-            [
-              -79.39955,
-              43.65628
-            ],
-            [
-              -79.39955,
-              43.65672
-            ],
-            [
-              -79.40025,
-              43.65672
-            ],
-            [
-              -79.40025,
-              43.65628
-            ]
+            -79.364759658338,
+            43.6659572730188
+          ],
+          [
+            -79.3646466576578,
+            43.6659828749929
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
-      "id": "PF-007",
       "properties": {
-        "cluster_seed": "B",
-        "depth_class": "shallow_cut",
-        "description": "Spadina Ave utility cut for fibre pull near segment spadina-college.",
-        "end_date": "2024-01-20",
-        "expected_duration_days": 4,
-        "lane_days": 4,
-        "lanes_affected": "shoulder",
-        "lat": 43.6565,
-        "lon": -79.3999,
-        "permit_id": "PF-007",
-        "segment_id": "spadina-college",
-        "start_date": "2024-01-16",
-        "street": "Spadina Ave",
-        "traffic_volume": 10790,
-        "utility_owner": "rogers",
-        "work_type": "fibre_pull"
-      },
-      "type": "Feature"
+        "permit_id": "22",
+        "source": "road_reconstruction",
+        "street": "SACKVILLE PL&lt;br&gt; From: WOODSTOCK PL&lt;br&gt; To: FLAGLER ST ",
+        "work_type": "Local Road Reconstruction",
+        "status": "Active",
+        "start_year": 2025,
+        "description": "Local Road Reconstruction on SACKVILLE PL&lt;br&gt; From: WOODSTOCK PL&lt;br&gt; To: FLAGLER ST (2025)"
+      }
     },
     {
+      "type": "Feature",
+      "id": "rc-264",
       "geometry": {
+        "type": "LineString",
         "coordinates": [
           [
-            [
-              -79.40325,
-              43.65458
-            ],
-            [
-              -79.40255,
-              43.65458
-            ],
-            [
-              -79.40255,
-              43.65502
-            ],
-            [
-              -79.40325,
-              43.65502
-            ],
-            [
-              -79.40325,
-              43.65458
-            ]
+            -79.3653496007707,
+            43.6658238675451
+          ],
+          [
+            -79.3647928557414,
+            43.6659497421659
+          ],
+          [
+            -79.364759658338,
+            43.6659572730188
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
-      "id": "PF-008",
       "properties": {
-        "cluster_seed": "C",
-        "depth_class": "shallow_cut",
-        "description": "Augusta Ave utility cut for gas main near segment augusta-oxford.",
-        "end_date": "2023-09-12",
-        "expected_duration_days": 3,
-        "lane_days": 3,
-        "lanes_affected": "one_lane",
-        "lat": 43.6548,
-        "lon": -79.4029,
-        "permit_id": "PF-008",
-        "segment_id": "augusta-oxford",
-        "start_date": "2023-09-09",
-        "street": "Augusta Ave",
-        "traffic_volume": 11160,
-        "utility_owner": "enbridge",
-        "work_type": "gas_main"
-      },
-      "type": "Feature"
+        "permit_id": "264",
+        "source": "road_reconstruction",
+        "street": "SACKVILLE PL&lt;br&gt; From: SACKVILLE ST&lt;br&gt; To: WOODSTOCK PL ",
+        "work_type": "Local Road Reconstruction",
+        "status": "Active",
+        "start_year": 2025,
+        "description": "Local Road Reconstruction on SACKVILLE PL&lt;br&gt; From: SACKVILLE ST&lt;br&gt; To: WOODSTOCK PL (2025)"
+      }
     },
     {
+      "type": "Feature",
+      "id": "rc-290",
       "geometry": {
+        "type": "LineString",
         "coordinates": [
           [
-            [
-              -79.40285,
-              43.65428
-            ],
-            [
-              -79.40215,
-              43.65428
-            ],
-            [
-              -79.40215,
-              43.65472
-            ],
-            [
-              -79.40285,
-              43.65472
-            ],
-            [
-              -79.40285,
-              43.65428
-            ]
+            -79.3707022026958,
+            43.6615644097245
+          ],
+          [
+            -79.3697172755116,
+            43.6617810438202
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
-      "id": "PF-009",
       "properties": {
-        "cluster_seed": "C",
-        "depth_class": "shallow_cut",
-        "description": "Augusta Ave utility cut for hydro pull near segment augusta-oxford.",
-        "end_date": "2024-04-05",
-        "expected_duration_days": 2,
-        "lane_days": 2,
-        "lanes_affected": "shoulder",
-        "lat": 43.6545,
-        "lon": -79.4025,
-        "permit_id": "PF-009",
-        "segment_id": "augusta-oxford",
-        "start_date": "2024-04-03",
-        "street": "Augusta Ave",
-        "traffic_volume": 11530,
-        "utility_owner": "toronto_hydro",
-        "work_type": "hydro_pull"
-      },
-      "type": "Feature"
+        "permit_id": "290",
+        "source": "road_reconstruction",
+        "street": "GERRARD ST E&lt;br&gt; From: SEATON ST&lt;br&gt; To: ONTARIO ST ",
+        "work_type": "Major Road Reconstruction",
+        "status": "Active",
+        "start_year": 2025,
+        "description": "Major Road Reconstruction on GERRARD ST E&lt;br&gt; From: SEATON ST&lt;br&gt; To: ONTARIO ST (2025)"
+      }
     },
     {
+      "type": "Feature",
+      "id": "rc-324",
       "geometry": {
+        "type": "LineString",
         "coordinates": [
           [
-            [
-              -79.40644999999999,
-              43.65758
-            ],
-            [
-              -79.40575,
-              43.65758
-            ],
-            [
-              -79.40575,
-              43.65802
-            ],
-            [
-              -79.40644999999999,
-              43.65802
-            ],
-            [
-              -79.40644999999999,
-              43.65758
-            ]
+            -79.3632393117332,
+            43.6655390894353
+          ],
+          [
+            -79.3625174394227,
+            43.6656921436714
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
-      "id": "PF-010",
       "properties": {
-        "cluster_seed": "D",
-        "depth_class": "shallow_cut",
-        "description": "College St utility cut for road resurfacing near segment college-borden.",
-        "end_date": "2024-05-25",
-        "expected_duration_days": 5,
-        "lane_days": 5,
-        "lanes_affected": "multi_lane",
-        "lat": 43.6578,
-        "lon": -79.4061,
-        "permit_id": "PF-010",
-        "segment_id": "college-borden",
-        "start_date": "2024-05-20",
-        "street": "College St",
-        "traffic_volume": 11900,
-        "utility_owner": "city_transportation",
-        "work_type": "road_resurfacing"
-      },
-      "type": "Feature"
+        "permit_id": "324",
+        "source": "road_reconstruction",
+        "street": "CARLTON ST&lt;br&gt; From: RAWLINGS AVE&lt;br&gt; To: SUMACH ST ",
+        "work_type": "Local Road Rehabilitation",
+        "status": "Active",
+        "start_year": 2025,
+        "description": "Local Road Rehabilitation on CARLTON ST&lt;br&gt; From: RAWLINGS AVE&lt;br&gt; To: SUMACH ST (2025)"
+      }
     },
     {
+      "type": "Feature",
+      "id": "rc-46",
       "geometry": {
+        "type": "LineString",
         "coordinates": [
           [
-            [
-              -79.40605,
-              43.65728
-            ],
-            [
-              -79.40535,
-              43.65728
-            ],
-            [
-              -79.40535,
-              43.65772
-            ],
-            [
-              -79.40605,
-              43.65772
-            ],
-            [
-              -79.40605,
-              43.65728
-            ]
+            -79.3650544654706,
+            43.6651339478541
+          ],
+          [
+            -79.3645021590854,
+            43.6652537495124
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
-      "id": "PF-011",
       "properties": {
-        "cluster_seed": "D",
-        "depth_class": "deep_excavation",
-        "description": "College St utility cut for watermain replacement near segment college-borden.",
-        "end_date": "2024-09-05",
-        "expected_duration_days": 3,
-        "lane_days": 3,
-        "lanes_affected": "one_lane",
-        "lat": 43.6575,
-        "lon": -79.4057,
-        "permit_id": "PF-011",
-        "segment_id": "college-borden",
-        "start_date": "2024-09-02",
-        "street": "College St",
-        "traffic_volume": 12270,
-        "utility_owner": "toronto_water",
-        "work_type": "watermain_replacement"
-      },
-      "type": "Feature"
+        "permit_id": "46",
+        "source": "road_reconstruction",
+        "street": "CARLTON ST&lt;br&gt; From: SACKVILLE ST&lt;br&gt; To: WOODSTOCK PL ",
+        "work_type": "Local Road Rehabilitation",
+        "status": "Active",
+        "start_year": 2025,
+        "description": "Local Road Rehabilitation on CARLTON ST&lt;br&gt; From: SACKVILLE ST&lt;br&gt; To: WOODSTOCK PL (2025)"
+      }
     },
     {
+      "type": "Feature",
+      "id": "rc-52",
       "geometry": {
+        "type": "LineString",
         "coordinates": [
           [
-            [
-              -79.40565,
-              43.65688
-            ],
-            [
-              -79.40495,
-              43.65688
-            ],
-            [
-              -79.40495,
-              43.65732
-            ],
-            [
-              -79.40565,
-              43.65732
-            ],
-            [
-              -79.40565,
-              43.65688
-            ]
+            -79.3641587769398,
+            43.6660933151395
+          ],
+          [
+            -79.3635261310259,
+            43.6662363354209
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
-      "id": "PF-012",
       "properties": {
-        "cluster_seed": "D",
-        "depth_class": "shallow_cut",
-        "description": "College St utility cut for fibre pull near segment college-borden.",
-        "end_date": "2025-01-13",
-        "expected_duration_days": 2,
-        "lane_days": 2,
-        "lanes_affected": "shoulder",
-        "lat": 43.6571,
-        "lon": -79.4053,
-        "permit_id": "PF-012",
-        "segment_id": "college-borden",
-        "start_date": "2025-01-11",
-        "street": "College St",
-        "traffic_volume": 12640,
-        "utility_owner": "bell",
-        "work_type": "fibre_pull"
-      },
-      "type": "Feature"
+        "permit_id": "52",
+        "source": "road_reconstruction",
+        "street": "SACKVILLE PL&lt;br&gt; From: BOWMAN ST&lt;br&gt; To: RAWLINGS AVE ",
+        "work_type": "Local Road Reconstruction",
+        "status": "Active",
+        "start_year": 2025,
+        "description": "Local Road Reconstruction on SACKVILLE PL&lt;br&gt; From: BOWMAN ST&lt;br&gt; To: RAWLINGS AVE (2025)"
+      }
     },
     {
+      "type": "Feature",
+      "id": "rc-54",
       "geometry": {
+        "type": "LineString",
         "coordinates": [
           [
-            [
-              -79.40455,
-              43.66178
-            ],
-            [
-              -79.40385,
-              43.66178
-            ],
-            [
-              -79.40385,
-              43.66222
-            ],
-            [
-              -79.40455,
-              43.66222
-            ],
-            [
-              -79.40455,
-              43.66178
-            ]
+            -79.3680571008485,
+            43.664463438273
+          ],
+          [
+            -79.3674857192746,
+            43.6645993879443
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
-      "id": "PF-013",
       "properties": {
-        "cluster_seed": "E",
-        "depth_class": "deep_excavation",
-        "description": "Borden St utility cut for sewer repair near segment borden-sussex.",
-        "end_date": "2024-03-28",
-        "expected_duration_days": 6,
-        "lane_days": 6,
-        "lanes_affected": "one_lane",
-        "lat": 43.662,
-        "lon": -79.4042,
-        "permit_id": "PF-013",
-        "segment_id": "borden-sussex",
-        "start_date": "2024-03-22",
-        "street": "Borden St",
-        "traffic_volume": 13010,
-        "utility_owner": "toronto_water",
-        "work_type": "sewer_repair"
-      },
-      "type": "Feature"
+        "permit_id": "54",
+        "source": "road_reconstruction",
+        "street": "CARLTON ST&lt;br&gt; From: PARLIAMENT ST&lt;br&gt; To: BROADCAST LANE ",
+        "work_type": "Local Road Rehabilitation",
+        "status": "Active",
+        "start_year": 2025,
+        "description": "Local Road Rehabilitation on CARLTON ST&lt;br&gt; From: PARLIAMENT ST&lt;br&gt; To: BROADCAST LANE (2025)"
+      }
     },
     {
+      "type": "Feature",
+      "id": "rc-7",
       "geometry": {
+        "type": "LineString",
         "coordinates": [
           [
-            [
-              -79.40424999999999,
-              43.66138
-            ],
-            [
-              -79.40355,
-              43.66138
-            ],
-            [
-              -79.40355,
-              43.66182
-            ],
-            [
-              -79.40424999999999,
-              43.66182
-            ],
-            [
-              -79.40424999999999,
-              43.66138
-            ]
+            -79.3645021590854,
+            43.6652537495124
+          ],
+          [
+            -79.3644791353327,
+            43.6652587809706
+          ],
+          [
+            -79.3644459028372,
+            43.6652660785571
+          ],
+          [
+            -79.3638396631037,
+            43.6654072533266
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
-      "id": "PF-014",
       "properties": {
-        "cluster_seed": "E",
-        "depth_class": "shallow_cut",
-        "description": "Borden St utility cut for gas main near segment borden-sussex.",
-        "end_date": "2024-10-19",
-        "expected_duration_days": 5,
-        "lane_days": 5,
-        "lanes_affected": "one_lane",
-        "lat": 43.6616,
-        "lon": -79.4039,
-        "permit_id": "PF-014",
-        "segment_id": "borden-sussex",
-        "start_date": "2024-10-14",
-        "street": "Borden St",
-        "traffic_volume": 13380,
-        "utility_owner": "enbridge",
-        "work_type": "gas_main"
-      },
-      "type": "Feature"
+        "permit_id": "7",
+        "source": "road_reconstruction",
+        "street": "CARLTON ST&lt;br&gt; From: WOODSTOCK PL&lt;br&gt; To: BOWMAN ST ",
+        "work_type": "Local Road Rehabilitation",
+        "status": "Active",
+        "start_year": 2025,
+        "description": "Local Road Rehabilitation on CARLTON ST&lt;br&gt; From: WOODSTOCK PL&lt;br&gt; To: BOWMAN ST (2025)"
+      }
     },
     {
+      "type": "Feature",
+      "id": "rc-80",
       "geometry": {
+        "type": "LineString",
         "coordinates": [
           [
-            [
-              -79.40165,
-              43.653780000000005
-            ],
-            [
-              -79.40095000000001,
-              43.653780000000005
-            ],
-            [
-              -79.40095000000001,
-              43.65422
-            ],
-            [
-              -79.40165,
-              43.65422
-            ],
-            [
-              -79.40165,
-              43.653780000000005
-            ]
+            -79.3681759581657,
+            43.6621129619358
+          ],
+          [
+            -79.3671914091739,
+            43.6623343336908
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
-      "id": "PF-015",
       "properties": {
-        "cluster_seed": "F",
-        "depth_class": "shallow_cut",
-        "description": "Oxford St utility cut for hydro pull near segment oxford-augusta.",
-        "end_date": "2025-02-21",
-        "expected_duration_days": 4,
-        "lane_days": 4,
-        "lanes_affected": "one_lane",
-        "lat": 43.654,
-        "lon": -79.4013,
-        "permit_id": "PF-015",
-        "segment_id": "oxford-augusta",
-        "start_date": "2025-02-17",
-        "street": "Oxford St",
-        "traffic_volume": 13750,
-        "utility_owner": "toronto_hydro",
-        "work_type": "hydro_pull"
-      },
-      "type": "Feature"
+        "permit_id": "80",
+        "source": "road_reconstruction",
+        "street": "[N] GERRARD ST E [BRANCH]&lt;br&gt; From: GERRARD ST E&lt;br&gt; To: PARLIAMENT ST ",
+        "work_type": "Major Road Reconstruction",
+        "status": "Active",
+        "start_year": 2025,
+        "description": "Major Road Reconstruction on [N] GERRARD ST E [BRANCH]&lt;br&gt; From: GERRARD ST E&lt;br&gt; To: PARLIAMENT ST (2025)"
+      }
     },
     {
+      "type": "Feature",
+      "id": "rc-82",
       "geometry": {
+        "type": "LineString",
         "coordinates": [
           [
-            [
-              -79.40135,
-              43.65358
-            ],
-            [
-              -79.40065,
-              43.65358
-            ],
-            [
-              -79.40065,
-              43.654019999999996
-            ],
-            [
-              -79.40135,
-              43.654019999999996
-            ],
-            [
-              -79.40135,
-              43.65358
-            ]
+            -79.3681759581657,
+            43.6621129619358
+          ],
+          [
+            -79.3670355355869,
+            43.6619503721934
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
-      "id": "PF-016",
       "properties": {
-        "cluster_seed": "F",
-        "depth_class": "shallow_cut",
-        "description": "Oxford St utility cut for fibre pull near segment oxford-augusta.",
-        "end_date": "2025-04-05",
-        "expected_duration_days": 4,
-        "lane_days": 4,
-        "lanes_affected": "shoulder",
-        "lat": 43.6538,
-        "lon": -79.401,
-        "permit_id": "PF-016",
-        "segment_id": "oxford-augusta",
-        "start_date": "2025-04-01",
-        "street": "Oxford St",
-        "traffic_volume": 14120,
-        "utility_owner": "rogers",
-        "work_type": "fibre_pull"
-      },
-      "type": "Feature"
+        "permit_id": "82",
+        "source": "road_reconstruction",
+        "street": "GERRARD ST E&lt;br&gt; From: [N] GERRARD ST E [BRANCH]&lt;br&gt; To: PARLIAMENT ST ",
+        "work_type": "Major Road Reconstruction",
+        "status": "Active",
+        "start_year": 2025,
+        "description": "Major Road Reconstruction on GERRARD ST E&lt;br&gt; From: [N] GERRARD ST E [BRANCH]&lt;br&gt; To: PARLIAMENT ST (2025)"
+      }
     },
     {
+      "type": "Feature",
+      "id": "rc-9",
       "geometry": {
+        "type": "LineString",
         "coordinates": [
           [
-            [
-              -79.40095,
-              43.65328
-            ],
-            [
-              -79.40025,
-              43.65328
-            ],
-            [
-              -79.40025,
-              43.65372
-            ],
-            [
-              -79.40095,
-              43.65372
-            ],
-            [
-              -79.40095,
-              43.65328
-            ]
+            -79.3667013421698,
+            43.6647859999478
+          ],
+          [
+            -79.3665810096809,
+            43.6648000780788
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
-      "id": "PF-017",
       "properties": {
-        "cluster_seed": "F",
-        "depth_class": "deep_excavation",
-        "description": "Oxford St utility cut for watermain replacement near segment oxford-augusta.",
-        "end_date": "2025-07-11",
-        "expected_duration_days": 3,
-        "lane_days": 3,
-        "lanes_affected": "one_lane",
-        "lat": 43.6535,
-        "lon": -79.4006,
-        "permit_id": "PF-017",
-        "segment_id": "oxford-augusta",
-        "start_date": "2025-07-08",
-        "street": "Oxford St",
-        "traffic_volume": 14490,
-        "utility_owner": "toronto_water",
-        "work_type": "watermain_replacement"
+        "permit_id": "9",
+        "source": "road_reconstruction",
+        "street": "CARLTON ST&lt;br&gt; From: METCALFE ST&lt;br&gt; To: DERMOTT PL ",
+        "work_type": "Local Road Rehabilitation",
+        "status": "Active",
+        "start_year": 2025,
+        "description": "Local Road Rehabilitation on CARLTON ST&lt;br&gt; From: METCALFE ST&lt;br&gt; To: DERMOTT PL (2025)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "rr-308",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -79.3709140661811,
+            43.6679085803102
+          ],
+          [
+            -79.3700983995994,
+            43.6680893536112
+          ],
+          [
+            -79.3697517994021,
+            43.6681661681441
+          ],
+          [
+            -79.3695619487555,
+            43.6681746361543
+          ]
+        ]
       },
-      "type": "Feature"
+      "properties": {
+        "permit_id": "308",
+        "source": "road_resurfacing",
+        "street": "WELLESLEY ST E&lt;br&gt; From: ROSE AVE&lt;br&gt; To: PARLIAMENT ST ",
+        "work_type": "Major Road Resurfacing",
+        "status": "Active",
+        "start_year": 2025,
+        "description": "Major Road Resurfacing on WELLESLEY ST E&lt;br&gt; From: ROSE AVE&lt;br&gt; To: PARLIAMENT ST (2025)"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "rr-463",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -79.3638396631037,
+            43.6654072533266
+          ],
+          [
+            -79.3641587769398,
+            43.6660933151395
+          ]
+        ]
+      },
+      "properties": {
+        "permit_id": "463",
+        "source": "road_resurfacing",
+        "street": "BOWMAN ST&lt;br&gt; From: CARLTON ST&lt;br&gt; To: SACKVILLE PL ",
+        "work_type": "Local Road Resurfacing",
+        "status": "Active",
+        "start_year": 2025,
+        "description": "Local Road Resurfacing on BOWMAN ST&lt;br&gt; From: CARLTON ST&lt;br&gt; To: SACKVILLE PL (2025)"
+      }
     }
-  ],
-  "type": "FeatureCollection"
+  ]
 }

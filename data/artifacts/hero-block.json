@@ -1,0 +1,16 @@
+{
+  "name": "Greektown corridor (Danforth, 43.6657 / -79.3642)",
+  "id": "segment-43666-79364",
+  "bbox": [
+    -79.370383,
+    43.661222,
+    -79.357943,
+    43.670202
+  ],
+  "center": [
+    43.665712,
+    -79.364163
+  ],
+  "source": ".planning/phases/01-parallel-kickoff/hero-block.json",
+  "selected_by": "disruption events 2023-2025 per 100m segment (D-08)"
+}

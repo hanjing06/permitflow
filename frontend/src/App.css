@@ -1,61 +1,253 @@
-* {
-  box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background: #0b0f17;
+  color: #e5e7eb;
 }
 
 .app {
   display: flex;
-  height: 100vh;
-  width: 100vw;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
 }
 
-.sidebar {
-  width: 380px;
-  padding: 20px;
-  overflow-y: auto;
+/* --- topbar --- */
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
   background: #111827;
-  color: white;
+  border-bottom: 1px solid #1f2937;
+}
+.brand h1 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 600;
+  color: #f9fafb;
+}
+.brand-sub {
+  font-size: 12px;
+  color: #9ca3af;
+  margin-left: 6px;
 }
 
-.sidebar h1 {
-  margin-top: 0;
+/* --- toggle (hard cut per D-32) --- */
+/* Stacked wrapper so the "Naive | Optimized" caption sits above the buttons. */
+.toggle-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
 }
-
-.sidebar p {
-  color: #d1d5db;
+.toggle-context {
+  font-size: 10px;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
 }
-
-.card {
+.toggle {
+  display: inline-flex;
   background: #1f2937;
-  border-radius: 12px;
-  padding: 14px;
-  margin-bottom: 14px;
+  border-radius: 8px;
+  padding: 3px;
+  gap: 2px;
+}
+.toggle-btn {
+  background: transparent;
+  color: #9ca3af;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 120ms ease-out;
+}
+.toggle-btn.active {
+  background: #f59e0b;       /* amber — same palette family as 'coordinated' polygons */
+  color: #0b0f17;
+  font-size: 15px;
+  font-weight: 700;
+  box-shadow: 0 0 0 1px #fbbf24, 0 2px 6px rgba(245, 158, 11, 0.35);
+}
+.toggle-btn:not(.active) {
+  opacity: 0.55;
 }
 
-.card h3 {
-  margin-top: 0;
+/* --- tri-stat counter (D-33: three equal cells) --- */
+.tristat {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background: #0f172a;
+  border-bottom: 1px solid #1f2937;
+}
+.tristat-cell {
+  padding: 22px 20px;
+  text-align: center;
+  border-right: 1px solid #1f2937;
+}
+.tristat-cell:last-child { border-right: none; }
+.tristat-value {
+  font-size: 44px;
+  font-weight: 700;
+  color: #f9fafb;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -1.5px;
+}
+.tristat-label {
+  font-size: 12px;
+  color: #cbd5e1;
+  margin-top: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.tristat-subnote {
+  padding: 8px 20px;
+  background: #0f172a;
+  border-bottom: 1px solid #1f2937;
+  text-align: center;
+  font-size: 12px;
+  color: #cbd5e1;
+}
+.tristat-subnote b {
+  color: #f59e0b;
+  font-variant-numeric: tabular-nums;
+}
+.tristat-subnote-hint {
+  color: #6b7280;
+  font-style: italic;
+}
+.tristat-loading {
+  padding: 16px 20px;
+  text-align: center;
+  color: #6b7280;
+  font-size: 13px;
 }
 
+/* --- main: map + chat panel --- */
+.main {
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+}
 .map {
   flex: 1;
-  height: 100vh;
+  height: 100%;
 }
 
-button {
-  width: 100%;
-  padding: 10px;
-  border: none;
-  border-radius: 8px;
-  background: #2563eb;
-  color: white;
-  font-weight: bold;
+/* --- chat panel (right dock) --- */
+.chat-panel {
+  width: 380px;
+  background: #111827;
+  border-left: 1px solid #1f2937;
+  display: flex;
+  flex-direction: column;
+}
+.chat-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 16px;
+  border-bottom: 1px solid #1f2937;
+}
+.chat-header h2 {
+  margin: 0;
+  font-size: 15px;
+  color: #f9fafb;
+}
+.chat-badge {
+  font-size: 10px;
+  padding: 4px 8px;
+  background: rgba(245, 158, 11, 0.15);
+  color: #f59e0b;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+/* GX10 / Nemotron anchor badge — period-accurate mono, stable (no animation). */
+.gx10-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  padding: 5px 9px;
+}
+.gx10-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #10b981;
+  box-shadow: 0 0 6px rgba(16, 185, 129, 0.6);
+}
+.chat-canned {
+  padding: 12px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  border-bottom: 1px solid #1f2937;
+}
+.canned-btn {
+  background: #1f2937;
+  color: #d1d5db;
+  border: 1px solid #374151;
+  padding: 8px 10px;
+  border-radius: 6px;
+  font-size: 12px;
   cursor: pointer;
+  text-align: left;
+  line-height: 1.3;
 }
+.canned-btn:hover:not(:disabled) {
+  background: #374151;
+  border-color: #4b5563;
+}
+.canned-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.chat-response {
+  flex: 1;
+  padding: 14px 16px;
+  overflow-y: auto;
+  white-space: pre-wrap;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #e5e7eb;
+}
+.chat-input-row {
+  display: flex;
+  gap: 6px;
+  padding: 12px 16px;
+  border-top: 1px solid #1f2937;
+}
+.chat-input {
+  flex: 1;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #374151;
+  background: #0b0f17;
+  color: #e5e7eb;
+  font-size: 13px;
+}
+.chat-input:focus { outline: none; border-color: #f59e0b; }
+.chat-send {
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: none;
+  background: #f59e0b;
+  color: #0b0f17;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 13px;
+}
+.chat-send:disabled { opacity: 0.5; cursor: not-allowed; }
 
-button:hover {
-  background: #1d4ed8;
-}
+/* Leaflet popups in dark theme */
+.leaflet-popup-content { font-size: 12px; }

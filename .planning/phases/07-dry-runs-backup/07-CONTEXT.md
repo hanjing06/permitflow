@@ -1,7 +1,12 @@
 # Phase 7: Dry Runs & Backup - Context
 
 **Gathered:** 2026-05-30
-**Status:** Ready for planning
+**Status:** Not started
+
+> ⚠ **Reality-check (2026-05-31):** the recovery / contingency logic is intact, but wording is stale.
+> - **"NIM containers" / "NIM stack" / "49B model" → read as "Ollama stack" / "123B model"** (D-76). Contingency cards should reference `ollama` on `:11434` and the Valhalla container on `:5000` (D-75), not NIM or OSRM.
+> - **D-67 ("never improvise recovery — don't restart NIM containers") still applies** to Ollama and Valhalla containers. The principle holds; only the container names change.
+> - **Snapshot dependency:** Ollama install belongs to user `frost` on the shared box (Phase 1 D-76 risk). Phase 7 contingency cards must include the `ollama show nemotron-3-super:latest --modelfile` snapshot path (`.planning/phases/01-parallel-kickoff/ollama-modelfile.txt`).
 
 <domain>
 ## Phase Boundary

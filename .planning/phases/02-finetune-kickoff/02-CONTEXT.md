@@ -1,7 +1,11 @@
 # Phase 2: Fine-tune Kickoff - Context
 
 **Gathered:** 2026-05-30
-**Status:** Ready for planning
+**Status:** ⏭ **CLOSED — do not plan, do not execute.**
+
+> ⛔ **Phase 2 is closed (D-77, see body §"Phase Closure").**
+> No LoRA fine-tune. No label corpus. No held-out eval. The Nemotron-3 Super 123B running locally on the GX10 via Ollama (D-76) replaces the tuned-Nano story as the demo's wow anchor. Phase 5 D-78 collapses the downstream eval/swap step in lockstep.
+> The body of this doc below is preserved as a historical record of what *would* have been built.
 
 <domain>
 ## Phase Boundary

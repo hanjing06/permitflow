@@ -4,7 +4,7 @@
 
 ## One-line pitch
 
-Toronto issues ~30,000 utility cut permits a year. The same blocks get torn up 3–6 times in 18 months because permits are issued in isolation. PermitFlow clusters spatially-and-temporally adjacent permits into single coordinated closures, and uses traffic-flow simulation to decide which permits can be issued in parallel without compounding congestion — explained by a Nemotron model fine-tuned on Toronto permit data, running locally on the GX10.
+Toronto issues ~30,000 utility cut permits a year. The same blocks get torn up 3–6 times in 18 months because permits are issued in isolation. PermitFlow clusters spatially-and-temporally adjacent permits into single coordinated closures, and uses Valhalla-driven traffic-flow simulation to decide which permits can be issued in parallel without compounding congestion — explained by a 123B Nemotron-3 Super running locally on the GX10 via Ollama.
 
 ## Who it's for
 
@@ -19,9 +19,9 @@ Two simultaneous optimizations on top of the live permit feed:
 1. **Space-time clustering** — group permits that touch the same block in overlapping windows so the road is opened once, not five times.
 2. **Traffic-conflict-aware scheduling** — simulate edge closures on Toronto's road graph (Valhalla on OSM); allow concurrent permits only when their detour paths don't compound on the same arterial.
 
-Nemotron is the *spokesperson and normalizer*, not the optimizer:
-- A LoRA-tuned **Nemotron Nano 9B** normalizes messy permit free-text into a canonical schema.
-- **Nemotron Super 49B** generates human-readable consolidation proposals and answers "what if I close X next week" in a chat panel.
+Nemotron is the *spokesperson*, not the optimizer:
+- **Nemotron-3 Super 123B** (Ollama-served, local on GX10) generates human-readable consolidation proposals and answers "what if I close X next week" in a chat panel. No fine-tune — the demo anchor is "123B reasoning model running locally, no internet" (D-76, D-77).
+- Permit normalization uses schema-prompted Super calls rather than a tuned Nano (Phase 2 closed — D-77).
 
 ## Data sources (Toronto Open Data, CKAN)
 
@@ -36,7 +36,7 @@ Nemotron is the *spokesperson and normalizer*, not the optimizer:
 
 ## Hardware
 
-ASUS Ascent GX10 (DGX Spark variant). 128 GB unified memory, FP4-native. **Non-negotiable: all Nemotron inference and the LoRA fine-tune run on this box.** The hackathon laptop is a thin client; the GX10 is the product.
+ASUS Ascent GX10 (DGX Spark variant). 128 GB unified memory, FP4-native. **Non-negotiable: all Nemotron inference runs on this box.** The hackathon laptop is a thin client; the GX10 is the product.
 
 ### Memory budget
 
@@ -48,7 +48,7 @@ ASUS Ascent GX10 (DGX Spark variant). 128 GB unified memory, FP4-native. **Non-n
 | FastAPI + DuckDB + headroom | ~10 GB |
 | **Total** | **~104 GB / 128 GB** |
 
-See Phase 1 CONTEXT D-76 and Phase 2 CONTEXT D-77 for the Ollama swap and fine-tune skip. The 24 GB of headroom is tighter than the original NIM plan but the 123B reasoning model is a substantial upgrade over the planned Super 49B.
+Routing engine is Valhalla (D-75, arm64-native, replaces OSRM). Inference engine is Ollama serving Nemotron-3 Super 123B (D-76, replaces NIM Nemotron Nano + Super). LoRA fine-tune is dropped (D-77). The 24 GB of headroom is tighter than the original NIM plan but the 123B reasoning model is a substantial upgrade over the planned Super 49B.
 
 Verify in Phase 1 with `nvidia-smi`.
 
@@ -74,10 +74,16 @@ Verify in Phase 1 with `nvidia-smi`.
 - **Time:** ~36 hours.
 - **Scope:** one Toronto neighbourhood, ~1–2 km². Chosen in Phase 1 as the block with the most repeat excavations in 2023–2025.
 - **Demo arc (90 seconds):**
-  1. Time-lapse on the hero block — 6 separate red closures over 18 months.
-  2. Toggle to optimized — same block, 2 consolidated closures. Counter ticks: "11 redundant excavations avoided · 38 lane-days saved."
-  3. Chat panel: judge asks "what if I issue a watermain permit on Harbord next week?" — Nemotron answers with traffic-impact reasoning and a deferral / batching recommendation.
-- **Wow lever:** the model talking to the judge is running locally on the GX10 and was fine-tuned on Toronto permits last night.
+  1. Hero block, next quarter: ~530 utility-cut permits already planned for this
+     ~1 km² of Toronto over the coming 90 days. Map opens on the block, auto-zoomed,
+     each permit a static polygon coloured by week.
+  2. Toggle to Optimized — same permits, regrouped into trench-sharing clusters
+     and conflict-deferred singletons. Tri-stat counter tweens up: "permits
+     considered · excavations avoided · cost avoidance."
+  3. Chat panel: judge asks "what if I issue a watermain permit on Harbord next
+     week?" — Nemotron-3 Super (123B, local on GX10 via Ollama) streams a
+     traffic-impact answer with a defer / piggyback recommendation.
+- **Wow lever:** the model talking to the judge is a 123B Nemotron-3 Super running locally on the GX10 over Ollama — no internet, no cloud.
 
 ## Success criteria
 
@@ -85,7 +91,7 @@ Verify in Phase 1 with `nvidia-smi`.
 |---|---|---|
 | 1 | Reasoning + embedder both serving on GX10 | curl returns 200 from Ollama `:11434/v1/models` (lists nemotron-3-super) AND NIM embedder `:8003/v1/models` |
 | 2 | ~~LoRA fine-tune lift~~ — **superseded by D-77 (skip fine-tune).** New pitch anchor: "**123B Nemotron-3 Super running locally**" on this box, no internet. |
-| 3 | Optimizer produces non-trivial savings | hero block: ≥ 5 redundant excavations identified across the historical window |
+| 3 | Optimizer produces non-trivial savings | hero block: ≥ 5 redundant excavations identified across the next-quarter window |
 | 4 | Conflict simulator working | toggling closures in UI shows Valhalla-driven detour volume deltas |
 | 5 | End-to-end demo runs offline | full 90-second arc completes with WiFi disabled |
 | 6 | Backup video exists | recorded by hour 35 |
@@ -99,7 +105,7 @@ See [ROADMAP.md](./ROADMAP.md). Seven phases mapped to the 36-hour budget.
 If running behind, cut in this order:
 
 1. **Cut embedding/RAG.** Hard-code chat context to "all permits in this neighbourhood." Saves ~4h.
-2. **Cut fine-tune.** Fall back to raw Nemotron Nano. Saves ~4h, costs the "trained on GX10 overnight" slide.
+2. ~~Cut fine-tune.~~ Already cut (D-77). The "trained overnight" slide is replaced by "123B running locally on GX10."
 3. **Cut interactive chat.** Pre-record canned scenarios as in-UI video. Saves ~6h, costs interactivity.
 
-**Never cut:** local Nemotron serving on GX10 · before/after time-lapse on hero block · savings counter.
+**Never cut:** local Nemotron-3 Super 123B serving on GX10 · before/after time-lapse on hero block · savings counter.

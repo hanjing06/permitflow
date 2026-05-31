@@ -2,7 +2,9 @@
 
 ## Overview
 
-PermitFlow is a 36-hour NVIDIA hackathon build: an AI-assisted permit consolidation system for the City of Toronto, running Nemotron locally on an ASUS Ascent GX10. The seven phases below are time-boxed to the hackathon clock — Phase N covers Hour X–Y. Phase 1 stands up infrastructure in parallel. Phase 2 kicks off a LoRA fine-tune that runs in the background through Phases 3 and 4. Phase 3 builds the geospatial optimizer (DBSCAN clustering + OSRM-driven conflict graph). Phase 4 wires the UI and chat panel. Phase 5 evaluates the trained model and swaps it into the pipeline. Phase 6 polishes the demo arc. Phase 7 rehearses and records a backup video. Three hard gates: G1 (infra alive @ h4), G2 (end-to-end skeleton @ h22), G3 (offline demo @ h34).
+PermitFlow is a 36-hour NVIDIA hackathon build: an AI-assisted permit consolidation system for the City of Toronto, running Nemotron-3 Super 123B locally on an ASUS Ascent GX10 via Ollama. The seven phases below are time-boxed to the hackathon clock — Phase N covers Hour X–Y. Phase 1 stands up infrastructure in parallel (Ollama, Valhalla, data, UI). **Phase 2 is closed (D-77)** — no LoRA fine-tune; the 123B local model is the anchor instead. Phase 3 builds the geospatial optimizer (DBSCAN trench-sharing clusters + Valhalla-driven conflict graph — D-79). Phase 4 wires the UI and chat panel. **Phase 5 is reduced (D-78)** to verification + screenshot capture. Phase 6 polishes the demo arc. Phase 7 rehearses and records a backup video. Three hard gates: G1 (infra alive @ h4), G2 (end-to-end skeleton @ h22), G3 (offline demo @ h34).
+
+> **Reality-check (2026-05-31):** ROADMAP success criteria below reflect the current stack — Ollama (not NIM Nano/Super), Valhalla (not OSRM), no fine-tune. See `.planning/HEALTHCHECK.md` for the per-phase implementation delta. Decisions D-75 / D-76 / D-77 / D-78 / D-79 in STATE.md drive the changes.
 
 ## Phases
 
@@ -10,99 +12,90 @@ PermitFlow is a 36-hour NVIDIA hackathon build: an AI-assisted permit consolidat
 - Integer phases (1–7): The seven hour-block phases
 - Decimal phases would be urgent insertions if needed during the hackathon
 
-- [ ] **Phase 1: Parallel Kickoff** — Stand up NIM, OSRM, data ingestion, UI scaffold; pick hero block (Hour 0–4)
-- [ ] **Phase 2: Fine-tune Kickoff** — Launch LoRA training on Nemotron Nano in background (Hour 4–6)
-- [ ] **Phase 3: Optimizer Build** — DBSCAN clusters + OSRM conflict graph + naive/optimized timelines (Hour 6–14)
-- [ ] **Phase 4: UI & Chat Panel** — Leaflet scrubber, savings counter, Nemotron Super chat (Hour 14–22)
-- [ ] **Phase 5: Fine-tune Eval & Swap** — Eval tuned Nano vs raw, swap into pipeline, capture pitch artifacts (Hour 22–28)
+- [x] **Phase 1: Parallel Kickoff** — Stand up Ollama (123B), Valhalla, NIM embedder, data ingestion, UI scaffold; pick hero block (Hour 0–4) ✅ all 5 G1 criteria satisfied 2026-05-30
+- [x] ~~**Phase 2: Fine-tune Kickoff**~~ — **CLOSED (D-77).** No fine-tune; 123B local is the anchor. Phase 5 D-44 fallback narrative replaces it.
+- [x] **Phase 3: Optimizer Build** — DBSCAN trench-sharing (anchor + piggyback per D-79) + space-time-proxy conflict graph + naive/optimized timelines (Hour 6–14) ✅ merged hanjing06/c6100d0 + wired endpoints in 27ac93b 2026-05-31. Demo: 532 considered / 2 merges / 3 excavations avoided / $210K.
+- [x] **Phase 4: UI & Chat Panel** — Leaflet hero-block view, naive↔optimized toggle, tri-stat counter, streaming Nemotron Super chat (Hour 14–22) (completed 2026-05-31)
+- [ ] **Phase 5: Verification & Pitch Artifacts** — REDUCED per D-78: nvidia-smi (123B resident) screenshot + live chat latency screenshot. No fine-tune eval. (Hour 22–24)
 - [ ] **Phase 6: Demo Polish** — Lock 90-second arc, deck, cost-avoidance figure, camera flourish (Hour 28–34)
 - [ ] **Phase 7: Dry Runs & Backup** — Three rehearsals, WiFi-off test, backup video, contingency cards (Hour 34–36)
+- [x] **Phase 8: Street-Based Clustering (Layers 1+2)** — Replaced radius-DBSCAN leftover clustering with GEO_ID exact match → normalized-street + 60-day temporal sub-buckets. Every recommendation now carries `match_type`. New `backend/street_norm.py` + 23-test suite green; SCHEMAS.md additive section appended; HeroMap popup carries one `match: ...` subtitle. Headline numbers unchanged (532 / 3 / $210K) — geocoding gap on utility_cuts is the v1.1 blocker for Layer-2 lift. Layer 3 (intersection coordination + new UI color) still deferred. ✅ 08-01 2026-05-31. **human_needed_verification: true**
 
 ## Phase Details
 
 ### Phase 1: Parallel Kickoff
-**Goal**: Stand up every external dependency (Nemotron NIM endpoints on GX10, OSRM with Toronto OSM, data ingestion into DuckDB, Leaflet UI shell) and lock the hero neighbourhood so every later phase has concrete inputs.
+**Goal**: Stand up every external dependency (Ollama serving Nemotron-3 Super 123B on GX10 — D-76; NIM embedder; Valhalla with Toronto OSM tiles — D-75; Toronto Open Data ingestion into DuckDB; Leaflet UI shell) and lock the hero neighbourhood so every later phase has concrete inputs.
 **Depends on**: Nothing (first phase)
 **Window**: Hour 0–4
 **Success Criteria** (what must be TRUE):
-  1. `curl localhost:8001/v1/models` returns Nemotron Nano on the GX10
-  2. `curl localhost:8002/v1/models` returns Nemotron Super on the GX10
-  3. `osrm-routed` returns a valid route for two coordinates inside the hero block
+  1. `curl localhost:11434/api/tags` (on GX10) lists `nemotron-3-super:latest`
+  2. `curl localhost:8003/v1/models` returns NIM `nv-embedqa-e5-v5`
+  3. `curl localhost:5000/route ...` (Valhalla) returns a valid route for two coords inside the hero block
   4. `hero-block.json` exists with the chosen neighbourhood bbox
-  5. Leaflet UI renders the hero block with two placeholder polygons
-**Plans**: TBD
+  5. Leaflet UI renders the hero block with permits from the CKAN feed
+**Plans**: TBD (CONTEXT, SPEC, infra largely landed — see HEALTHCHECK.md)
 
 Plans:
-- [ ] 01-01: NIM serving for Nemotron Nano, Super, and embedder on GX10
-- [ ] 01-02: Toronto Open Data ingestion + hero block selection
-- [ ] 01-03: OSRM stack on Toronto OSM extract
-- [ ] 01-04: Leaflet + timeline scrubber UI scaffold
+- [x] 01-01: Ollama (123B) + NIM embedder on GX10 ✅ standing
+- [x] 01-02: Toronto Open Data ingestion (CKAN multi-dataset) + hero block selection ✅ datasets ✅, hero ✅ (segment-43666-79364, Danforth/Greektown, 5 events 2023-2025)
+- [x] 01-03: Valhalla stack on Toronto OSM extract ✅
+- [x] 01-04: Vite + React + Leaflet UI scaffold ✅
 
-### Phase 2: Fine-tune Kickoff
-**Goal**: Launch a LoRA fine-tune of Nemotron Nano 9B that normalizes Toronto utility-cut permit free-text into a canonical JSON schema. Training runs unattended through Phases 3 and 4.
-**Depends on**: Phase 1
-**Window**: Hour 4–6
-**Success Criteria** (what must be TRUE):
-  1. Training process is running on GX10 (GPU util > 0)
-  2. Loss has decreased measurably from step 0 to step ~100
-  3. Held-out eval set exists at `~/permitflow/data/eval-100.jsonl` and is untouched
-**Plans**: TBD
+### Phase 2: Fine-tune Kickoff — ⏭ CLOSED (D-77)
 
-Plans:
-- [ ] 02-01: Label 200 permits + synthesize 600 via Nemotron Super
-- [ ] 02-02: LoRA training launch (Nano 9B, r=16, 3 epochs, detached)
+**Status:** Closed. No work.
+**Decision:** D-77 — skip the LoRA fine-tune entirely. The Nemotron-3 Super 123B running locally on the GX10 (D-76) replaces the planned tuned-Nano-9B story as the demo's "wow" anchor. Phase 5's D-44 fallback narrative ("123B reasoning model on local hardware, no cloud") becomes the pitch line that the fine-tune was originally meant to enable.
+**Nothing to plan. Nothing to build.**
 
 ### Phase 3: Optimizer Build
-**Goal**: Produce the two timelines (naive vs optimized) and the conflict graph that drive the demo. DBSCAN clustering for space-time merge candidates; OSRM-driven detour simulation for the conflict graph.
+**Goal**: Produce the two timelines (naive vs optimized) and the conflict graph that drive the demo. **Trench-sharing two-pass per D-79**: utility-cut-permits are *candidates*, road-reconstruction / resurfacing / sidewalk programs are *anchor windows*. DBSCAN clusters candidates spatially+temporally against anchors, then a Valhalla `exclude_polygons` pass simulates concurrent closures for the conflict graph.
 **Depends on**: Phase 1
 **Window**: Hour 6–14
 **Success Criteria** (what must be TRUE):
-  1. `clusters.json` exists with at least 5 multi-permit clusters in the hero neighbourhood
-  2. `conflict-graph.json` exists with non-zero edges weighted by traffic volume
+  1. `clusters.json` (or equivalent) identifies ≥ 5 anchor↔candidate trench-sharing matches in the hero neighbourhood
+  2. `conflict-graph.json` exists with non-zero edges from Valhalla detour simulation, weighted by traffic volume
   3. `naive.json` and `optimized.json` differ visibly when overlaid on the map
-  4. Headline metrics computed: redundant excavations avoided + lane-days saved
-  5. FastAPI `/whatif?street=X&date=Y` endpoint responds with conflict assessment
-**Plans**: TBD
+  4. Headline metrics computed and persisted to `metrics.json`: redundant excavations avoided + lane-days saved + estimated cost avoidance (per D-53, not magic $15K)
+  5. FastAPI `/whatif?street=X&date=Y` endpoint calls Valhalla and responds with detour-volume delta (not the current hardcoded delay-week stub)
+**Plans**: TBD — biggest remaining gap per HEALTHCHECK
 
 Plans:
-- [ ] 03-01: DBSCAN clustering + merge savings computation
-- [ ] 03-02: OSRM conflict graph (closure simulation + volume weighting)
-- [ ] 03-03: Greedy interval scheduler + `/whatif` API
+- [ ] 03-01: Future-window data prep — anchor + candidate tables (D-20/D-22, D-07 building filter)
+- [ ] 03-02: Trench-sharing two-pass — anchor<->candidate match + leftover-cluster DBSCAN (D-79, D-28/D-29) -> clusters.json + SCHEMAS.md
+- [ ] 03-03: Valhalla conflict graph — exclude_polygons precompute -> conflict-graph.json
+- [ ] 03-04: Greedy interval scheduler -> naive.json + optimized.json + durable metrics.json
+- [ ] 03-05: API surface — real /whatif (Valhalla) + /metrics from disk + /clusters,/naive,/optimized,/conflict-graph for Phase 4
 
 ### Phase 4: UI & Chat Panel
-**Goal**: Wire the optimizer outputs and Nemotron Super chat into a single screen that tells the demo story. Even with placeholder chat content, the map alone should communicate the project.
+**Goal**: Wire the optimizer outputs and Nemotron-3 Super 123B chat (over Ollama) into a single screen that tells the demo story. Even with placeholder chat content, the map alone should communicate the project.
 **Depends on**: Phase 3
 **Window**: Hour 14–22
 **Success Criteria** (what must be TRUE):
-  1. Timeline scrubber plays through the historical window, polygons animate correctly
-  2. Naive ↔ Optimized toggle works and savings counter updates live
-  3. Chat panel returns a streamed Nemotron Super response for at least one live question
-  4. All three canned scenarios run end-to-end with cached responses
-  5. The full 90-second demo loop is executable end-to-end
-**Plans**: TBD
+  1. Map auto-centres on hero block at appropriate zoom (D-55)
+  2. Naive ↔ Optimized toggle works and tri-stat counter updates live (D-32, D-33)
+  3. Chat panel returns a streamed Ollama response for at least one live question (D-41 — SSE, not batch)
+  4. RAG retrieval uses the NIM embedder for context assembly (D-39/D-40/D-41) — or fall back to "all permits in this neighbourhood" per cut-list
+  5. All three canned scenarios run end-to-end with cached responses by hour 30 (D-37)
+  6. The full 90-second demo loop is executable end-to-end
+**Plans:** 2/2 plans complete
 
 Plans:
-- [ ] 04-01: Leaflet map + timeline scrubber + savings counter
-- [ ] 04-02: Naive↔Optimized toggle + crossfade
-- [ ] 04-03: Chat panel + Nemotron Super streaming + RAG context assembly
-- [ ] 04-04: Traffic camera hover flourish
+- [x] 04-01-PLAN.md — Backend: POST /chat (SSE Ollama stream) + POST /retrieve (NIM embedder → top-5) + RAG helpers in llm.py
+- [x] 04-02-PLAN.md — Frontend rewrite: HeroMap (auto-centre via /hero-block) + ToggleSwitch (naive↔optimized hard cut) + TriStatCounter (3 equal metrics, 2s tween) + ChatPanel (SSE consumer + 3 canned scenarios)
 
-### Phase 5: Fine-tune Eval & Swap
-**Goal**: Turn the LoRA checkpoint from Phase 2 into a quantifiable win and a live demo upgrade. Produce a real before/after lift number for the pitch slide and swap the tuned model into the live ingestion pipeline.
-**Depends on**: Phase 2, Phase 4
-**Window**: Hour 22–28
+### Phase 5: Verification & Pitch Artifacts — REDUCED (D-78)
+**Goal**: Capture proof that the 123B Nemotron-3 Super is genuinely resident and serving on the GX10. No fine-tune to eval (Phase 2 closed per D-77); the artifacts feed the pitch slide directly.
+**Depends on**: Phase 1, Phase 4
+**Window**: Hour 22–24 (compressed from original 22–28)
 **Success Criteria** (what must be TRUE):
-  1. `eval-report.json` exists with concrete per-field accuracy numbers
-  2. Tuned Nano shows ≥ +15 points (≥ +20 ideal) on overall schema-correct rate vs raw Nano
-  3. Tuned Nano is the model running in the NIM container during the demo
-  4. Hero-neighbourhood data has been re-normalized with the tuned model
-  5. Pitch artifacts saved: loss curve, 3 side-by-side examples, headline number
+  1. `ollama-modelfile.txt` snapshot captured (✅ done in Phase 1)
+  2. `nvidia-smi` screenshot showing the 123B model resident in GPU memory
+  3. One live chat round-trip latency screenshot from the demo path
 **Plans**: TBD
 
 Plans:
-- [ ] 05-01: Eval tuned vs raw Nano on held-out 100
-- [ ] 05-02: Swap tuned adapter into NIM, re-ingest hero data
-- [ ] 05-03: Capture pitch artifacts (loss curve, examples, nvidia-smi screenshot)
+- [ ] 05-01: Capture `nvidia-smi` while a live chat call is in flight
+- [ ] 05-02: Capture chat-latency screenshot + add to pitch deck assets
 
 ### Phase 6: Demo Polish
 **Goal**: Convert a working system into a 90-second presentation that wins. No new features — only existing ones getting sharper, faster, and legible to a first-time viewer.
@@ -114,12 +107,12 @@ Plans:
   3. Pitch script is timed to ≤ 90 seconds
   4. Three-slide deck is finished and rehearsed
   5. No unfixed UI jank in the recorded demo path
-**Plans**: TBD
+**Plans:** 1 code plan (pitch-lead deliverables tracked separately, not in GSD plans)
 
 Plans:
-- [ ] 06-01: UI polish pass (hero centring, polygon styling, counter animation)
-- [ ] 06-02: Three-slide deck + pitch script + cost-avoidance figure
-- [ ] 06-03: Live traffic camera flourish (with offline fallback)
+- [x] 06-01-PLAN.md — Code-only polish: counter retween fix + tri-stat typography + toggle active-state + GX10 badge + PROJECT.md demo arc rewrite (D-21) ✅ shipped 2026-05-31 (build green; human eyeball pass pending — see 06-01-SUMMARY.md)
+- [pitch-lead] 3-slide deck + 90s script + cost-avoidance back-of-envelope (D-53, D-56, D-58, D-59)
+- [cut, D-54] Live traffic camera flourish
 
 ### Phase 7: Dry Runs & Backup
 **Goal**: Make the demo bulletproof. Three full run-throughs, an offline test, a recorded backup video, and a contingency for every plausible failure. No code changes after hour 35.
@@ -142,14 +135,60 @@ Plans:
 ## Progress
 
 **Execution Order:**
-Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7
+Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Parallel Kickoff | 0/4 | Not started | - |
-| 2. Fine-tune Kickoff | 0/2 | Not started | - |
-| 3. Optimizer Build | 0/3 | Not started | - |
-| 4. UI & Chat Panel | 0/4 | Not started | - |
-| 5. Fine-tune Eval & Swap | 0/3 | Not started | - |
-| 6. Demo Polish | 0/3 | Not started | - |
+| 1. Parallel Kickoff | 4/4 (infra ✅, data ✅, hero ✅) | Complete | 2026-05-30 |
+| 2. ~~Fine-tune Kickoff~~ | n/a | ⏭ Closed (D-77) | 2026-05-30 |
+| 3. Optimizer Build | 0/5 | In progress (single-pass DBSCAN only; Valhalla not wired) | - |
+| 4. UI & Chat Panel | 2/2 | Complete   | 2026-05-31 |
+| 5. Verification & Pitch Artifacts | 1/2 (modelfile ✅; nvidia-smi + latency ❌) | In progress | - |
+| 6. Demo Polish | 1/3 (code-only polish ✅; pitch-lead deck + script + cost-avoidance owed) | In progress | - |
 | 7. Dry Runs & Backup | 0/4 | Not started | - |
+| 8. Street-Based Clustering | 0/1 (Layers 1+2 only; Layer 3 deferred) | Planned | - |
+
+See `.planning/HEALTHCHECK.md` for the per-item gap analysis.
+
+### Phase 8: Street-Based Clustering
+
+**Status:** Planned — mid-late hackathon insertion per user request. Layers 1+2 only; Layer 3 deferred to a follow-up phase / v1.1.
+
+**Goal:** Replace the current radius-based DBSCAN clustering (`backend/optimizer.py:cluster_leftover_candidates`) with street-aware grouping that matches the physical reality of trench-sharing — permits should cluster when they're on the *same opened road* (same GEO_ID segment, or same normalized street name within a temporal window), not when they happen to be geometrically close on parallel streets.
+
+**Window:** Mid-late hackathon insertion (post-Phase-6, before/alongside Phase-7 rehearsals). Demo numbers will change once artifacts regenerate; rehearsals should run AFTER Phase 8 lands so the pitch reflects the new numbers.
+
+**Success Criteria** (what must be TRUE):
+  1. `backend/street_norm.py` exists with a unit-tested `normalize_street` helper (G8-NORM)
+  2. Every permit dict carries `geo_id` and `normalized_street` fields (G8-GEOID)
+  3. `cluster_leftover_candidates` groups by GEO_ID first, then by normalized street + temporal proximity (no more radius-DBSCAN for leftovers) (G8-CLUSTER)
+  4. All 7 Phase-3 artifacts regenerated; `clusters.json` carries an additive `match_type` field on every entry (G8-ARTIFACTS)
+  5. Phase 4 TriStatCounter + ChatPanel continue to read `/metrics` and `/clusters` with no field removals (G8-CONTRACT)
+
+**Layers shipping in this phase:**
+
+1. **Same-street clustering (Layer 1)** — Normalize `street_name` (strip "| From: X | To: Y" tails; canonicalize AVE/AVENUE/ST/STREET/RD/BLVD/etc.; strip direction prefixes preserving them as a `direction` field). Group by normalized name, then sub-cluster temporally within each group.
+2. **Same-segment clustering via GEO_ID (Layer 2)** — `utility_cuts.csv` and `building_permits.csv` carry `GEO_ID`. Group by exact `GEO_ID` BEFORE Layer 1 falls through. This is the gold-standard match — the city's own segment IDs.
+
+**Deferred to follow-up / v1.1:**
+
+- **Layer 3 — Cross-street intersection clustering** — Permits within ~50 m on different streets are likely at the same intersection. Would need a new `optimization_status="intersection_coordinated"` value and a fourth UI color. Out of scope here.
+- **utility_cuts geocoding** (DISPLAY_DESC → lat/lon) — separate v1.1 work; this phase still respects the silent-drop behaviour for candidates without lat/lon.
+- **Anchor LineString spatial join** — separate v1.1 work.
+
+**Why this matters:**
+- Current radius-DBSCAN clusters permits on *parallel* streets that share no trench (false positive).
+- Current radius-DBSCAN misses permits on the *same* street more than ~220m apart that share a trench (false negative).
+- Street-based grouping fixes both. The new demo numbers (whatever they are) are more defensible than the current 532/3/$210K.
+
+**Known caveats:**
+- Street-name normalization is messy (typos, abbreviations, missing values). 90%-correct normalizer ships in this plan; perfection is a rabbit hole.
+- Doesn't solve the utility_cut geocoding gap (no inline lat/lon) — that's separate v1.1 work.
+- Demo numbers will change. SUMMARY must record OLD vs NEW and the pitch line "we group by physical road, not radius."
+
+**Depends on:** Phase 3 (clusters.json contract); Phase 4 (TriStatCounter / ChatPanel — no breaking changes to /metrics or /clusters).
+
+**Plans:** 1 plan (Layers 1+2 only; Layer 3 deferred)
+
+Plans:
+- [ ] 08-01-PLAN.md — street_norm.py + geo_id/normalized_street on permits + rewrite cluster_leftover_candidates (GEO_ID → same-street → temporal) + regenerate artifacts + additive match_type field + SCHEMAS.md Phase 8 section

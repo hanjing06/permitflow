@@ -1,7 +1,12 @@
-# Phase 5: Fine-tune Eval & Swap - Context
+# Phase 5: Verification & Pitch Artifacts - Context
 
 **Gathered:** 2026-05-30
-**Status:** Ready for planning
+**Status:** REDUCED per D-78 — most of this doc is moot
+
+> ⚠ **Reality-check (2026-05-31):** Phase 5 is reduced to verification + screenshot capture.
+> - **D-77 closed Phase 2** — no LoRA was trained. There is nothing to eval and nothing to swap.
+> - **D-78** collapses Phase 5 to: (a) `ollama-modelfile.txt` snapshot ✅ (captured in Phase 1), (b) `nvidia-smi` screenshot showing the 123B resident in GPU memory ❌, (c) one live chat round-trip latency screenshot ❌. See body §"Phase 5 Reduced".
+> - The eval-set / LoRA-swap / NIM-`--lora-modules` / vLLM-fallback content below (D-42 through D-46) is preserved as historical record only. **Do not plan against it.**
 
 <domain>
 ## Phase Boundary
