@@ -36,6 +36,19 @@ body {
 }
 
 /* --- toggle (hard cut per D-32) --- */
+/* Stacked wrapper so the "Naive | Optimized" caption sits above the buttons. */
+.toggle-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+}
+.toggle-context {
+  font-size: 10px;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
 .toggle {
   display: inline-flex;
   background: #1f2937;
@@ -51,11 +64,18 @@ body {
   border-radius: 6px;
   font-weight: 600;
   cursor: pointer;
-  font-size: 13px;
+  font-size: 14px;
+  transition: all 120ms ease-out;
 }
 .toggle-btn.active {
   background: #f59e0b;       /* amber — same palette family as 'coordinated' polygons */
   color: #0b0f17;
+  font-size: 15px;
+  font-weight: 700;
+  box-shadow: 0 0 0 1px #fbbf24, 0 2px 6px rgba(245, 158, 11, 0.35);
+}
+.toggle-btn:not(.active) {
+  opacity: 0.55;
 }
 
 /* --- tri-stat counter (D-33: three equal cells) --- */
@@ -125,12 +145,30 @@ body {
 }
 .chat-badge {
   font-size: 10px;
-  padding: 3px 8px;
+  padding: 4px 8px;
   background: rgba(245, 158, 11, 0.15);
   color: #f59e0b;
   border-radius: 4px;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+}
+/* GX10 / Nemotron anchor badge — period-accurate mono, stable (no animation). */
+.gx10-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  padding: 5px 9px;
+}
+.gx10-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #10b981;
+  box-shadow: 0 0 6px rgba(16, 185, 129, 0.6);
 }
 .chat-canned {
   padding: 12px 16px;

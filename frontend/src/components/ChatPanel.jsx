@@ -66,7 +66,10 @@ export default function ChatPanel({ view }) {
     <div className="chat-panel">
       <div className="chat-header">
         <h2>Ask PermitFlow</h2>
-        <span className="chat-badge">running on GX10</span>
+        <span className="chat-badge gx10-badge">
+          <span className="gx10-dot" />
+          RUNNING ON GX10 · NEMOTRON-3 SUPER 123B
+        </span>
       </div>
 
       <div className="chat-canned">
