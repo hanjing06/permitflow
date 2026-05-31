@@ -105,16 +105,12 @@ def inspect():
 
 @app.get("/metrics")
 def metrics():
-    df = load_permits()
-    df = cluster_permits(df)
-    return get_metrics(df)
+    return get_metrics()
 
 
 @app.get("/whatif")
 def whatif(cluster_id: int, delay_weeks: int = 2):
-    df = load_permits()
-    df = cluster_permits(df)
-    return what_if_analysis(df, cluster_id, delay_weeks)
+    return what_if_analysis(cluster_id=cluster_id, delay_weeks=delay_weeks)
 
 @app.get("/hero-block")
 def hero_block():
