@@ -4,7 +4,8 @@
 //   neutral = singleton OR naive (no opinion)
 //   muted  = unknown / default
 export const STATUS_COLOR = {
-  coordinated:        "#f59e0b", // amber
+  coordinated:        "#f59e0b", // amber — confirmed trench-share
+  review_cluster:     "#3b82f6", // blue  — same-street, review-only (anchor_program)
   conflict_deferred:  "#dc2626", // shifted red
   singleton:          "#9ca3af", // neutral gray
   naive:              "#6b7280", // slate (independent)

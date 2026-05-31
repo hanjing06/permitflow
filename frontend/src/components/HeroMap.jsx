@@ -113,21 +113,23 @@ export default function HeroMap({ view }) {
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
 
-      {/* Cluster circles (optimized view only) — one shape per coordinated decision. */}
+      {/* Cluster circles (optimized view only) — one shape per coordinated decision.
+          Blue = anchor_program (review-only). Amber = confirmed trench-share. */}
       {clusterRenders.map(({ cluster, chronology, centroid, radius }) => {
         const start = chronology[0]?.start_date;
         const end = chronology.reduce(
           (max, m) => (new Date(m.end_date) > new Date(max) ? m.end_date : max),
           chronology[0]?.end_date,
         );
+        const clusterColorKey = cluster.review_only ? "review_cluster" : "coordinated";
         return (
           <Circle
             key={`cluster-${cluster.cluster_id}`}
             center={centroid}
             radius={radius}
             pathOptions={{
-              color: colorFor("coordinated"),
-              fillColor: colorFor("coordinated"),
+              color: colorFor(clusterColorKey),
+              fillColor: colorFor(clusterColorKey),
               fillOpacity: 0.35,
               weight: 3,
             }}
