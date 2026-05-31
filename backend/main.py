@@ -1,6 +1,18 @@
-from llm import build_cluster_prompt, ask_local_llm
+from llm import (
+    build_cluster_prompt,
+    ask_local_llm,
+    embed_query,
+    retrieve_permits,
+    lookup_conflict_edges,
+    extract_street_mentions,
+    build_chat_messages,
+    stream_chat,
+    CANNED_SCENARIOS,
+)
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import StreamingResponse
 from fastapi import FastAPI
+from pydantic import BaseModel
 from optimizer import (
     load_permits,
     cluster_permits,
@@ -152,3 +164,76 @@ def explain(cluster_id: int):
         "cluster": cluster,
         "explanation": explanation,
     }
+
+
+# ---------------------------------------------------------------------------
+# Phase 4 — chat panel: SSE /chat, RAG /retrieve, GET /chat/scenarios.
+# ---------------------------------------------------------------------------
+
+
+class ChatRequest(BaseModel):
+    query: str
+    view: str = "optimized"  # "naive" | "optimized"
+
+
+class RetrieveRequest(BaseModel):
+    query: str
+    view: str = "optimized"
+    top_k: int = 5
+
+
+@app.get("/chat/scenarios")
+def chat_scenarios():
+    return {"scenarios": CANNED_SCENARIOS}
+
+
+@app.post("/retrieve")
+def retrieve(req: RetrieveRequest):
+    permits = load_artifact_or_build(
+        "optimized.json" if req.view == "optimized" else "naive.json"
+    )
+    hits = retrieve_permits(req.query, permits, top_k=req.top_k)
+    used_embedder = embed_query("__healthcheck__") is not None
+    return {
+        "query": req.query,
+        "view": req.view,
+        "used_embedder": used_embedder,
+        "top_k": req.top_k,
+        "results": hits,
+    }
+
+
+@app.post("/chat")
+def chat(req: ChatRequest):
+    permits = load_artifact_or_build(
+        "optimized.json" if req.view == "optimized" else "naive.json"
+    )
+    context_permits = retrieve_permits(req.query, permits, top_k=5)
+    try:
+        conflict_graph = load_artifact_or_build("conflict-graph.json")
+    except Exception:
+        conflict_graph = []
+    streets = extract_street_mentions(req.query, context_permits)
+    edges = lookup_conflict_edges(streets, conflict_graph) if streets else []
+    try:
+        metrics_doc = load_artifact_or_build("metrics.json")
+    except Exception:
+        metrics_doc = None
+
+    def event_stream():
+        # SSE framing: each chunk is `data: <text>\n\n`. Escape embedded
+        # newlines so each model chunk stays a single SSE event the client
+        # can parse without buffering across frames.
+        for chunk in stream_chat(req.query, context_permits, edges, metrics_doc):
+            safe = chunk.replace("\r", "").replace("\n", "\\n")
+            yield f"data: {safe}\n\n"
+        yield "data: [DONE]\n\n"
+
+    return StreamingResponse(
+        event_stream(),
+        media_type="text/event-stream",
+        headers={
+            "Cache-Control": "no-cache",
+            "X-Accel-Buffering": "no",
+        },
+    )
