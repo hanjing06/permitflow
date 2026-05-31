@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
-import { MapContainer, TileLayer, Polygon, Popup } from "react-leaflet";
+import { MapContainer, TileLayer, Polygon, Circle, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import { colorFor, fillOpacityFor } from "../lib/permitColors";
 
@@ -19,9 +19,15 @@ function daysBetween(a, b) {
 }
 
 function shortId(id) {
-  // "road_resurfacing:1234" → "road_resurfacing #1234"
   const [src, num] = String(id).split(":");
   return num ? `${src} #${num}` : id;
+}
+
+// Approx meters between two [lat, lon] points — fine at hero-block scales.
+function distM([lat1, lon1], [lat2, lon2]) {
+  const dLat = (lat2 - lat1) * 111320;
+  const dLon = (lon2 - lon1) * 111320 * Math.cos((lat1 * Math.PI) / 180);
+  return Math.sqrt(dLat * dLat + dLon * dLon);
 }
 
 export default function HeroMap({ view }) {
@@ -40,9 +46,9 @@ export default function HeroMap({ view }) {
     fetch(`${API}/conflict-graph`).then(r => r.json()).then(setConflictGraph).catch(console.error);
   }, []);
 
-  const clusterById = useMemo(
-    () => Object.fromEntries(clusters.map(c => [String(c.cluster_id), c])),
-    [clusters]
+  const permitById = useMemo(
+    () => Object.fromEntries(permits.map(p => [p.permit_id, p])),
+    [permits]
   );
 
   const naiveById = useMemo(
@@ -64,12 +70,41 @@ export default function HeroMap({ view }) {
         streets: edge.shared_streets,
       });
     }
-    // Sort each list strongest-first so the popup shows the most relevant conflict.
-    for (const k of Object.keys(map)) {
-      map[k].sort((a, b) => b.score - a.score);
-    }
+    for (const k of Object.keys(map)) map[k].sort((a, b) => b.score - a.score);
     return map;
   }, [conflictGraph]);
+
+  // In optimized view: collapse multi-member clusters into a single Circle so the
+  // user sees "one decision per cluster" instead of N overlapping polygons.
+  // In naive view: clusters don't apply — render every permit independently.
+  const { clusterRenders, clusteredPermitIds } = useMemo(() => {
+    if (view !== "optimized" || clusters.length === 0 || permits.length === 0) {
+      return { clusterRenders: [], clusteredPermitIds: new Set() };
+    }
+    const renders = [];
+    const ids = new Set();
+    for (const cluster of clusters) {
+      const members = (cluster.member_permit_ids || [])
+        .map(id => permitById[id])
+        .filter(Boolean);
+      if (members.length < 2) continue;
+
+      const centroid = [
+        members.reduce((s, m) => s + m.lat, 0) / members.length,
+        members.reduce((s, m) => s + m.lon, 0) / members.length,
+      ];
+      const radius = Math.max(80, ...members.map(m => distM(centroid, [m.lat, m.lon]))) + 40;
+
+      // Chronology: sort members by start_date ascending.
+      const chronology = [...members].sort(
+        (a, b) => new Date(a.start_date) - new Date(b.start_date)
+      );
+
+      members.forEach(m => ids.add(m.permit_id));
+      renders.push({ cluster, members, chronology, centroid, radius });
+    }
+    return { clusterRenders: renders, clusteredPermitIds: ids };
+  }, [view, clusters, permits, permitById]);
 
   return (
     <MapContainer center={DEFAULT_CENTER} zoom={DEFAULT_ZOOM} className="map">
@@ -77,13 +112,68 @@ export default function HeroMap({ view }) {
         attribution="&copy; OpenStreetMap contributors"
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
+
+      {/* Cluster circles (optimized view only) — one shape per coordinated decision. */}
+      {clusterRenders.map(({ cluster, chronology, centroid, radius }) => {
+        const start = chronology[0]?.start_date;
+        const end = chronology.reduce(
+          (max, m) => (new Date(m.end_date) > new Date(max) ? m.end_date : max),
+          chronology[0]?.end_date,
+        );
+        return (
+          <Circle
+            key={`cluster-${cluster.cluster_id}`}
+            center={centroid}
+            radius={radius}
+            pathOptions={{
+              color: colorFor("coordinated"),
+              fillColor: colorFor("coordinated"),
+              fillOpacity: 0.35,
+              weight: 3,
+            }}
+          >
+            <Popup>
+              <div style={{ minWidth: 260 }}>
+                <b>{cluster.type === "piggyback" ? "Piggyback" : "Merged cluster"}</b>
+                {" "}<span style={{ color: "#666", fontSize: 11 }}>({cluster.cluster_id})</span>
+                <br/>
+                <span style={{ fontSize: 12, color: "#444" }}>
+                  {chronology.length} permits · {start} → {end}
+                </span>
+                {cluster.savings_lane_days != null && (
+                  <div style={{ fontSize: 12, marginTop: 4, color: "#444" }}>
+                    Saves <b>{cluster.savings_lane_days} lane-days</b> vs running independently
+                  </div>
+                )}
+                <hr style={{ margin: "8px 0", border: 0, borderTop: "1px solid #ddd" }}/>
+                <div style={{ fontSize: 11, fontWeight: 600, marginBottom: 4 }}>Chronology</div>
+                {chronology.map((m, i) => (
+                  <div key={m.permit_id} style={{ fontSize: 11, color: "#333", marginBottom: 2 }}>
+                    <span style={{ display: "inline-block", width: 14, color: "#999" }}>{i + 1}.</span>
+                    <b>{m.start_date}</b> → {m.end_date} · {shortId(m.permit_id)}
+                    <div style={{ marginLeft: 14, color: "#666" }}>
+                      {m.street_name} <span style={{ color: "#999" }}>· {m.work_type}</span>
+                    </div>
+                  </div>
+                ))}
+                {cluster.action && (
+                  <div style={{ fontSize: 11, marginTop: 6, color: "#555", fontStyle: "italic" }}>
+                    {cluster.action}
+                  </div>
+                )}
+              </div>
+            </Popup>
+          </Circle>
+        );
+      })}
+
+      {/* Individual permit polygons — skip the ones already represented by a cluster circle. */}
       {permits.map(p => {
+        if (clusteredPermitIds.has(p.permit_id)) return null;
         const positions = geomToLatLngs(p.geometry);
         const status = p.optimization_status || "naive";
         if (positions.length === 0) return null;
 
-        const cluster = p.cluster_id != null ? clusterById[String(p.cluster_id)] : null;
-        const partners = cluster?.member_permit_ids?.filter(id => id !== p.permit_id) ?? [];
         const naiveTwin = naiveById[p.permit_id];
         const shiftedDays = naiveTwin ? daysBetween(naiveTwin.start_date, p.start_date) : 0;
         const conflicts = (conflictsForPermit[p.permit_id] ?? []).slice(0, 3);
@@ -103,34 +193,11 @@ export default function HeroMap({ view }) {
               <div style={{ minWidth: 220 }}>
                 <b>{p.street_name}</b><br/>
                 {p.work_type} ({p.status})<br/>
-                <span style={{ color: "#555" }}>{shortId(p.permit_id)}</span><br/>
+                <span style={{ color: "#555", fontSize: 11 }}>{shortId(p.permit_id)}</span><br/>
                 {p.start_date} → {p.end_date} ({p.lane_days} lane-days)<br/>
                 <span style={{ display: "inline-block", marginTop: 4, padding: "1px 6px", background: colorFor(status), color: "#fff", borderRadius: 3, fontSize: 11 }}>
                   {status}
                 </span>
-
-                {status === "coordinated" && cluster && (
-                  <>
-                    <hr style={{ margin: "8px 0", border: 0, borderTop: "1px solid #ddd" }}/>
-                    <b>Coordinated ({cluster.type})</b><br/>
-                    {partners.length > 0 ? (
-                      <>
-                        Merged with {partners.length} other{partners.length === 1 ? "" : "s"}:<br/>
-                        {partners.slice(0, 4).map(id => (
-                          <div key={id} style={{ fontSize: 11, color: "#444" }}>• {shortId(id)}</div>
-                        ))}
-                        {partners.length > 4 && <div style={{ fontSize: 11, color: "#777" }}>+ {partners.length - 4} more</div>}
-                      </>
-                    ) : (
-                      <span style={{ fontSize: 11 }}>Single-permit cluster</span>
-                    )}
-                    {cluster.savings_lane_days != null && (
-                      <div style={{ fontSize: 11, marginTop: 4, color: "#444" }}>
-                        Saves ~{cluster.savings_lane_days} lane-days vs running independently
-                      </div>
-                    )}
-                  </>
-                )}
 
                 {status === "conflict_deferred" && (
                   <>
@@ -138,10 +205,10 @@ export default function HeroMap({ view }) {
                     <b>Pushed +{shiftedDays} days</b> to avoid concurrent closure<br/>
                     {conflicts.length > 0 ? (
                       <>
-                        <div style={{ fontSize: 11, marginTop: 4 }}>Top conflict{conflicts.length === 1 ? "" : "s"}:</div>
+                        <div style={{ fontSize: 11, marginTop: 4 }}>Conflicts with:</div>
                         {conflicts.map(c => (
                           <div key={c.other} style={{ fontSize: 11, color: "#444" }}>
-                            • vs {shortId(c.other)} on {c.streets.join(" / ")} <span style={{ color: "#999" }}>(score {c.score.toFixed(2)})</span>
+                            • {shortId(c.other)} on {c.streets.join(" / ")} <span style={{ color: "#999" }}>(score {c.score.toFixed(2)})</span>
                           </div>
                         ))}
                       </>
