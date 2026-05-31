@@ -53,6 +53,11 @@ DBSCAN_MIN_SAMPLES = int(os.getenv("PERMITFLOW_MIN_SAMPLES", "2"))
 CONFLICT_DISTANCE_METERS = float(os.getenv("PERMITFLOW_CONFLICT_M", "500"))
 CONFLICT_THRESHOLD = float(os.getenv("PERMITFLOW_CONFLICT_THRESHOLD", "0.15"))
 LANE_DAY_COST = int(os.getenv("PERMITFLOW_LANE_DAY_COST", "15000"))
+# Per-mobilization savings used by anchor_program clusters. Same-street city road
+# permits that get coordinated don't save a full trench (the work happens anyway)
+# — they save crew dispatch / mobilization overhead. $5K is the conservative end
+# of the $5K-25K range for municipal road-crew mobilization.
+MOBILIZATION_SAVINGS = int(os.getenv("PERMITFLOW_MOBILIZATION_SAVINGS", "5000"))
 STREET_CLUSTER_WINDOW_DAYS = int(os.getenv("PERMITFLOW_STREET_WINDOW_DAYS", "60"))
 
 ANCHOR_FILES = {
@@ -641,6 +646,112 @@ def cluster_leftover_candidates(permits, used_candidate_ids):
     return recommendations
 
 
+def cluster_anchor_program(permits, used_anchor_ids):
+    """Phase-8b — cluster anchor (city road-program) permits on the same street.
+
+    The original D-79 framing treated anchors as fixed windows that *candidates*
+    piggyback onto. But when the city itself has multiple anchor permits on the
+    same street (observed: 6 separate BRIDGMAN AVE road jobs in the demo data),
+    those are a coordination opportunity too — they should be one street program
+    cluster, not 6 singletons.
+
+    Mirrors `cluster_leftover_candidates`:
+      Layer 2 — GEO_ID exact match (rarely fires; anchor CSVs don't carry one).
+      Layer 1 — normalized_street + temporal sub-bucketing.
+
+    Excludes anchors already absorbed into a piggyback recommendation so we
+    don't double-claim the same window.
+    """
+    anchors = [
+        p for p in permits
+        if p["role"] == "anchor" and p["permit_id"] not in used_anchor_ids
+    ]
+    if not anchors:
+        return []
+
+    clusters: list[tuple[str, list]] = []
+
+    # Layer 2 — GEO_ID
+    geo_groups: dict[str, list] = defaultdict(list)
+    no_geo: list = []
+    for permit in anchors:
+        gid = permit.get("geo_id")
+        if gid:
+            geo_groups[gid].append(permit)
+        else:
+            no_geo.append(permit)
+
+    for gid, group in geo_groups.items():
+        if len(group) < 2:
+            no_geo.extend(group)
+            continue
+        for sub in _temporal_subclusters(group, STREET_CLUSTER_WINDOW_DAYS):
+            if len(sub) >= 2:
+                clusters.append(("same_segment", sub))
+            else:
+                no_geo.extend(sub)
+
+    # Layer 1 — normalized street
+    street_groups: dict[str, list] = defaultdict(list)
+    for permit in no_geo:
+        key = permit.get("normalized_street", "") or ""
+        if not key:
+            continue
+        street_groups[key].append(permit)
+
+    for key, group in street_groups.items():
+        if len(group) < 2:
+            continue
+        for sub in _temporal_subclusters(group, STREET_CLUSTER_WINDOW_DAYS):
+            if len(sub) >= 2:
+                clusters.append(("anchor_program", sub))
+
+    # Convert to recommendation dicts. Anchor-program savings are MOBILIZATION-
+    # based (not trench-share): the road work itself still happens. We save crew
+    # dispatch overhead per merged permit, NOT lane-days.
+    recommendations = []
+    for label, (match_type, group) in enumerate(clusters):
+        start = min(p["start_date"] for p in group)
+        end = max(p["end_date"] for p in group)
+        mobilizations_saved = len(group) - 1
+        dollar_savings = mobilizations_saved * MOBILIZATION_SAVINGS
+        recommendations.append({
+            "type": "merge",
+            "cluster_id": f"program:{label}",
+            "match_type": match_type if match_type == "same_segment" else "anchor_program",
+            "member_permit_ids": [p["permit_id"] for p in group],
+            "merged_window": {
+                "start": serialize_date(start),
+                "end": serialize_date(end),
+            },
+            # Lane-days NOT saved — the road work happens regardless.
+            "savings_lane_days": 0,
+            "lane_days_saved": 0,
+            # Excavations IS the right unit: each merged permit is one
+            # mobilization (crew + equipment dispatch) we don't re-pay for.
+            "excavations_avoided": mobilizations_saved,
+            "mobilizations_saved": mobilizations_saved,
+            "permit_count": len(group),
+            "road_openings_saved": mobilizations_saved,
+            "estimated_savings": int(dollar_savings),
+            "priority": "High" if mobilizations_saved >= 4 else "Medium",
+            "locations": sorted({p["street_name"] for p in group})[:8],
+            "projects": sorted({p["work_type"] for p in group})[:5],
+            "statuses": sorted({p["status"] for p in group}),
+            "action": (
+                "Merge city road-program permits on the same street into one "
+                "coordinated program. Saves crew mobilization per merged permit."
+            ),
+            "reason": (
+                f"{len(group)} city road-work permits on the same street within "
+                f"a single coordination window — combining them saves "
+                f"{mobilizations_saved} mobilization{'s' if mobilizations_saved != 1 else ''} "
+                f"at ~${MOBILIZATION_SAVINGS:,} each."
+            ),
+        })
+    return recommendations
+
+
 def build_naive_timeline(permits):
     return [
         {
@@ -772,13 +883,20 @@ def permits_geojson(permits):
 def build_metrics(permits, recommendations, naive, optimized, conflict_graph):
     lane_days_saved = sum(r.get("lane_days_saved", 0) for r in recommendations)
     excavations_avoided = sum(r.get("excavations_avoided", 0) for r in recommendations)
+    mobilizations_saved = sum(r.get("mobilizations_saved", 0) for r in recommendations)
+    # cost_avoidance now sums each recommendation's own estimated_savings so that
+    # trench-share (lane-days × $/lane-day) and anchor-program (mobilizations ×
+    # $/mob) contribute on their own honest scales rather than being conflated.
+    cost_avoidance = sum(int(r.get("estimated_savings", 0)) for r in recommendations)
     clusters = [r for r in recommendations if r["type"] == "merge"]
     piggybacks = [r for r in recommendations if r["type"] == "piggyback"]
     return {
         "lane_days_saved": int(lane_days_saved),
         "permits_considered": int(len(permits)),
-        "cost_avoidance": int(lane_days_saved * LANE_DAY_COST),
+        "cost_avoidance": int(cost_avoidance),
         "per_lane_day_cost": int(LANE_DAY_COST),
+        "per_mobilization_savings": int(MOBILIZATION_SAVINGS),
+        "mobilizations_saved": int(mobilizations_saved),
         "excavations_avoided": int(excavations_avoided),
         "piggybacks_accepted": int(len(piggybacks)),
         "cluster_merges": int(len(clusters)),
@@ -790,7 +908,7 @@ def build_metrics(permits, recommendations, naive, optimized, conflict_graph):
         "consolidation_opportunities": int(len(recommendations)),
         "largest_cluster": int(max((r["permit_count"] for r in recommendations), default=0)),
         "road_openings_saved": int(excavations_avoided),
-        "estimated_savings": int(lane_days_saved * LANE_DAY_COST),
+        "estimated_savings": int(cost_avoidance),
     }
 
 
@@ -799,10 +917,12 @@ def build_phase3_artifacts():
     hero_block = read_json(artifact_path("hero-block.json")) or hero_block_from_permits(permits)
     permits = filter_to_hero_block(permits, hero_block)
 
-    piggybacks, used = match_piggybacks(permits)
-    merges = cluster_leftover_candidates(permits, used)
+    piggybacks, used_candidates = match_piggybacks(permits)
+    used_anchors = {r["anchor_id"] for r in piggybacks}
+    merges = cluster_leftover_candidates(permits, used_candidates)
+    programs = cluster_anchor_program(permits, used_anchors)
     recommendations = sorted(
-        piggybacks + merges,
+        piggybacks + merges + programs,
         key=lambda r: (r.get("lane_days_saved", 0), r.get("permit_count", 0)),
         reverse=True,
     )

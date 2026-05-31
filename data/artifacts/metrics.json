@@ -1,18 +1,20 @@
 {
   "lane_days_saved": 14,
   "permits_considered": 532,
-  "cost_avoidance": 210000,
+  "cost_avoidance": 1320000,
   "per_lane_day_cost": 15000,
-  "excavations_avoided": 3,
+  "per_mobilization_savings": 5000,
+  "mobilizations_saved": 222,
+  "excavations_avoided": 225,
   "piggybacks_accepted": 0,
-  "cluster_merges": 2,
+  "cluster_merges": 126,
   "conflict_edges": 1228,
   "naive_max_concurrent_closures": 478,
   "optimized_max_concurrent_closures": 205,
   "total_projects": 532,
-  "clustered_projects": 5,
-  "consolidation_opportunities": 2,
-  "largest_cluster": 3,
-  "road_openings_saved": 3,
-  "estimated_savings": 210000
+  "clustered_projects": 351,
+  "consolidation_opportunities": 126,
+  "largest_cluster": 15,
+  "road_openings_saved": 225,
+  "estimated_savings": 1320000
 }

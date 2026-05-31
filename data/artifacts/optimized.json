@@ -14,9 +14,9 @@
     "normalized_street": "keele street",
     "direction": "",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_reconstruction:253",
-    "cluster_id": "singleton",
+    "cluster_id": "program:59",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -60,9 +60,9 @@
     "normalized_street": "westview boulevard",
     "direction": "",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_resurfacing:1138",
-    "cluster_id": "singleton",
+    "cluster_id": "program:89",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -106,9 +106,9 @@
     "normalized_street": "richmond street",
     "direction": "W",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_resurfacing:1332",
-    "cluster_id": "singleton",
+    "cluster_id": "program:73",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -154,7 +154,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:1369",
-    "cluster_id": "singleton",
+    "cluster_id": "program:73",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -200,7 +200,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:189",
-    "cluster_id": "singleton",
+    "cluster_id": "program:89",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -244,9 +244,9 @@
     "normalized_street": "shoreham drive",
     "direction": "",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_resurfacing:490",
-    "cluster_id": "singleton",
+    "cluster_id": "program:107",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -292,7 +292,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:69",
-    "cluster_id": "singleton",
+    "cluster_id": "program:73",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -338,7 +338,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:70",
-    "cluster_id": "singleton",
+    "cluster_id": "program:73",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -384,7 +384,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:71",
-    "cluster_id": "singleton",
+    "cluster_id": "program:73",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -430,7 +430,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:840",
-    "cluster_id": "singleton",
+    "cluster_id": "program:107",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -474,9 +474,9 @@
     "normalized_street": "copperfield road",
     "direction": "",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_reconstruction:11",
-    "cluster_id": "singleton",
+    "cluster_id": "program:2",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -520,9 +520,9 @@
     "normalized_street": "[46.30 m n] dundas street",
     "direction": "W",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_reconstruction:116",
-    "cluster_id": "singleton",
+    "cluster_id": "program:28",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -566,9 +566,9 @@
     "normalized_street": "[34 m n] florence avenue",
     "direction": "",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_reconstruction:124",
-    "cluster_id": "singleton",
+    "cluster_id": "program:29",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -612,9 +612,9 @@
     "normalized_street": "dover avenue",
     "direction": "",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_reconstruction:14",
-    "cluster_id": "singleton",
+    "cluster_id": "program:3",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -658,9 +658,9 @@
     "normalized_street": "college view avenue",
     "direction": "",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_reconstruction:143",
-    "cluster_id": "singleton",
+    "cluster_id": "program:35",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -704,9 +704,9 @@
     "normalized_street": "amiens road",
     "direction": "",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_reconstruction:146",
-    "cluster_id": "singleton",
+    "cluster_id": "program:36",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -750,9 +750,9 @@
     "normalized_street": "parkcrest drive",
     "direction": "",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_reconstruction:147",
-    "cluster_id": "singleton",
+    "cluster_id": "program:37",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -796,9 +796,9 @@
     "normalized_street": "ridelle avenue",
     "direction": "",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_reconstruction:148",
-    "cluster_id": "singleton",
+    "cluster_id": "program:9",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -842,9 +842,9 @@
     "normalized_street": "alan borovoy lane",
     "direction": "",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_reconstruction:15",
-    "cluster_id": "singleton",
+    "cluster_id": "program:4",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -888,9 +888,9 @@
     "normalized_street": "ascot avenue",
     "direction": "",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_reconstruction:153",
-    "cluster_id": "singleton",
+    "cluster_id": "program:22",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -934,9 +934,9 @@
     "normalized_street": "macpherson avenue",
     "direction": "",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_reconstruction:157",
-    "cluster_id": "singleton",
+    "cluster_id": "program:12",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -982,7 +982,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_reconstruction:16",
-    "cluster_id": "singleton",
+    "cluster_id": "program:5",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -1028,7 +1028,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_reconstruction:164",
-    "cluster_id": "singleton",
+    "cluster_id": "program:28",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -1074,7 +1074,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_reconstruction:172",
-    "cluster_id": "singleton",
+    "cluster_id": "program:9",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -1120,7 +1120,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_reconstruction:18",
-    "cluster_id": "singleton",
+    "cluster_id": "program:7",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -1166,7 +1166,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_reconstruction:189",
-    "cluster_id": "singleton",
+    "cluster_id": "program:43",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -1210,9 +1210,9 @@
     "normalized_street": "orchard park drive",
     "direction": "",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_reconstruction:19",
-    "cluster_id": "singleton",
+    "cluster_id": "program:8",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -1256,9 +1256,9 @@
     "normalized_street": "ascot avenue",
     "direction": "",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_reconstruction:194",
-    "cluster_id": "singleton",
+    "cluster_id": "program:22",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -1304,7 +1304,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_reconstruction:20",
-    "cluster_id": "singleton",
+    "cluster_id": "program:9",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -1350,7 +1350,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_reconstruction:216",
-    "cluster_id": "singleton",
+    "cluster_id": "program:9",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -1396,7 +1396,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_reconstruction:219",
-    "cluster_id": "singleton",
+    "cluster_id": "program:50",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -1442,7 +1442,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_reconstruction:220",
-    "cluster_id": "singleton",
+    "cluster_id": "program:51",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -1486,9 +1486,9 @@
     "normalized_street": "castlefield avenue",
     "direction": "",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_reconstruction:223",
-    "cluster_id": "singleton",
+    "cluster_id": "program:52",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -1532,9 +1532,9 @@
     "normalized_street": "roslin avenue",
     "direction": "",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_reconstruction:224",
-    "cluster_id": "singleton",
+    "cluster_id": "program:53",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -1580,7 +1580,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_reconstruction:225",
-    "cluster_id": "singleton",
+    "cluster_id": "program:54",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -1624,9 +1624,9 @@
     "normalized_street": "roselawn avenue",
     "direction": "",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_reconstruction:226",
-    "cluster_id": "singleton",
+    "cluster_id": "program:55",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -1672,7 +1672,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_reconstruction:227",
-    "cluster_id": "singleton",
+    "cluster_id": "program:12",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -1716,9 +1716,9 @@
     "normalized_street": "nunes lane",
     "direction": "",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_reconstruction:236",
-    "cluster_id": "singleton",
+    "cluster_id": "program:56",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -1764,7 +1764,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_reconstruction:237",
-    "cluster_id": "singleton",
+    "cluster_id": "program:12",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -1808,9 +1808,9 @@
     "normalized_street": "[40.20 m n] norman avenue",
     "direction": "",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_reconstruction:239",
-    "cluster_id": "singleton",
+    "cluster_id": "program:57",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -1856,7 +1856,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_reconstruction:271",
-    "cluster_id": "singleton",
+    "cluster_id": "program:61",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -1902,7 +1902,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_reconstruction:272",
-    "cluster_id": "singleton",
+    "cluster_id": "program:12",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -1946,9 +1946,9 @@
     "normalized_street": "zaph avenue",
     "direction": "",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_reconstruction:274",
-    "cluster_id": "singleton",
+    "cluster_id": "program:62",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -1994,7 +1994,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_reconstruction:28",
-    "cluster_id": "singleton",
+    "cluster_id": "program:12",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -2038,9 +2038,9 @@
     "normalized_street": "toffee crt",
     "direction": "",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_reconstruction:292",
-    "cluster_id": "singleton",
+    "cluster_id": "program:64",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -2086,7 +2086,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_reconstruction:294",
-    "cluster_id": "singleton",
+    "cluster_id": "program:9",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -2132,7 +2132,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_reconstruction:299",
-    "cluster_id": "singleton",
+    "cluster_id": "program:65",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -2178,7 +2178,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_reconstruction:300",
-    "cluster_id": "singleton",
+    "cluster_id": "program:22",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -2222,9 +2222,9 @@
     "normalized_street": "penrose road",
     "direction": "",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_reconstruction:302",
-    "cluster_id": "singleton",
+    "cluster_id": "program:66",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -2270,7 +2270,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_reconstruction:303",
-    "cluster_id": "singleton",
+    "cluster_id": "program:67",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -2316,7 +2316,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_reconstruction:314",
-    "cluster_id": "singleton",
+    "cluster_id": "program:68",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -2362,7 +2362,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_reconstruction:57",
-    "cluster_id": "singleton",
+    "cluster_id": "program:17",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -2408,7 +2408,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_reconstruction:59",
-    "cluster_id": "singleton",
+    "cluster_id": "program:9",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -2454,7 +2454,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_reconstruction:60",
-    "cluster_id": "singleton",
+    "cluster_id": "program:9",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -2500,7 +2500,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_reconstruction:61",
-    "cluster_id": "singleton",
+    "cluster_id": "program:19",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -2544,9 +2544,9 @@
     "normalized_street": "hollaman road",
     "direction": "",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_reconstruction:64",
-    "cluster_id": "singleton",
+    "cluster_id": "program:20",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -2592,7 +2592,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_reconstruction:67",
-    "cluster_id": "singleton",
+    "cluster_id": "program:12",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -2636,9 +2636,9 @@
     "normalized_street": "cortleigh boulevard",
     "direction": "",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_reconstruction:68",
-    "cluster_id": "singleton",
+    "cluster_id": "program:21",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -2684,7 +2684,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_reconstruction:73",
-    "cluster_id": "singleton",
+    "cluster_id": "program:22",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -2730,7 +2730,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_reconstruction:75",
-    "cluster_id": "singleton",
+    "cluster_id": "program:22",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -2820,9 +2820,9 @@
     "normalized_street": "ormont drive",
     "direction": "",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_resurfacing:100",
-    "cluster_id": "singleton",
+    "cluster_id": "program:78",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -2866,9 +2866,9 @@
     "normalized_street": "bridgman avenue",
     "direction": "",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_resurfacing:1007",
-    "cluster_id": "singleton",
+    "cluster_id": "program:54",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -3142,9 +3142,9 @@
     "normalized_street": "hillholm road",
     "direction": "",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_resurfacing:1051",
-    "cluster_id": "singleton",
+    "cluster_id": "program:121",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -3372,9 +3372,9 @@
     "normalized_street": "kenwood avenue",
     "direction": "",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_resurfacing:1063",
-    "cluster_id": "singleton",
+    "cluster_id": "program:79",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -3510,9 +3510,9 @@
     "normalized_street": "leslie street",
     "direction": "",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_resurfacing:1069",
-    "cluster_id": "singleton",
+    "cluster_id": "program:69",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -3536,6 +3536,52 @@
           [
             -79.3267863116303,
             43.656064645413096
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "permit_id": "road_resurfacing:107",
+    "source": "road_resurfacing",
+    "role": "anchor",
+    "street_name": "KENWOOD AVE |  From: LOUISE AVE |  To: MAPLEWOOD AVE",
+    "work_type": "Local Road Resurfacing",
+    "status": "Active",
+    "start_date": "2027-01-06",
+    "end_date": "2027-10-07",
+    "lane_days": 275,
+    "lat": 43.6859382632463,
+    "lon": -79.423390436576,
+    "normalized_street": "kenwood avenue",
+    "direction": "",
+    "geo_id": null,
+    "optimization_status": "conflict_deferred",
+    "timeline_id": "road_resurfacing:107",
+    "cluster_id": "program:79",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -79.423840436576,
+            43.6854882632463
+          ],
+          [
+            -79.422940436576,
+            43.6854882632463
+          ],
+          [
+            -79.422940436576,
+            43.6863882632463
+          ],
+          [
+            -79.423840436576,
+            43.6863882632463
+          ],
+          [
+            -79.423840436576,
+            43.6854882632463
           ]
         ]
       ]
@@ -3648,9 +3694,9 @@
     "normalized_street": "norelco drive",
     "direction": "",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_resurfacing:108",
-    "cluster_id": "singleton",
+    "cluster_id": "program:80",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -3694,9 +3740,9 @@
     "normalized_street": "west lodge avenue",
     "direction": "",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_resurfacing:1081",
-    "cluster_id": "singleton",
+    "cluster_id": "program:72",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -3972,7 +4018,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:1118",
-    "cluster_id": "singleton",
+    "cluster_id": "program:78",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -4055,16 +4101,16 @@
     "work_type": "Local Road Resurfacing",
     "status": "Active",
     "start_date": "2026-04-01",
-    "end_date": "2026-06-30",
-    "lane_days": 91,
+    "end_date": "2026-12-31",
+    "lane_days": 275,
     "lat": 43.6954413771017,
     "lon": -79.4276220571007,
     "normalized_street": "warwick avenue",
     "direction": "",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_resurfacing:1133",
-    "cluster_id": "singleton",
+    "cluster_id": "program:93",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -4154,9 +4200,9 @@
     "normalized_street": "cobourg avenue",
     "direction": "",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_resurfacing:1143",
-    "cluster_id": "singleton",
+    "cluster_id": "program:92",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -4248,7 +4294,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:1154",
-    "cluster_id": "singleton",
+    "cluster_id": "program:54",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -4292,9 +4338,9 @@
     "normalized_street": "burlington street",
     "direction": "",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_resurfacing:116",
-    "cluster_id": "singleton",
+    "cluster_id": "program:81",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -4430,9 +4476,9 @@
     "normalized_street": "glenellen",
     "direction": "",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_resurfacing:120",
-    "cluster_id": "singleton",
+    "cluster_id": "program:82",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -4478,7 +4524,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:1205",
-    "cluster_id": "singleton",
+    "cluster_id": "program:97",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -4522,9 +4568,9 @@
     "normalized_street": "ridley boulevard",
     "direction": "",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_resurfacing:1213",
-    "cluster_id": "singleton",
+    "cluster_id": "program:95",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -4798,9 +4844,9 @@
     "normalized_street": "dale avenue",
     "direction": "",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_resurfacing:124",
-    "cluster_id": "singleton",
+    "cluster_id": "program:83",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -4982,9 +5028,9 @@
     "normalized_street": "mansfield avenue",
     "direction": "",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_resurfacing:1254",
-    "cluster_id": "singleton",
+    "cluster_id": "program:99",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -5168,7 +5214,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:1266",
-    "cluster_id": "singleton",
+    "cluster_id": "program:117",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -5212,9 +5258,9 @@
     "normalized_street": "chaplin crescent",
     "direction": "",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_resurfacing:1268",
-    "cluster_id": "singleton",
+    "cluster_id": "program:123",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -5442,9 +5488,9 @@
     "normalized_street": "woodrow boulevard",
     "direction": "N",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_resurfacing:1305",
-    "cluster_id": "singleton",
+    "cluster_id": "program:70",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -5490,7 +5536,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:1308",
-    "cluster_id": "singleton",
+    "cluster_id": "program:83",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -5672,9 +5718,9 @@
     "normalized_street": "harcourt avenue",
     "direction": "",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_resurfacing:1319",
-    "cluster_id": "singleton",
+    "cluster_id": "program:114",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -5718,9 +5764,9 @@
     "normalized_street": "castlefield avenue",
     "direction": "",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_resurfacing:1324",
-    "cluster_id": "singleton",
+    "cluster_id": "program:52",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -5856,9 +5902,9 @@
     "normalized_street": "oakvale avenue",
     "direction": "",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_resurfacing:1330",
-    "cluster_id": "singleton",
+    "cluster_id": "program:113",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -6042,7 +6088,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:1377",
-    "cluster_id": "singleton",
+    "cluster_id": "program:123",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -6178,9 +6224,9 @@
     "normalized_street": "new toronto street",
     "direction": "",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_resurfacing:1388",
-    "cluster_id": "singleton",
+    "cluster_id": "program:119",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -6272,7 +6318,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:1397",
-    "cluster_id": "singleton",
+    "cluster_id": "program:69",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -6456,7 +6502,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:1419",
-    "cluster_id": "singleton",
+    "cluster_id": "program:77",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -6960,9 +7006,9 @@
     "normalized_street": "select avenue",
     "direction": "",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_resurfacing:1473",
-    "cluster_id": "singleton",
+    "cluster_id": "program:109",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -7006,9 +7052,9 @@
     "normalized_street": "bathurst street",
     "direction": "",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_resurfacing:1478",
-    "cluster_id": "singleton",
+    "cluster_id": "program:120",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -7146,7 +7192,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:161",
-    "cluster_id": "singleton",
+    "cluster_id": "program:85",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -7192,7 +7238,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:168",
-    "cluster_id": "singleton",
+    "cluster_id": "program:85",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -7282,9 +7328,9 @@
     "normalized_street": "symington avenue",
     "direction": "",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_resurfacing:187",
-    "cluster_id": "singleton",
+    "cluster_id": "program:88",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -7606,7 +7652,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:215",
-    "cluster_id": "singleton",
+    "cluster_id": "program:92",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -7650,9 +7696,9 @@
     "normalized_street": "leslie street",
     "direction": "",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_resurfacing:22",
-    "cluster_id": "singleton",
+    "cluster_id": "program:69",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -7744,7 +7790,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:238",
-    "cluster_id": "singleton",
+    "cluster_id": "program:54",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -7780,8 +7826,8 @@
     "street_name": "WARWICK AVE |  From: BATHURST ST |  To: CHILTERN HILL RD",
     "work_type": "Local Road Resurfacing",
     "status": "Active",
-    "start_date": "2026-07-01",
-    "end_date": "2027-04-01",
+    "start_date": "2027-01-06",
+    "end_date": "2027-10-07",
     "lane_days": 275,
     "lat": 43.6950930078707,
     "lon": -79.4241357699977,
@@ -7790,7 +7836,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:241",
-    "cluster_id": "singleton",
+    "cluster_id": "program:93",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -7928,7 +7974,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:33",
-    "cluster_id": "singleton",
+    "cluster_id": "program:70",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -8020,7 +8066,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:333",
-    "cluster_id": "singleton",
+    "cluster_id": "program:95",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -8250,7 +8296,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:350",
-    "cluster_id": "singleton",
+    "cluster_id": "program:70",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -8388,7 +8434,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:360",
-    "cluster_id": "singleton",
+    "cluster_id": "program:97",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -8434,7 +8480,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:361",
-    "cluster_id": "singleton",
+    "cluster_id": "program:97",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -8478,9 +8524,9 @@
     "normalized_street": "glenhurst avenue",
     "direction": "",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_resurfacing:366",
-    "cluster_id": "singleton",
+    "cluster_id": "program:98",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -8526,7 +8572,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:368",
-    "cluster_id": "singleton",
+    "cluster_id": "program:99",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -8572,7 +8618,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:370",
-    "cluster_id": "singleton",
+    "cluster_id": "program:100",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -8618,7 +8664,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:371",
-    "cluster_id": "singleton",
+    "cluster_id": "program:37",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -8664,7 +8710,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:374",
-    "cluster_id": "singleton",
+    "cluster_id": "program:100",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -8754,9 +8800,9 @@
     "normalized_street": "indian road",
     "direction": "",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_resurfacing:383",
-    "cluster_id": "singleton",
+    "cluster_id": "program:101",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -8846,9 +8892,9 @@
     "normalized_street": "jackson avenue",
     "direction": "",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_resurfacing:387",
-    "cluster_id": "singleton",
+    "cluster_id": "program:102",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -8892,9 +8938,9 @@
     "normalized_street": "spruce hill road",
     "direction": "",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_resurfacing:388",
-    "cluster_id": "singleton",
+    "cluster_id": "program:103",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -9032,7 +9078,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:393",
-    "cluster_id": "singleton",
+    "cluster_id": "program:54",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -9078,7 +9124,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:395",
-    "cluster_id": "singleton",
+    "cluster_id": "program:104",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -9194,6 +9240,52 @@
           [
             -79.5367266136852,
             43.7110373075652
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "permit_id": "road_resurfacing:409",
+    "source": "road_resurfacing",
+    "role": "anchor",
+    "street_name": "GLENELLEN (W) DR |  From: GRENVIEW BLVD |  To: [60 m W] GRENVIEW BLVD [END]",
+    "work_type": "Local Road Resurfacing",
+    "status": "Active",
+    "start_date": "2028-07-19",
+    "end_date": "2029-04-19",
+    "lane_days": 275,
+    "lat": 43.6388071950504,
+    "lon": -79.5048431832498,
+    "normalized_street": "glenellen",
+    "direction": "",
+    "geo_id": null,
+    "optimization_status": "conflict_deferred",
+    "timeline_id": "road_resurfacing:409",
+    "cluster_id": "program:82",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -79.5052931832498,
+            43.638357195050396
+          ],
+          [
+            -79.5043931832498,
+            43.638357195050396
+          ],
+          [
+            -79.5043931832498,
+            43.6392571950504
+          ],
+          [
+            -79.5052931832498,
+            43.6392571950504
+          ],
+          [
+            -79.5052931832498,
+            43.638357195050396
           ]
         ]
       ]
@@ -9400,7 +9492,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:452",
-    "cluster_id": "singleton",
+    "cluster_id": "program:88",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -9492,7 +9584,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:495",
-    "cluster_id": "singleton",
+    "cluster_id": "program:54",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -9584,7 +9676,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:55",
-    "cluster_id": "singleton",
+    "cluster_id": "program:72",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -9720,9 +9812,9 @@
     "normalized_street": "select avenue",
     "direction": "",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_resurfacing:568",
-    "cluster_id": "singleton",
+    "cluster_id": "program:109",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -9768,7 +9860,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:583",
-    "cluster_id": "singleton",
+    "cluster_id": "program:99",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -9858,9 +9950,9 @@
     "normalized_street": "lakeview avenue",
     "direction": "",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_resurfacing:614",
-    "cluster_id": "singleton",
+    "cluster_id": "program:110",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -9884,6 +9976,52 @@
           [
             -79.4241523035181,
             43.6513648644686
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "permit_id": "road_resurfacing:616",
+    "source": "road_resurfacing",
+    "role": "anchor",
+    "street_name": "KENWOOD AVE |  From: ST CLAIR AVE W |  To: [50.60 m N] ST CLAIR AVE W [CITY LIMITS]",
+    "work_type": "Local Road Resurfacing",
+    "status": "Active",
+    "start_date": "2027-10-13",
+    "end_date": "2028-07-13",
+    "lane_days": 275,
+    "lat": 43.6828293910262,
+    "lon": -79.4221370649893,
+    "normalized_street": "kenwood avenue",
+    "direction": "",
+    "geo_id": null,
+    "optimization_status": "conflict_deferred",
+    "timeline_id": "road_resurfacing:616",
+    "cluster_id": "program:79",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -79.4225870649893,
+            43.6823793910262
+          ],
+          [
+            -79.4216870649893,
+            43.6823793910262
+          ],
+          [
+            -79.4216870649893,
+            43.683279391026204
+          ],
+          [
+            -79.4225870649893,
+            43.683279391026204
+          ],
+          [
+            -79.4225870649893,
+            43.6823793910262
           ]
         ]
       ]
@@ -9998,7 +10136,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:640",
-    "cluster_id": "singleton",
+    "cluster_id": "program:99",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -10044,7 +10182,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:649",
-    "cluster_id": "singleton",
+    "cluster_id": "program:98",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -10182,7 +10320,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:668",
-    "cluster_id": "singleton",
+    "cluster_id": "program:104",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -10226,9 +10364,9 @@
     "normalized_street": "niagara street",
     "direction": "",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_resurfacing:670",
-    "cluster_id": "singleton",
+    "cluster_id": "program:76",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -10412,7 +10550,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:687",
-    "cluster_id": "singleton",
+    "cluster_id": "program:85",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -10548,9 +10686,9 @@
     "normalized_street": "exbury road",
     "direction": "",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_resurfacing:699",
-    "cluster_id": "singleton",
+    "cluster_id": "program:112",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -10594,9 +10732,9 @@
     "normalized_street": "ridelle avenue",
     "direction": "",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_resurfacing:7",
-    "cluster_id": "singleton",
+    "cluster_id": "program:9",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -10642,7 +10780,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:701",
-    "cluster_id": "singleton",
+    "cluster_id": "program:113",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -10734,7 +10872,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:717",
-    "cluster_id": "singleton",
+    "cluster_id": "program:114",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -10778,9 +10916,9 @@
     "normalized_street": "humewood gardens",
     "direction": "",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_resurfacing:722",
-    "cluster_id": "singleton",
+    "cluster_id": "program:115",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -10826,7 +10964,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:724",
-    "cluster_id": "singleton",
+    "cluster_id": "program:101",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -10918,7 +11056,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:733",
-    "cluster_id": "singleton",
+    "cluster_id": "program:103",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -11010,7 +11148,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:743",
-    "cluster_id": "singleton",
+    "cluster_id": "program:110",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -11054,9 +11192,9 @@
     "normalized_street": "glenlake avenue",
     "direction": "",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_resurfacing:744",
-    "cluster_id": "singleton",
+    "cluster_id": "program:116",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -11562,7 +11700,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:786",
-    "cluster_id": "singleton",
+    "cluster_id": "program:117",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -11608,7 +11746,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:788",
-    "cluster_id": "singleton",
+    "cluster_id": "program:95",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -11736,8 +11874,8 @@
     "street_name": "PINEWOOD AVE |  From: ST CLAIR AVE W |  To: [26.20 m N] ST CLAIR AVE W [CITY LIMITS]",
     "work_type": "Local Road Resurfacing",
     "status": "Active",
-    "start_date": "2027-01-06",
-    "end_date": "2027-10-07",
+    "start_date": "2028-07-19",
+    "end_date": "2029-04-19",
     "lane_days": 275,
     "lat": 43.6822956330818,
     "lon": -79.4247087457754,
@@ -11746,7 +11884,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:797",
-    "cluster_id": "singleton",
+    "cluster_id": "program:118",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -11928,9 +12066,9 @@
     "normalized_street": "woodrow boulevard",
     "direction": "N",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_resurfacing:808",
-    "cluster_id": "singleton",
+    "cluster_id": "program:70",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -11966,8 +12104,8 @@
     "street_name": "LOUISE AVE |  From: KENWOOD AVE |  To: WYCHWOOD AVE",
     "work_type": "Local Road Resurfacing",
     "status": "Active",
-    "start_date": "2027-10-13",
-    "end_date": "2028-07-13",
+    "start_date": "2029-04-25",
+    "end_date": "2030-01-24",
     "lane_days": 275,
     "lat": 43.6840683605616,
     "lon": -79.4232855384341,
@@ -11976,7 +12114,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:81",
-    "cluster_id": "singleton",
+    "cluster_id": "program:75",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -12068,7 +12206,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:822",
-    "cluster_id": "singleton",
+    "cluster_id": "program:119",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -12150,8 +12288,8 @@
     "street_name": "PINEWOOD AVE |  From: [26.20 m N] ST CLAIR AVE W |  To: MAPLEWOOD AVE",
     "work_type": "Local Road Resurfacing",
     "status": "Active",
-    "start_date": "2028-07-19",
-    "end_date": "2029-04-19",
+    "start_date": "2030-01-30",
+    "end_date": "2030-10-31",
     "lane_days": 275,
     "lat": 43.6842828115158,
     "lon": -79.4254903570268,
@@ -12160,7 +12298,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:834",
-    "cluster_id": "singleton",
+    "cluster_id": "program:118",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -12204,9 +12342,9 @@
     "normalized_street": "jackson avenue",
     "direction": "",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_resurfacing:839",
-    "cluster_id": "singleton",
+    "cluster_id": "program:102",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -12334,8 +12472,8 @@
     "street_name": "GRENVIEW (S) BLVD |  From: RIDGEGATE CRES |  To: KENRIDGE AVE",
     "work_type": "Local Road Resurfacing",
     "status": "Active",
-    "start_date": "2028-07-19",
-    "end_date": "2029-04-19",
+    "start_date": "2029-04-25",
+    "end_date": "2030-01-24",
     "lane_days": 275,
     "lat": 43.6376872147903,
     "lon": -79.5032598789656,
@@ -12344,7 +12482,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:844",
-    "cluster_id": "singleton",
+    "cluster_id": "program:97",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -12434,9 +12572,9 @@
     "normalized_street": "bathurst street",
     "direction": "",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_resurfacing:849",
-    "cluster_id": "singleton",
+    "cluster_id": "program:120",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -12482,7 +12620,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:85",
-    "cluster_id": "singleton",
+    "cluster_id": "program:76",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -12528,7 +12666,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:858",
-    "cluster_id": "singleton",
+    "cluster_id": "program:98",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -12756,9 +12894,9 @@
     "normalized_street": "exbury road",
     "direction": "",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_resurfacing:875",
-    "cluster_id": "singleton",
+    "cluster_id": "program:112",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -12802,9 +12940,9 @@
     "normalized_street": "exbury road",
     "direction": "",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_resurfacing:876",
-    "cluster_id": "singleton",
+    "cluster_id": "program:112",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -13126,7 +13264,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:888",
-    "cluster_id": "singleton",
+    "cluster_id": "program:116",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -13172,7 +13310,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:889",
-    "cluster_id": "singleton",
+    "cluster_id": "program:81",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -13402,7 +13540,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:899",
-    "cluster_id": "singleton",
+    "cluster_id": "program:115",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -13494,7 +13632,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:900",
-    "cluster_id": "singleton",
+    "cluster_id": "program:121",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -13538,9 +13676,9 @@
     "normalized_street": "norelco drive",
     "direction": "",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_resurfacing:901",
-    "cluster_id": "singleton",
+    "cluster_id": "program:80",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -13632,7 +13770,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:904",
-    "cluster_id": "singleton",
+    "cluster_id": "program:35",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -13770,7 +13908,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:911",
-    "cluster_id": "singleton",
+    "cluster_id": "program:116",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -13816,7 +13954,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:912",
-    "cluster_id": "singleton",
+    "cluster_id": "program:83",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -13852,8 +13990,8 @@
     "street_name": "LOUISE AVE |  From: VAUGHAN RD |  To: KENWOOD AVE",
     "work_type": "Local Road Resurfacing",
     "status": "Active",
-    "start_date": "2029-04-25",
-    "end_date": "2030-01-24",
+    "start_date": "2030-11-06",
+    "end_date": "2031-08-07",
     "lane_days": 275,
     "lat": 43.6843202162536,
     "lon": -79.4220600457952,
@@ -13862,7 +14000,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:914",
-    "cluster_id": "singleton",
+    "cluster_id": "program:75",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -14046,7 +14184,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:932",
-    "cluster_id": "singleton",
+    "cluster_id": "program:52",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -14184,7 +14322,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:954",
-    "cluster_id": "singleton",
+    "cluster_id": "program:104",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -14230,7 +14368,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:96",
-    "cluster_id": "singleton",
+    "cluster_id": "program:77",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -14320,9 +14458,9 @@
     "normalized_street": "[30.50 m n] wallace avenue",
     "direction": "",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_reconstruction:109",
-    "cluster_id": "singleton",
+    "cluster_id": "program:25",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -14368,7 +14506,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_reconstruction:190",
-    "cluster_id": "singleton",
+    "cluster_id": "program:44",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -14414,7 +14552,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_reconstruction:192",
-    "cluster_id": "singleton",
+    "cluster_id": "program:45",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -14458,9 +14596,9 @@
     "normalized_street": "douglas campbell lane",
     "direction": "",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_reconstruction:193",
-    "cluster_id": "singleton",
+    "cluster_id": "program:46",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -14504,9 +14642,9 @@
     "normalized_street": "[113 m w] humbercrest boulevard",
     "direction": "",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_reconstruction:266",
-    "cluster_id": "singleton",
+    "cluster_id": "program:60",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -14552,7 +14690,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_reconstruction:267",
-    "cluster_id": "singleton",
+    "cluster_id": "program:46",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -14598,7 +14736,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_reconstruction:27",
-    "cluster_id": "singleton",
+    "cluster_id": "program:11",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -14644,7 +14782,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_reconstruction:284",
-    "cluster_id": "singleton",
+    "cluster_id": "program:63",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -14668,52 +14806,6 @@
           [
             -79.4225633490483,
             43.6498636226759
-          ]
-        ]
-      ]
-    }
-  },
-  {
-    "permit_id": "road_resurfacing:107",
-    "source": "road_resurfacing",
-    "role": "anchor",
-    "street_name": "KENWOOD AVE |  From: LOUISE AVE |  To: MAPLEWOOD AVE",
-    "work_type": "Local Road Resurfacing",
-    "status": "Active",
-    "start_date": "2030-01-28",
-    "end_date": "2030-06-29",
-    "lane_days": 153,
-    "lat": 43.6859382632463,
-    "lon": -79.423390436576,
-    "normalized_street": "kenwood avenue",
-    "direction": "",
-    "geo_id": null,
-    "optimization_status": "conflict_deferred",
-    "timeline_id": "road_resurfacing:107",
-    "cluster_id": "singleton",
-    "geometry": {
-      "type": "Polygon",
-      "coordinates": [
-        [
-          [
-            -79.423840436576,
-            43.6854882632463
-          ],
-          [
-            -79.422940436576,
-            43.6854882632463
-          ],
-          [
-            -79.422940436576,
-            43.6863882632463
-          ],
-          [
-            -79.423840436576,
-            43.6863882632463
-          ],
-          [
-            -79.423840436576,
-            43.6854882632463
           ]
         ]
       ]
@@ -14726,8 +14818,8 @@
     "street_name": "GLEN CEDAR RD |  From: WARWICK AVE |  To: AVENAL DR",
     "work_type": "Local Road Resurfacing",
     "status": "Active",
-    "start_date": "2027-04-05",
-    "end_date": "2027-09-04",
+    "start_date": "2027-10-11",
+    "end_date": "2028-03-11",
     "lane_days": 153,
     "lat": 43.696061500518,
     "lon": -79.4291265643639,
@@ -14736,7 +14828,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:1080",
-    "cluster_id": "singleton",
+    "cluster_id": "program:74",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -14780,9 +14872,9 @@
     "normalized_street": "airdrie road",
     "direction": "",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_resurfacing:176",
-    "cluster_id": "singleton",
+    "cluster_id": "program:87",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -14828,7 +14920,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:213",
-    "cluster_id": "singleton",
+    "cluster_id": "program:91",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -14920,7 +15012,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:422",
-    "cluster_id": "singleton",
+    "cluster_id": "program:87",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -14966,7 +15058,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:446",
-    "cluster_id": "singleton",
+    "cluster_id": "program:91",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -15048,8 +15140,8 @@
     "street_name": "GLEN CEDAR RD |  From: AVENAL DR |  To: AVA RD",
     "work_type": "Local Road Resurfacing",
     "status": "Active",
-    "start_date": "2027-09-06",
-    "end_date": "2028-02-05",
+    "start_date": "2027-01-04",
+    "end_date": "2027-06-05",
     "lane_days": 153,
     "lat": 43.6968280547354,
     "lon": -79.4296672578847,
@@ -15058,7 +15150,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:598",
-    "cluster_id": "singleton",
+    "cluster_id": "program:74",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -15082,52 +15174,6 @@
           [
             -79.4301172578847,
             43.6963780547354
-          ]
-        ]
-      ]
-    }
-  },
-  {
-    "permit_id": "road_resurfacing:616",
-    "source": "road_resurfacing",
-    "role": "anchor",
-    "street_name": "KENWOOD AVE |  From: ST CLAIR AVE W |  To: [50.60 m N] ST CLAIR AVE W [CITY LIMITS]",
-    "work_type": "Local Road Resurfacing",
-    "status": "Active",
-    "start_date": "2030-07-01",
-    "end_date": "2030-11-30",
-    "lane_days": 153,
-    "lat": 43.6828293910262,
-    "lon": -79.4221370649893,
-    "normalized_street": "kenwood avenue",
-    "direction": "",
-    "geo_id": null,
-    "optimization_status": "conflict_deferred",
-    "timeline_id": "road_resurfacing:616",
-    "cluster_id": "singleton",
-    "geometry": {
-      "type": "Polygon",
-      "coordinates": [
-        [
-          [
-            -79.4225870649893,
-            43.6823793910262
-          ],
-          [
-            -79.4216870649893,
-            43.6823793910262
-          ],
-          [
-            -79.4216870649893,
-            43.683279391026204
-          ],
-          [
-            -79.4225870649893,
-            43.683279391026204
-          ],
-          [
-            -79.4225870649893,
-            43.6823793910262
           ]
         ]
       ]
@@ -15186,8 +15232,8 @@
     "street_name": "GLEN CEDAR RD |  From: MARKDALE AVE |  To: WARWICK AVE",
     "work_type": "Local Road Resurfacing",
     "status": "Active",
-    "start_date": "2028-02-07",
-    "end_date": "2028-07-08",
+    "start_date": "2028-03-13",
+    "end_date": "2028-08-12",
     "lane_days": 153,
     "lat": 43.6946158616898,
     "lon": -79.4281602037961,
@@ -15196,7 +15242,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:74",
-    "cluster_id": "singleton",
+    "cluster_id": "program:74",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -15518,7 +15564,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_reconstruction:10",
-    "cluster_id": "singleton",
+    "cluster_id": "program:1",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -15562,9 +15608,9 @@
     "normalized_street": "donald avenue",
     "direction": "",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_reconstruction:106",
-    "cluster_id": "singleton",
+    "cluster_id": "program:23",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -15610,7 +15656,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_reconstruction:108",
-    "cluster_id": "singleton",
+    "cluster_id": "program:24",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -15654,9 +15700,9 @@
     "normalized_street": "monogram place",
     "direction": "",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_reconstruction:112",
-    "cluster_id": "singleton",
+    "cluster_id": "program:26",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -15702,7 +15748,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_reconstruction:113",
-    "cluster_id": "singleton",
+    "cluster_id": "program:26",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -15748,7 +15794,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_reconstruction:115",
-    "cluster_id": "singleton",
+    "cluster_id": "program:27",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -15792,9 +15838,9 @@
     "normalized_street": "fernwood park avenue",
     "direction": "",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_reconstruction:127",
-    "cluster_id": "singleton",
+    "cluster_id": "program:30",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -15830,8 +15876,8 @@
     "street_name": "DEWBOURNE AVE |  From: BATHURST ST |  To: CHILTERN HILL RD",
     "work_type": "Local Road Reconstruction",
     "status": "Active",
-    "start_date": "2028-02-09",
-    "end_date": "2028-08-10",
+    "start_date": "2028-03-15",
+    "end_date": "2028-09-14",
     "lane_days": 184,
     "lat": 43.6986053269079,
     "lon": -79.4256101198034,
@@ -15840,7 +15886,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_reconstruction:128",
-    "cluster_id": "singleton",
+    "cluster_id": "program:31",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -15884,9 +15930,9 @@
     "normalized_street": "clifton road",
     "direction": "",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_reconstruction:130",
-    "cluster_id": "singleton",
+    "cluster_id": "program:32",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -15932,7 +15978,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_reconstruction:134",
-    "cluster_id": "singleton",
+    "cluster_id": "program:33",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -15978,7 +16024,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_reconstruction:139",
-    "cluster_id": "singleton",
+    "cluster_id": "program:34",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -16024,7 +16070,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_reconstruction:162",
-    "cluster_id": "singleton",
+    "cluster_id": "program:38",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -16068,9 +16114,9 @@
     "normalized_street": "[36 m w] hopedale avenue",
     "direction": "",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_reconstruction:168",
-    "cluster_id": "singleton",
+    "cluster_id": "program:39",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -16114,9 +16160,9 @@
     "normalized_street": "[28.70 m n] springhurst avenue",
     "direction": "",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_reconstruction:17",
-    "cluster_id": "singleton",
+    "cluster_id": "program:6",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -16162,7 +16208,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_reconstruction:180",
-    "cluster_id": "singleton",
+    "cluster_id": "program:40",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -16208,7 +16254,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_reconstruction:184",
-    "cluster_id": "singleton",
+    "cluster_id": "program:41",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -16252,9 +16298,9 @@
     "normalized_street": "[87.20 m n] davenport road",
     "direction": "",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_reconstruction:187",
-    "cluster_id": "singleton",
+    "cluster_id": "program:42",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -16298,9 +16344,9 @@
     "normalized_street": "[36.60 m n] queen street",
     "direction": "W",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_reconstruction:203",
-    "cluster_id": "singleton",
+    "cluster_id": "program:47",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -16346,7 +16392,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_reconstruction:204",
-    "cluster_id": "singleton",
+    "cluster_id": "program:48",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -16392,7 +16438,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_reconstruction:205",
-    "cluster_id": "singleton",
+    "cluster_id": "program:49",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -16438,7 +16484,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_reconstruction:208",
-    "cluster_id": "singleton",
+    "cluster_id": "program:26",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -16484,7 +16530,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_reconstruction:23",
-    "cluster_id": "singleton",
+    "cluster_id": "program:10",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -16530,7 +16576,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_reconstruction:246",
-    "cluster_id": "singleton",
+    "cluster_id": "program:13",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -16576,7 +16622,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_reconstruction:248",
-    "cluster_id": "singleton",
+    "cluster_id": "program:13",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -16620,9 +16666,9 @@
     "normalized_street": "[37 m s] eglinton avenue",
     "direction": "W",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_reconstruction:251",
-    "cluster_id": "singleton",
+    "cluster_id": "program:58",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -16668,7 +16714,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_reconstruction:281",
-    "cluster_id": "singleton",
+    "cluster_id": "program:32",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -16714,7 +16760,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_reconstruction:309",
-    "cluster_id": "singleton",
+    "cluster_id": "program:48",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -16760,7 +16806,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_reconstruction:315",
-    "cluster_id": "singleton",
+    "cluster_id": "program:26",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -16806,7 +16852,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_reconstruction:316",
-    "cluster_id": "singleton",
+    "cluster_id": "program:38",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -16852,7 +16898,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_reconstruction:318",
-    "cluster_id": "singleton",
+    "cluster_id": "program:13",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -16898,7 +16944,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_reconstruction:34",
-    "cluster_id": "singleton",
+    "cluster_id": "program:13",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -16942,9 +16988,9 @@
     "normalized_street": "[37 m n] bedford park avenue",
     "direction": "",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_reconstruction:41",
-    "cluster_id": "singleton",
+    "cluster_id": "program:14",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -16990,7 +17036,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_reconstruction:5",
-    "cluster_id": "singleton",
+    "cluster_id": "program:0",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -17036,7 +17082,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_reconstruction:50",
-    "cluster_id": "singleton",
+    "cluster_id": "program:15",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -17082,7 +17128,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_reconstruction:51",
-    "cluster_id": "singleton",
+    "cluster_id": "program:16",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -17126,9 +17172,9 @@
     "normalized_street": "queen elizabeth boulevard",
     "direction": "",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_reconstruction:58",
-    "cluster_id": "singleton",
+    "cluster_id": "program:18",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -17174,7 +17220,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_reconstruction:84",
-    "cluster_id": "singleton",
+    "cluster_id": "program:13",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -17264,9 +17310,9 @@
     "normalized_street": "brimorton drive",
     "direction": "",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_resurfacing:1083",
-    "cluster_id": "singleton",
+    "cluster_id": "program:122",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -17540,9 +17586,9 @@
     "normalized_street": "brimorton drive",
     "direction": "",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_resurfacing:1207",
-    "cluster_id": "singleton",
+    "cluster_id": "program:122",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -17578,8 +17624,8 @@
     "street_name": "KIRK BRADDEN (W) RD |  From: PRINCE EDWARD DR (ETBK) |  To: [61 m W] GRENVIEW BLVD [END]",
     "work_type": "Local Road Resurfacing",
     "status": "Active",
-    "start_date": "2029-04-25",
-    "end_date": "2029-10-25",
+    "start_date": "2030-01-30",
+    "end_date": "2030-08-01",
     "lane_days": 184,
     "lat": 43.6383262806723,
     "lon": -79.5038323461085,
@@ -17634,7 +17680,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:1253",
-    "cluster_id": "singleton",
+    "cluster_id": "program:106",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -17678,9 +17724,9 @@
     "normalized_street": "brimorton drive",
     "direction": "",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_resurfacing:1362",
-    "cluster_id": "singleton",
+    "cluster_id": "program:122",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -17816,9 +17862,9 @@
     "normalized_street": "victoria park avenue",
     "direction": "",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_resurfacing:1408",
-    "cluster_id": "singleton",
+    "cluster_id": "program:111",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -17862,9 +17908,9 @@
     "normalized_street": "willowdale avenue",
     "direction": "",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_resurfacing:141",
-    "cluster_id": "singleton",
+    "cluster_id": "program:84",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -17900,8 +17946,8 @@
     "street_name": "ARLINGTON AVE |  From: NORMANNA AVE |  To: MAPLEWOOD AVE",
     "work_type": "Local Road Resurfacing",
     "status": "Active",
-    "start_date": "2029-04-25",
-    "end_date": "2029-10-25",
+    "start_date": "2028-07-19",
+    "end_date": "2029-01-18",
     "lane_days": 184,
     "lat": 43.6838870355637,
     "lon": -79.4299383322808,
@@ -17910,7 +17956,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:1414",
-    "cluster_id": "singleton",
+    "cluster_id": "program:94",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -17956,7 +18002,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:1425",
-    "cluster_id": "singleton",
+    "cluster_id": "program:84",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -18048,7 +18094,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:1459",
-    "cluster_id": "singleton",
+    "cluster_id": "program:86",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -18094,7 +18140,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:169",
-    "cluster_id": "singleton",
+    "cluster_id": "program:86",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -18138,9 +18184,9 @@
     "normalized_street": "conacher drive",
     "direction": "",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_resurfacing:210",
-    "cluster_id": "singleton",
+    "cluster_id": "program:90",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -18176,8 +18222,8 @@
     "street_name": "DEWBOURNE AVE |  From: ROSTREVOR RD |  To: CAMBERWELL RD",
     "work_type": "Local Road Resurfacing",
     "status": "Active",
-    "start_date": "2028-08-16",
-    "end_date": "2029-02-15",
+    "start_date": "2028-09-20",
+    "end_date": "2029-03-22",
     "lane_days": 184,
     "lat": 43.6978670659019,
     "lon": -79.4290044896232,
@@ -18186,7 +18232,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:27",
-    "cluster_id": "singleton",
+    "cluster_id": "program:31",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -18222,8 +18268,8 @@
     "street_name": "DEWBOURNE AVE |  From: CHILTERN HILL RD |  To: ROSTREVOR RD",
     "work_type": "Local Road Resurfacing",
     "status": "Active",
-    "start_date": "2029-02-21",
-    "end_date": "2029-08-23",
+    "start_date": "2029-03-28",
+    "end_date": "2029-09-27",
     "lane_days": 184,
     "lat": 43.6981096388869,
     "lon": -79.4279500681759,
@@ -18232,7 +18278,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:29",
-    "cluster_id": "singleton",
+    "cluster_id": "program:31",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -18314,8 +18360,8 @@
     "street_name": "ARLINGTON AVE |  From: HUMEWOOD GDNS |  To: NORMANNA AVE",
     "work_type": "Local Road Resurfacing",
     "status": "Active",
-    "start_date": "2029-10-31",
-    "end_date": "2030-05-02",
+    "start_date": "2029-01-24",
+    "end_date": "2029-07-26",
     "lane_days": 184,
     "lat": 43.6835487536287,
     "lon": -79.4298881437499,
@@ -18324,7 +18370,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:320",
-    "cluster_id": "singleton",
+    "cluster_id": "program:94",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -18368,9 +18414,9 @@
     "normalized_street": "beechgrove drive",
     "direction": "",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_resurfacing:340",
-    "cluster_id": "singleton",
+    "cluster_id": "program:96",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -18460,9 +18506,9 @@
     "normalized_street": "island road",
     "direction": "",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_resurfacing:36",
-    "cluster_id": "singleton",
+    "cluster_id": "program:71",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -18552,9 +18598,9 @@
     "normalized_street": "weston road",
     "direction": "N",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_resurfacing:396",
-    "cluster_id": "singleton",
+    "cluster_id": "program:105",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -18600,7 +18646,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:40",
-    "cluster_id": "singleton",
+    "cluster_id": "program:71",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -18624,52 +18670,6 @@
           [
             -79.1416990784948,
             43.7967561329581
-          ]
-        ]
-      ]
-    }
-  },
-  {
-    "permit_id": "road_resurfacing:409",
-    "source": "road_resurfacing",
-    "role": "anchor",
-    "street_name": "GLENELLEN (W) DR |  From: GRENVIEW BLVD |  To: [60 m W] GRENVIEW BLVD [END]",
-    "work_type": "Local Road Resurfacing",
-    "status": "Active",
-    "start_date": "2029-10-31",
-    "end_date": "2030-05-02",
-    "lane_days": 184,
-    "lat": 43.6388071950504,
-    "lon": -79.5048431832498,
-    "normalized_street": "glenellen",
-    "direction": "",
-    "geo_id": null,
-    "optimization_status": "conflict_deferred",
-    "timeline_id": "road_resurfacing:409",
-    "cluster_id": "singleton",
-    "geometry": {
-      "type": "Polygon",
-      "coordinates": [
-        [
-          [
-            -79.5052931832498,
-            43.638357195050396
-          ],
-          [
-            -79.5043931832498,
-            43.638357195050396
-          ],
-          [
-            -79.5043931832498,
-            43.6392571950504
-          ],
-          [
-            -79.5052931832498,
-            43.6392571950504
-          ],
-          [
-            -79.5052931832498,
-            43.638357195050396
           ]
         ]
       ]
@@ -18738,7 +18738,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:439",
-    "cluster_id": "singleton",
+    "cluster_id": "program:106",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -18782,9 +18782,9 @@
     "normalized_street": "bayview avenue",
     "direction": "",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_resurfacing:442",
-    "cluster_id": "singleton",
+    "cluster_id": "program:86",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -18830,7 +18830,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:447",
-    "cluster_id": "singleton",
+    "cluster_id": "program:86",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -18876,7 +18876,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:451",
-    "cluster_id": "singleton",
+    "cluster_id": "program:86",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -18920,9 +18920,9 @@
     "normalized_street": "hill garden road",
     "direction": "",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_resurfacing:514",
-    "cluster_id": "singleton",
+    "cluster_id": "program:108",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -19096,8 +19096,8 @@
     "street_name": "ARLINGTON AVE |  From: MAPLEWOOD AVE |  To: HURSTING AVE",
     "work_type": "Local Road Resurfacing",
     "status": "Active",
-    "start_date": "2028-07-19",
-    "end_date": "2029-01-18",
+    "start_date": "2029-08-01",
+    "end_date": "2030-01-31",
     "lane_days": 184,
     "lat": 43.6855154917507,
     "lon": -79.4305846984082,
@@ -19106,7 +19106,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:655",
-    "cluster_id": "singleton",
+    "cluster_id": "program:94",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -19152,7 +19152,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:675",
-    "cluster_id": "singleton",
+    "cluster_id": "program:111",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -19188,8 +19188,8 @@
     "street_name": "DEWBOURNE AVE |  From: CAMBERWELL RD |  To: GLEN CEDAR RD",
     "work_type": "Local Road Resurfacing",
     "status": "Active",
-    "start_date": "2029-08-29",
-    "end_date": "2030-02-28",
+    "start_date": "2029-10-03",
+    "end_date": "2030-04-04",
     "lane_days": 184,
     "lat": 43.6976545142055,
     "lon": -79.4300251399486,
@@ -19198,7 +19198,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:679",
-    "cluster_id": "singleton",
+    "cluster_id": "program:31",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -19244,7 +19244,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:720",
-    "cluster_id": "singleton",
+    "cluster_id": "program:106",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -19326,8 +19326,8 @@
     "street_name": "ARLINGTON AVE |  From: ST CLAIR AVE W |  To: [50.60 m N] ST CLAIR AVE W [CITY LIMITS]",
     "work_type": "Local Road Resurfacing",
     "status": "Active",
-    "start_date": "2030-05-08",
-    "end_date": "2030-11-07",
+    "start_date": "2030-11-06",
+    "end_date": "2031-05-08",
     "lane_days": 184,
     "lat": 43.6814496644776,
     "lon": -79.429033662549,
@@ -19336,7 +19336,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:757",
-    "cluster_id": "singleton",
+    "cluster_id": "program:94",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -19372,8 +19372,8 @@
     "street_name": "ARLINGTON AVE |  From: [49 m N] ST CLAIR AVE W |  To: HUMEWOOD GDNS",
     "work_type": "Local Road Resurfacing",
     "status": "Active",
-    "start_date": "2030-11-13",
-    "end_date": "2031-05-15",
+    "start_date": "2031-05-14",
+    "end_date": "2031-11-13",
     "lane_days": 184,
     "lat": 43.6827490118024,
     "lon": -79.4295561046654,
@@ -19382,7 +19382,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:779",
-    "cluster_id": "singleton",
+    "cluster_id": "program:94",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -19428,7 +19428,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:780",
-    "cluster_id": "singleton",
+    "cluster_id": "program:96",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -19474,7 +19474,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:787",
-    "cluster_id": "singleton",
+    "cluster_id": "program:90",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -19520,7 +19520,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:842",
-    "cluster_id": "singleton",
+    "cluster_id": "program:108",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -19610,9 +19610,9 @@
     "normalized_street": "weston road",
     "direction": "N",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_resurfacing:887",
-    "cluster_id": "singleton",
+    "cluster_id": "program:105",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -19704,7 +19704,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:933",
-    "cluster_id": "singleton",
+    "cluster_id": "program:86",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -19750,7 +19750,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:949",
-    "cluster_id": "singleton",
+    "cluster_id": "program:106",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -19840,9 +19840,9 @@
     "normalized_street": "bayview avenue",
     "direction": "",
     "geo_id": null,
-    "optimization_status": "singleton",
+    "optimization_status": "coordinated",
     "timeline_id": "road_resurfacing:964",
-    "cluster_id": "singleton",
+    "cluster_id": "program:86",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
@@ -19888,7 +19888,7 @@
     "geo_id": null,
     "optimization_status": "conflict_deferred",
     "timeline_id": "road_resurfacing:979",
-    "cluster_id": "singleton",
+    "cluster_id": "program:111",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
