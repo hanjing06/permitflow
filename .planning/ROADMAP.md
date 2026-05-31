@@ -15,7 +15,7 @@ PermitFlow is a 36-hour NVIDIA hackathon build: an AI-assisted permit consolidat
 - [x] **Phase 1: Parallel Kickoff** — Stand up Ollama (123B), Valhalla, NIM embedder, data ingestion, UI scaffold; pick hero block (Hour 0–4) ✅ all 5 G1 criteria satisfied 2026-05-30
 - [x] ~~**Phase 2: Fine-tune Kickoff**~~ — **CLOSED (D-77).** No fine-tune; 123B local is the anchor. Phase 5 D-44 fallback narrative replaces it.
 - [x] **Phase 3: Optimizer Build** — DBSCAN trench-sharing (anchor + piggyback per D-79) + space-time-proxy conflict graph + naive/optimized timelines (Hour 6–14) ✅ merged hanjing06/c6100d0 + wired endpoints in 27ac93b 2026-05-31. Demo: 532 considered / 2 merges / 3 excavations avoided / $210K.
-- [ ] **Phase 4: UI & Chat Panel** — Leaflet hero-block view, naive↔optimized toggle, tri-stat counter, streaming Nemotron Super chat (Hour 14–22)
+- [x] **Phase 4: UI & Chat Panel** — Leaflet hero-block view, naive↔optimized toggle, tri-stat counter, streaming Nemotron Super chat (Hour 14–22) (completed 2026-05-31)
 - [ ] **Phase 5: Verification & Pitch Artifacts** — REDUCED per D-78: nvidia-smi (123B resident) screenshot + live chat latency screenshot. No fine-tune eval. (Hour 22–24)
 - [ ] **Phase 6: Demo Polish** — Lock 90-second arc, deck, cost-avoidance figure, camera flourish (Hour 28–34)
 - [ ] **Phase 7: Dry Runs & Backup** — Three rehearsals, WiFi-off test, backup video, contingency cards (Hour 34–36)
@@ -76,11 +76,11 @@ Plans:
   4. RAG retrieval uses the NIM embedder for context assembly (D-39/D-40/D-41) — or fall back to "all permits in this neighbourhood" per cut-list
   5. All three canned scenarios run end-to-end with cached responses by hour 30 (D-37)
   6. The full 90-second demo loop is executable end-to-end
-**Plans:** 2 plans
+**Plans:** 2/2 plans complete
 
 Plans:
 - [x] 04-01-PLAN.md — Backend: POST /chat (SSE Ollama stream) + POST /retrieve (NIM embedder → top-5) + RAG helpers in llm.py
-- [ ] 04-02-PLAN.md — Frontend rewrite: HeroMap (auto-centre via /hero-block) + ToggleSwitch (naive↔optimized hard cut) + TriStatCounter (3 equal metrics, 2s tween) + ChatPanel (SSE consumer + 3 canned scenarios)
+- [x] 04-02-PLAN.md — Frontend rewrite: HeroMap (auto-centre via /hero-block) + ToggleSwitch (naive↔optimized hard cut) + TriStatCounter (3 equal metrics, 2s tween) + ChatPanel (SSE consumer + 3 canned scenarios)
 
 ### Phase 5: Verification & Pitch Artifacts — REDUCED (D-78)
 **Goal**: Capture proof that the 123B Nemotron-3 Super is genuinely resident and serving on the GX10. No fine-tune to eval (Phase 2 closed per D-77); the artifacts feed the pitch slide directly.
@@ -141,7 +141,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7
 | 1. Parallel Kickoff | 4/4 (infra ✅, data ✅, hero ✅) | Complete | 2026-05-30 |
 | 2. ~~Fine-tune Kickoff~~ | n/a | ⏭ Closed (D-77) | 2026-05-30 |
 | 3. Optimizer Build | 0/5 | In progress (single-pass DBSCAN only; Valhalla not wired) | - |
-| 4. UI & Chat Panel | 0/2 (gap closure plans created — toggle/tri-stat/streaming/RAG pending) | In progress | - |
+| 4. UI & Chat Panel | 2/2 | Complete   | 2026-05-31 |
 | 5. Verification & Pitch Artifacts | 1/2 (modelfile ✅; nvidia-smi + latency ❌) | In progress | - |
 | 6. Demo Polish | 0/3 | Not started | - |
 | 7. Dry Runs & Backup | 0/4 | Not started | - |
