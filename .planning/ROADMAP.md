@@ -19,7 +19,7 @@ PermitFlow is a 36-hour NVIDIA hackathon build: an AI-assisted permit consolidat
 - [ ] **Phase 5: Verification & Pitch Artifacts** — REDUCED per D-78: nvidia-smi (123B resident) screenshot + live chat latency screenshot. No fine-tune eval. (Hour 22–24)
 - [ ] **Phase 6: Demo Polish** — Lock 90-second arc, deck, cost-avoidance figure, camera flourish (Hour 28–34)
 - [ ] **Phase 7: Dry Runs & Backup** — Three rehearsals, WiFi-off test, backup video, contingency cards (Hour 34–36)
-- [ ] **Phase 8: Street-Based Clustering** — Mid-late hackathon insertion (per user request). Replace radius-based DBSCAN with GEO_ID + same-street + temporal grouping. Layers 1+2 only; Layer 3 (intersection coordination + new UI color) deferred to follow-up phase / v1.1.
+- [x] **Phase 8: Street-Based Clustering (Layers 1+2)** — Replaced radius-DBSCAN leftover clustering with GEO_ID exact match → normalized-street + 60-day temporal sub-buckets. Every recommendation now carries `match_type`. New `backend/street_norm.py` + 23-test suite green; SCHEMAS.md additive section appended; HeroMap popup carries one `match: ...` subtitle. Headline numbers unchanged (532 / 3 / $210K) — geocoding gap on utility_cuts is the v1.1 blocker for Layer-2 lift. Layer 3 (intersection coordination + new UI color) still deferred. ✅ 08-01 2026-05-31. **human_needed_verification: true**
 
 ## Phase Details
 
