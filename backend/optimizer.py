@@ -29,6 +29,11 @@ try:
 except Exception:  # pragma: no cover - exercised on machines without sklearn
     SklearnDBSCAN = None
 
+try:
+    from .street_norm import normalize_street
+except ImportError:  # pragma: no cover - exercised when optimizer.py is run as a script
+    from street_norm import normalize_street  # type: ignore[no-redef]
+
 
 ROOT_DIR = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT_DIR / "data"
@@ -176,6 +181,28 @@ def artifact_path(name):
     return ARTIFACT_DIR / name
 
 
+def _coerce_geo_id(value):
+    """Stringify Toronto centerline GEO_ID, dropping the trailing '.0' pandas attaches.
+
+    Returns None for missing / NaN / empty values. Used for Phase-8 Layer-2
+    GEO_ID exact-match clustering.
+    """
+    if value is None:
+        return None
+    try:
+        if pd.isna(value):
+            return None
+    except (TypeError, ValueError):
+        pass
+    text = str(value).strip()
+    if not text or text.lower() == "nan":
+        return None
+    try:
+        return str(int(float(text)))
+    except (TypeError, ValueError):
+        return text
+
+
 def _permit_from_open_toronto(row, source="road_reconstruction", role="anchor"):
     lat, lon = extract_lat_lon(row.get("geometry"))
     if lat is None or lon is None:
@@ -183,11 +210,13 @@ def _permit_from_open_toronto(row, source="road_reconstruction", role="anchor"):
     start, end = parse_year_window(row)
     if start is None or end is None:
         return None
+    raw_location = row.get("LOCATION")
+    norm = normalize_street(clean_text(raw_location) if raw_location is not None else None)
     return {
         "permit_id": f"{source}:{row.get('_id')}",
         "source": source,
         "role": role,
-        "street_name": clean_text(row.get("LOCATION"), "Unknown location"),
+        "street_name": clean_text(raw_location, "Unknown location"),
         "work_type": clean_text(row.get("PROJECT"), "Road work"),
         "status": clean_text(row.get("STATUS"), "Unknown"),
         "start_date": start,
@@ -195,21 +224,103 @@ def _permit_from_open_toronto(row, source="road_reconstruction", role="anchor"):
         "lane_days": lane_days(start, end),
         "lat": float(lat),
         "lon": float(lon),
+        "normalized_street": norm["normalized"],
+        "direction": norm["direction"],
+        "geo_id": _coerce_geo_id(row.get("GEO_ID")),
     }
 
 
 def _permit_from_simple_csv(row, source="utility_cut", role="candidate"):
+    """Build a permit dict from one of three candidate schemas.
+
+    1. utility_cuts.csv  → GEO_ID + DISPLAY_DESC + PROPOSED_FROM_DATE/PROPOSED_TO_DATE.
+       No inline lat/lon (silently dropped today; documented limitation).
+    2. building_permits.csv → GEO_ID + STREET_NAME/STREET_TYPE/STREET_DIRECTION.
+       No inline lat/lon either.
+    3. permits.csv (legacy simple) → street_name + lat + lon + start_date/end_date.
+
+    All three now emit `normalized_street`, `direction`, and `geo_id` for the
+    Phase-8 clustering pass. Schemas 1 and 2 still return None because lat/lon
+    are absent — the optimizer's downstream stages need coordinates today
+    (geocoding is a separate v1.1 task — see SCHEMAS.md Known limitations).
+    """
+    # Schema 1: utility_cuts.csv (PROPOSED_FROM_DATE + DISPLAY_DESC + GEO_ID)
+    if row.get("DISPLAY_DESC") is not None and "PROPOSED_FROM_DATE" in row:
+        start = parse_date(row.get("PROPOSED_FROM_DATE"))
+        end = parse_date(row.get("PROPOSED_TO_DATE")) or start
+        raw_street = clean_text(row.get("DISPLAY_DESC"))
+        norm = normalize_street(raw_street)
+        lat = pd.to_numeric(row.get("lat"), errors="coerce") if "lat" in row else float("nan")
+        lon = pd.to_numeric(row.get("lon"), errors="coerce") if "lon" in row else float("nan")
+        base = {
+            "permit_id": f"{source}:{row.get('_id') if row.get('_id') is not None else row.get('PERMIT_NUMBER')}",
+            "source": source,
+            "role": role,
+            "street_name": raw_street or "Unknown location",
+            "work_type": clean_text(row.get("INSTALLATION_TYPE_DESC"), "Utility work"),
+            "status": clean_text(row.get("PERMIT_STATUS"), "Planned"),
+            "start_date": start,
+            "end_date": end,
+            "normalized_street": norm["normalized"],
+            "direction": norm["direction"],
+            "geo_id": _coerce_geo_id(row.get("GEO_ID")),
+        }
+        if start is None or end is None or pd.isna(lat) or pd.isna(lon):
+            # Lat/lon absent (the v1.0 reality for utility_cuts). Return None to
+            # preserve the existing silent-drop behaviour for downstream stages,
+            # which still require coordinates. The Phase-8 fields above would
+            # only matter once a geocoder fills in lat/lon.
+            return None
+        base["lane_days"] = lane_days(start, end)
+        base["lat"] = float(lat)
+        base["lon"] = float(lon)
+        return base
+
+    # Schema 2: building_permits.csv (STREET_NAME + STREET_TYPE + GEO_ID)
+    if row.get("STREET_NAME") is not None and "STREET_TYPE" in row:
+        street_dir = clean_text(row.get("STREET_DIRECTION"))
+        street_name = clean_text(row.get("STREET_NAME"))
+        street_type = clean_text(row.get("STREET_TYPE"))
+        raw_street = " ".join(p for p in (street_dir, street_name, street_type) if p).strip()
+        norm = normalize_street(raw_street)
+        start = parse_date(row.get("ISSUED_DATE")) or parse_date(row.get("APPLICATION_DATE"))
+        end = parse_date(row.get("COMPLETED_DATE")) or start
+        lat = pd.to_numeric(row.get("lat"), errors="coerce") if "lat" in row else float("nan")
+        lon = pd.to_numeric(row.get("lon"), errors="coerce") if "lon" in row else float("nan")
+        base = {
+            "permit_id": f"{source}:{row.get('_id') if row.get('_id') is not None else row.get('PERMIT_NUM')}",
+            "source": source,
+            "role": role,
+            "street_name": raw_street or "Unknown location",
+            "work_type": clean_text(row.get("WORK"), "Building work"),
+            "status": clean_text(row.get("STATUS"), "Planned"),
+            "start_date": start,
+            "end_date": end,
+            "normalized_street": norm["normalized"],
+            "direction": norm["direction"],
+            "geo_id": _coerce_geo_id(row.get("GEO_ID")),
+        }
+        if start is None or end is None or pd.isna(lat) or pd.isna(lon):
+            return None
+        base["lane_days"] = lane_days(start, end)
+        base["lat"] = float(lat)
+        base["lon"] = float(lon)
+        return base
+
+    # Schema 3: legacy simple permits.csv
     start = parse_date(row.get("start_date"))
     end = parse_date(row.get("end_date")) or start
     lat = pd.to_numeric(row.get("lat"), errors="coerce")
     lon = pd.to_numeric(row.get("lon"), errors="coerce")
     if start is None or end is None or pd.isna(lat) or pd.isna(lon):
         return None
+    raw_street = clean_text(row.get("street_name"))
+    norm = normalize_street(raw_street)
     return {
         "permit_id": f"{source}:{row.get('permit_id')}",
         "source": source,
         "role": role,
-        "street_name": clean_text(row.get("street_name"), "Unknown location"),
+        "street_name": raw_street or "Unknown location",
         "work_type": clean_text(row.get("work_type"), "Utility work"),
         "status": clean_text(row.get("status"), "Planned"),
         "start_date": start,
@@ -217,6 +328,9 @@ def _permit_from_simple_csv(row, source="utility_cut", role="candidate"):
         "lane_days": lane_days(start, end),
         "lat": float(lat),
         "lon": float(lon),
+        "normalized_street": norm["normalized"],
+        "direction": norm["direction"],
+        "geo_id": _coerce_geo_id(row.get("GEO_ID")),
     }
 
 
