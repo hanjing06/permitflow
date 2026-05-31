@@ -69,6 +69,7 @@
     "type": "merge",
     "cluster_id": "program:9",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_reconstruction:20",
       "road_reconstruction:59",
@@ -92,12 +93,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 14,
-    "mobilizations_saved": 14,
+    "excavations_avoided": 0,
     "permit_count": 15,
-    "road_openings_saved": 14,
-    "estimated_savings": 70000,
-    "priority": "High",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "RIDELLE AVE |  From: BATHURST ST |  To: MANITOU BLVD",
       "RIDELLE AVE |  From: BURMONT RD |  To: OLD PARK RD",
@@ -115,13 +115,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "15 city road-work permits on the same street within a single coordination window \u2014 combining them saves 14 mobilizations at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "15 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:12",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_reconstruction:28",
       "road_reconstruction:67",
@@ -142,12 +143,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 11,
-    "mobilizations_saved": 11,
+    "excavations_avoided": 0,
     "permit_count": 12,
-    "road_openings_saved": 11,
-    "estimated_savings": 55000,
-    "priority": "High",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "MACPHERSON AVE |  From: HURON ST |  To: MADISON AVE",
       "MACPHERSON AVE |  From: MADISON AVE |  To: SPADINA RD (TO)",
@@ -162,13 +162,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "12 city road-work permits on the same street within a single coordination window \u2014 combining them saves 11 mobilizations at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "12 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:13",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_reconstruction:34",
       "road_reconstruction:84",
@@ -187,12 +188,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 9,
-    "mobilizations_saved": 9,
+    "excavations_avoided": 0,
     "permit_count": 10,
-    "road_openings_saved": 9,
-    "estimated_savings": 45000,
-    "priority": "High",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "DUPONT ST |  From: DAVENPORT RD |  To: ST GEORGE ST (TO)",
       "DUPONT ST |  From: HURON ST |  To: MADISON AVE",
@@ -206,13 +206,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "10 city road-work permits on the same street within a single coordination window \u2014 combining them saves 9 mobilizations at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "10 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:22",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_reconstruction:73",
       "road_reconstruction:75",
@@ -231,12 +232,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 9,
-    "mobilizations_saved": 9,
+    "excavations_avoided": 0,
     "permit_count": 10,
-    "road_openings_saved": 9,
-    "estimated_savings": 45000,
-    "priority": "High",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "ASCOT AVE |  From: BOON AVE |  To: EARLSCOURT AVE",
       "ASCOT AVE |  From: DUFFERIN ST |  To: ST CLAIR GDNS",
@@ -250,13 +250,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "10 city road-work permits on the same street within a single coordination window \u2014 combining them saves 9 mobilizations at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "10 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:26",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_reconstruction:112",
       "road_reconstruction:113",
@@ -273,12 +274,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 7,
-    "mobilizations_saved": 7,
+    "excavations_avoided": 0,
     "permit_count": 8,
-    "road_openings_saved": 7,
-    "estimated_savings": 35000,
-    "priority": "High",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "MONOGRAM PL |  From: ISLINGTON AVE |  To: [149 m W] ISLINGTON AVE",
       "MONOGRAM PL |  From: [149 m W] ISLINGTON AVE |  To: [329 m W] ISLINGTON AVE",
@@ -291,13 +291,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "8 city road-work permits on the same street within a single coordination window \u2014 combining them saves 7 mobilizations at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "8 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:54",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_reconstruction:225",
       "road_reconstruction:225",
@@ -313,12 +314,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 6,
-    "mobilizations_saved": 6,
+    "excavations_avoided": 0,
     "permit_count": 7,
-    "road_openings_saved": 6,
-    "estimated_savings": 30000,
-    "priority": "High",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "BRIDGMAN AVE |  From: ALBANY AVE |  To: BATHURST ST",
       "BRIDGMAN AVE |  From: DARTNELL AVE |  To: [15 m W] DARTNELL AVE",
@@ -334,13 +334,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "7 city road-work permits on the same street within a single coordination window \u2014 combining them saves 6 mobilizations at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "7 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:86",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_resurfacing:169",
       "road_resurfacing:442",
@@ -356,12 +357,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 6,
-    "mobilizations_saved": 6,
+    "excavations_avoided": 0,
     "permit_count": 7,
-    "road_openings_saved": 6,
-    "estimated_savings": 30000,
-    "priority": "High",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "BAYVIEW AVE |  From: BELSIZE DR |  To: MANOR RD E",
       "BAYVIEW AVE |  From: DAVISVILLE AVE |  To: MILLWOOD RD",
@@ -377,13 +377,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "7 city road-work permits on the same street within a single coordination window \u2014 combining them saves 6 mobilizations at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "7 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:31",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_reconstruction:128",
       "road_reconstruction:128",
@@ -397,12 +398,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 4,
-    "mobilizations_saved": 4,
+    "excavations_avoided": 0,
     "permit_count": 5,
-    "road_openings_saved": 4,
-    "estimated_savings": 20000,
-    "priority": "High",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "DEWBOURNE AVE |  From: BATHURST ST |  To: CHILTERN HILL RD",
       "DEWBOURNE AVE |  From: CAMBERWELL RD |  To: GLEN CEDAR RD",
@@ -416,13 +416,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "5 city road-work permits on the same street within a single coordination window \u2014 combining them saves 4 mobilizations at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "5 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:73",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_resurfacing:69",
       "road_resurfacing:70",
@@ -436,12 +437,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 4,
-    "mobilizations_saved": 4,
+    "excavations_avoided": 0,
     "permit_count": 5,
-    "road_openings_saved": 4,
-    "estimated_savings": 20000,
-    "priority": "High",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "RICHMOND ST W |  From: NIAGARA ST |  To: [S] WALNUT AVE [BRANCH]",
       "RICHMOND ST W |  From: STAFFORD ST |  To: STRACHAN AVE",
@@ -455,13 +455,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "5 city road-work permits on the same street within a single coordination window \u2014 combining them saves 4 mobilizations at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "5 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:94",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_resurfacing:320",
       "road_resurfacing:655",
@@ -475,12 +476,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 4,
-    "mobilizations_saved": 4,
+    "excavations_avoided": 0,
     "permit_count": 5,
-    "road_openings_saved": 4,
-    "estimated_savings": 20000,
-    "priority": "High",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "ARLINGTON AVE |  From: HUMEWOOD GDNS |  To: NORMANNA AVE",
       "ARLINGTON AVE |  From: MAPLEWOOD AVE |  To: HURSTING AVE",
@@ -494,13 +494,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "5 city road-work permits on the same street within a single coordination window \u2014 combining them saves 4 mobilizations at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "5 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:28",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_reconstruction:116",
       "road_reconstruction:164",
@@ -513,12 +514,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 3,
-    "mobilizations_saved": 3,
+    "excavations_avoided": 0,
     "permit_count": 4,
-    "road_openings_saved": 3,
-    "estimated_savings": 15000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "[46.30 m N] DUNDAS ST W |  From: BEVERLEY ST |  To: [42.70 m W] BEVERLEY ST",
       "[46.30 m N] DUNDAS ST W |  From: [42.70 m W] BEVERLEY ST |  To: [95.40 m E] HURON ST"
@@ -529,13 +529,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "4 city road-work permits on the same street within a single coordination window \u2014 combining them saves 3 mobilizations at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "4 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:32",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_reconstruction:130",
       "road_reconstruction:281",
@@ -548,12 +549,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 3,
-    "mobilizations_saved": 3,
+    "excavations_avoided": 0,
     "permit_count": 4,
-    "road_openings_saved": 3,
-    "estimated_savings": 15000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "CLIFTON RD |  From: GLENROSE AVE |  To: ST CLAIR AVE E (TO)",
       "CLIFTON RD |  From: [73 m S] GLENROSE AVE [END] |  To: GLENROSE AVE"
@@ -564,13 +564,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "4 city road-work permits on the same street within a single coordination window \u2014 combining them saves 3 mobilizations at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "4 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:38",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_reconstruction:162",
       "road_reconstruction:316",
@@ -583,12 +584,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 3,
-    "mobilizations_saved": 3,
+    "excavations_avoided": 0,
     "permit_count": 4,
-    "road_openings_saved": 3,
-    "estimated_savings": 15000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "HAZEL AVE |  From: BALSAM AVE |  To: FERNWOOD PARK AVE",
       "HAZEL AVE |  From: FERNWOOD PARK AVE |  To: BEECH AVE"
@@ -599,13 +599,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "4 city road-work permits on the same street within a single coordination window \u2014 combining them saves 3 mobilizations at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "4 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:46",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_reconstruction:193",
       "road_reconstruction:267",
@@ -618,12 +619,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 3,
-    "mobilizations_saved": 3,
+    "excavations_avoided": 0,
     "permit_count": 4,
-    "road_openings_saved": 3,
-    "estimated_savings": 15000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "DOUGLAS CAMPBELL LANE |  From: COLLEGE ST (TO) |  To: [45.70 m N] COLLEGE ST (TO)",
       "DOUGLAS CAMPBELL LANE |  From: [57.90 m W] SPADINA AVE |  To: ROBERT ST"
@@ -634,13 +634,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "4 city road-work permits on the same street within a single coordination window \u2014 combining them saves 3 mobilizations at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "4 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:48",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_reconstruction:204",
       "road_reconstruction:309",
@@ -653,12 +654,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 3,
-    "mobilizations_saved": 3,
+    "excavations_avoided": 0,
     "permit_count": 4,
-    "road_openings_saved": 3,
-    "estimated_savings": 15000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "ORIOLE PKWY |  From: ELWOOD BLVD |  To: ROSELAWN AVE",
       "ORIOLE PKWY |  From: ORCHARD VIEW BLVD |  To: ELWOOD BLVD"
@@ -669,13 +669,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "4 city road-work permits on the same street within a single coordination window \u2014 combining them saves 3 mobilizations at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "4 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:52",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_reconstruction:223",
       "road_reconstruction:223",
@@ -688,12 +689,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 3,
-    "mobilizations_saved": 3,
+    "excavations_avoided": 0,
     "permit_count": 4,
-    "road_openings_saved": 3,
-    "estimated_savings": 15000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "CASTLEFIELD AVE |  From: AVENUE RD |  To: ROSEWELL AVE",
       "CASTLEFIELD AVE |  From: DUPLEX AVE |  To: ROSEWELL AVE",
@@ -706,13 +706,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "4 city road-work permits on the same street within a single coordination window \u2014 combining them saves 3 mobilizations at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "4 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:70",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_resurfacing:33",
       "road_resurfacing:350",
@@ -725,12 +726,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 3,
-    "mobilizations_saved": 3,
+    "excavations_avoided": 0,
     "permit_count": 4,
-    "road_openings_saved": 3,
-    "estimated_savings": 15000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "N WOODROW BLVD |  From: DANFORTH RD |  To: ZENITH DR",
       "N WOODROW BLVD |  From: DUNLOP AVE |  To: ST CLAIR AVE E (SC)",
@@ -743,13 +743,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "4 city road-work permits on the same street within a single coordination window \u2014 combining them saves 3 mobilizations at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "4 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:97",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_resurfacing:360",
       "road_resurfacing:361",
@@ -762,12 +763,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 3,
-    "mobilizations_saved": 3,
+    "excavations_avoided": 0,
     "permit_count": 4,
-    "road_openings_saved": 3,
-    "estimated_savings": 15000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "GRENVIEW (S) BLVD |  From: ELDERIDGE AVE |  To: FAIRMAR AVE",
       "GRENVIEW (S) BLVD |  From: KENRIDGE AVE |  To: REID MNR",
@@ -780,13 +780,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "4 city road-work permits on the same street within a single coordination window \u2014 combining them saves 3 mobilizations at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "4 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:99",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_resurfacing:368",
       "road_resurfacing:583",
@@ -799,12 +800,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 3,
-    "mobilizations_saved": 3,
+    "excavations_avoided": 0,
     "permit_count": 4,
-    "road_openings_saved": 3,
-    "estimated_savings": 15000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "MANSFIELD AVE |  From: BELLWOODS AVE |  To: GRACE ST (TO)",
       "MANSFIELD AVE |  From: CLAREMONT ST |  To: CLINTON ST",
@@ -817,13 +817,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "4 city road-work permits on the same street within a single coordination window \u2014 combining them saves 3 mobilizations at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "4 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:106",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_resurfacing:439",
       "road_resurfacing:720",
@@ -836,12 +837,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 3,
-    "mobilizations_saved": 3,
+    "excavations_avoided": 0,
     "permit_count": 4,
-    "road_openings_saved": 3,
-    "estimated_savings": 15000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "WOODFIELD RD |  From: FAIRFORD AVE |  To: WALPOLE AVE",
       "WOODFIELD RD |  From: GERRARD ST E |  To: FAIRFORD AVE",
@@ -854,13 +854,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "4 city road-work permits on the same street within a single coordination window \u2014 combining them saves 3 mobilizations at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "4 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:35",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_reconstruction:143",
       "road_reconstruction:143",
@@ -872,12 +873,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 2,
-    "mobilizations_saved": 2,
+    "excavations_avoided": 0,
     "permit_count": 3,
-    "road_openings_saved": 2,
-    "estimated_savings": 10000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "COLLEGE VIEW AVE |  From: HIGHBOURNE RD |  To: AVENUE RD",
       "COLLEGE VIEW AVE |  From: ORIOLE PKWY |  To: HIGHBOURNE RD"
@@ -889,13 +889,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "3 city road-work permits on the same street within a single coordination window \u2014 combining them saves 2 mobilizations at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "3 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:37",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_reconstruction:147",
       "road_reconstruction:147",
@@ -907,12 +908,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 2,
-    "mobilizations_saved": 2,
+    "excavations_avoided": 0,
     "permit_count": 3,
-    "road_openings_saved": 2,
-    "estimated_savings": 10000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "PARKCREST DR |  From: HILL CRES |  To: 126 m S KINGSTON RD",
       "PARKCREST DR |  From: KINGSTON RD |  To: 126m S KINGSTON RD"
@@ -924,13 +924,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "3 city road-work permits on the same street within a single coordination window \u2014 combining them saves 2 mobilizations at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "3 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:69",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_resurfacing:22",
       "road_resurfacing:1069",
@@ -942,12 +943,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 2,
-    "mobilizations_saved": 2,
+    "excavations_avoided": 0,
     "permit_count": 3,
-    "road_openings_saved": 2,
-    "estimated_savings": 10000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "LESLIE ST (TO) |  From: RAILWAY LANDS - CNR |  To: COMMISSIONERS ST",
       "LESLIE ST (TO) |  From: UNWIN AVE |  To: [72 m N] UNWIN AVE",
@@ -959,13 +959,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "3 city road-work permits on the same street within a single coordination window \u2014 combining them saves 2 mobilizations at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "3 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:74",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_resurfacing:74",
       "road_resurfacing:598",
@@ -977,12 +978,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 2,
-    "mobilizations_saved": 2,
+    "excavations_avoided": 0,
     "permit_count": 3,
-    "road_openings_saved": 2,
-    "estimated_savings": 10000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "GLEN CEDAR RD |  From: AVENAL DR |  To: AVA RD",
       "GLEN CEDAR RD |  From: MARKDALE AVE |  To: WARWICK AVE",
@@ -994,13 +994,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "3 city road-work permits on the same street within a single coordination window \u2014 combining them saves 2 mobilizations at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "3 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:79",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_resurfacing:1063",
       "road_resurfacing:107",
@@ -1012,12 +1013,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 2,
-    "mobilizations_saved": 2,
+    "excavations_avoided": 0,
     "permit_count": 3,
-    "road_openings_saved": 2,
-    "estimated_savings": 10000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "KENWOOD AVE |  From: LOUISE AVE |  To: MAPLEWOOD AVE",
       "KENWOOD AVE |  From: ST CLAIR AVE W |  To: [50.60 m N] ST CLAIR AVE W [CITY LIMITS]",
@@ -1029,13 +1029,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "3 city road-work permits on the same street within a single coordination window \u2014 combining them saves 2 mobilizations at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "3 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:83",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_resurfacing:124",
       "road_resurfacing:912",
@@ -1047,12 +1048,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 2,
-    "mobilizations_saved": 2,
+    "excavations_avoided": 0,
     "permit_count": 3,
-    "road_openings_saved": 2,
-    "estimated_savings": 10000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "DALE AVE (TO) |  From: GLEN RD |  To: POWELL AVE",
       "DALE AVE (TO) |  From: MAPLE AVE |  To: NANTON AVE",
@@ -1064,13 +1064,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "3 city road-work permits on the same street within a single coordination window \u2014 combining them saves 2 mobilizations at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "3 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:85",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_resurfacing:161",
       "road_resurfacing:168",
@@ -1082,12 +1083,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 2,
-    "mobilizations_saved": 2,
+    "excavations_avoided": 0,
     "permit_count": 3,
-    "road_openings_saved": 2,
-    "estimated_savings": 10000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "CRESCENT RD |  From: LAMPORT AVE |  To: SOUTH DR",
       "CRESCENT RD |  From: [E] MOUNT PLEASANT RD [BRIDGE] |  To: LAMPORT AVE",
@@ -1099,13 +1099,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "3 city road-work permits on the same street within a single coordination window \u2014 combining them saves 2 mobilizations at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "3 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:95",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_resurfacing:333",
       "road_resurfacing:788",
@@ -1117,12 +1118,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 2,
-    "mobilizations_saved": 2,
+    "excavations_avoided": 0,
     "permit_count": 3,
-    "road_openings_saved": 2,
-    "estimated_savings": 10000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "RIDLEY BLVD |  From: DELORAINE AVE |  To: OLD ORCHARD GRV",
       "RIDLEY BLVD |  From: OLD ORCHARD GRV |  To: [130 m N] OLD ORCHARD GRV [CITY LIMITS]",
@@ -1134,13 +1134,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "3 city road-work permits on the same street within a single coordination window \u2014 combining them saves 2 mobilizations at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "3 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:98",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_resurfacing:366",
       "road_resurfacing:649",
@@ -1152,12 +1153,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 2,
-    "mobilizations_saved": 2,
+    "excavations_avoided": 0,
     "permit_count": 3,
-    "road_openings_saved": 2,
-    "estimated_savings": 10000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "GLENHURST AVE |  From: OAKWOOD AVE |  To: ROBINA AVE",
       "GLENHURST AVE |  From: ROSENEATH GDNS |  To: ROBINA AVE",
@@ -1169,13 +1169,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "3 city road-work permits on the same street within a single coordination window \u2014 combining them saves 2 mobilizations at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "3 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:104",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_resurfacing:395",
       "road_resurfacing:668",
@@ -1187,12 +1188,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 2,
-    "mobilizations_saved": 2,
+    "excavations_avoided": 0,
     "permit_count": 3,
-    "road_openings_saved": 2,
-    "estimated_savings": 10000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "ROSEWELL AVE |  From: CASTLEFIELD AVE |  To: ST CLEMENTS AVE",
       "ROSEWELL AVE |  From: ROSELAWN AVE |  To: CASTLEFIELD AVE",
@@ -1204,13 +1204,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "3 city road-work permits on the same street within a single coordination window \u2014 combining them saves 2 mobilizations at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "3 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:111",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_resurfacing:675",
       "road_resurfacing:979",
@@ -1222,12 +1223,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 2,
-    "mobilizations_saved": 2,
+    "excavations_avoided": 0,
     "permit_count": 3,
-    "road_openings_saved": 2,
-    "estimated_savings": 10000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "VICTORIA PARK AVE |  From: GERRARD ST E |  To: MUSGRAVE ST",
       "VICTORIA PARK AVE |  From: LINTON AVE |  To: GERRARD ST E",
@@ -1239,13 +1239,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "3 city road-work permits on the same street within a single coordination window \u2014 combining them saves 2 mobilizations at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "3 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:112",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_resurfacing:699",
       "road_resurfacing:875",
@@ -1257,12 +1258,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 2,
-    "mobilizations_saved": 2,
+    "excavations_avoided": 0,
     "permit_count": 3,
-    "road_openings_saved": 2,
-    "estimated_savings": 10000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "EXBURY RD |  From: CALVINGTON DR |  To: TROUTBROOKE DR",
       "EXBURY RD |  From: DEEVALE RD |  To: CALVINGTON DR",
@@ -1274,13 +1274,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "3 city road-work permits on the same street within a single coordination window \u2014 combining them saves 2 mobilizations at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "3 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:116",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_resurfacing:744",
       "road_resurfacing:888",
@@ -1292,12 +1293,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 2,
-    "mobilizations_saved": 2,
+    "excavations_avoided": 0,
     "permit_count": 3,
-    "road_openings_saved": 2,
-    "estimated_savings": 10000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "GLENLAKE AVE |  From: HIGH PARK AVE |  To: QUEBEC AVE",
       "GLENLAKE AVE |  From: PINE CREST RD |  To: CLENDENAN AVE",
@@ -1309,13 +1309,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "3 city road-work permits on the same street within a single coordination window \u2014 combining them saves 2 mobilizations at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "3 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:122",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_resurfacing:1083",
       "road_resurfacing:1207",
@@ -1327,12 +1328,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 2,
-    "mobilizations_saved": 2,
+    "excavations_avoided": 0,
     "permit_count": 3,
-    "road_openings_saved": 2,
-    "estimated_savings": 10000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "BRIMORTON DR |  From: BELLAMY RD N |  To: MARKHAM RD",
       "BRIMORTON DR |  From: BRIMLEY RD |  To: MCCOWAN RD",
@@ -1344,13 +1344,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "3 city road-work permits on the same street within a single coordination window \u2014 combining them saves 2 mobilizations at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "3 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:0",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_reconstruction:5",
       "road_reconstruction:5"
@@ -1361,12 +1362,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "[195.70 m N] DAVENPORT RD |  From: ST CLARENS AVE |  To: [36.10 m W] ST CLARENS AVE"
     ],
@@ -1376,13 +1376,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:1",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_reconstruction:10",
       "road_reconstruction:10"
@@ -1393,12 +1394,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "[40 m S] ST CLAIR AVE W |  From: [39 m E] LANSDOWNE AVE (TO) |  To: LANSDOWNE AVE (TO)"
     ],
@@ -1408,13 +1408,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:2",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_reconstruction:11",
       "road_reconstruction:11"
@@ -1425,12 +1426,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "COPPERFIELD RD |  From: MANSE RD |  To: [550 m E] MANSE RD"
     ],
@@ -1440,13 +1440,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:3",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_reconstruction:14",
       "road_reconstruction:14"
@@ -1457,12 +1458,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "DOVER AVE |  From: BROWNS LINE |  To: LLOYD GEORGE AVE"
     ],
@@ -1472,13 +1472,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:4",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_reconstruction:15",
       "road_reconstruction:15"
@@ -1489,12 +1490,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "Alan Borovoy Lane |  From: [39.3 m E] GRACE ST (TO) |  To: JERSEY AVE"
     ],
@@ -1504,13 +1504,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:5",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_reconstruction:16",
       "road_reconstruction:16"
@@ -1521,12 +1522,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "[79.20 m W] HURON ST |  From: DUNDAS ST W |  To: D&apos;ARCY ST"
     ],
@@ -1536,13 +1536,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:6",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_reconstruction:17",
       "road_reconstruction:17"
@@ -1553,12 +1554,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "[28.70 m N] SPRINGHURST AVE |  From: COWAN AVE |  To: DUNN AVE"
     ],
@@ -1568,13 +1568,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:7",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_reconstruction:18",
       "road_reconstruction:18"
@@ -1585,12 +1586,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "[43.30 m N] DUNDAS ST W |  From: HURON ST |  To: [79.20 m W] HURON ST"
     ],
@@ -1600,13 +1600,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:8",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_reconstruction:19",
       "road_reconstruction:19"
@@ -1617,12 +1618,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "ORCHARD PARK DR |  From: KINGSTON RD |  To: WEST HILL DR"
     ],
@@ -1632,13 +1632,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:10",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_reconstruction:23",
       "road_reconstruction:23"
@@ -1649,12 +1650,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "[79 m N] O&apos;CONNOR DR |  From: HOPEDALE AVE |  To: [35 m W] HOPEDALE AVE"
     ],
@@ -1664,13 +1664,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:11",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_reconstruction:27",
       "road_reconstruction:27"
@@ -1681,12 +1682,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "[33.50 m E] EMERSON AVE |  From: [30.50 m N] WALLACE AVE |  To: ARMSTRONG AVE"
     ],
@@ -1696,13 +1696,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:14",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_reconstruction:41",
       "road_reconstruction:41"
@@ -1713,12 +1714,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "[37 m N] BEDFORD PARK AVE |  From: AVENUE RD |  To: GREY RD"
     ],
@@ -1728,13 +1728,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:15",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_reconstruction:50",
       "road_reconstruction:50"
@@ -1745,12 +1746,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "[34.40 m N] AUBURN AVE |  From: [45.70 m W] VIA ITALIA |  To: [143.30 m W] VIA ITALIA"
     ],
@@ -1760,13 +1760,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:16",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_reconstruction:51",
       "road_reconstruction:51"
@@ -1777,12 +1778,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "WESTSIDE DR |  From: THE WEST MALL |  To: [457 m S/W] THE WEST MALL"
     ],
@@ -1792,13 +1792,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:17",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_reconstruction:57",
       "road_reconstruction:57"
@@ -1809,12 +1810,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "[31 m E] EILEEN AVE |  From: [39 m N] FLORENCE AVE |  To: [70 m N] FLORENCE AVE"
     ],
@@ -1824,13 +1824,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:18",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_reconstruction:58",
       "road_reconstruction:58"
@@ -1841,12 +1842,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "QUEEN ELIZABETH BLVD |  From: ROYAL YORK RD |  To: CANMOTOR AVE"
     ],
@@ -1856,13 +1856,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:19",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_reconstruction:61",
       "road_reconstruction:61"
@@ -1873,12 +1874,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "WEST HILL DR |  From: LAWRENCE AVE E |  To: KINGSTON RD"
     ],
@@ -1888,13 +1888,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:20",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_reconstruction:64",
       "road_reconstruction:64"
@@ -1905,12 +1906,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "HOLLAMAN RD |  From: GLEN PARK AVE |  To: [40 m N] GLEN PARK AVE"
     ],
@@ -1920,13 +1920,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:21",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_reconstruction:68",
       "road_reconstruction:68"
@@ -1937,12 +1938,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "CORTLEIGH BLVD |  From: AVENUE RD |  To: MONA DR"
     ],
@@ -1952,13 +1952,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:23",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_reconstruction:106",
       "road_reconstruction:106"
@@ -1969,12 +1970,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "DONALD AVE |  From: SILVERTHORN AVE |  To: KANE AVE"
     ],
@@ -1984,13 +1984,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:24",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_reconstruction:108",
       "road_reconstruction:108"
@@ -2001,12 +2002,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "[45.70 m E] BEECH AVE |  From: CEDAR AVE |  To: PINE AVE"
     ],
@@ -2016,13 +2016,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:25",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_reconstruction:109",
       "road_reconstruction:109"
@@ -2033,12 +2034,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "[30.50 m N] WALLACE AVE |  From: [33.50 m E] EMERSON AVE |  To: EMERSON AVE"
     ],
@@ -2048,13 +2048,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:27",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_reconstruction:115",
       "road_reconstruction:115"
@@ -2065,12 +2066,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "MERRILL AVE E |  From: MOBERLY AVE |  To: WOODBINE AVE"
     ],
@@ -2080,13 +2080,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:29",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_reconstruction:124",
       "road_reconstruction:124"
@@ -2097,12 +2098,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "[34 m N] FLORENCE AVE |  From: [54 m E] EILEEN AVE |  To: EILEEN AVE"
     ],
@@ -2112,13 +2112,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:30",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_reconstruction:127",
       "road_reconstruction:127"
@@ -2129,12 +2130,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "FERNWOOD PARK AVE |  From: FIR AVE |  To: HAZEL AVE"
     ],
@@ -2144,13 +2144,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:33",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_reconstruction:134",
       "road_reconstruction:134"
@@ -2161,12 +2162,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "[36.60 m W] PAPE AVE |  From: DINGWALL AVE |  To: FRIZZELL AVE"
     ],
@@ -2176,13 +2176,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:34",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_reconstruction:139",
       "road_reconstruction:139"
@@ -2193,12 +2194,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "GLENROSE AVE |  From: CLIFTON RD |  To: [E] GLENROSE AVE [END]"
     ],
@@ -2208,13 +2208,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:36",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_reconstruction:146",
       "road_reconstruction:146"
@@ -2225,12 +2226,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "AMIENS RD |  From: KINGSTON RD |  To: FAIRWOOD CRES"
     ],
@@ -2240,13 +2240,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:39",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_reconstruction:168",
       "road_reconstruction:168"
@@ -2257,12 +2258,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "[36 m W] HOPEDALE AVE |  From: [81 m N] O&apos;CONNOR DR |  To: [171 m N] O&apos;CONNOR DR"
     ],
@@ -2272,13 +2272,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:40",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_reconstruction:180",
       "road_reconstruction:180"
@@ -2289,12 +2290,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "[119.70 m W] VIA ITALIA |  From: AUBURN AVE |  To: [34.40 m N] AUBURN AVE"
     ],
@@ -2304,13 +2304,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:41",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_reconstruction:184",
       "road_reconstruction:184"
@@ -2321,12 +2322,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "[33.50 m W] DUFFERIN ST |  From: WALLACE AVE |  To: ARMSTRONG AVE"
     ],
@@ -2336,13 +2336,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:42",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_reconstruction:187",
       "road_reconstruction:187"
@@ -2353,12 +2354,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "[87.20 m N] DAVENPORT RD |  From: GREENLAW AVE |  To: ST CLARENS AVE"
     ],
@@ -2368,13 +2368,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:43",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_reconstruction:189",
       "road_reconstruction:189"
@@ -2385,12 +2386,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "CHEMICAL CRT |  From: [305 m S] CORONATION DR [CUL-DE-SAC] |  To: CORONATION DR"
     ],
@@ -2400,13 +2400,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:44",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_reconstruction:190",
       "road_reconstruction:190"
@@ -2417,12 +2418,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "[32 m E] ST CLARENS AVE |  From: COLLEGE ST (TO) |  To: [27.80 m N] COLLEGE ST (TO)"
     ],
@@ -2432,13 +2432,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:45",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_reconstruction:192",
       "road_reconstruction:192"
@@ -2449,12 +2450,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "[30.50 m W] OSSINGTON AVE |  From: BADEN ST |  To: [30.20 m N] BADEN ST"
     ],
@@ -2464,13 +2464,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:47",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_reconstruction:203",
       "road_reconstruction:203"
@@ -2481,12 +2482,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "[36.60 m N] QUEEN ST W |  From: MACDONELL AVE |  To: FULLER AVE"
     ],
@@ -2496,13 +2496,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:49",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_reconstruction:205",
       "road_reconstruction:205"
@@ -2513,12 +2514,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "ORCHARD VIEW BLVD |  From: [28.70 m E] ORIOLE PKWY [END] |  To: ORIOLE PKWY"
     ],
@@ -2528,13 +2528,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:50",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_reconstruction:219",
       "road_reconstruction:219"
@@ -2545,12 +2546,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "[44.50 m N] DUNDAS ST W |  From: [95.40 m E] HURON ST |  To: HURON ST"
     ],
@@ -2560,13 +2560,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:51",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_reconstruction:220",
       "road_reconstruction:220"
@@ -2577,12 +2578,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "[43.70 m S] BALDWIN ST |  From: HURON ST |  To: [79.20 m W] HURON ST"
     ],
@@ -2592,13 +2592,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:53",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_reconstruction:224",
       "road_reconstruction:224"
@@ -2609,12 +2610,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "ROSLIN AVE |  From: RONAN AVE |  To: [230 m E] RONAN AVE [END]"
     ],
@@ -2624,13 +2624,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:55",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_reconstruction:226",
       "road_reconstruction:226"
@@ -2641,12 +2642,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "ROSELAWN AVE |  From: CASTLEWOOD RD |  To: LATIMER AVE"
     ],
@@ -2656,13 +2656,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:56",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_reconstruction:236",
       "road_reconstruction:236"
@@ -2673,12 +2674,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "NUNES LANE |  From: MC FARLAND AVE |  To: VIA ITALIA"
     ],
@@ -2688,13 +2688,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:57",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_reconstruction:239",
       "road_reconstruction:239"
@@ -2705,12 +2706,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "[40.20 m N] NORMAN AVE |  From: CALEDONIA RD |  To: GILBERT AVE"
     ],
@@ -2720,13 +2720,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:58",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_reconstruction:251",
       "road_reconstruction:251"
@@ -2737,12 +2738,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "[37 m S] EGLINTON AVE W |  From: SCOTT RD |  To: KEELE ST"
     ],
@@ -2752,13 +2752,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:59",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_reconstruction:253",
       "road_reconstruction:253"
@@ -2769,12 +2770,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "KEELE ST |  From: FINCH AVE W |  To: STEELES AVE W"
     ],
@@ -2784,13 +2784,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:60",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_reconstruction:266",
       "road_reconstruction:266"
@@ -2801,12 +2802,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "[113 m W] HUMBERCREST BLVD |  From: UNDERWOOD AVE |  To: ST MARK&apos;S RD"
     ],
@@ -2816,13 +2816,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:61",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_reconstruction:271",
       "road_reconstruction:271"
@@ -2833,12 +2834,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "[24.90 m E] HURON ST |  From: [23.80 m N] DUNDAS ST W |  To: [44.30 m N] DUNDAS ST W"
     ],
@@ -2848,13 +2848,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:62",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_reconstruction:274",
       "road_reconstruction:274"
@@ -2865,12 +2866,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "ZAPH AVE |  From: ELLESMERE RD |  To: [762 m N] ELLESMERE AVE [CUL-DE-SAC]"
     ],
@@ -2880,13 +2880,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:63",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_reconstruction:284",
       "road_reconstruction:284"
@@ -2897,12 +2898,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "[30.20 m N] BADEN ST |  From: [30.50 m W] OSSINGTON AVE |  To: [67.10 m W] OSSINGTON AVE"
     ],
@@ -2912,13 +2912,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:64",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_reconstruction:292",
       "road_reconstruction:292"
@@ -2929,12 +2930,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "TOFFEE CRT |  From: NEW TORONTO ST |  To: [128 m S] NEW TORONTO ST [CUL-DE-SAC]"
     ],
@@ -2944,13 +2944,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:65",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_reconstruction:299",
       "road_reconstruction:299"
@@ -2961,12 +2962,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "HABIBI LANE |  From: CALEDONIA RD |  To: GILBERT AVE"
     ],
@@ -2976,13 +2976,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:66",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_reconstruction:302",
       "road_reconstruction:302"
@@ -2993,12 +2994,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "PENROSE RD |  From: DE-SAVERY CRES |  To: MOUNT PLEASANT RD"
     ],
@@ -3008,13 +3008,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:67",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_reconstruction:303",
       "road_reconstruction:303"
@@ -3025,12 +3026,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "[40.20 m S] INNES AVE |  From: HABIBI LANE |  To: [40.2 m N] NORMAN AVE"
     ],
@@ -3040,13 +3040,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:68",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_reconstruction:314",
       "road_reconstruction:314"
@@ -3057,12 +3058,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "[42.70 m E] SPADINA AVE |  From: D&apos;ARCY ST |  To: BALDWIN ST"
     ],
@@ -3072,13 +3072,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:71",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_resurfacing:36",
       "road_resurfacing:40"
@@ -3089,12 +3090,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "ISLAND RD |  From: EAST AVE (SC) |  To: ROUGE HILLS DR",
       "ISLAND RD |  From: PORT UNION RD |  To: EAST AVE (SC)"
@@ -3105,13 +3105,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:72",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_resurfacing:55",
       "road_resurfacing:1081"
@@ -3122,12 +3123,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "WEST LODGE AVE |  From: SEAFORTH AVE |  To: [180 m N] SEAFORTH AVE",
       "WEST LODGE AVE |  From: [180 m N] SEAFORTH AVE |  To: [325 m N] SEAFORTH AVE [END]"
@@ -3138,13 +3138,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:75",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_resurfacing:81",
       "road_resurfacing:914"
@@ -3155,12 +3156,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "LOUISE AVE |  From: KENWOOD AVE |  To: WYCHWOOD AVE",
       "LOUISE AVE |  From: VAUGHAN RD |  To: KENWOOD AVE"
@@ -3171,13 +3171,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:76",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_resurfacing:85",
       "road_resurfacing:670"
@@ -3188,12 +3189,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "NIAGARA ST |  From: BATHURST ST |  To: TECUMSETH ST",
       "NIAGARA ST |  From: PORTLAND ST (TO) |  To: BATHURST ST"
@@ -3204,13 +3204,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:77",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_resurfacing:96",
       "road_resurfacing:1419"
@@ -3221,12 +3222,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "CORONADO CRT |  From: ST LUCIE DR |  To: [60 m W] ST LUCIE DR [CUL-DE-SAC]",
       "CORONADO CRT |  From: WESTON RD |  To: ST LUCIE DR"
@@ -3237,13 +3237,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:78",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_resurfacing:100",
       "road_resurfacing:1118"
@@ -3254,12 +3255,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "ORMONT DR |  From: NORELCO DR |  To: SIGNET DR",
       "ORMONT DR |  From: SIGNET DR |  To: WESTON RD"
@@ -3270,13 +3270,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:80",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_resurfacing:108",
       "road_resurfacing:901"
@@ -3287,12 +3288,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "NORELCO DR |  From: FENMAR DR |  To: ORMONT DR",
       "NORELCO DR |  From: ORMONT DR |  To: GARYRAY DR"
@@ -3303,13 +3303,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:81",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_resurfacing:116",
       "road_resurfacing:889"
@@ -3320,12 +3321,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "BURLINGTON ST |  From: CAVELL AVE (ETBK) |  To: [80 m N] CAVELL AVE (ETBK) [CUL-DE-SAC]",
       "BURLINGTON ST |  From: LAKE SHORE BLVD |  To: CAVELL AVE (ETBK)"
@@ -3336,13 +3336,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:82",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_resurfacing:120",
       "road_resurfacing:409"
@@ -3353,12 +3354,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "GLENELLEN (E) DR |  From: RIVERWOOD PKWY |  To: KIRK BRADDEN RD",
       "GLENELLEN (W) DR |  From: GRENVIEW BLVD |  To: [60 m W] GRENVIEW BLVD [END]"
@@ -3369,13 +3369,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:84",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_resurfacing:141",
       "road_resurfacing:1425"
@@ -3386,12 +3387,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "WILLOWDALE AVE |  From: BISHOP AVE |  To: 150 m N of Bishop Ave",
       "WILLOWDALE AVE |  From: FINCH AVE (N YK) |  To: BISHOP AVE"
@@ -3402,13 +3402,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:87",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_resurfacing:176",
       "road_resurfacing:422"
@@ -3419,12 +3420,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "AIRDRIE RD |  From: BAYVIEW AVE |  To: HEATHER RD (E YK)",
       "AIRDRIE RD |  From: HEATHER RD (E YK) |  To: BESSBOROUGH DR"
@@ -3435,13 +3435,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:88",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_resurfacing:187",
       "road_resurfacing:452"
@@ -3452,12 +3453,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "SYMINGTON AVE |  From: ERNEST AVE |  To: WALLACE AVE",
       "SYMINGTON AVE |  From: PATON RD |  To: ERNEST AVE"
@@ -3468,13 +3468,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:89",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_resurfacing:189",
       "road_resurfacing:1138"
@@ -3485,12 +3486,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "WESTVIEW BLVD |  From: AMSTERDAM AVE |  To: HOLLAND AVE",
       "WESTVIEW BLVD |  From: HOLLAND AVE |  To: [44 m N] HOLLAND AVE [END]"
@@ -3501,13 +3501,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:90",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_resurfacing:210",
       "road_resurfacing:787"
@@ -3518,12 +3519,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "CONACHER DR |  From: CASWELL DR |  To: STEELES AVE E",
       "CONACHER DR |  From: NEWTON DR |  To: CASWELL DR"
@@ -3534,13 +3534,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:91",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_resurfacing:213",
       "road_resurfacing:446"
@@ -3551,12 +3552,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "TECUMSETH ST |  From: [111 m S] NIAGARA ST [END] |  To: [78.30 m S] NIAGARA ST",
       "TECUMSETH ST |  From: [78.30 m S] NIAGARA ST |  To: NIAGARA ST"
@@ -3567,13 +3567,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:92",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_resurfacing:215",
       "road_resurfacing:1143"
@@ -3584,12 +3585,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "COBOURG AVE |  From: ARCHER ST |  To: BROCK AVE",
       "COBOURG AVE |  From: [51 m E] ARCHER ST [END] |  To: ARCHER ST"
@@ -3600,13 +3600,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:93",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_resurfacing:241",
       "road_resurfacing:1133"
@@ -3617,12 +3618,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "WARWICK AVE |  From: BATHURST ST |  To: CHILTERN HILL RD",
       "WARWICK AVE |  From: CHILTERN HILL RD |  To: GLEN CEDAR RD"
@@ -3633,13 +3633,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:96",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_resurfacing:340",
       "road_resurfacing:780"
@@ -3650,12 +3651,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "BEECHGROVE DR |  From: COPPERFIELD RD |  To: RAILWAY LANDS - CNR",
       "BEECHGROVE DR |  From: [95.11 m N] COPERFIELD RD |  To: [330 m E] MINUK ACRES"
@@ -3666,13 +3666,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:100",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_resurfacing:370",
       "road_resurfacing:374"
@@ -3683,12 +3684,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "ALCAN AVE |  From: EDGEWARE DR |  To: GORT AVE",
       "ALCAN AVE |  From: GORT AVE |  To: ENFIELD AVE"
@@ -3699,13 +3699,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:101",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_resurfacing:383",
       "road_resurfacing:724"
@@ -3716,12 +3717,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "INDIAN RD |  From: CHELSEA AVE |  To: WANDA RD",
       "INDIAN RD |  From: EDNA AVE |  To: INDIAN ROAD CRES"
@@ -3732,13 +3732,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:102",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_resurfacing:387",
       "road_resurfacing:839"
@@ -3749,12 +3750,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "JACKSON AVE |  From: BLOOR ST W |  To: KING GEORGES RD",
       "JACKSON AVE |  From: KING GEORGES RD |  To: THE KINGSWAY"
@@ -3765,13 +3765,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:103",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_resurfacing:388",
       "road_resurfacing:733"
@@ -3782,12 +3783,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "SPRUCE HILL RD |  From: QUEEN ST E |  To: SYCAMORE PL",
       "SPRUCE HILL RD |  From: SYCAMORE PL |  To: PINE AVE"
@@ -3798,13 +3798,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:105",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_resurfacing:396",
       "road_resurfacing:887"
@@ -3815,12 +3816,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "WESTON RD N |  From: CPR (N FINCH AVE W) |  To: STEELES AVE W",
       "WESTON RD N |  From: FINCH AVE W |  To: CPR (N FINCH AVE W)"
@@ -3831,13 +3831,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:107",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_resurfacing:490",
       "road_resurfacing:840"
@@ -3848,12 +3849,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "SHOREHAM DR |  From: MURRAY ROSS PKWY |  To: BLACK CREEK BRIDGE",
       "SHOREHAM DR |  From: THE POND RD |  To: MURRAY ROSS PKWY"
@@ -3864,13 +3864,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:108",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_resurfacing:514",
       "road_resurfacing:842"
@@ -3881,12 +3882,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "HILL GARDEN RD |  From: SCARLETT RD |  To: FREEMONT AVE",
       "HILL GARDEN RD |  From: [50 m  W] FREEMONT AVE |  To: [195m  W] FREEMONT AVE [CUL-DE-SAC]"
@@ -3897,13 +3897,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:109",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_resurfacing:568",
       "road_resurfacing:1473"
@@ -3914,12 +3915,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "SELECT AVE |  From: STATE CROWN BLVD |  To: [205 m W] STATE CROWN BLVD [END]",
       "SELECT AVE |  From: [150 m W] STATE CROWN BLVD |  To: STATE CROWN BLVD"
@@ -3930,13 +3930,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:110",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_resurfacing:614",
       "road_resurfacing:743"
@@ -3947,12 +3948,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "LAKEVIEW AVE |  From: HARRISON ST |  To: CHURCHILL AVE",
       "LAKEVIEW AVE |  From: [29.30 m N] DUNDAS ST W |  To: HARRISON ST"
@@ -3963,13 +3963,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:113",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_resurfacing:701",
       "road_resurfacing:1330"
@@ -3980,12 +3981,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "OAKVALE AVE |  From: LYDIA CRT |  To: [27 m E] LYDIA CRT [END]",
       "OAKVALE AVE |  From: PHIN AVE |  To: LYDIA CRT"
@@ -3996,13 +3996,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:114",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_resurfacing:717",
       "road_resurfacing:1319"
@@ -4013,12 +4014,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "HARCOURT AVE |  From: PAPE AVE |  To: [34 m W] JONES AVE",
       "HARCOURT AVE |  From: [34 m W] JONES AVE |  To: JONES AVE"
@@ -4029,13 +4029,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:115",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_resurfacing:722",
       "road_resurfacing:899"
@@ -4046,12 +4047,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "HUMEWOOD GDNS |  From: HUMEWOOD DR |  To: RUSHTON RD",
       "HUMEWOOD GDNS |  From: RUSHTON RD |  To: ARLINGTON AVE"
@@ -4062,13 +4062,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:117",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_resurfacing:786",
       "road_resurfacing:1266"
@@ -4079,12 +4080,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "MINGLEHAZE DR |  From: SHOCKLEY DR |  To: [N-S] MINGLEHAZE DR [BRANCH]",
       "MINGLEHAZE DR |  From: [N-S] MINGLEHAZE DR [BRANCH] |  To: [421.91 m E] MINGLEHAZE DR [CUL-DE-SAC]"
@@ -4095,13 +4095,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:118",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_resurfacing:797",
       "road_resurfacing:834"
@@ -4112,12 +4113,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "PINEWOOD AVE |  From: ST CLAIR AVE W |  To: [26.20 m N] ST CLAIR AVE W [CITY LIMITS]",
       "PINEWOOD AVE |  From: [26.20 m N] ST CLAIR AVE W |  To: MAPLEWOOD AVE"
@@ -4128,13 +4128,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:119",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_resurfacing:822",
       "road_resurfacing:1388"
@@ -4145,12 +4146,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "NEW TORONTO ST |  From: ISLINGTON AVE |  To: [104 m W] ISLINGTON AVE",
       "NEW TORONTO ST |  From: [104 m W] ISLINGTON AVE |  To: [41 m E] SEVENTEENTH ST"
@@ -4161,13 +4161,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:120",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_resurfacing:849",
       "road_resurfacing:1478"
@@ -4178,12 +4179,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "BATHURST ST |  From: FINCH AVE W |  To: STEELES AVE W",
       "BATHURST ST |  From: KINGSBRIDGE CRT |  To: FINCH AVE W"
@@ -4194,13 +4194,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:121",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_resurfacing:900",
       "road_resurfacing:1051"
@@ -4211,12 +4212,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "HILLHOLM RD |  From: DUNVEGAN RD |  To: [N] HILLHOLM RD [BRANCH]",
       "HILLHOLM RD |  From: FOREST HILL RD |  To: DUNVEGAN RD"
@@ -4227,13 +4227,14 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   },
   {
     "type": "merge",
     "cluster_id": "program:123",
     "match_type": "anchor_program",
+    "review_only": true,
     "member_permit_ids": [
       "road_resurfacing:1268",
       "road_resurfacing:1377"
@@ -4244,12 +4245,11 @@
     },
     "savings_lane_days": 0,
     "lane_days_saved": 0,
-    "excavations_avoided": 1,
-    "mobilizations_saved": 1,
+    "excavations_avoided": 0,
     "permit_count": 2,
-    "road_openings_saved": 1,
-    "estimated_savings": 5000,
-    "priority": "Medium",
+    "road_openings_saved": 0,
+    "estimated_savings": 0,
+    "priority": "Review",
     "locations": [
       "CHAPLIN CRES |  From: EGLINTON AVE W |  To: SPADINA RD (TO)",
       "CHAPLIN CRES |  From: SPADINA RD (TO) |  To: [113 m N] SPADINA RD (TO)"
@@ -4260,7 +4260,7 @@
     "statuses": [
       "Active"
     ],
-    "action": "Merge city road-program permits on the same street into one coordinated program. Saves crew mobilization per merged permit.",
-    "reason": "2 city road-work permits on the same street within a single coordination window \u2014 combining them saves 1 mobilization at ~$5,000 each."
+    "action": "Review \u2014 multiple permits on the same street. Confirm with the city whether this is already one coordinated project or a genuine consolidation opportunity.",
+    "reason": "2 city road-work permits on the same street within a single coordination window. May be admin-split segments of one project, or genuinely separate work \u2014 surfaced for review."
   }
 ]

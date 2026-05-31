@@ -105,6 +105,22 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
+.tristat-subnote {
+  padding: 8px 20px;
+  background: #0f172a;
+  border-bottom: 1px solid #1f2937;
+  text-align: center;
+  font-size: 12px;
+  color: #cbd5e1;
+}
+.tristat-subnote b {
+  color: #f59e0b;
+  font-variant-numeric: tabular-nums;
+}
+.tristat-subnote-hint {
+  color: #6b7280;
+  font-style: italic;
+}
 .tristat-loading {
   padding: 16px 20px;
   text-align: center;

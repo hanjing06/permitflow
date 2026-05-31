@@ -24,6 +24,7 @@ function App() {
     permits_considered: metrics.permits_considered,
     excavations_avoided: 0,
     cost_avoidance: 0,
+    coordination_opportunities: 0,
   };
   const displayMetrics = view === "naive" ? naiveMetrics : metrics;
 

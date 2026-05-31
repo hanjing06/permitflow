@@ -706,47 +706,48 @@ def cluster_anchor_program(permits, used_anchor_ids):
             if len(sub) >= 2:
                 clusters.append(("anchor_program", sub))
 
-    # Convert to recommendation dicts. Anchor-program savings are MOBILIZATION-
-    # based (not trench-share): the road work itself still happens. We save crew
-    # dispatch overhead per merged permit, NOT lane-days.
+    # Convert to recommendation dicts. Anchor-program clusters are
+    # REVIEW-ONLY surfaces — the city's permit system shows multiple rows for
+    # what may already be one coordinated project (e.g. consecutive Bridgman
+    # Ave segments under one contract). We can't tell from CKAN data alone
+    # whether each cluster is true coordination opportunity or an admin split
+    # of an already-coordinated project, so we don't claim dollar savings or
+    # excavation credit. The cluster still appears on the map for a human
+    # reviewer to check.
     recommendations = []
     for label, (match_type, group) in enumerate(clusters):
         start = min(p["start_date"] for p in group)
         end = max(p["end_date"] for p in group)
-        mobilizations_saved = len(group) - 1
-        dollar_savings = mobilizations_saved * MOBILIZATION_SAVINGS
         recommendations.append({
             "type": "merge",
             "cluster_id": f"program:{label}",
             "match_type": match_type if match_type == "same_segment" else "anchor_program",
+            "review_only": True,
             "member_permit_ids": [p["permit_id"] for p in group],
             "merged_window": {
                 "start": serialize_date(start),
                 "end": serialize_date(end),
             },
-            # Lane-days NOT saved — the road work happens regardless.
+            # No dollar or excavation credit — see comment above.
             "savings_lane_days": 0,
             "lane_days_saved": 0,
-            # Excavations IS the right unit: each merged permit is one
-            # mobilization (crew + equipment dispatch) we don't re-pay for.
-            "excavations_avoided": mobilizations_saved,
-            "mobilizations_saved": mobilizations_saved,
+            "excavations_avoided": 0,
             "permit_count": len(group),
-            "road_openings_saved": mobilizations_saved,
-            "estimated_savings": int(dollar_savings),
-            "priority": "High" if mobilizations_saved >= 4 else "Medium",
+            "road_openings_saved": 0,
+            "estimated_savings": 0,
+            "priority": "Review",
             "locations": sorted({p["street_name"] for p in group})[:8],
             "projects": sorted({p["work_type"] for p in group})[:5],
             "statuses": sorted({p["status"] for p in group}),
             "action": (
-                "Merge city road-program permits on the same street into one "
-                "coordinated program. Saves crew mobilization per merged permit."
+                "Review — multiple permits on the same street. Confirm with "
+                "the city whether this is already one coordinated project or "
+                "a genuine consolidation opportunity."
             ),
             "reason": (
                 f"{len(group)} city road-work permits on the same street within "
-                f"a single coordination window — combining them saves "
-                f"{mobilizations_saved} mobilization{'s' if mobilizations_saved != 1 else ''} "
-                f"at ~${MOBILIZATION_SAVINGS:,} each."
+                f"a single coordination window. May be admin-split segments of "
+                f"one project, or genuinely separate work — surfaced for review."
             ),
         })
     return recommendations
@@ -881,25 +882,27 @@ def permits_geojson(permits):
 
 
 def build_metrics(permits, recommendations, naive, optimized, conflict_graph):
+    # Headline numbers count ONLY trench-share recommendations (piggybacks +
+    # same-segment + same-street candidate merges). Anchor-program clusters
+    # are review-only surfaces and contribute 0 to all "savings" / "avoided"
+    # fields — they're separately reported via `coordination_opportunities`
+    # so a reviewer can see they exist without the demo claiming credit.
     lane_days_saved = sum(r.get("lane_days_saved", 0) for r in recommendations)
     excavations_avoided = sum(r.get("excavations_avoided", 0) for r in recommendations)
-    mobilizations_saved = sum(r.get("mobilizations_saved", 0) for r in recommendations)
-    # cost_avoidance now sums each recommendation's own estimated_savings so that
-    # trench-share (lane-days × $/lane-day) and anchor-program (mobilizations ×
-    # $/mob) contribute on their own honest scales rather than being conflated.
     cost_avoidance = sum(int(r.get("estimated_savings", 0)) for r in recommendations)
-    clusters = [r for r in recommendations if r["type"] == "merge"]
-    piggybacks = [r for r in recommendations if r["type"] == "piggyback"]
+    review_clusters = [r for r in recommendations if r.get("review_only")]
+    confirmed_clusters = [r for r in recommendations
+                          if r.get("type") == "merge" and not r.get("review_only")]
+    piggybacks = [r for r in recommendations if r.get("type") == "piggyback"]
     return {
         "lane_days_saved": int(lane_days_saved),
         "permits_considered": int(len(permits)),
         "cost_avoidance": int(cost_avoidance),
         "per_lane_day_cost": int(LANE_DAY_COST),
-        "per_mobilization_savings": int(MOBILIZATION_SAVINGS),
-        "mobilizations_saved": int(mobilizations_saved),
         "excavations_avoided": int(excavations_avoided),
         "piggybacks_accepted": int(len(piggybacks)),
-        "cluster_merges": int(len(clusters)),
+        "cluster_merges": int(len(confirmed_clusters)),
+        "coordination_opportunities": int(len(review_clusters)),
         "conflict_edges": int(len(conflict_graph)),
         "naive_max_concurrent_closures": int(max_concurrent(naive)),
         "optimized_max_concurrent_closures": int(max_concurrent(optimized)),
