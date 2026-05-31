@@ -37,21 +37,30 @@ Per D-77 — no LoRA training. Phase 5 D-44 fallback narrative replaces it (123B
 
 ---
 
-## Phase 3 — Optimizer Build
+## Phase 3 — Optimizer Build ✅
+
+Delivered via merge of `hanjing06/phase3` commit `c6100d0` plus wiring commit `27ac93b`.
 
 | Item | Status | Notes |
 |---|---|---|
-| DBSCAN clustering | 🟡 | `backend/optimizer.py` — projected to meters + time dim added. Single-pass (no trench-sharing) |
-| Trench-sharing two-pass (D-79) | ❌ | No anchor↔candidate matching. Optimizer doesn't distinguish planned-city-openings from utility cuts |
-| Future-window filter (D-20/D-22) | ❌ | Optimizer runs on all dates regardless |
-| Valhalla closure simulation | ❌ | `/whatif` is hardcoded delay-week buckets; never calls Valhalla's `exclude_polygons` |
-| Conflict graph cache (`conflict-graph.json`) | ❌ | No precompute pass |
-| Singleton handling per D-28/D-29 | ❌ | Cluster -1 is filtered entirely instead of contributing to `permits_considered` |
-| `permits.geojson` / `naive.json` / `optimized.json` | ❌ | None produced |
-| `metrics.json` durable artifact | ❌ | `/metrics` is computed live every request, not persisted |
-| `/whatif` endpoint | 🟡 | Exists but is a stub |
+| Future-window data prep (D-20/D-22) | ✅ | `load_canonical_permits()` reads ANCHOR_FILES + CANDIDATE_FILES, filters to TODAY+90d, env-tunable |
+| Trench-sharing two-pass (D-79) | ✅ | `match_piggybacks()` (250m + 35d tolerance) then `cluster_leftover_candidates()` DBSCAN |
+| Singleton handling (D-28/D-29) | ✅ | Tagged `optimization_status: "singleton"`; counted in `permits_considered` not `excavations_avoided` |
+| Conflict graph | 🟡 design pivot | `build_conflict_graph()` is space-time **proxy** (not Valhalla `exclude_polygons` precompute). Intentional — keeps demo offline. `valhalla.py` ready for live `/whatif-street` use. |
+| Greedy scheduler + naive/optimized timelines | ✅ | `build_optimized_timeline()` defers conflicts in 7-day steps |
+| `metrics.json` durable artifact | ✅ | Built once, served from disk |
+| 7 artifact files | ✅ | `data/artifacts/{hero-block,clusters,conflict-graph,naive,optimized,permits.geojson,metrics}.json` |
+| `/whatif?cluster_id=N` endpoint | ✅ | Legacy delay-bucket impact (backward compat for current App.jsx) |
+| `/whatif-street?street=NAME` endpoint | ✅ | New — street-scoped impact + listed conflicts |
+| 5 new Phase 4 endpoints | ✅ | `/hero-block`, `/clusters`, `/conflict-graph`, `/naive`, `/optimized` |
+| Phase 4 contract (SCHEMAS.md) | ✅ | Per-field JSON docs at `.planning/phases/03-optimizer-build/SCHEMAS.md` |
 
-**Phase 3 verdict:** the clustering math is sounder than before, but the *trench-sharing thesis and the Valhalla conflict simulation are both missing*. This is the biggest gap.
+**Phase 3 verdict:** Engine + APIs done. Demo numbers (Greektown / 90-day window): **532 permits considered · 2 cluster merges · 3 excavations avoided · 14 lane-days saved · $210K cost avoidance** (at $15K/lane placeholder per D-26 → Phase 6 swap).
+
+**Phase 3 → Phase 6 carryover (known limitations):**
+- `utility_cuts.csv` has no inline geometry → 0 piggybacks. Geocoding DISPLAY_DESC is Phase 4/6 work.
+- Conflict graph is proxy, not real Valhalla precompute (intentional).
+- $15K/lane-day is placeholder; Toronto Congestion Management Plan figure swaps in during Phase 6.
 
 ---
 
@@ -109,11 +118,20 @@ Per D-78 — reduced to verification + screenshot capture.
 
 ## Closing gaps in order (highest leverage first)
 
-1. **Pull the new datasets** — `python backend/open_toronto.py all`
-2. **Hero block selection** — script + write `hero-block.json` + filter `permits.geojson`
-3. **Trench-sharing pass + future-window filter** — biggest change to `optimizer.py`
-4. **Naive↔Optimized toggle + tri-stat counter** — frontend
-5. **Valhalla integration** — turn `/whatif` from a stub into a real closure simulator
-6. **Streaming `/chat`** — SSE from Ollama through FastAPI
+Phase 1 ✅ (data + hero-block landed via plans 01-01 + 01-02)
+Phase 3 ✅ (merged hanjing06/c6100d0 + wired endpoints in 27ac93b)
 
-Items 1–4 are the actual demo. Items 5–6 are the wow.
+Remaining:
+1. **Phase 4 — UI rewire** to consume the new Phase 3 endpoints:
+   - `/hero-block` → auto-centre + zoom (D-55)
+   - `/naive` vs `/optimized` → toggle (D-32)
+   - `/metrics` → tri-stat counter (D-33: lane-days saved / permits considered / $ avoided)
+   - 3 canned scenarios cached (D-37)
+2. **Phase 4 — Streaming /chat** — SSE from Ollama through FastAPI (D-41)
+3. **Phase 4 — RAG retrieval** via NIM embedder (D-39/D-40/D-41) — nice-to-have
+4. **Phase 5 — Two screenshots** (`nvidia-smi` showing 123B resident; one live chat latency capture) — 2-min capture tasks
+5. **Phase 6 — Demo polish**: PROJECT.md demo arc rewrite (D-21), 3-slide deck, pitch script ≤90s, swap $15K placeholder for TCMP figure
+6. **Phase 6 — Geocode utility_cuts** to unlock piggyback matches (raises demo numbers from 2 merges to potentially many)
+7. **Phase 7 — Dry runs + backup video + offline tile bundling + contingency cards**
+
+Phase 4 is now the actual demo work. The optimizer engine, all the JSON contracts, and all the API endpoints are in place — what's missing is the UI binding.

@@ -14,7 +14,7 @@ PermitFlow is a 36-hour NVIDIA hackathon build: an AI-assisted permit consolidat
 
 - [x] **Phase 1: Parallel Kickoff** — Stand up Ollama (123B), Valhalla, NIM embedder, data ingestion, UI scaffold; pick hero block (Hour 0–4) ✅ all 5 G1 criteria satisfied 2026-05-30
 - [x] ~~**Phase 2: Fine-tune Kickoff**~~ — **CLOSED (D-77).** No fine-tune; 123B local is the anchor. Phase 5 D-44 fallback narrative replaces it.
-- [ ] **Phase 3: Optimizer Build** — DBSCAN trench-sharing (anchor + piggyback per D-79) + Valhalla conflict graph + naive/optimized timelines (Hour 6–14)
+- [x] **Phase 3: Optimizer Build** — DBSCAN trench-sharing (anchor + piggyback per D-79) + space-time-proxy conflict graph + naive/optimized timelines (Hour 6–14) ✅ merged hanjing06/c6100d0 + wired endpoints in 27ac93b 2026-05-31. Demo: 532 considered / 2 merges / 3 excavations avoided / $210K.
 - [ ] **Phase 4: UI & Chat Panel** — Leaflet hero-block view, naive↔optimized toggle, tri-stat counter, streaming Nemotron Super chat (Hour 14–22)
 - [ ] **Phase 5: Verification & Pitch Artifacts** — REDUCED per D-78: nvidia-smi (123B resident) screenshot + live chat latency screenshot. No fine-tune eval. (Hour 22–24)
 - [ ] **Phase 6: Demo Polish** — Lock 90-second arc, deck, cost-avoidance figure, camera flourish (Hour 28–34)
