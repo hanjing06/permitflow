@@ -2,16 +2,16 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: completed
-stopped_at: Plan 04-02 complete — frontend rewritten as component-based UI (HeroMap + ToggleSwitch + TriStatCounter + ChatPanel). Build green. Browser UAT required for visual centring/colors/tween/SSE per D-32/D-33/D-34/D-55/D-41.
-last_updated: "2026-05-31T00:58:04.382Z"
+status: in-progress
+stopped_at: Plan 06-01 complete — counter retween fix + tri-stat typography + toggle active-state + GX10 badge + PROJECT.md future-only rewrite. Build green. Browser eyeball pass required (human_needed_verification: true).
+last_updated: "2026-05-31T00:00:00.000Z"
 last_activity: 2026-05-31
 progress:
   total_phases: 7
   completed_phases: 2
-  total_plans: 9
-  completed_plans: 4
-  percent: 44
+  total_plans: 10
+  completed_plans: 5
+  percent: 50
 ---
 
 # Project State
@@ -22,17 +22,17 @@ See: .planning/PROJECT.md (updated 2026-05-30) · .planning/HEALTHCHECK.md (mid-
 
 **Core value:** Cut redundant Toronto road excavations via trench-sharing (anchor-and-piggyback) and Valhalla conflict-aware scheduling, narrated by Ollama-served Nemotron-3 Super 123B running locally on a GX10.
 
-**Current focus:** Phase 04 — ui-chat-panel (both plans shipped; awaiting browser UAT)
+**Current focus:** Phase 06 — demo-polish (06-01 code-only polish shipped; awaiting browser eyeball pass + pitch-lead deliverables)
 
 ## Current Position
 
-Phase: 04 (ui-chat-panel) — READY FOR VERIFICATION (browser UAT)
-Plan: 2 of 2 ✅ (both 04-01 backend SSE + 04-02 frontend rewrite complete)
+Phase: 06 (demo-polish) — READY FOR VERIFICATION (human eyeball)
+Plan: 1 of 1 code plan complete ✅ (06-01 counter retween + typography + toggle + GX10 badge + PROJECT.md rewrite)
 Phases done: 1, 2 (closed), 3, 4 (code-complete), 5 (reduced)
-Phases remaining: 6, 7
+Phases remaining: 6 (pitch-lead deliverables only), 7
 Last activity: 2026-05-31
 
-Progress: [████░░░░░░] 44%
+Progress: [█████░░░░░] 50%
 
 See `.planning/HEALTHCHECK.md` for the per-phase delta — Phase 3 rows flip ❌ → ✅; Phase 4 D-32 / D-33 / D-34 / D-55 / D-41 wired (visual UAT pending).
 
@@ -40,6 +40,7 @@ See `.planning/HEALTHCHECK.md` for the per-phase delta — Phase 3 rows flip ❌
 
 ### Decisions (latest 5)
 
+- **D-82 (06-01)** — Counter retween bug was App.jsx wiring (single fetched `metrics` object passed to both views), not the `useCountUp` hook (hook was already correctly keyed on `[target, durationMs]`). Fix derives `naiveMetrics` (savings zeroed) and `displayMetrics = view === "naive" ? naiveMetrics : metrics` client-side so toggling hands TriStatCounter a different object reference, retargeting the tween cleanly. Mono badge fallback chain pinned to ui-monospace/SF Mono/Menlo/Consolas/monospace (no remote fonts — preserves WiFi-off behaviour for Phase 7). GX10 status dot deliberately static (no pulse) per plan acceptance criteria.
 - **D-81 (04-02)** — Frontend default view = `optimized` so the demo opens on the value-prop surface (amber merged clusters), not the slate naive baseline. Vite dev binds `[::1]` only — executor smoke-checks use `curl localhost:PORT`, not `127.0.0.1`. `.gitignore` Python virtualenv patterns anchored to repo root (`/lib/`, `/lib64/`) so nested `frontend/src/lib/` is no longer silently ignored.
 - **D-80** — Hero block selection takes path (c): rank only geometry-bearing program datasets (road_resurfacing, sidewalk_construction, road_reconstruction); carry utility_cuts + filtered building_permits as bonus address-overlap counts in selection metadata. Decided in Plan 01-02 because the candidate CSVs ship without inline geometry (per 01-01 SUMMARY deviation 3). D-07 building-permit filter recorded into `hero-block.json:selection.building_permit_filter` for audit.
 - **D-79** — Optimizer reframes to trench-sharing (anchor + piggyback) using utility-cut-permits as candidates and road-reconstruction / resurfacing / sidewalk programs as anchor windows.
@@ -61,6 +62,6 @@ Full decision log lives in per-phase CONTEXT files.
 
 ## Session Continuity
 
-Last session: 2026-05-31T00:58:04.350Z
-Stopped at: Plan 04-02 complete — frontend rewritten as component-based UI (HeroMap + ToggleSwitch + TriStatCounter + ChatPanel). Build green. Browser UAT required for visual centring/colors/tween/SSE per D-32/D-33/D-34/D-55/D-41.
+Last session: 2026-05-31T00:00:00.000Z
+Stopped at: Plan 06-01 complete — counter retween + tri-stat typography + toggle active-state + GX10/Nemotron badge + PROJECT.md future-only rewrite. Build green (vite, 65 modules). Dev server serves HTTP 200 on :5173. human_needed_verification: true — see 06-01-SUMMARY.md "Human-Needed Verification" checklist (7 items).
 Resume file: None

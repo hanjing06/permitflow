@@ -106,12 +106,12 @@ Plans:
   3. Pitch script is timed to ≤ 90 seconds
   4. Three-slide deck is finished and rehearsed
   5. No unfixed UI jank in the recorded demo path
-**Plans**: TBD
+**Plans:** 1 code plan (pitch-lead deliverables tracked separately, not in GSD plans)
 
 Plans:
-- [ ] 06-01: UI polish pass (hero centring, polygon styling, counter animation)
-- [ ] 06-02: Three-slide deck + pitch script + cost-avoidance figure
-- [ ] 06-03: Live traffic camera flourish (with offline fallback)
+- [x] 06-01-PLAN.md — Code-only polish: counter retween fix + tri-stat typography + toggle active-state + GX10 badge + PROJECT.md demo arc rewrite (D-21) ✅ shipped 2026-05-31 (build green; human eyeball pass pending — see 06-01-SUMMARY.md)
+- [pitch-lead] 3-slide deck + 90s script + cost-avoidance back-of-envelope (D-53, D-56, D-58, D-59)
+- [cut, D-54] Live traffic camera flourish
 
 ### Phase 7: Dry Runs & Backup
 **Goal**: Make the demo bulletproof. Three full run-throughs, an offline test, a recorded backup video, and a contingency for every plausible failure. No code changes after hour 35.
@@ -143,7 +143,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7
 | 3. Optimizer Build | 0/5 | In progress (single-pass DBSCAN only; Valhalla not wired) | - |
 | 4. UI & Chat Panel | 2/2 | Complete   | 2026-05-31 |
 | 5. Verification & Pitch Artifacts | 1/2 (modelfile ✅; nvidia-smi + latency ❌) | In progress | - |
-| 6. Demo Polish | 0/3 | Not started | - |
+| 6. Demo Polish | 1/3 (code-only polish ✅; pitch-lead deck + script + cost-avoidance owed) | In progress | - |
 | 7. Dry Runs & Backup | 0/4 | Not started | - |
 
 See `.planning/HEALTHCHECK.md` for the per-item gap analysis.
