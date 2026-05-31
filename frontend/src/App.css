@@ -66,22 +66,22 @@ body {
   border-bottom: 1px solid #1f2937;
 }
 .tristat-cell {
-  padding: 16px 20px;
+  padding: 22px 20px;
   text-align: center;
   border-right: 1px solid #1f2937;
 }
 .tristat-cell:last-child { border-right: none; }
 .tristat-value {
-  font-size: 32px;
+  font-size: 44px;
   font-weight: 700;
   color: #f9fafb;
   font-variant-numeric: tabular-nums;
-  letter-spacing: -0.5px;
+  letter-spacing: -1.5px;
 }
 .tristat-label {
-  font-size: 11px;
-  color: #9ca3af;
-  margin-top: 4px;
+  font-size: 12px;
+  color: #cbd5e1;
+  margin-top: 8px;
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
