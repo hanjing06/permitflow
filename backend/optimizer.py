@@ -53,6 +53,7 @@ DBSCAN_MIN_SAMPLES = int(os.getenv("PERMITFLOW_MIN_SAMPLES", "2"))
 CONFLICT_DISTANCE_METERS = float(os.getenv("PERMITFLOW_CONFLICT_M", "500"))
 CONFLICT_THRESHOLD = float(os.getenv("PERMITFLOW_CONFLICT_THRESHOLD", "0.15"))
 LANE_DAY_COST = int(os.getenv("PERMITFLOW_LANE_DAY_COST", "15000"))
+STREET_CLUSTER_WINDOW_DAYS = int(os.getenv("PERMITFLOW_STREET_WINDOW_DAYS", "60"))
 
 ANCHOR_FILES = {
     "road_reconstruction": "road_reconstruction.csv",
@@ -510,11 +511,49 @@ def match_piggybacks(permits):
             "statuses": [best["status"], candidate["status"]],
             "action": "Piggyback flexible utility work into an already-planned city opening.",
             "reason": "The candidate is close enough in space and time to share the anchor closure window.",
+            "match_type": "piggyback_segment",
         })
     return recommendations, used
 
 
+def _temporal_subclusters(group, window_days):
+    """Greedy 1-D temporal bucketing within a same-street / same-segment group.
+
+    Sort by start_date; start a new bucket whenever the next permit's start_date
+    is more than `window_days` after the running bucket's max end_date.
+    Returns list[list[permit]] (each inner list is one temporal sub-cluster).
+    """
+    if not group:
+        return []
+    sorted_group = sorted(group, key=lambda p: p["start_date"])
+    buckets = [[sorted_group[0]]]
+    for permit in sorted_group[1:]:
+        current_end = max(q["end_date"] for q in buckets[-1])
+        if (permit["start_date"] - current_end).days <= window_days:
+            buckets[-1].append(permit)
+        else:
+            buckets.append([permit])
+    return buckets
+
+
 def cluster_leftover_candidates(permits, used_candidate_ids):
+    """Phase-8 street-aware grouping (Layers 1 + 2).
+
+    Layer 2 — GEO_ID exact match (gold-standard city centerline segment IDs):
+      Candidates with the same geo_id are grouped, then sub-bucketed by
+      temporal proximity. Multi-permit buckets become "same_segment" clusters;
+      singletons fall through to Layer 1 along with no-geo candidates.
+
+    Layer 1 — Same normalized street + temporal sub-bucketing:
+      Remaining candidates are grouped by `normalized_street` (empty key is
+      NEVER a group — those permits stay as singletons). Each street group is
+      sub-bucketed by `STREET_CLUSTER_WINDOW_DAYS` (default 60d). Multi-permit
+      buckets become "same_street" clusters.
+
+    Returns: list of recommendation dicts, each carrying a `match_type` field
+    in {"same_segment", "same_street"}. The shape is otherwise identical to
+    the previous DBSCAN-based output (clusters.json contract preserved).
+    """
     candidates = [
         p for p in permits
         if p["role"] == "candidate" and p["permit_id"] not in used_candidate_ids
@@ -522,21 +561,55 @@ def cluster_leftover_candidates(permits, used_candidate_ids):
     if not candidates:
         return []
 
-    labels = dbscan_labels(candidates)
-    groups = defaultdict(list)
-    for permit, label in zip(candidates, labels):
-        groups[int(label)].append(permit)
+    # --- Layer 2: GEO_ID exact match (preferred when present) ---
+    geo_groups: dict[str, list] = defaultdict(list)
+    no_geo: list = []
+    for permit in candidates:
+        gid = permit.get("geo_id")
+        if gid:
+            geo_groups[gid].append(permit)
+        else:
+            no_geo.append(permit)
 
-    recommendations = []
-    for label, group in groups.items():
-        if label == -1 or len(group) < 2:
+    clusters: list[tuple[str, list]] = []  # (match_type, [permits])
+    for gid, group in geo_groups.items():
+        if len(group) < 2:
+            no_geo.extend(group)
             continue
+        for sub in _temporal_subclusters(group, STREET_CLUSTER_WINDOW_DAYS):
+            if len(sub) >= 2:
+                clusters.append(("same_segment", sub))
+            else:
+                # Singletons within a GEO_ID fall through to Layer 1.
+                no_geo.extend(sub)
+
+    # --- Layer 1: Same normalized street + temporal sub-bucketing ---
+    street_groups: dict[str, list] = defaultdict(list)
+    for permit in no_geo:
+        key = permit.get("normalized_street", "") or ""
+        if not key:
+            # Empty normalized_street is a soft singleton signal — NEVER group
+            # all "unknown" permits together (would create a giant junk cluster).
+            continue
+        street_groups[key].append(permit)
+
+    for key, group in street_groups.items():
+        if len(group) < 2:
+            continue
+        for sub in _temporal_subclusters(group, STREET_CLUSTER_WINDOW_DAYS):
+            if len(sub) >= 2:
+                clusters.append(("same_street", sub))
+
+    # --- Convert to recommendation dicts (preserves clusters.json contract) ---
+    recommendations = []
+    for label, (match_type, group) in enumerate(clusters):
         start = min(p["start_date"] for p in group)
         end = max(p["end_date"] for p in group)
         saved = sum(p["lane_days"] for p in group) - max(p["lane_days"] for p in group)
         recommendations.append({
             "type": "merge",
             "cluster_id": f"merge:{label}",
+            "match_type": match_type,
             "member_permit_ids": [p["permit_id"] for p in group],
             "merged_window": {
                 "start": serialize_date(start),
@@ -552,8 +625,18 @@ def cluster_leftover_candidates(permits, used_candidate_ids):
             "locations": sorted({p["street_name"] for p in group})[:8],
             "projects": sorted({p["work_type"] for p in group})[:5],
             "statuses": sorted({p["status"] for p in group}),
-            "action": "Merge nearby flexible permits into a single coordinated closure window.",
-            "reason": "These candidate permits are geographically close and scheduled in the same near-term window.",
+            "action": (
+                "Merge same-segment utility work into one coordinated opening."
+                if match_type == "same_segment"
+                else "Coordinate same-street permits into one trench-sharing window."
+            ),
+            "reason": (
+                "These permits share the city's GEO_ID (same road segment) and "
+                "fall within a single coordination window."
+                if match_type == "same_segment"
+                else "These permits are on the same physical road within a "
+                "single coordination window."
+            ),
         })
     return recommendations
 
