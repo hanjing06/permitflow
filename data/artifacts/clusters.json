@@ -1,0 +1,66 @@
+[
+  {
+    "type": "merge",
+    "cluster_id": "merge:0",
+    "member_permit_ids": [
+      "utility_cut:P001",
+      "utility_cut:P002",
+      "utility_cut:P003"
+    ],
+    "merged_window": {
+      "start": "2026-06-01",
+      "end": "2026-06-12"
+    },
+    "savings_lane_days": 10,
+    "lane_days_saved": 10,
+    "excavations_avoided": 2,
+    "permit_count": 3,
+    "road_openings_saved": 2,
+    "estimated_savings": 150000,
+    "priority": "Medium",
+    "locations": [
+      "Queen St W"
+    ],
+    "projects": [
+      "gas repair",
+      "utility cut",
+      "water repair"
+    ],
+    "statuses": [
+      "Planned"
+    ],
+    "action": "Merge nearby flexible permits into a single coordinated closure window.",
+    "reason": "These candidate permits are geographically close and scheduled in the same near-term window."
+  },
+  {
+    "type": "merge",
+    "cluster_id": "merge:1",
+    "member_permit_ids": [
+      "utility_cut:P004",
+      "utility_cut:P005"
+    ],
+    "merged_window": {
+      "start": "2026-07-01",
+      "end": "2026-07-06"
+    },
+    "savings_lane_days": 4,
+    "lane_days_saved": 4,
+    "excavations_avoided": 1,
+    "permit_count": 2,
+    "road_openings_saved": 1,
+    "estimated_savings": 60000,
+    "priority": "Medium",
+    "locations": [
+      "Dundas St W"
+    ],
+    "projects": [
+      "electrical work",
+      "utility cut"
+    ],
+    "statuses": [
+      "Planned"
+    ],
+    "action": "Merge nearby flexible permits into a single coordinated closure window.",
+    "reason": "These candidate permits are geographically close and scheduled in the same near-term window."
+  }
+]

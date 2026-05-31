@@ -6,7 +6,9 @@ from optimizer import (
     cluster_permits,
     recommend_consolidations,
     get_metrics,
-    what_if_analysis
+    what_if_analysis,
+    what_if_by_street,
+    load_artifact_or_build,
 )
 
 app = FastAPI(title="PermitFlow")
@@ -97,6 +99,36 @@ def whatif(cluster_id: int, delay_weeks: int = 2):
     df = load_permits()
     df = cluster_permits(df)
     return what_if_analysis(df, cluster_id, delay_weeks)
+
+@app.get("/hero-block")
+def hero_block():
+    return load_artifact_or_build("hero-block.json")
+
+
+@app.get("/clusters")
+def clusters():
+    return load_artifact_or_build("clusters.json")
+
+
+@app.get("/conflict-graph")
+def conflict_graph():
+    return load_artifact_or_build("conflict-graph.json")
+
+
+@app.get("/naive")
+def naive():
+    return load_artifact_or_build("naive.json")
+
+
+@app.get("/optimized")
+def optimized():
+    return load_artifact_or_build("optimized.json")
+
+
+@app.get("/whatif-street")
+def whatif_street(street: str, date: str | None = None):
+    return what_if_by_street(street, date)
+
 
 @app.get("/explain")
 def explain(cluster_id: int):

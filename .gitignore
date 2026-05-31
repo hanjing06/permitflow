@@ -216,3 +216,9 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# PermitFlow — keep reproducible CKAN downloads out of git, ship optimizer artifacts
+data/*.csv
+data/*.parquet
+!data/artifacts/
+
