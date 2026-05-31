@@ -2,6 +2,7 @@
   {
     "type": "merge",
     "cluster_id": "merge:0",
+    "match_type": "same_street",
     "member_permit_ids": [
       "utility_cut:P001",
       "utility_cut:P002",
@@ -29,12 +30,13 @@
     "statuses": [
       "Planned"
     ],
-    "action": "Merge nearby flexible permits into a single coordinated closure window.",
-    "reason": "These candidate permits are geographically close and scheduled in the same near-term window."
+    "action": "Coordinate same-street permits into one trench-sharing window.",
+    "reason": "These permits are on the same physical road within a single coordination window."
   },
   {
     "type": "merge",
     "cluster_id": "merge:1",
+    "match_type": "same_street",
     "member_permit_ids": [
       "utility_cut:P004",
       "utility_cut:P005"
@@ -60,7 +62,7 @@
     "statuses": [
       "Planned"
     ],
-    "action": "Merge nearby flexible permits into a single coordinated closure window.",
-    "reason": "These candidate permits are geographically close and scheduled in the same near-term window."
+    "action": "Coordinate same-street permits into one trench-sharing window.",
+    "reason": "These permits are on the same physical road within a single coordination window."
   }
 ]

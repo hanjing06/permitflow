@@ -140,6 +140,11 @@ export default function HeroMap({ view }) {
                 <span style={{ fontSize: 12, color: "#444" }}>
                   {chronology.length} permits · {start} → {end}
                 </span>
+                {cluster.match_type && (
+                  <div style={{ fontSize: 11, color: "#888", marginTop: 2 }}>
+                    match: {String(cluster.match_type).replace(/_/g, " ")}
+                  </div>
+                )}
                 {cluster.savings_lane_days != null && (
                   <div style={{ fontSize: 12, marginTop: 4, color: "#444" }}>
                     Saves <b>{cluster.savings_lane_days} lane-days</b> vs running independently

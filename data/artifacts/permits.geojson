@@ -40,6 +40,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "[195.70 m n] davenport road",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6733499753259,
         "lon": -79.4487804363014
       }
@@ -83,6 +86,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "[40 m s] st clair avenue",
+        "direction": "W",
+        "geo_id": null,
         "lat": 43.6759758574483,
         "lon": -79.4499284342664
       }
@@ -126,6 +132,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-06-30",
         "lane_days": 91,
+        "normalized_street": "copperfield road",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.761340768032,
         "lon": -79.1636322775794
       }
@@ -169,6 +178,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "dover avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.5956595238175,
         "lon": -79.5430568545606
       }
@@ -212,6 +224,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-06-30",
         "lane_days": 91,
+        "normalized_street": "alan borovoy lane",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6585765551403,
         "lon": -79.4164095716357
       }
@@ -255,6 +270,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "[79.20 m w] huron street",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.653578495542,
         "lon": -79.3974500705277
       }
@@ -298,6 +316,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "[28.70 m n] springhurst avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6340241781122,
         "lon": -79.4318736417011
       }
@@ -341,6 +362,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "[43.30 m n] dundas street",
+        "direction": "W",
+        "geo_id": null,
         "lat": 43.653578495542,
         "lon": -79.3974500705277
       }
@@ -384,6 +408,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "orchard park drive",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7748966815375,
         "lon": -79.1795664299426
       }
@@ -427,6 +454,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "ridelle avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7053528781632,
         "lon": -79.4352586953962
       }
@@ -470,6 +500,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "[79 m n] o&apos;connor drive",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6935649128476,
         "lon": -79.3531025231468
       }
@@ -513,6 +546,9 @@
         "start_date": "2026-06-01",
         "end_date": "2026-10-31",
         "lane_days": 153,
+        "normalized_street": "[33.50 m e] emerson avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6633025150236,
         "lon": -79.4420207671826
       }
@@ -556,6 +592,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-06-30",
         "lane_days": 91,
+        "normalized_street": "macpherson avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6754333996106,
         "lon": -79.4096177161817
       }
@@ -599,6 +638,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-09-30",
         "lane_days": 92,
+        "normalized_street": "dupont street",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6751085658455,
         "lon": -79.4059769635791
       }
@@ -642,6 +684,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-09-30",
         "lane_days": 92,
+        "normalized_street": "[37 m n] bedford park avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7243612752746,
         "lon": -79.4195982671343
       }
@@ -685,6 +730,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "[34.40 m n] auburn avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6750084237118,
         "lon": -79.4463538719074
       }
@@ -728,6 +776,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "westside drive",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6180544599082,
         "lon": -79.5636253016292
       }
@@ -771,6 +822,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "[31 m e] eileen avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6700994974601,
         "lon": -79.4949789913813
       }
@@ -814,6 +868,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-09-30",
         "lane_days": 92,
+        "normalized_street": "queen elizabeth boulevard",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6215272517268,
         "lon": -79.5129525632846
       }
@@ -857,6 +914,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "ridelle avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.705102179694,
         "lon": -79.4364077172101
       }
@@ -900,6 +960,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "ridelle avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7058560969965,
         "lon": -79.4329630691003
       }
@@ -943,6 +1006,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "west hill drive",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7741562734533,
         "lon": -79.181731009347
       }
@@ -986,6 +1052,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-06-30",
         "lane_days": 91,
+        "normalized_street": "hollaman road",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.713266387425,
         "lon": -79.4298163688248
       }
@@ -1029,6 +1098,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-06-30",
         "lane_days": 91,
+        "normalized_street": "macpherson avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6757501952466,
         "lon": -79.4080897468529
       }
@@ -1072,6 +1144,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "cortleigh boulevard",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7122280026321,
         "lon": -79.4156786733477
       }
@@ -1115,6 +1190,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-06-30",
         "lane_days": 91,
+        "normalized_street": "ascot avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6791741606789,
         "lon": -79.4483381993882
       }
@@ -1158,6 +1236,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-06-30",
         "lane_days": 91,
+        "normalized_street": "ascot avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6795814989939,
         "lon": -79.4465083593762
       }
@@ -1201,6 +1282,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-09-30",
         "lane_days": 92,
+        "normalized_street": "dupont street",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.675594773861,
         "lon": -79.403600319043
       }
@@ -1244,6 +1328,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "donald avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6859965090083,
         "lon": -79.4678915091002
       }
@@ -1287,6 +1374,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "[45.70 m e] beech avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6754832201276,
         "lon": -79.2879796582391
       }
@@ -1330,6 +1420,9 @@
         "start_date": "2026-06-01",
         "end_date": "2026-10-31",
         "lane_days": 153,
+        "normalized_street": "[30.50 m n] wallace avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6632356139409,
         "lon": -79.4419968763231
       }
@@ -1373,6 +1466,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "monogram place",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.703837696326,
         "lon": -79.5549610701561
       }
@@ -1416,6 +1512,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "monogram place",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7039904367322,
         "lon": -79.5542971690567
       }
@@ -1459,6 +1558,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "merrill avenue",
+        "direction": "E",
+        "geo_id": null,
         "lat": 43.6833013299465,
         "lon": -79.3123878319493
       }
@@ -1502,6 +1604,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "[46.30 m n] dundas street",
+        "direction": "W",
+        "geo_id": null,
         "lat": 43.6541713678773,
         "lon": -79.3945509542036
       }
@@ -1545,6 +1650,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "[34 m n] florence avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6699354210539,
         "lon": -79.4946385510168
       }
@@ -1588,6 +1696,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "fernwood park avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6710697145906,
         "lon": -79.2883999949919
       }
@@ -1631,6 +1742,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "dewbourne avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6986053269079,
         "lon": -79.4256101198034
       }
@@ -1674,6 +1788,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "clifton road",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6901390533539,
         "lon": -79.3843590690759
       }
@@ -1717,6 +1834,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "[36.60 m w] pape avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6742692893272,
         "lon": -79.3435691363315
       }
@@ -1760,6 +1880,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "glenrose avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6893831118331,
         "lon": -79.3832170202299
       }
@@ -1803,6 +1926,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "college view avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7020610206571,
         "lon": -79.4063385693134
       }
@@ -1846,6 +1972,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "amiens road",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7739923921575,
         "lon": -79.1869232842013
       }
@@ -1889,6 +2018,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-10-31",
         "lane_days": 214,
+        "normalized_street": "parkcrest drive",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.735248761302,
         "lon": -79.2176344434893
       }
@@ -1932,6 +2064,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "ridelle avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7060823742306,
         "lon": -79.4318104838685
       }
@@ -1975,6 +2110,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-06-30",
         "lane_days": 91,
+        "normalized_street": "ascot avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.679822893364,
         "lon": -79.4454150061561
       }
@@ -2018,6 +2156,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-06-30",
         "lane_days": 91,
+        "normalized_street": "macpherson avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6759529194814,
         "lon": -79.4069870403323
       }
@@ -2061,6 +2202,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "hazel avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6716000288966,
         "lon": -79.2879610380909
       }
@@ -2104,6 +2248,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "[46.30 m n] dundas street",
+        "direction": "W",
+        "geo_id": null,
         "lat": 43.6539042948101,
         "lon": -79.3958991824756
       }
@@ -2147,6 +2294,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "[36 m w] hopedale avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6942004911605,
         "lon": -79.3536153141476
       }
@@ -2190,6 +2340,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "ridelle avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7067692737433,
         "lon": -79.4285835861986
       }
@@ -2233,6 +2386,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "[119.70 m w] via italia",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6750084237118,
         "lon": -79.4463538719074
       }
@@ -2276,6 +2432,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "[33.50 m w] dufferin street",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.664152275056,
         "lon": -79.4377521981833
       }
@@ -2319,6 +2478,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "[87.20 m n] davenport road",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6727870163589,
         "lon": -79.4465549600059
       }
@@ -2362,6 +2524,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "chemical crt",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7639405985815,
         "lon": -79.1625531024077
       }
@@ -2405,6 +2570,9 @@
         "start_date": "2026-06-01",
         "end_date": "2026-10-31",
         "lane_days": 153,
+        "normalized_street": "[32 m e] st clarens avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6517237208411,
         "lon": -79.4383769880856
       }
@@ -2448,6 +2616,9 @@
         "start_date": "2026-06-01",
         "end_date": "2026-10-31",
         "lane_days": 153,
+        "normalized_street": "[30.50 m w] ossington avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6500841307132,
         "lon": -79.421591252616
       }
@@ -2491,6 +2662,9 @@
         "start_date": "2026-06-01",
         "end_date": "2026-10-31",
         "lane_days": 153,
+        "normalized_street": "douglas campbell lane",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6581118072005,
         "lon": -79.402023594678
       }
@@ -2534,6 +2708,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-06-30",
         "lane_days": 91,
+        "normalized_street": "ascot avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6786565635646,
         "lon": -79.4507281001754
       }
@@ -2577,6 +2754,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "[36.60 m n] queen street",
+        "direction": "W",
+        "geo_id": null,
         "lat": 43.6406342394106,
         "lon": -79.4386550799761
       }
@@ -2620,6 +2800,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "oriole parkway",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7085536204118,
         "lon": -79.4074811493918
       }
@@ -2663,6 +2846,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "orchard view boulevard",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7070861600804,
         "lon": -79.40711993841
       }
@@ -2706,6 +2892,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "monogram place",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7037098704109,
         "lon": -79.5555025161576
       }
@@ -2749,6 +2938,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "ridelle avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7063224618657,
         "lon": -79.4306603358075
       }
@@ -2792,6 +2984,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "[44.50 m n] dundas street",
+        "direction": "W",
+        "geo_id": null,
         "lat": 43.6538134539269,
         "lon": -79.3963577279059
       }
@@ -2835,6 +3030,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "[43.70 m s] baldwin street",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6545627611997,
         "lon": -79.397842054292
       }
@@ -2878,6 +3076,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "castlefield avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7117357599221,
         "lon": -79.3999992653582
       }
@@ -2921,6 +3122,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "roslin avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7315878461685,
         "lon": -79.3928150300386
       }
@@ -2964,6 +3168,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-06-30",
         "lane_days": 91,
+        "normalized_street": "bridgman avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6749637113763,
         "lon": -79.4117988856133
       }
@@ -3007,6 +3214,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "roselawn avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7071568142802,
         "lon": -79.4170993159339
       }
@@ -3050,6 +3260,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-06-30",
         "lane_days": 91,
+        "normalized_street": "macpherson avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6765933111377,
         "lon": -79.4040959554037
       }
@@ -3093,6 +3306,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-06-30",
         "lane_days": 91,
+        "normalized_street": "nunes lane",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6729581349581,
         "lon": -79.4437645179198
       }
@@ -3136,6 +3352,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-06-30",
         "lane_days": 91,
+        "normalized_street": "macpherson avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6763638637536,
         "lon": -79.4051682267088
       }
@@ -3179,6 +3398,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "[40.20 m n] norman avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6780566539711,
         "lon": -79.4566428105757
       }
@@ -3222,6 +3444,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-09-30",
         "lane_days": 92,
+        "normalized_street": "dupont street",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6749142174177,
         "lon": -79.4068632086908
       }
@@ -3265,6 +3490,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-09-30",
         "lane_days": 92,
+        "normalized_street": "dupont street",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6754803452256,
         "lon": -79.4041738521104
       }
@@ -3308,6 +3536,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "[37 m s] eglinton avenue",
+        "direction": "W",
+        "geo_id": null,
         "lat": 43.6900932023795,
         "lon": -79.4730302442544
       }
@@ -3351,6 +3582,9 @@
         "start_date": "2026-01-01",
         "end_date": "2026-12-31",
         "lane_days": 365,
+        "normalized_street": "keele street",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7787088410808,
         "lon": -79.4946752364054
       }
@@ -3394,6 +3628,9 @@
         "start_date": "2026-06-01",
         "end_date": "2026-10-31",
         "lane_days": 153,
+        "normalized_street": "[113 m w] humbercrest boulevard",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6600939142195,
         "lon": -79.4946587574067
       }
@@ -3437,6 +3674,9 @@
         "start_date": "2026-06-01",
         "end_date": "2026-10-31",
         "lane_days": 153,
+        "normalized_street": "douglas campbell lane",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6582724129034,
         "lon": -79.4012453655503
       }
@@ -3480,6 +3720,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "[24.90 m e] huron street",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6537224602289,
         "lon": -79.3958250685226
       }
@@ -3523,6 +3766,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-06-30",
         "lane_days": 91,
+        "normalized_street": "macpherson avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6761221387338,
         "lon": -79.4063298369843
       }
@@ -3566,6 +3812,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "zaph avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.796251440119,
         "lon": -79.1688008359139
       }
@@ -3609,6 +3858,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "clifton road",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6886441235492,
         "lon": -79.3837153827839
       }
@@ -3652,6 +3904,9 @@
         "start_date": "2026-06-01",
         "end_date": "2026-10-31",
         "lane_days": 153,
+        "normalized_street": "[30.20 m n] baden street",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6503136226759,
         "lon": -79.4221133490483
       }
@@ -3695,6 +3950,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "toffee crt",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6065277727074,
         "lon": -79.5076735563786
       }
@@ -3738,6 +3996,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "ridelle avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7055975320004,
         "lon": -79.4340824104198
       }
@@ -3781,6 +4042,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "habibi lane",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6804243690658,
         "lon": -79.4576392528267
       }
@@ -3824,6 +4088,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-06-30",
         "lane_days": 91,
+        "normalized_street": "ascot avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6789139380522,
         "lon": -79.4495473959531
       }
@@ -3867,6 +4134,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "penrose road",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7032932683942,
         "lon": -79.3881569271875
       }
@@ -3910,6 +4180,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "[40.20 m s] innes avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6804243690658,
         "lon": -79.4576392528267
       }
@@ -3953,6 +4226,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "oriole parkway",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7074777696901,
         "lon": -79.4072101079657
       }
@@ -3996,6 +4272,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "[42.70 m e] spadina avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6545627611997,
         "lon": -79.397842054292
       }
@@ -4039,6 +4318,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "monogram place",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7048730764941,
         "lon": -79.5511516757264
       }
@@ -4082,6 +4364,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "hazel avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.671542321821,
         "lon": -79.2888219319829
       }
@@ -4125,6 +4410,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-09-30",
         "lane_days": 92,
+        "normalized_street": "dupont street",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6748573134163,
         "lon": -79.4071227701378
       }
@@ -4168,6 +4456,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "[195.70 m n] davenport road",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6733499753259,
         "lon": -79.4487804363014
       }
@@ -4211,6 +4502,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "[40 m s] st clair avenue",
+        "direction": "W",
+        "geo_id": null,
         "lat": 43.6759758574483,
         "lon": -79.4499284342664
       }
@@ -4254,6 +4548,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-06-30",
         "lane_days": 91,
+        "normalized_street": "copperfield road",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.761340768032,
         "lon": -79.1636322775794
       }
@@ -4297,6 +4594,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "dover avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.5956595238175,
         "lon": -79.5430568545606
       }
@@ -4340,6 +4640,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-06-30",
         "lane_days": 91,
+        "normalized_street": "alan borovoy lane",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6585765551403,
         "lon": -79.4164095716357
       }
@@ -4383,6 +4686,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "[79.20 m w] huron street",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.653578495542,
         "lon": -79.3974500705277
       }
@@ -4426,6 +4732,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "[28.70 m n] springhurst avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6340241781122,
         "lon": -79.4318736417011
       }
@@ -4469,6 +4778,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "[43.30 m n] dundas street",
+        "direction": "W",
+        "geo_id": null,
         "lat": 43.653578495542,
         "lon": -79.3974500705277
       }
@@ -4512,6 +4824,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "orchard park drive",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7748966815375,
         "lon": -79.1795664299426
       }
@@ -4555,6 +4870,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "ridelle avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7053528781632,
         "lon": -79.4352586953962
       }
@@ -4598,6 +4916,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "[79 m n] o&apos;connor drive",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6935649128476,
         "lon": -79.3531025231468
       }
@@ -4641,6 +4962,9 @@
         "start_date": "2026-06-01",
         "end_date": "2026-10-31",
         "lane_days": 153,
+        "normalized_street": "[33.50 m e] emerson avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6633025150236,
         "lon": -79.4420207671826
       }
@@ -4684,6 +5008,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-06-30",
         "lane_days": 91,
+        "normalized_street": "macpherson avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6754333996106,
         "lon": -79.4096177161817
       }
@@ -4727,6 +5054,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-09-30",
         "lane_days": 92,
+        "normalized_street": "dupont street",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6751085658455,
         "lon": -79.4059769635791
       }
@@ -4770,6 +5100,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-09-30",
         "lane_days": 92,
+        "normalized_street": "[37 m n] bedford park avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7243612752746,
         "lon": -79.4195982671343
       }
@@ -4813,6 +5146,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "[34.40 m n] auburn avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6750084237118,
         "lon": -79.4463538719074
       }
@@ -4856,6 +5192,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "westside drive",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6180544599082,
         "lon": -79.5636253016292
       }
@@ -4899,6 +5238,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "[31 m e] eileen avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6700994974601,
         "lon": -79.4949789913813
       }
@@ -4942,6 +5284,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-09-30",
         "lane_days": 92,
+        "normalized_street": "queen elizabeth boulevard",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6215272517268,
         "lon": -79.5129525632846
       }
@@ -4985,6 +5330,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "ridelle avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.705102179694,
         "lon": -79.4364077172101
       }
@@ -5028,6 +5376,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "ridelle avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7058560969965,
         "lon": -79.4329630691003
       }
@@ -5071,6 +5422,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "west hill drive",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7741562734533,
         "lon": -79.181731009347
       }
@@ -5114,6 +5468,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-06-30",
         "lane_days": 91,
+        "normalized_street": "hollaman road",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.713266387425,
         "lon": -79.4298163688248
       }
@@ -5157,6 +5514,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-06-30",
         "lane_days": 91,
+        "normalized_street": "macpherson avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6757501952466,
         "lon": -79.4080897468529
       }
@@ -5200,6 +5560,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "cortleigh boulevard",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7122280026321,
         "lon": -79.4156786733477
       }
@@ -5243,6 +5606,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-06-30",
         "lane_days": 91,
+        "normalized_street": "ascot avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6791741606789,
         "lon": -79.4483381993882
       }
@@ -5286,6 +5652,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-06-30",
         "lane_days": 91,
+        "normalized_street": "ascot avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6795814989939,
         "lon": -79.4465083593762
       }
@@ -5329,6 +5698,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-09-30",
         "lane_days": 92,
+        "normalized_street": "dupont street",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.675594773861,
         "lon": -79.403600319043
       }
@@ -5372,6 +5744,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "donald avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6859965090083,
         "lon": -79.4678915091002
       }
@@ -5415,6 +5790,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "[45.70 m e] beech avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6754832201276,
         "lon": -79.2879796582391
       }
@@ -5458,6 +5836,9 @@
         "start_date": "2026-06-01",
         "end_date": "2026-10-31",
         "lane_days": 153,
+        "normalized_street": "[30.50 m n] wallace avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6632356139409,
         "lon": -79.4419968763231
       }
@@ -5501,6 +5882,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "monogram place",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.703837696326,
         "lon": -79.5549610701561
       }
@@ -5544,6 +5928,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "monogram place",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7039904367322,
         "lon": -79.5542971690567
       }
@@ -5587,6 +5974,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "merrill avenue",
+        "direction": "E",
+        "geo_id": null,
         "lat": 43.6833013299465,
         "lon": -79.3123878319493
       }
@@ -5630,6 +6020,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "[46.30 m n] dundas street",
+        "direction": "W",
+        "geo_id": null,
         "lat": 43.6541713678773,
         "lon": -79.3945509542036
       }
@@ -5673,6 +6066,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "[34 m n] florence avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6699354210539,
         "lon": -79.4946385510168
       }
@@ -5716,6 +6112,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "fernwood park avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6710697145906,
         "lon": -79.2883999949919
       }
@@ -5759,6 +6158,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "dewbourne avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6986053269079,
         "lon": -79.4256101198034
       }
@@ -5802,6 +6204,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "clifton road",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6901390533539,
         "lon": -79.3843590690759
       }
@@ -5845,6 +6250,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "[36.60 m w] pape avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6742692893272,
         "lon": -79.3435691363315
       }
@@ -5888,6 +6296,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "glenrose avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6893831118331,
         "lon": -79.3832170202299
       }
@@ -5931,6 +6342,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "college view avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7020610206571,
         "lon": -79.4063385693134
       }
@@ -5974,6 +6388,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "amiens road",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7739923921575,
         "lon": -79.1869232842013
       }
@@ -6017,6 +6434,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-10-31",
         "lane_days": 214,
+        "normalized_street": "parkcrest drive",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.735248761302,
         "lon": -79.2176344434893
       }
@@ -6060,6 +6480,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "ridelle avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7060823742306,
         "lon": -79.4318104838685
       }
@@ -6103,6 +6526,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-06-30",
         "lane_days": 91,
+        "normalized_street": "ascot avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.679822893364,
         "lon": -79.4454150061561
       }
@@ -6146,6 +6572,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-06-30",
         "lane_days": 91,
+        "normalized_street": "macpherson avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6759529194814,
         "lon": -79.4069870403323
       }
@@ -6189,6 +6618,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "hazel avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6716000288966,
         "lon": -79.2879610380909
       }
@@ -6232,6 +6664,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "[46.30 m n] dundas street",
+        "direction": "W",
+        "geo_id": null,
         "lat": 43.6539042948101,
         "lon": -79.3958991824756
       }
@@ -6275,6 +6710,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "[36 m w] hopedale avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6942004911605,
         "lon": -79.3536153141476
       }
@@ -6318,6 +6756,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "ridelle avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7067692737433,
         "lon": -79.4285835861986
       }
@@ -6361,6 +6802,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "[119.70 m w] via italia",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6750084237118,
         "lon": -79.4463538719074
       }
@@ -6404,6 +6848,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "[33.50 m w] dufferin street",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.664152275056,
         "lon": -79.4377521981833
       }
@@ -6447,6 +6894,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "[87.20 m n] davenport road",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6727870163589,
         "lon": -79.4465549600059
       }
@@ -6490,6 +6940,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "chemical crt",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7639405985815,
         "lon": -79.1625531024077
       }
@@ -6533,6 +6986,9 @@
         "start_date": "2026-06-01",
         "end_date": "2026-10-31",
         "lane_days": 153,
+        "normalized_street": "[32 m e] st clarens avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6517237208411,
         "lon": -79.4383769880856
       }
@@ -6576,6 +7032,9 @@
         "start_date": "2026-06-01",
         "end_date": "2026-10-31",
         "lane_days": 153,
+        "normalized_street": "[30.50 m w] ossington avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6500841307132,
         "lon": -79.421591252616
       }
@@ -6619,6 +7078,9 @@
         "start_date": "2026-06-01",
         "end_date": "2026-10-31",
         "lane_days": 153,
+        "normalized_street": "douglas campbell lane",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6581118072005,
         "lon": -79.402023594678
       }
@@ -6662,6 +7124,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-06-30",
         "lane_days": 91,
+        "normalized_street": "ascot avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6786565635646,
         "lon": -79.4507281001754
       }
@@ -6705,6 +7170,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "[36.60 m n] queen street",
+        "direction": "W",
+        "geo_id": null,
         "lat": 43.6406342394106,
         "lon": -79.4386550799761
       }
@@ -6748,6 +7216,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "oriole parkway",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7085536204118,
         "lon": -79.4074811493918
       }
@@ -6791,6 +7262,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "orchard view boulevard",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7070861600804,
         "lon": -79.40711993841
       }
@@ -6834,6 +7308,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "monogram place",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7037098704109,
         "lon": -79.5555025161576
       }
@@ -6877,6 +7354,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "ridelle avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7063224618657,
         "lon": -79.4306603358075
       }
@@ -6920,6 +7400,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "[44.50 m n] dundas street",
+        "direction": "W",
+        "geo_id": null,
         "lat": 43.6538134539269,
         "lon": -79.3963577279059
       }
@@ -6963,6 +7446,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "[43.70 m s] baldwin street",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6545627611997,
         "lon": -79.397842054292
       }
@@ -7006,6 +7492,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "castlefield avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7117357599221,
         "lon": -79.3999992653582
       }
@@ -7049,6 +7538,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "roslin avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7315878461685,
         "lon": -79.3928150300386
       }
@@ -7092,6 +7584,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-06-30",
         "lane_days": 91,
+        "normalized_street": "bridgman avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6749637113763,
         "lon": -79.4117988856133
       }
@@ -7135,6 +7630,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "roselawn avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7071568142802,
         "lon": -79.4170993159339
       }
@@ -7178,6 +7676,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-06-30",
         "lane_days": 91,
+        "normalized_street": "macpherson avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6765933111377,
         "lon": -79.4040959554037
       }
@@ -7221,6 +7722,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-06-30",
         "lane_days": 91,
+        "normalized_street": "nunes lane",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6729581349581,
         "lon": -79.4437645179198
       }
@@ -7264,6 +7768,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-06-30",
         "lane_days": 91,
+        "normalized_street": "macpherson avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6763638637536,
         "lon": -79.4051682267088
       }
@@ -7307,6 +7814,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "[40.20 m n] norman avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6780566539711,
         "lon": -79.4566428105757
       }
@@ -7350,6 +7860,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-09-30",
         "lane_days": 92,
+        "normalized_street": "dupont street",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6749142174177,
         "lon": -79.4068632086908
       }
@@ -7393,6 +7906,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-09-30",
         "lane_days": 92,
+        "normalized_street": "dupont street",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6754803452256,
         "lon": -79.4041738521104
       }
@@ -7436,6 +7952,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "[37 m s] eglinton avenue",
+        "direction": "W",
+        "geo_id": null,
         "lat": 43.6900932023795,
         "lon": -79.4730302442544
       }
@@ -7479,6 +7998,9 @@
         "start_date": "2026-01-01",
         "end_date": "2026-12-31",
         "lane_days": 365,
+        "normalized_street": "keele street",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7787088410808,
         "lon": -79.4946752364054
       }
@@ -7522,6 +8044,9 @@
         "start_date": "2026-06-01",
         "end_date": "2026-10-31",
         "lane_days": 153,
+        "normalized_street": "[113 m w] humbercrest boulevard",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6600939142195,
         "lon": -79.4946587574067
       }
@@ -7565,6 +8090,9 @@
         "start_date": "2026-06-01",
         "end_date": "2026-10-31",
         "lane_days": 153,
+        "normalized_street": "douglas campbell lane",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6582724129034,
         "lon": -79.4012453655503
       }
@@ -7608,6 +8136,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "[24.90 m e] huron street",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6537224602289,
         "lon": -79.3958250685226
       }
@@ -7651,6 +8182,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-06-30",
         "lane_days": 91,
+        "normalized_street": "macpherson avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6761221387338,
         "lon": -79.4063298369843
       }
@@ -7694,6 +8228,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "zaph avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.796251440119,
         "lon": -79.1688008359139
       }
@@ -7737,6 +8274,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "clifton road",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6886441235492,
         "lon": -79.3837153827839
       }
@@ -7780,6 +8320,9 @@
         "start_date": "2026-06-01",
         "end_date": "2026-10-31",
         "lane_days": 153,
+        "normalized_street": "[30.20 m n] baden street",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6503136226759,
         "lon": -79.4221133490483
       }
@@ -7823,6 +8366,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "toffee crt",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6065277727074,
         "lon": -79.5076735563786
       }
@@ -7866,6 +8412,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "ridelle avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7055975320004,
         "lon": -79.4340824104198
       }
@@ -7909,6 +8458,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "habibi lane",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6804243690658,
         "lon": -79.4576392528267
       }
@@ -7952,6 +8504,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-06-30",
         "lane_days": 91,
+        "normalized_street": "ascot avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6789139380522,
         "lon": -79.4495473959531
       }
@@ -7995,6 +8550,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "penrose road",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7032932683942,
         "lon": -79.3881569271875
       }
@@ -8038,6 +8596,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "[40.20 m s] innes avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6804243690658,
         "lon": -79.4576392528267
       }
@@ -8081,6 +8642,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "oriole parkway",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7074777696901,
         "lon": -79.4072101079657
       }
@@ -8124,6 +8688,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "[42.70 m e] spadina avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6545627611997,
         "lon": -79.397842054292
       }
@@ -8167,6 +8734,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "monogram place",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7048730764941,
         "lon": -79.5511516757264
       }
@@ -8210,6 +8780,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "hazel avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.671542321821,
         "lon": -79.2888219319829
       }
@@ -8253,6 +8826,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-09-30",
         "lane_days": 92,
+        "normalized_street": "dupont street",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6748573134163,
         "lon": -79.4071227701378
       }
@@ -8296,6 +8872,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "jennings avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.660940446275,
         "lon": -79.4732809052606
       }
@@ -8339,6 +8918,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "midwest road",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7591208416935,
         "lon": -79.270632627094
       }
@@ -8382,6 +8964,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-09-30",
         "lane_days": 92,
+        "normalized_street": "morningside avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7933050473812,
         "lon": -79.1960583313365
       }
@@ -8425,6 +9010,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "ridelle avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7048538078069,
         "lon": -79.4375461444458
       }
@@ -8468,6 +9056,9 @@
         "start_date": "2026-06-01",
         "end_date": "2026-10-31",
         "lane_days": 153,
+        "normalized_street": "sage avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.711129567797,
         "lon": -79.4629689249961
       }
@@ -8511,6 +9102,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "sedgebrook crescent",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6613767440435,
         "lon": -79.5680169121988
       }
@@ -8554,6 +9148,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "elderidge avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6363775428027,
         "lon": -79.5025359161437
       }
@@ -8597,6 +9194,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "belle ayre boulevard",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7024068767677,
         "lon": -79.3838013089538
       }
@@ -8640,6 +9240,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "danzig street",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7643075580946,
         "lon": -79.187330706739
       }
@@ -8683,6 +9286,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "foch avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.5930426956209,
         "lon": -79.5449135843755
       }
@@ -8726,6 +9332,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "rowallan drive",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7605040613045,
         "lon": -79.185472107434
       }
@@ -8769,6 +9378,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "stonehouse crescent",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.647557920377,
         "lon": -79.430200137832
       }
@@ -8812,6 +9424,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-06-30",
         "lane_days": 91,
+        "normalized_street": "leslie street",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6525045806898,
         "lon": -79.3229935878885
       }
@@ -8855,6 +9470,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "king henrys boulevard",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7845278868523,
         "lon": -79.2975815621667
       }
@@ -8898,6 +9516,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "dewbourne avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6978670659019,
         "lon": -79.4290044896232
       }
@@ -8941,6 +9562,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "dewbourne avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6981096388869,
         "lon": -79.4279500681759
       }
@@ -8984,6 +9608,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "paula boulevard",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6138126866145,
         "lon": -79.5350839067886
       }
@@ -9027,6 +9654,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-06-30",
         "lane_days": 91,
+        "normalized_street": "woodrow boulevard",
+        "direction": "N",
+        "geo_id": null,
         "lat": 43.7152587296237,
         "lon": -79.2667369097853
       }
@@ -9070,6 +9700,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-09-30",
         "lane_days": 92,
+        "normalized_street": "island road",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7994799574472,
         "lon": -79.1324930489337
       }
@@ -9113,6 +9746,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-09-30",
         "lane_days": 92,
+        "normalized_street": "island road",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7972061329581,
         "lon": -79.1412490784948
       }
@@ -9156,6 +9792,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-09-30",
         "lane_days": 92,
+        "normalized_street": "kipling avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7432636032611,
         "lon": -79.5821160426591
       }
@@ -9199,6 +9838,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "boler street",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6670955001116,
         "lon": -79.4749334200804
       }
@@ -9242,6 +9884,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "knob hill drive",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7114000142418,
         "lon": -79.5333351776815
       }
@@ -9285,6 +9930,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "west lodge avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6445172574275,
         "lon": -79.4368583468343
       }
@@ -9328,6 +9976,9 @@
         "start_date": "2026-01-01",
         "end_date": "2026-12-31",
         "lane_days": 365,
+        "normalized_street": "richmond street",
+        "direction": "W",
+        "geo_id": null,
         "lat": 43.6448622375137,
         "lon": -79.4099963990264
       }
@@ -9371,6 +10022,9 @@
         "start_date": "2026-01-01",
         "end_date": "2026-12-31",
         "lane_days": 365,
+        "normalized_street": "richmond street",
+        "direction": "W",
+        "geo_id": null,
         "lat": 43.6447176111335,
         "lon": -79.4106740326492
       }
@@ -9414,6 +10068,9 @@
         "start_date": "2026-01-01",
         "end_date": "2026-12-31",
         "lane_days": 365,
+        "normalized_street": "richmond street",
+        "direction": "W",
+        "geo_id": null,
         "lat": 43.6444434453926,
         "lon": -79.4121653304065
       }
@@ -9457,6 +10114,9 @@
         "start_date": "2026-06-01",
         "end_date": "2026-10-31",
         "lane_days": 153,
+        "normalized_street": "glen cedar road",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6946158616898,
         "lon": -79.4281602037961
       }
@@ -9500,6 +10160,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "lanewood crescent",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.802309085174,
         "lon": -79.3278036753944
       }
@@ -9543,6 +10206,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "lauren crt",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7204633300624,
         "lon": -79.3794082149908
       }
@@ -9586,6 +10252,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "louise avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6840683605616,
         "lon": -79.4232855384341
       }
@@ -9629,6 +10298,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "exchequer place",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.8078663073662,
         "lon": -79.2635840182791
       }
@@ -9672,6 +10344,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "ripplewood road",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6727329537665,
         "lon": -79.5248124195513
       }
@@ -9715,6 +10390,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-06-30",
         "lane_days": 91,
+        "normalized_street": "niagara street",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6417343412003,
         "lon": -79.4028110438654
       }
@@ -9758,6 +10436,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "ethelwin avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6850268897317,
         "lon": -79.3089383817493
       }
@@ -9801,6 +10482,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "dusay place",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7958764191234,
         "lon": -79.3298404830803
       }
@@ -9844,6 +10528,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "strathburn boulevard",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.719066305363,
         "lon": -79.5322173636435
       }
@@ -9887,6 +10574,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "feeney avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.8168710621908,
         "lon": -79.2149550354475
       }
@@ -9930,6 +10620,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "twyford crt",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6696177194765,
         "lon": -79.536971930591
       }
@@ -9973,6 +10666,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "fenelon drive",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7636210982838,
         "lon": -79.3391097864608
       }
@@ -10016,6 +10712,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "coronado crt",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7401804356499,
         "lon": -79.5402184090187
       }
@@ -10059,6 +10758,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "beamsville drive",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7792823529366,
         "lon": -79.3204842088518
       }
@@ -10102,6 +10804,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "ormont drive",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.764874938826,
         "lon": -79.5453640568366
       }
@@ -10145,6 +10850,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "woodmere crt",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6734280433515,
         "lon": -79.5271185899835
       }
@@ -10188,6 +10896,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "proud grove",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.799191898356,
         "lon": -79.2294573129006
       }
@@ -10231,6 +10942,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "[n-s] connaught crcl [branch]",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6890149161581,
         "lon": -79.4251137238913
       }
@@ -10274,6 +10988,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "bell royal crt",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6730284921801,
         "lon": -79.5217275292722
       }
@@ -10317,6 +11034,9 @@
         "start_date": "2026-06-01",
         "end_date": "2026-10-31",
         "lane_days": 153,
+        "normalized_street": "kenwood avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6859382632463,
         "lon": -79.423390436576
       }
@@ -10360,6 +11080,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "norelco drive",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7698760627918,
         "lon": -79.5350283648551
       }
@@ -10403,6 +11126,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "cornell avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6886119544706,
         "lon": -79.2736990776334
       }
@@ -10446,6 +11172,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "st johns road",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6626173544933,
         "lon": -79.4867683720624
       }
@@ -10489,6 +11218,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "heatherglen road",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7218360368501,
         "lon": -79.5827689350128
       }
@@ -10532,6 +11264,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "kingslea gardens",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6408512809761,
         "lon": -79.5017618538836
       }
@@ -10575,6 +11310,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "north kingslea drive",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.641562410013,
         "lon": -79.50071415995
       }
@@ -10618,6 +11356,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "forty first street",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.588632413158,
         "lon": -79.5421490473849
       }
@@ -10661,6 +11402,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "burlington street",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6196392878225,
         "lon": -79.4919022396763
       }
@@ -10704,6 +11448,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "skelton street",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6191036212835,
         "lon": -79.4900565674141
       }
@@ -10747,6 +11494,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "glenellen",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6406937028082,
         "lon": -79.4955745601423
       }
@@ -10790,6 +11540,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "kirk bradden",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6383262806723,
         "lon": -79.5038323461085
       }
@@ -10833,6 +11586,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "dale avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6743429489383,
         "lon": -79.3724780370817
       }
@@ -10876,6 +11632,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "madill street",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7007019087298,
         "lon": -79.5408434224183
       }
@@ -10919,6 +11678,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "landfair crescent",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7530026947788,
         "lon": -79.2284043475961
       }
@@ -10962,6 +11724,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "eda crt",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6473734960864,
         "lon": -79.5781590382012
       }
@@ -11005,6 +11770,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "apollo drive",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7468942469221,
         "lon": -79.3628412671459
       }
@@ -11048,6 +11816,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "odessa avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6593066616021,
         "lon": -79.5733716042621
       }
@@ -11091,6 +11862,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "eva road",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6396464543734,
         "lon": -79.5633112207061
       }
@@ -11134,6 +11908,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "[n-s] industrial st [leg]",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7092014629659,
         "lon": -79.3544954873241
       }
@@ -11177,6 +11954,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "breen crescent",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7506205317024,
         "lon": -79.3922203918207
       }
@@ -11220,6 +12000,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "willowdale avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7824985265062,
         "lon": -79.4074666092747
       }
@@ -11263,6 +12046,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "crescent road",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6781718891614,
         "lon": -79.3798946458181
       }
@@ -11306,6 +12092,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "crescent road",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6776701737964,
         "lon": -79.3778306239745
       }
@@ -11349,6 +12138,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "bayview avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7078130869911,
         "lon": -79.3760052372797
       }
@@ -11392,6 +12184,9 @@
         "start_date": "2026-06-01",
         "end_date": "2026-10-31",
         "lane_days": 153,
+        "normalized_street": "airdrie road",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7000028660285,
         "lon": -79.3709555029289
       }
@@ -11435,6 +12230,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "symington avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6597635407902,
         "lon": -79.4487713797738
       }
@@ -11478,6 +12276,9 @@
         "start_date": "2026-01-01",
         "end_date": "2026-09-30",
         "lane_days": 273,
+        "normalized_street": "westview boulevard",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.715161333466,
         "lon": -79.3038670483068
       }
@@ -11521,6 +12322,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "franson crescent",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7400558010198,
         "lon": -79.5434882290018
       }
@@ -11564,6 +12368,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "lloyd george avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.5943119696556,
         "lon": -79.544143582218
       }
@@ -11607,6 +12414,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "kane avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6808633039371,
         "lon": -79.4661148221707
       }
@@ -11650,6 +12460,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "conacher drive",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7979334289135,
         "lon": -79.3997329388254
       }
@@ -11693,6 +12506,9 @@
         "start_date": "2026-06-01",
         "end_date": "2026-10-31",
         "lane_days": 153,
+        "normalized_street": "tecumseth street",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6406315115596,
         "lon": -79.4041339238681
       }
@@ -11736,6 +12552,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "winsdale road",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6356209279392,
         "lon": -79.5762968159695
       }
@@ -11779,6 +12598,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "cobourg avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6550900082938,
         "lon": -79.4376166079803
       }
@@ -11822,6 +12644,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-06-30",
         "lane_days": 91,
+        "normalized_street": "elderwood drive",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6961842813461,
         "lon": -79.418400478644
       }
@@ -11865,6 +12690,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-06-30",
         "lane_days": 91,
+        "normalized_street": "bridgman avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6748625829458,
         "lon": -79.4123202389868
       }
@@ -11908,6 +12736,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "warwick avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6950930078707,
         "lon": -79.4241357699977
       }
@@ -11951,6 +12782,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "cabot crt",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6472698775145,
         "lon": -79.5310267219571
       }
@@ -11994,6 +12828,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "arlington avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6835487536287,
         "lon": -79.4298881437499
       }
@@ -12037,6 +12874,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "snowball crescent",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7990875015156,
         "lon": -79.228765747842
       }
@@ -12080,6 +12920,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "ridley boulevard",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7338441653275,
         "lon": -79.4085953009889
       }
@@ -12123,6 +12966,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "john stoner drive",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.8130738640769,
         "lon": -79.2091286658321
       }
@@ -12166,6 +13012,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "banmoor boulevard",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7514472495749,
         "lon": -79.2296562009184
       }
@@ -12209,6 +13058,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "beechgrove drive",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7668825242753,
         "lon": -79.1529044688365
       }
@@ -12252,6 +13104,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "rathgar avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6425733606179,
         "lon": -79.5720917628988
       }
@@ -12295,6 +13150,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "collingsbrook boulevard",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7890312119749,
         "lon": -79.3152538764942
       }
@@ -12338,6 +13196,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "centre drive",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6736636719664,
         "lon": -79.5228519040964
       }
@@ -12381,6 +13242,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-06-30",
         "lane_days": 91,
+        "normalized_street": "woodrow boulevard",
+        "direction": "N",
+        "geo_id": null,
         "lat": 43.7120938603503,
         "lon": -79.2653989536623
       }
@@ -12424,6 +13288,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "andover crescent",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.76649584921,
         "lon": -79.194893754215
       }
@@ -12467,6 +13334,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "maxine road",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7565652653759,
         "lon": -79.5912711340599
       }
@@ -12510,6 +13380,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "grenview",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6364765468324,
         "lon": -79.5027845798965
       }
@@ -12553,6 +13426,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "grenview",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6349374078222,
         "lon": -79.5012080925764
       }
@@ -12596,6 +13472,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "glenhurst avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6823029691075,
         "lon": -79.4346087872733
       }
@@ -12639,6 +13518,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "mansfield avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6532005304192,
         "lon": -79.4148937957878
       }
@@ -12682,6 +13564,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "alcan avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.593619379162,
         "lon": -79.5472687318418
       }
@@ -12725,6 +13610,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-10-31",
         "lane_days": 214,
+        "normalized_street": "parkcrest drive",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7354872167949,
         "lon": -79.2194667978855
       }
@@ -12768,6 +13656,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "alcan avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.5940520909181,
         "lon": -79.5453456147916
       }
@@ -12811,6 +13702,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "coronation drive",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7646534803944,
         "lon": -79.1693630785571
       }
@@ -12854,6 +13748,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "indian road",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6577332280039,
         "lon": -79.4568043439079
       }
@@ -12897,6 +13794,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "trowell avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6871392276457,
         "lon": -79.4673242918845
       }
@@ -12940,6 +13840,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "harleyford gt",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7772257075935,
         "lon": -79.2954708266235
       }
@@ -12983,6 +13886,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "jackson avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6532761488052,
         "lon": -79.5113164865422
       }
@@ -13026,6 +13932,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "spruce hill road",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.676039725897,
         "lon": -79.2902873159184
       }
@@ -13069,6 +13978,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "benedict road",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6707814124433,
         "lon": -79.5368572187536
       }
@@ -13112,6 +14024,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "rivercrest road",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6500317879443,
         "lon": -79.4853469658366
       }
@@ -13155,6 +14070,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-06-30",
         "lane_days": 91,
+        "normalized_street": "bridgman avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6752842669918,
         "lon": -79.4107051105068
       }
@@ -13198,6 +14116,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "rosewell avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.711787917846,
         "lon": -79.405496546998
       }
@@ -13241,6 +14162,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-09-30",
         "lane_days": 92,
+        "normalized_street": "weston road",
+        "direction": "N",
+        "geo_id": null,
         "lat": 43.7533361488939,
         "lon": -79.542709408584
       }
@@ -13284,6 +14208,9 @@
         "start_date": "2026-06-01",
         "end_date": "2026-10-31",
         "lane_days": 153,
+        "normalized_street": "[e-w] grenadier hts [leg]",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6416790017695,
         "lon": -79.4694132379945
       }
@@ -13327,6 +14254,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "vimy avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7041285646726,
         "lon": -79.5055946579489
       }
@@ -13370,6 +14300,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "dee crescent",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7114873075652,
         "lon": -79.5362766136852
       }
@@ -13413,6 +14346,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "glenellen",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6388071950504,
         "lon": -79.5048431832498
       }
@@ -13456,6 +14392,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "villa road",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.5905664330821,
         "lon": -79.5423606075443
       }
@@ -13499,6 +14438,9 @@
         "start_date": "2026-06-01",
         "end_date": "2026-10-31",
         "lane_days": 153,
+        "normalized_street": "airdrie road",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6998280449292,
         "lon": -79.3715789228523
       }
@@ -13542,6 +14484,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "sophia loren crt",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7570977621354,
         "lon": -79.5938337294976
       }
@@ -13585,6 +14530,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "woodfield road",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6762440437677,
         "lon": -79.3257884647793
       }
@@ -13628,6 +14576,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "bayview avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7106629276039,
         "lon": -79.3770525037904
       }
@@ -13671,6 +14622,9 @@
         "start_date": "2026-06-01",
         "end_date": "2026-10-31",
         "lane_days": 153,
+        "normalized_street": "tecumseth street",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6411183243516,
         "lon": -79.4043407018706
       }
@@ -13714,6 +14668,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "bayview avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7069396300705,
         "lon": -79.375649158024
       }
@@ -13757,6 +14714,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "bayview avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7051070513517,
         "lon": -79.3749356923048
       }
@@ -13800,6 +14760,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "symington avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6612929774594,
         "lon": -79.4493920487813
       }
@@ -13843,6 +14806,9 @@
         "start_date": "2026-01-01",
         "end_date": "2026-12-31",
         "lane_days": 365,
+        "normalized_street": "shoreham drive",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7722366973271,
         "lon": -79.5123814605768
       }
@@ -13886,6 +14852,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "candlewood crescent",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7547720905308,
         "lon": -79.5014703750461
       }
@@ -13929,6 +14898,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-06-30",
         "lane_days": 91,
+        "normalized_street": "bridgman avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6748086241094,
         "lon": -79.4126112225777
       }
@@ -13972,6 +14944,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "hill garden road",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6959658585268,
         "lon": -79.5214269586262
       }
@@ -14015,6 +14990,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "araman drive",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7752192877294,
         "lon": -79.2945067601759
       }
@@ -14058,6 +15036,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "gulfstream road",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7385968391625,
         "lon": -79.5430313871476
       }
@@ -14101,6 +15082,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "compass crt",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.8030567426054,
         "lon": -79.2578530142789
       }
@@ -14144,6 +15128,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "select avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.8325847425476,
         "lon": -79.2550986047273
       }
@@ -14187,6 +15174,9 @@
         "start_date": "2026-06-01",
         "end_date": "2026-10-31",
         "lane_days": 153,
+        "normalized_street": "greenwood avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6748753696798,
         "lon": -79.3296411989846
       }
@@ -14230,6 +15220,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "mansfield avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6535837288542,
         "lon": -79.4130492802401
       }
@@ -14273,6 +15266,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "ares crt",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7610475543639,
         "lon": -79.2002670994986
       }
@@ -14316,6 +15312,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "van dusen boulevard",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6417424924722,
         "lon": -79.5209440072164
       }
@@ -14359,6 +15358,9 @@
         "start_date": "2026-06-01",
         "end_date": "2026-10-31",
         "lane_days": 153,
+        "normalized_street": "glen cedar road",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6968280547354,
         "lon": -79.4296672578847
       }
@@ -14402,6 +15404,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-09-30",
         "lane_days": 92,
+        "normalized_street": "east avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7994461534601,
         "lon": -79.1394864477015
       }
@@ -14445,6 +15450,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "lakeview avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6518148644686,
         "lon": -79.4237023035181
       }
@@ -14488,6 +15496,9 @@
         "start_date": "2026-06-01",
         "end_date": "2026-10-31",
         "lane_days": 153,
+        "normalized_street": "kenwood avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6828293910262,
         "lon": -79.4221370649893
       }
@@ -14531,6 +15542,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "tooklea crescent",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.806202019244,
         "lon": -79.2640557757066
       }
@@ -14574,6 +15588,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "honeyview place",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.73398245441,
         "lon": -79.6206840721967
       }
@@ -14617,6 +15634,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "mansfield avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.653672198838,
         "lon": -79.4125879980853
       }
@@ -14660,6 +15680,9 @@
         "start_date": "2026-06-01",
         "end_date": "2026-10-31",
         "lane_days": 153,
+        "normalized_street": "hatton crt",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6517977438419,
         "lon": -79.5277715806137
       }
@@ -14703,6 +15726,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "glenhurst avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6820834274681,
         "lon": -79.4356115117512
       }
@@ -14746,6 +15772,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "grimthorpe road",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6821768340137,
         "lon": -79.430000734246
       }
@@ -14789,6 +15818,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "arlington avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6855154917507,
         "lon": -79.4305846984082
       }
@@ -14832,6 +15864,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "prince william crt",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7920590337692,
         "lon": -79.2441168718618
       }
@@ -14875,6 +15910,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "rosewell avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7113151466443,
         "lon": -79.4052491103072
       }
@@ -14918,6 +15956,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-06-30",
         "lane_days": 91,
+        "normalized_street": "niagara street",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6420472067038,
         "lon": -79.4012515666709
       }
@@ -14961,6 +16002,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "barlow road",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7692500079125,
         "lon": -79.2222283446136
       }
@@ -15004,6 +16048,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-09-30",
         "lane_days": 92,
+        "normalized_street": "victoria park avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6861002201908,
         "lon": -79.286250097859
       }
@@ -15047,6 +16094,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "lapsley road",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7953090418812,
         "lon": -79.2267155560148
       }
@@ -15090,6 +16140,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "dewbourne avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6976545142055,
         "lon": -79.4300251399486
       }
@@ -15133,6 +16186,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "sesame street",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7839483787062,
         "lon": -79.3227214839284
       }
@@ -15176,6 +16232,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "crescent road",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6775791071665,
         "lon": -79.3855309557062
       }
@@ -15219,6 +16278,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "ventnor avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6995115183175,
         "lon": -79.3175587758221
       }
@@ -15262,6 +16324,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "kennerly crt",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7548475716295,
         "lon": -79.5061324126915
       }
@@ -15305,6 +16370,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "exbury road",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.729260700691,
         "lon": -79.4946616799912
       }
@@ -15348,6 +16416,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "oakvale avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.678799120848,
         "lon": -79.3355187199939
       }
@@ -15391,6 +16462,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "leland avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6385692498753,
         "lon": -79.518242225888
       }
@@ -15434,6 +16508,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "harcourt avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.678320891997,
         "lon": -79.3394942325302
       }
@@ -15477,6 +16554,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "woodfield road",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.675930691071,
         "lon": -79.3256664495703
       }
@@ -15520,6 +16600,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "humewood gardens",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6829976250919,
         "lon": -79.4284011405991
       }
@@ -15563,6 +16646,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "indian road",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6565680728859,
         "lon": -79.4572050585085
       }
@@ -15606,6 +16692,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "gardenvale road",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6450127505297,
         "lon": -79.5186790202582
       }
@@ -15649,6 +16738,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "gondola crescent",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7672671467785,
         "lon": -79.2082564692608
       }
@@ -15692,6 +16784,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "spruce hill road",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6728343946207,
         "lon": -79.2889487967175
       }
@@ -15735,6 +16830,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "dansk crt",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7438732321781,
         "lon": -79.6160743097534
       }
@@ -15778,6 +16876,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "lakeview avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6500129500302,
         "lon": -79.4230113613086
       }
@@ -15821,6 +16922,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "glenlake avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6568910776931,
         "lon": -79.4684763453702
       }
@@ -15864,6 +16968,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "[n] hillholm rd [branch]",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6961162222715,
         "lon": -79.4095821662349
       }
@@ -15907,6 +17014,9 @@
         "start_date": "2026-06-01",
         "end_date": "2026-10-31",
         "lane_days": 153,
+        "normalized_street": "milky way",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6411938167676,
         "lon": -79.4314277280891
       }
@@ -15950,6 +17060,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "inverdon road",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.661357418185,
         "lon": -79.5718153978797
       }
@@ -15993,6 +17106,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "arlington avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6814496644776,
         "lon": -79.429033662549
       }
@@ -16036,6 +17152,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "st john&apos;s place",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6659372275721,
         "lon": -79.4759280471347
       }
@@ -16079,6 +17198,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "beulah street",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7589513388941,
         "lon": -79.5956920484316
       }
@@ -16122,6 +17244,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "[n] paulson rd [leg]",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6945752004239,
         "lon": -79.4790775607274
       }
@@ -16165,6 +17290,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "larmere crt",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7107382867177,
         "lon": -79.2659909464824
       }
@@ -16208,6 +17336,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "strathgowan avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7191986535404,
         "lon": -79.3986465390406
       }
@@ -16251,6 +17382,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "bankview circle",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7346836476703,
         "lon": -79.6217210823069
       }
@@ -16294,6 +17428,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "arlington avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6827490118024,
         "lon": -79.4295561046654
       }
@@ -16337,6 +17474,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "beechgrove drive",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7642597318963,
         "lon": -79.1517792688363
       }
@@ -16380,6 +17520,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "minglehaze drive",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7575952098348,
         "lon": -79.6011484752798
       }
@@ -16423,6 +17566,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "conacher drive",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7987311075262,
         "lon": -79.4000048077492
       }
@@ -16466,6 +17612,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "ridley boulevard",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7344338969715,
         "lon": -79.4086898567776
       }
@@ -16509,6 +17658,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "hiltz avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.665894202187,
         "lon": -79.326923741667
       }
@@ -16552,6 +17704,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "birdsilver gardens",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7917444477355,
         "lon": -79.1302343023559
       }
@@ -16595,6 +17750,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "pinewood avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6822956330818,
         "lon": -79.4247087457754
       }
@@ -16638,6 +17796,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "hunter avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6942228997741,
         "lon": -79.4506680175036
       }
@@ -16681,6 +17842,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "hillock place",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7526087020124,
         "lon": -79.2325760921213
       }
@@ -16724,6 +17888,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "nashville avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6835804121663,
         "lon": -79.472921583693
       }
@@ -16767,6 +17934,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-06-30",
         "lane_days": 91,
+        "normalized_street": "woodrow boulevard",
+        "direction": "N",
+        "geo_id": null,
         "lat": 43.7086486918758,
         "lon": -79.263954854798
       }
@@ -16810,6 +17980,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "lanor avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6114251253044,
         "lon": -79.5340875464461
       }
@@ -16853,6 +18026,9 @@
         "start_date": "2026-06-01",
         "end_date": "2026-10-31",
         "lane_days": 153,
+        "normalized_street": "signal hill avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7522410751287,
         "lon": -79.624766944225
       }
@@ -16896,6 +18072,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "new toronto street",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6065421360591,
         "lon": -79.5075961459653
       }
@@ -16939,6 +18118,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "pinewood avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6842828115158,
         "lon": -79.4254903570268
       }
@@ -16982,6 +18164,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "jackson avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6494040729744,
         "lon": -79.5095355520462
       }
@@ -17025,6 +18210,9 @@
         "start_date": "2026-01-01",
         "end_date": "2026-12-31",
         "lane_days": 365,
+        "normalized_street": "shoreham drive",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7711415932523,
         "lon": -79.5150188197778
       }
@@ -17068,6 +18256,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "belper crt",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7295358961856,
         "lon": -79.3062484101813
       }
@@ -17111,6 +18302,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "hill garden road",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.694927751865,
         "lon": -79.5234164346939
       }
@@ -17154,6 +18348,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "grenview",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6376872147903,
         "lon": -79.5032598789656
       }
@@ -17197,6 +18394,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "courton drive",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7426274344303,
         "lon": -79.3028899440662
       }
@@ -17240,6 +18440,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "bathurst street",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7723153379253,
         "lon": -79.4426086625864
       }
@@ -17283,6 +18486,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "glenhurst avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6818671613127,
         "lon": -79.4365991061729
       }
@@ -17326,6 +18532,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "sun avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7501028264801,
         "lon": -79.3001413289525
       }
@@ -17369,6 +18578,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "cairnside crescent",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7807749769363,
         "lon": -79.3314048949625
       }
@@ -17412,6 +18624,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "exbury road",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7299804010328,
         "lon": -79.5089151696197
       }
@@ -17455,6 +18670,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "exbury road",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7323799263187,
         "lon": -79.4978517194587
       }
@@ -17498,6 +18716,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "torham place",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.8200646604039,
         "lon": -79.2315492019474
       }
@@ -17541,6 +18762,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "point grey crescent",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7698867699598,
         "lon": -79.2141716786697
       }
@@ -17584,6 +18808,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "devon road",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6811273564098,
         "lon": -79.3096746011658
       }
@@ -17627,6 +18854,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "kingslea crt",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6414048853853,
         "lon": -79.5007985908112
       }
@@ -17670,6 +18900,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "ormsby crescent",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7006448348479,
         "lon": -79.4157380448397
       }
@@ -17713,6 +18946,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "glebeholme boulevard",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6839278905934,
         "lon": -79.3335866627111
       }
@@ -17756,6 +18992,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "deerbrook trl",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.800040326248,
         "lon": -79.3274776291565
       }
@@ -17799,6 +19038,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-09-30",
         "lane_days": 92,
+        "normalized_street": "weston road",
+        "direction": "N",
+        "geo_id": null,
         "lat": 43.7581492055145,
         "lon": -79.5438951367334
       }
@@ -17842,6 +19084,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "glenlake avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6554715711084,
         "lon": -79.4704906313066
       }
@@ -17885,6 +19130,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "burlington street",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6179379347576,
         "lon": -79.4896099307621
       }
@@ -17928,6 +19176,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "alvin avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6908995774694,
         "lon": -79.3933470407224
       }
@@ -17971,6 +19222,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "buckingham street",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6197564946383,
         "lon": -79.4965090204434
       }
@@ -18014,6 +19268,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "camberwell road",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6996725972736,
         "lon": -79.4297338669912
       }
@@ -18057,6 +19314,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "federal street",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.649249655661,
         "lon": -79.4307715382089
       }
@@ -18100,6 +19360,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "humewood gardens",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6828855897943,
         "lon": -79.4288978623905
       }
@@ -18143,6 +19406,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "hillholm road",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6962414777595,
         "lon": -79.4089187189067
       }
@@ -18186,6 +19452,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "norelco drive",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7598983742931,
         "lon": -79.5326790890564
       }
@@ -18229,6 +19498,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "sycamore place",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6748450563942,
         "lon": -79.2891442432312
       }
@@ -18272,6 +19544,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "college view avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7018393986127,
         "lon": -79.4074450474863
       }
@@ -18315,6 +19590,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "stacy street",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.682047080252,
         "lon": -79.3182793714438
       }
@@ -18358,6 +19636,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "glenlake avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6566593086517,
         "lon": -79.4694628636937
       }
@@ -18401,6 +19682,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "dale avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6746063774502,
         "lon": -79.3713496465142
       }
@@ -18444,6 +19728,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "louise avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6843202162536,
         "lon": -79.4220600457952
       }
@@ -18487,6 +19774,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "humberview crescent",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7065738764461,
         "lon": -79.5340787152808
       }
@@ -18530,6 +19820,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "craggview drive",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7716471320041,
         "lon": -79.19504244845
       }
@@ -18573,6 +19866,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "castlefield avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7110837497969,
         "lon": -79.4031223880169
       }
@@ -18616,6 +19912,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "bayview avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7087045222347,
         "lon": -79.3763384171897
       }
@@ -18659,6 +19958,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "margrath place",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6611435724952,
         "lon": -79.5728550397158
       }
@@ -18702,6 +20004,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "woodfield road",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6735509658127,
         "lon": -79.3246951797563
       }
@@ -18745,6 +20050,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "scott road",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6863544178,
         "lon": -79.470836281519
       }
@@ -18788,6 +20096,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "rosewell avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7106578935096,
         "lon": -79.4050639988264
       }
@@ -18831,6 +20142,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "bayview avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.702999783526,
         "lon": -79.3741337256812
       }
@@ -18874,6 +20188,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-09-30",
         "lane_days": 92,
+        "normalized_street": "victoria park avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6869049614758,
         "lon": -79.2865765831036
       }
@@ -18917,6 +20234,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-06-30",
         "lane_days": 91,
+        "normalized_street": "bridgman avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6745465903995,
         "lon": -79.413891301089
       }
@@ -18960,6 +20280,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "mercedes drive",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7590363593063,
         "lon": -79.5949552813432
       }
@@ -19003,6 +20326,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "lamberton boulevard",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7539497239873,
         "lon": -79.5019567271454
       }
@@ -19046,6 +20372,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "beresford avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6616681062389,
         "lon": -79.4820097172578
       }
@@ -19089,6 +20418,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "hillholm road",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6961162222715,
         "lon": -79.4095821662349
       }
@@ -19132,6 +20464,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "laxford avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7417658814765,
         "lon": -79.2991982532623
       }
@@ -19175,6 +20510,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "knob hill pk",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7089668725381,
         "lon": -79.5322984540887
       }
@@ -19218,6 +20556,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "fleming crescent",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7078553450976,
         "lon": -79.3734377580234
       }
@@ -19261,6 +20602,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "kenwood avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6841824003221,
         "lon": -79.4226902368353
       }
@@ -19304,6 +20648,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "willie crt",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7573791030274,
         "lon": -79.5897006348636
       }
@@ -19347,6 +20694,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "teresa crt",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7571613001688,
         "lon": -79.5919481629763
       }
@@ -19390,6 +20740,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-06-30",
         "lane_days": 91,
+        "normalized_street": "leslie street",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6565146454131,
         "lon": -79.3263363116303
       }
@@ -19433,6 +20786,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-06-30",
         "lane_days": 91,
+        "normalized_street": "glasgow avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7112169282392,
         "lon": -79.2598648061691
       }
@@ -19476,6 +20832,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "bellvare crescent",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7455643444837,
         "lon": -79.3096657766321
       }
@@ -19519,6 +20878,9 @@
         "start_date": "2026-06-01",
         "end_date": "2026-10-31",
         "lane_days": 153,
+        "normalized_street": "glen cedar road",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.696061500518,
         "lon": -79.4291265643639
       }
@@ -19562,6 +20924,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "west lodge avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6445217950808,
         "lon": -79.4368600898252
       }
@@ -19605,6 +20970,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "brimorton drive",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7657729214004,
         "lon": -79.253190659519
       }
@@ -19648,6 +21016,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "rosemarie drive",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7493003800957,
         "lon": -79.2993834463441
       }
@@ -19691,6 +21062,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "halfway avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.8174716664912,
         "lon": -79.2142475113392
       }
@@ -19734,6 +21108,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "sunnylea",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6409951399977,
         "lon": -79.5050955895224
       }
@@ -19777,6 +21154,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "boncer road",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6169132787336,
         "lon": -79.5604658321217
       }
@@ -19820,6 +21200,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "ormont drive",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7657522806842,
         "lon": -79.5412131930377
       }
@@ -19863,6 +21246,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-06-30",
         "lane_days": 91,
+        "normalized_street": "warwick avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6954413771017,
         "lon": -79.4276220571007
       }
@@ -19906,6 +21292,9 @@
         "start_date": "2026-01-01",
         "end_date": "2026-09-30",
         "lane_days": 273,
+        "normalized_street": "westview boulevard",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7148106859545,
         "lon": -79.3041074805779
       }
@@ -19949,6 +21338,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "gihon spring drive",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7543265468492,
         "lon": -79.5988168698031
       }
@@ -19992,6 +21384,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "cobourg avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6552146421821,
         "lon": -79.4370342233395
       }
@@ -20035,6 +21430,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-06-30",
         "lane_days": 91,
+        "normalized_street": "bridgman avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.674338821193,
         "lon": -79.4148493024735
       }
@@ -20078,6 +21476,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "mckee avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7732945523259,
         "lon": -79.4120191691591
       }
@@ -20121,6 +21522,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "ross avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7865681335106,
         "lon": -79.2811764009126
       }
@@ -20164,6 +21568,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "grenview",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6383262797723,
         "lon": -79.5038323411508
       }
@@ -20207,6 +21614,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "brimorton drive",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7693564942781,
         "lon": -79.2374725545321
       }
@@ -20250,6 +21660,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "ridley boulevard",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7355278261546,
         "lon": -79.4089461918746
       }
@@ -20293,6 +21706,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "celeste drive",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7635335627385,
         "lon": -79.1974625091629
       }
@@ -20336,6 +21752,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "stamford square",
+        "direction": "S",
+        "geo_id": null,
         "lat": 43.7107227194923,
         "lon": -79.2954155062462
       }
@@ -20379,6 +21798,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "hiscock boulevard",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7661975860789,
         "lon": -79.2253389067063
       }
@@ -20422,6 +21844,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "ridgewood road",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7900884582171,
         "lon": -79.1330976070856
       }
@@ -20465,6 +21890,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "st lucie drive",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7406843641174,
         "lon": -79.544396980033
       }
@@ -20508,6 +21936,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "peacock avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.635555124443,
         "lon": -79.5661155281435
       }
@@ -20551,6 +21982,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "parkdale road",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6411441970858,
         "lon": -79.4522853662018
       }
@@ -20594,6 +22028,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "west burton crt",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7917694697527,
         "lon": -79.2458157927356
       }
@@ -20637,6 +22074,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "woodfield road",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6749785845738,
         "lon": -79.3252844000405
       }
@@ -20680,6 +22120,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "mansfield avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6535248246239,
         "lon": -79.4133393616796
       }
@@ -20723,6 +22166,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "mount olive drive",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.752891524705,
         "lon": -79.5969288688183
       }
@@ -20766,6 +22212,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "nanton avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6761606556938,
         "lon": -79.3719689362884
       }
@@ -20809,6 +22258,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "minglehaze drive",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7584312840915,
         "lon": -79.5978337207329
       }
@@ -20852,6 +22304,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "chaplin crescent",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7031747821512,
         "lon": -79.4183614767027
       }
@@ -20895,6 +22350,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "burrows hall boulevard",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7960214366245,
         "lon": -79.2235178326564
       }
@@ -20938,6 +22396,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-06-30",
         "lane_days": 91,
+        "normalized_street": "woodrow boulevard",
+        "direction": "N",
+        "geo_id": null,
         "lat": 43.7135213212527,
         "lon": -79.2660119096197
       }
@@ -20981,6 +22442,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "dale avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6736839384304,
         "lon": -79.3748100420107
       }
@@ -21024,6 +22488,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "holland park avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6855362890528,
         "lon": -79.4425415517399
       }
@@ -21067,6 +22534,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "south drive",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6763280372879,
         "lon": -79.3812088683141
       }
@@ -21110,6 +22580,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "harcourt avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6774797900501,
         "lon": -79.3437199340073
       }
@@ -21153,6 +22626,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "castlefield avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7098464717052,
         "lon": -79.4089531597606
       }
@@ -21196,6 +22672,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "tinton crescent",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7460985879558,
         "lon": -79.6014754324087
       }
@@ -21239,6 +22718,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "oakvale avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6788985467431,
         "lon": -79.3350876950718
       }
@@ -21282,6 +22764,9 @@
         "start_date": "2026-01-01",
         "end_date": "2026-12-31",
         "lane_days": 365,
+        "normalized_street": "richmond street",
+        "direction": "W",
+        "geo_id": null,
         "lat": 43.64468720227,
         "lon": -79.4109908267328
       }
@@ -21325,6 +22810,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-06-30",
         "lane_days": 91,
+        "normalized_street": "kilmarnock avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7117128465638,
         "lon": -79.2625114922732
       }
@@ -21368,6 +22856,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "[n-s] minglehaze dr [branch]",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7578166065398,
         "lon": -79.597582842407
       }
@@ -21411,6 +22902,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "brimorton drive",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7664678753943,
         "lon": -79.2418045149705
       }
@@ -21454,6 +22948,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "[30.50 m e] dovercourt road",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6463000133691,
         "lon": -79.4229314283841
       }
@@ -21497,6 +22994,9 @@
         "start_date": "2026-01-01",
         "end_date": "2026-12-31",
         "lane_days": 365,
+        "normalized_street": "richmond street",
+        "direction": "W",
+        "geo_id": null,
         "lat": 43.644547414405,
         "lon": -79.4116193881183
       }
@@ -21540,6 +23040,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "chaplin crescent",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7036390812111,
         "lon": -79.4193921819196
       }
@@ -21583,6 +23086,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "don river boulevard",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7585160256118,
         "lon": -79.4331541662873
       }
@@ -21626,6 +23132,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-09-30",
         "lane_days": 92,
+        "normalized_street": "scarborough golf club road",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7451537403078,
         "lon": -79.2089934460634
       }
@@ -21669,6 +23178,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "new toronto street",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6054306800506,
         "lon": -79.512840365778
       }
@@ -21712,6 +23224,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "times road",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7040279332615,
         "lon": -79.4472364731296
       }
@@ -21755,6 +23270,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-06-30",
         "lane_days": 91,
+        "normalized_street": "leslie street",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6538505747257,
         "lon": -79.3241049888768
       }
@@ -21798,6 +23316,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "midland avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.8234091809467,
         "lon": -79.2961344750768
       }
@@ -21841,6 +23362,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-09-30",
         "lane_days": 92,
+        "normalized_street": "victoria park avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6879392456868,
         "lon": -79.2870025790432
       }
@@ -21884,6 +23408,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "[s] paulson rd [leg]",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6949301600943,
         "lon": -79.4791962258411
       }
@@ -21927,6 +23454,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "arlington avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6838870355637,
         "lon": -79.4299383322808
       }
@@ -21970,6 +23500,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "coronado crt",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7400306775655,
         "lon": -79.5415628293771
       }
@@ -22013,6 +23546,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "plowshare crescent",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7554817170258,
         "lon": -79.5977470890551
       }
@@ -22056,6 +23592,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "willowdale avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7842098081652,
         "lon": -79.4081842895549
       }
@@ -22099,6 +23638,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-09-30",
         "lane_days": 92,
+        "normalized_street": "island rd [branch]",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.797486390408,
         "lon": -79.1414597266741
       }
@@ -22142,6 +23684,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "wallis crescent",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.754353985523,
         "lon": -79.5914451406225
       }
@@ -22185,6 +23730,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "staffordshire place",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.5991377698816,
         "lon": -79.5327869295404
       }
@@ -22228,6 +23776,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "eriksdale road",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6352901684037,
         "lon": -79.5673679487104
       }
@@ -22271,6 +23822,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "dumas crt",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7524659264581,
         "lon": -79.3198696578632
       }
@@ -22314,6 +23868,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-12-31",
         "lane_days": 184,
+        "normalized_street": "bayview avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7042695628993,
         "lon": -79.3746152725251
       }
@@ -22357,6 +23914,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "meredith crescent",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6757029120434,
         "lon": -79.3816499175083
       }
@@ -22400,6 +23960,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "the outlook street",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.6629202887688,
         "lon": -79.5667881093887
       }
@@ -22443,6 +24006,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "franca crescent",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7578840281168,
         "lon": -79.5945641383341
       }
@@ -22486,6 +24052,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "great west drive",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7654297025455,
         "lon": -79.2731114178122
       }
@@ -22529,6 +24098,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "briar hill avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7123778753874,
         "lon": -79.4059400349907
       }
@@ -22572,6 +24144,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "select avenue",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.8306782465831,
         "lon": -79.2615705735373
       }
@@ -22615,6 +24190,9 @@
         "start_date": "2026-04-01",
         "end_date": "2026-12-31",
         "lane_days": 275,
+        "normalized_street": "bathurst street",
+        "direction": "",
+        "geo_id": null,
         "lat": 43.7889604385201,
         "lon": -79.4466009354898
       }
@@ -22658,6 +24236,9 @@
         "start_date": "2026-06-01",
         "end_date": "2026-06-05",
         "lane_days": 5,
+        "normalized_street": "queen street",
+        "direction": "W",
+        "geo_id": null,
         "lat": 43.6501,
         "lon": -79.3905
       }
@@ -22701,6 +24282,9 @@
         "start_date": "2026-06-03",
         "end_date": "2026-06-07",
         "lane_days": 5,
+        "normalized_street": "queen street",
+        "direction": "W",
+        "geo_id": null,
         "lat": 43.6503,
         "lon": -79.3908
       }
@@ -22744,6 +24328,9 @@
         "start_date": "2026-06-08",
         "end_date": "2026-06-12",
         "lane_days": 5,
+        "normalized_street": "queen street",
+        "direction": "W",
+        "geo_id": null,
         "lat": 43.6506,
         "lon": -79.3911
       }
@@ -22787,6 +24374,9 @@
         "start_date": "2026-07-01",
         "end_date": "2026-07-04",
         "lane_days": 4,
+        "normalized_street": "dundas street",
+        "direction": "W",
+        "geo_id": null,
         "lat": 43.654,
         "lon": -79.388
       }
@@ -22830,6 +24420,9 @@
         "start_date": "2026-07-03",
         "end_date": "2026-07-06",
         "lane_days": 4,
+        "normalized_street": "dundas street",
+        "direction": "W",
+        "geo_id": null,
         "lat": 43.6542,
         "lon": -79.3884
       }
@@ -22873,6 +24466,9 @@
         "start_date": "2026-08-01",
         "end_date": "2026-08-04",
         "lane_days": 4,
+        "normalized_street": "bloor street",
+        "direction": "W",
+        "geo_id": null,
         "lat": 43.665,
         "lon": -79.41
       }

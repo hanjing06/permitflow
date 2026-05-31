@@ -174,3 +174,38 @@ Headline counter per D-27. Two-metric design per D-28 — `permits_considered` i
 - `utility_cuts.csv` ships without inline geometry (GEO_ID + DISPLAY_DESC only — per Plan 01-01 SUMMARY). The optimizer's `_permit_from_simple_csv` requires `lat`/`lon` columns, so utility_cut permits are silently dropped from the candidate set. Result: `piggybacks_accepted` is currently 0 in the demo data. Geocoding the DISPLAY_DESC strings is Phase 4 / Phase 6 work.
 - Conflict graph is a **space-time proxy**, not a Valhalla `exclude_polygons` precompute (intentional — keeps the demo offline-runnable). `backend/valhalla.py` has a live route client ready for `/whatif-street` to use if Valhalla is reachable at `:5000`.
 - `per_lane_day_cost` is a $15K placeholder — Phase 6 replaces from Toronto Congestion Management Plan per D-26.
+
+---
+
+## Phase 8 additions (additive, no removals)
+
+### Permit dicts (in-memory + naive.json / optimized.json)
+
+Three new fields on every permit dict produced by `_permit_from_open_toronto` and `_permit_from_simple_csv`:
+
+- `normalized_street` (str) — lowercased canonical street key (e.g. `"danforth avenue"`). Empty string for permits whose street text could not be parsed. Used by `cluster_leftover_candidates` Layer-1 grouping. Empty values are NEVER grouped together — they fall through as singletons.
+- `direction` (str) — single-letter compass prefix (`"E"`, `"W"`, `"N"`, `"S"`, `"NE"`/`"NW"`/`"SE"`/`"SW"`, or `""` if absent). Stored separately so "Yonge St E" and "Yonge St W" do not collapse into one cluster.
+- `geo_id` (str | None) — Toronto centerline segment ID, stringified from the CSV's `GEO_ID` column with trailing `.0` stripped. `None` for anchor sources (`road_resurfacing`, `road_reconstruction`, `sidewalk_construction`) whose CSVs do not carry a GEO_ID column.
+
+These fields are emitted into `naive.json` and `optimized.json` per-permit objects automatically (the existing builders spread the full permit dict). Adding them does not break any existing consumer.
+
+### clusters.json — `match_type` field
+
+Every recommendation object now carries a `match_type` field:
+
+- `"same_segment"` — Layer-2 GEO_ID exact match (city's own centerline segment ID + temporal sub-bucket).
+- `"same_street"` — Layer-1 normalized-street grouping with temporal sub-bucketing.
+- `"piggyback_segment"` — anchor↔candidate piggyback (no algorithmic change in Phase 8 — the field is added for consistency so every cluster has a basis tag).
+
+This is an additive field; the existing 17 fields (`type`, `cluster_id`, `member_permit_ids`, …) are unchanged.
+
+### Removed: radius-based DBSCAN for leftover clustering
+
+`cluster_leftover_candidates` no longer calls `dbscan_labels`. The `dbscan_labels` function itself is retained for the legacy `cluster_permits` DataFrame API (used by the old `/permits` endpoint and `recommend_consolidations` fallback). Layer-1+2 grouping is implemented in `_temporal_subclusters` + dict-keyed groupbys.
+
+Tunable: `PERMITFLOW_STREET_WINDOW_DAYS` env var (default `60`) controls the temporal sub-cluster gap within a street or segment group.
+
+### Layer-2 GEO_ID match — current data reality
+
+`piggybacks_accepted` and `same_segment` cluster counts will both stay at zero in the v1.0 demo data because the GEO_ID-carrying CSVs (`utility_cuts.csv`, `building_permits.csv`) ship without inline lat/lon and are still silently dropped by the constructors' coordinate guard. Once a geocoder fills in lat/lon (separate v1.1 work — see "Known limitations" above), `same_segment` clusters become viable without further optimizer changes.
+
