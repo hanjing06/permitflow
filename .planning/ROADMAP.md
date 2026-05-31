@@ -19,6 +19,7 @@ PermitFlow is a 36-hour NVIDIA hackathon build: an AI-assisted permit consolidat
 - [ ] **Phase 5: Verification & Pitch Artifacts** — REDUCED per D-78: nvidia-smi (123B resident) screenshot + live chat latency screenshot. No fine-tune eval. (Hour 22–24)
 - [ ] **Phase 6: Demo Polish** — Lock 90-second arc, deck, cost-avoidance figure, camera flourish (Hour 28–34)
 - [ ] **Phase 7: Dry Runs & Backup** — Three rehearsals, WiFi-off test, backup video, contingency cards (Hour 34–36)
+- [ ] **Phase 8: Street-Based Clustering** — POST-HACKATHON. Replace radius-based DBSCAN with same-street + GEO_ID + intersection-grouping for physically-meaningful trench-sharing.
 
 ## Phase Details
 
@@ -147,3 +148,29 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7
 | 7. Dry Runs & Backup | 0/4 | Not started | - |
 
 See `.planning/HEALTHCHECK.md` for the per-item gap analysis.
+
+### Phase 8: Street-Based Clustering
+
+**Status:** POST-HACKATHON. Captured during the hackathon as a follow-up improvement; not in scope for v1.0 demo.
+
+**Goal:** Replace the current radius-based DBSCAN clustering (`backend/optimizer.py:cluster_leftover_candidates`) with street-aware grouping that matches the physical reality of trench-sharing — permits should cluster when they're on the *same opened road*, not when they happen to be geometrically close on parallel streets.
+
+**Three-layer approach (incremental, each shippable independently):**
+
+1. **Same-street clustering** — Normalize `street_name` (strip "| From: X | To: Y" tails; canonicalize AVE/AVENUE/ST/STREET; strip direction prefixes). Group by normalized name, then sub-cluster temporally within each group. Replaces the leftover-DBSCAN pass.
+2. **Same-segment clustering via GEO_ID** — `utility_cuts.csv` already ships a `GEO_ID` per segment (Plan 01-01 SUMMARY). Road program CSVs presumably have one too. Group by exact `GEO_ID` for true same-segment matches. This is what the city's own coordination tool would do.
+3. **Cross-street intersection clustering** — Permits within ~50 m of each other AND on different streets are likely at the same intersection. Tag as "intersection coordination" — signage and traffic-control benefit, no actual trench sharing.
+
+**Why this matters:**
+- Current radius-DBSCAN clusters permits on *parallel* streets that share no trench (false positive).
+- Current radius-DBSCAN misses permits on the *same* street more than ~220m apart that share a trench (false negative).
+- Street-based grouping fixes both and likely lifts the demo's `excavations_avoided` number meaningfully.
+
+**Known caveats:**
+- Street-name normalization is messy (typos, abbreviations, missing values). 90%-correct normalizer ships in an afternoon; perfection is a rabbit hole.
+- Doesn't solve the utility_cut geocoding gap (no inline lat/lon) — that's a separate piece of work.
+- Anchors have real LineString geometry; pair this with point-in-buffer spatial joins to candidates for the full trench-sharing thesis.
+
+**Depends on:** v1.0 milestone closeout. This is **v1.1** work — should be in a new milestone, not the current one.
+
+**Plans:** 0 plans — not yet broken down. Run `/gsd-plan-phase 8` after v1.0 ships and the milestone is rolled.
