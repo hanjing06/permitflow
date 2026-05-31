@@ -19,7 +19,7 @@ PermitFlow is a 36-hour NVIDIA hackathon build: an AI-assisted permit consolidat
 - [ ] **Phase 5: Verification & Pitch Artifacts** — REDUCED per D-78: nvidia-smi (123B resident) screenshot + live chat latency screenshot. No fine-tune eval. (Hour 22–24)
 - [ ] **Phase 6: Demo Polish** — Lock 90-second arc, deck, cost-avoidance figure, camera flourish (Hour 28–34)
 - [ ] **Phase 7: Dry Runs & Backup** — Three rehearsals, WiFi-off test, backup video, contingency cards (Hour 34–36)
-- [ ] **Phase 8: Street-Based Clustering** — POST-HACKATHON. Replace radius-based DBSCAN with same-street + GEO_ID + intersection-grouping for physically-meaningful trench-sharing.
+- [ ] **Phase 8: Street-Based Clustering** — Mid-late hackathon insertion (per user request). Replace radius-based DBSCAN with GEO_ID + same-street + temporal grouping. Layers 1+2 only; Layer 3 (intersection coordination + new UI color) deferred to follow-up phase / v1.1.
 
 ## Phase Details
 
@@ -135,7 +135,7 @@ Plans:
 ## Progress
 
 **Execution Order:**
-Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7
+Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
@@ -146,31 +146,49 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7
 | 5. Verification & Pitch Artifacts | 1/2 (modelfile ✅; nvidia-smi + latency ❌) | In progress | - |
 | 6. Demo Polish | 1/3 (code-only polish ✅; pitch-lead deck + script + cost-avoidance owed) | In progress | - |
 | 7. Dry Runs & Backup | 0/4 | Not started | - |
+| 8. Street-Based Clustering | 0/1 (Layers 1+2 only; Layer 3 deferred) | Planned | - |
 
 See `.planning/HEALTHCHECK.md` for the per-item gap analysis.
 
 ### Phase 8: Street-Based Clustering
 
-**Status:** POST-HACKATHON. Captured during the hackathon as a follow-up improvement; not in scope for v1.0 demo.
+**Status:** Planned — mid-late hackathon insertion per user request. Layers 1+2 only; Layer 3 deferred to a follow-up phase / v1.1.
 
-**Goal:** Replace the current radius-based DBSCAN clustering (`backend/optimizer.py:cluster_leftover_candidates`) with street-aware grouping that matches the physical reality of trench-sharing — permits should cluster when they're on the *same opened road*, not when they happen to be geometrically close on parallel streets.
+**Goal:** Replace the current radius-based DBSCAN clustering (`backend/optimizer.py:cluster_leftover_candidates`) with street-aware grouping that matches the physical reality of trench-sharing — permits should cluster when they're on the *same opened road* (same GEO_ID segment, or same normalized street name within a temporal window), not when they happen to be geometrically close on parallel streets.
 
-**Three-layer approach (incremental, each shippable independently):**
+**Window:** Mid-late hackathon insertion (post-Phase-6, before/alongside Phase-7 rehearsals). Demo numbers will change once artifacts regenerate; rehearsals should run AFTER Phase 8 lands so the pitch reflects the new numbers.
 
-1. **Same-street clustering** — Normalize `street_name` (strip "| From: X | To: Y" tails; canonicalize AVE/AVENUE/ST/STREET; strip direction prefixes). Group by normalized name, then sub-cluster temporally within each group. Replaces the leftover-DBSCAN pass.
-2. **Same-segment clustering via GEO_ID** — `utility_cuts.csv` already ships a `GEO_ID` per segment (Plan 01-01 SUMMARY). Road program CSVs presumably have one too. Group by exact `GEO_ID` for true same-segment matches. This is what the city's own coordination tool would do.
-3. **Cross-street intersection clustering** — Permits within ~50 m of each other AND on different streets are likely at the same intersection. Tag as "intersection coordination" — signage and traffic-control benefit, no actual trench sharing.
+**Success Criteria** (what must be TRUE):
+  1. `backend/street_norm.py` exists with a unit-tested `normalize_street` helper (G8-NORM)
+  2. Every permit dict carries `geo_id` and `normalized_street` fields (G8-GEOID)
+  3. `cluster_leftover_candidates` groups by GEO_ID first, then by normalized street + temporal proximity (no more radius-DBSCAN for leftovers) (G8-CLUSTER)
+  4. All 7 Phase-3 artifacts regenerated; `clusters.json` carries an additive `match_type` field on every entry (G8-ARTIFACTS)
+  5. Phase 4 TriStatCounter + ChatPanel continue to read `/metrics` and `/clusters` with no field removals (G8-CONTRACT)
+
+**Layers shipping in this phase:**
+
+1. **Same-street clustering (Layer 1)** — Normalize `street_name` (strip "| From: X | To: Y" tails; canonicalize AVE/AVENUE/ST/STREET/RD/BLVD/etc.; strip direction prefixes preserving them as a `direction` field). Group by normalized name, then sub-cluster temporally within each group.
+2. **Same-segment clustering via GEO_ID (Layer 2)** — `utility_cuts.csv` and `building_permits.csv` carry `GEO_ID`. Group by exact `GEO_ID` BEFORE Layer 1 falls through. This is the gold-standard match — the city's own segment IDs.
+
+**Deferred to follow-up / v1.1:**
+
+- **Layer 3 — Cross-street intersection clustering** — Permits within ~50 m on different streets are likely at the same intersection. Would need a new `optimization_status="intersection_coordinated"` value and a fourth UI color. Out of scope here.
+- **utility_cuts geocoding** (DISPLAY_DESC → lat/lon) — separate v1.1 work; this phase still respects the silent-drop behaviour for candidates without lat/lon.
+- **Anchor LineString spatial join** — separate v1.1 work.
 
 **Why this matters:**
 - Current radius-DBSCAN clusters permits on *parallel* streets that share no trench (false positive).
 - Current radius-DBSCAN misses permits on the *same* street more than ~220m apart that share a trench (false negative).
-- Street-based grouping fixes both and likely lifts the demo's `excavations_avoided` number meaningfully.
+- Street-based grouping fixes both. The new demo numbers (whatever they are) are more defensible than the current 532/3/$210K.
 
 **Known caveats:**
-- Street-name normalization is messy (typos, abbreviations, missing values). 90%-correct normalizer ships in an afternoon; perfection is a rabbit hole.
-- Doesn't solve the utility_cut geocoding gap (no inline lat/lon) — that's a separate piece of work.
-- Anchors have real LineString geometry; pair this with point-in-buffer spatial joins to candidates for the full trench-sharing thesis.
+- Street-name normalization is messy (typos, abbreviations, missing values). 90%-correct normalizer ships in this plan; perfection is a rabbit hole.
+- Doesn't solve the utility_cut geocoding gap (no inline lat/lon) — that's separate v1.1 work.
+- Demo numbers will change. SUMMARY must record OLD vs NEW and the pitch line "we group by physical road, not radius."
 
-**Depends on:** v1.0 milestone closeout. This is **v1.1** work — should be in a new milestone, not the current one.
+**Depends on:** Phase 3 (clusters.json contract); Phase 4 (TriStatCounter / ChatPanel — no breaking changes to /metrics or /clusters).
 
-**Plans:** 0 plans — not yet broken down. Run `/gsd-plan-phase 8` after v1.0 ships and the milestone is rolled.
+**Plans:** 1 plan (Layers 1+2 only; Layer 3 deferred)
+
+Plans:
+- [ ] 08-01-PLAN.md — street_norm.py + geo_id/normalized_street on permits + rewrite cluster_leftover_candidates (GEO_ID → same-street → temporal) + regenerate artifacts + additive match_type field + SCHEMAS.md Phase 8 section
