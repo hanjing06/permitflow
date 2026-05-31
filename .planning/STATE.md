@@ -3,15 +3,15 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: completed
-stopped_at: "Phase 3 complete via merge of hanjing06/phase3 (c6100d0) plus follow-up wiring (27ac93b). Optimizer engine, 7 artifacts, 6 new endpoints, SCHEMAS contract all in. Demo numbers: 532 permits considered / 2 merges / 3 excavations avoided / 14 lane-days saved / $210K cost avoidance. Next: Phase 4 (UI & Chat Panel) — wire the Phase 4 endpoints into App.jsx, hero-centre zoom (D-55), naive↔optimized toggle (D-32), tri-stat counter (D-33), streaming /chat (D-41)."
-last_updated: "2026-05-31T01:25:00.000Z"
-last_activity: 2026-05-31 -- Phase 03 merged + wired (5-plan SPEC satisfied; artifacts on disk; APIs live)
+stopped_at: "Phase 1 complete — all 5 G1 exit criteria satisfied. Hero block locked to segment-43666-79364 (centre 43.6657, -79.3642, ~1 km² on the Danforth/Greektown corridor). Next: Phase 3 trench-sharing two-pass DBSCAN + Valhalla `/whatif` wiring (per HEALTHCHECK Phase 3 gap)."
+last_updated: "2026-05-31T00:45:56.771Z"
+last_activity: 2026-05-31
 progress:
   total_phases: 7
-  completed_phases: 3
-  total_plans: 7
-  completed_plans: 7
-  percent: 43
+  completed_phases: 1
+  total_plans: 9
+  completed_plans: 3
+  percent: 33
 ---
 
 # Project State
@@ -22,16 +22,17 @@ See: .planning/PROJECT.md (updated 2026-05-30) · .planning/HEALTHCHECK.md (mid-
 
 **Core value:** Cut redundant Toronto road excavations via trench-sharing (anchor-and-piggyback) and Valhalla conflict-aware scheduling, narrated by Ollama-served Nemotron-3 Super 123B running locally on a GX10.
 
-**Current focus:** Phase 04 — UI & Chat Panel (next)
+**Current focus:** Phase 04 — ui-chat-panel
 
 ## Current Position
 
-Phase: 03 — COMPLETE (merged hanjing06/phase3 + wired endpoints + artifacts)
+Phase: 04 (ui-chat-panel) — EXECUTING
+Plan: 2 of 2
 Phases done: 1, 2 (closed), 3, 5 (reduced)
 Phases remaining: 4, 6, 7
-Last activity: 2026-05-31 -- Phase 03 closed via merge + follow-up commit 27ac93b
+Last activity: 2026-05-31
 
-Progress: [████░░░░░░] 43% (3 of 7 phases)
+Progress: [███░░░░░░░] 33%
 
 See `.planning/HEALTHCHECK.md` for the per-phase delta — Phase 3 rows now flip ❌ → ✅.
 
@@ -59,6 +60,6 @@ Full decision log lives in per-phase CONTEXT files.
 
 ## Session Continuity
 
-Last session: 2026-05-30T23:23:00.000Z
+Last session: 2026-05-31T00:45:40.558Z
 Stopped at: Phase 1 complete — all 5 G1 exit criteria satisfied. Hero block locked to segment-43666-79364 (centre 43.6657, -79.3642, ~1 km² on the Danforth/Greektown corridor). Next: Phase 3 trench-sharing two-pass DBSCAN + Valhalla `/whatif` wiring (per HEALTHCHECK Phase 3 gap).
 Resume file: None

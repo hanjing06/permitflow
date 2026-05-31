@@ -79,7 +79,7 @@ Plans:
 **Plans:** 2 plans
 
 Plans:
-- [ ] 04-01-PLAN.md — Backend: POST /chat (SSE Ollama stream) + POST /retrieve (NIM embedder → top-5) + RAG helpers in llm.py
+- [x] 04-01-PLAN.md — Backend: POST /chat (SSE Ollama stream) + POST /retrieve (NIM embedder → top-5) + RAG helpers in llm.py
 - [ ] 04-02-PLAN.md — Frontend rewrite: HeroMap (auto-centre via /hero-block) + ToggleSwitch (naive↔optimized hard cut) + TriStatCounter (3 equal metrics, 2s tween) + ChatPanel (SSE consumer + 3 canned scenarios)
 
 ### Phase 5: Verification & Pitch Artifacts — REDUCED (D-78)
